@@ -84,6 +84,14 @@ OAuth storage still configured and evaluated. The current tool instead creates a
 Portal service per image tag. No helper adaptation or deployment was performed;
 this remains an option. See history/20261002_portal-dev-tool-mcp.md.
 
+Live Linear/GitHub tracing confirmed that Toolkit helpers are tracked through
+Platform tickets PLAT-338 and PLAT-513, neither attached to a Linear project.
+Created and read back PLAT-546, "Toolkit: add a manual MCP development deployment
+helper", in Platform Backlog, unassigned and without a project, related to both
+existing tickets. No deployment or milestone retry was started. See
+history/20261002_toolkit-project-tracking.md and
+https://linear.app/fulcradynamics/issue/PLAT-546/toolkit-add-a-manual-mcp-development-deployment-helper.
+
 Resolve actual host reachability/authentication prerequisites, then resume M2's
 required live host/account tests in a new recorded run. Hosting could replace the
 Platform tunnel route; ChatGPT authentication/install/render/link gates remain. Do not
