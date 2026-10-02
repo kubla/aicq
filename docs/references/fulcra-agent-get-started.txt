@@ -1,0 +1,120 @@
+Fulcra gives agents a shared place to access and store real-world data, record what matters, coordinate work, and discover what's new on every loop. That context belongs to the user rather than any individual agent, allowing it to be securely shared across agents and other AI applications over time.
+
+# Tools
+
+There are both CLI & MCP interfaces for connecting to Fulcra. Agents should use which ever one best suites their capabilities.
+
+## CLI
+
+The `fulcra` CLI command is shipped with the `fulcra-api` python package. It requires a Python 3.11 or higher and either `uv` or `pip`.
+
+If `uv`/`uvx` is available in your environment you can run the CLI directly via:
+```
+uvx fulcra-api --help
+```
+
+If `pipx` is available in your environment you can run the CLI directly via:
+```
+pipx run fulcra-api --help
+```
+
+The `fulcra-api` package can also be installed into a project, which will provide the `fulcra` and `fulcra-api` commands.
+
+Install via `uv`:
+```
+uv add fulcra-api
+```
+
+or via `pip`:
+
+```
+pip install fulcra-api
+```
+
+All examples from here on assume use of `uvx fulcra-api`.
+
+The `--help` flag provides additional documentation about command usage:
+
+```
+Usage: fulcra-api [OPTIONS] COMMAND [ARGS]...
+
+  Command line interface for authenticating and interacting with the Fulcra
+  Life API.
+
+  Sub-commands return JSON data by default for convienent piping into tools
+  like `jq` for parsing and filtering.
+
+Options:
+  --beta  Enable beta features
+  --help  Show this message and exit.
+
+Commands:
+  apple-location-updates   Return Apple location update records
+  apple-location-visits    Return Apple location visit records
+  apple-workouts           Return Apple workouts
+  auth                     Authentication sub-commands
+  calendar-events          Return Apple calendar events
+  calendars                Return Apple calendars
+  catalog                  Return a list of queryable Fulcra data types and
+                           metadata
+  data-type                Data type management sub-commands
+  data-updates             Return data/file updates that occurred during a
+                           period
+  delete                   Delete records for a data type
+  file                     File management sub-commands
+  get-records              Return raw sample records for a data type
+  google-location-updates  Return Google Maps location update records
+  location-at-time         Return location at specified time
+  location-time-series     Return a calculated time series of location data
+  metric-time-series       Return a calculated time series for a metric
+  record                   Record data for a data type
+  share                    Data sharing management sub-commands
+  sleep-cycles             Return sleep cycles summarized from sleep stages
+  sleep-cycles-aggregated  Return sleep cycles aggregated by a specific period
+  sleep-stages             Return sleep stages derived from sleep-related
+                           metric records
+  tag                      Tag management sub-commands
+  user-info                Return information about the authenticated user
+```
+
+### CLI Authentication
+
+Use the `auth login` subcommand to authenticate to Fulcra on behalf of a user. This consists of two explicit steps:
+
+Step 1: Run `uvx fulcra-api auth login --get-auth-url` to return an authentication URL, web authentication code, and device code. Prompt the user to visit the URL to validate the authentication code and authenticate.
+Step 2: Run `uvx fulcra-api auth login --device-code <device code>` where `<device code>` is the device code returned by step 1. This will command will block and poll for credentials until the user authenticates via the authentication URL given in step 1.
+
+Once a user authenticates and the CLI authentication process is completed, credentials will be persisted to `~/.config/fulcra/credentials.json`. The `fulcra` CLI command will automatically refresh and manage tokens as neccessary.
+
+Example:
+
+```
+$ uvx fulcra-api auth login --get-auth-url
+Open the web auth URL in a browser, verify the web auth code, and complete the web auth flow.
+
+Web auth URL: https://fulcra.us.auth0.com/activate?user_code=MTJJ-NFDF
+- Web auth code: MTJJ-NFDF
+- Device code: 7dxrpM_971s4p-WGy2Cs3TUW
+
+After finishing the web auth flow, complete authentication with the device code by running:
+
+uvx fulcra-api auth login --device-code 7dxrpM_971s4p-WGy2Cs3TUW
+```
+
+> **⚠️ Network Restriction Troubleshooting**
+>
+> If the login command immediately fails or prints a raw `<http.client.HTTPResponse object...>` error, your shell likely lacks outbound network access. Do not attempt to retry or troubleshoot the network to work around the issue. Instead, inform the user that the CLI method cannot be used in this environment, and advise them on the MCP Connector option.
+
+## MCP
+
+There is a Fulcra MCP server available. It can be used with HTTP transport via this URL: `https://mcp.fulcradynamics.com/mcp`
+
+Source code is available at `https://github.com/fulcradynamics/fulcra-context-mcp` and can be run locally with `stdio` transport.
+
+The MCP server covers the same ground as the CLI: the data catalog, records and time series, recording data, files, and datashares (`create_share`, `list_shares`, `delete_share`, plus a `fulcra_userid` parameter on the read tools for data another user has shared with you), and groups (`get_groups`, `join_group`, `leave_group`, `create_group`, `delete_group`; pass a group ID in `with_group_ids` to share with every member). `get_data_updates` with `include_shared=true` checks everyone who shares with you in one call.
+
+## Additional Skills
+
+Agents should read the skills available at https://github.com/fulcradynamics/agent-skills. The `fulcra-get-started` skill is a good place to start, but agents should use Fulcra in the most effective ways for their humans and tasks.
+
+Use cases and contributed skills are in the https://github.com/fulcradynamics/community-skills repo. This is a good place for agents to find examples of Fulcra usage beyond core/basic use cases.

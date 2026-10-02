@@ -1,0 +1,127 @@
+# AICQ workboard
+
+Status: implementation organization prepared. No AICQ application milestone has
+started or passed. This board expands the existing milestone plan; it is not
+additional user approval of architecture choices or a completed build.
+
+## Starting information
+
+The product direction is sufficient to start: agent collaboration with useful
+work exchanges, owner visibility, durable continuity, easy invitations, and
+ChatGPT-preferred delivery with Codex and other harness support.
+
+The user created private `kubla/aicq` after agent-side creation was rejected.
+Verified the repository is private and accessible. Reading repository metadata,
+creating/deleting a temporary branch in the Fulcra MCP fork, writing initial
+content to AICQ, and creating an AICQ issue all succeeded. Ordinary Git push
+returned HTTP 401; use GitHub's content/Git Data API for publication while that
+transport remains blocked. Local git was initialized at planning commit `c84c83f`.
+
+The user chose local-first development if feasible, with GCP deferred to Josh
+when a substantial infrastructure problem arises. Local implementation can proceed
+once the first harness run is recorded. Reuse existing Fulcra authentication and
+the harness annotation instead of creating another.
+
+Before two-owner acceptance, arrange a second Fulcra owner with separately
+authorized credentials. Sharing isolation also needs a third authenticated test
+principal. Do not borrow credentials from the invitation or from another owner.
+Test clients installed on the user's computer require a local test handoff or
+explicitly configured access; this workspace does not imply access to that computer.
+
+Use the official Svelte template by default and make the stack reproducible on
+the user's computer. Development initially runs in this execution workspace;
+that does not mean processes have been installed on the user's computer. Concrete
+message storage and operational database selection remain open. Domain, license,
+billing, and public publisher details can be resolved before their respective gates.
+
+OpenAI Secure MCP Tunnel is a documented private-development path, requiring
+Platform tunnel permissions, runtime credentials, and target workspace association.
+The browser-facing OAuth service is not automatically tunneled. Check this seam
+before committing to a local ChatGPT integration. Public directory distribution
+still needs a stable publicly reachable HTTPS endpoint. When local services are
+stopped, Fulcra retains shared work, but local relay execution cannot continue.
+
+## Workstreams
+
+| Workstream | Deliverable | Main milestones |
+| --- | --- | --- |
+| Foundation and development harness | Authenticated baseline, deployments, real progress dashboard | M1 |
+| Identity, invitation, and onboarding | Stable identities, contact acceptance, resumable resource setup | M2–M3 |
+| Portable messaging and work exchange | Durable requests, replies, artifacts, provenance, continuation | M3–M4 |
+| ChatGPT experience | Packaged skills, buddy list, collaboration/results views | M2, M4, M6 |
+| Events and activation | Reusable Fulcra Events lifecycle and durable delivery worker | Separate fork prerequisite, M5 |
+| Other harnesses and distribution | Codex and representative-client tests, adapters/instructions, release package | M4, M6 |
+
+Design the core exchange for all clients from the beginning. Verify cross-client
+work as soon as the core exists, then perform the full release walkthrough in M6.
+Keep background activation separate from basic messaging compatibility.
+
+## Initial task board
+
+| ID | Task | Depends on | Status | Evidence required |
+| --- | --- | --- | --- | --- |
+| P-01 | Provision private kubla/aicq; prepare local-first stack | User-created repository | Complete setup prerequisite | Private visibility verified; initial content write and issue creation succeeded; local git prepared |
+| M1-01 | Start recorded harness run; initialize app from template | Harness health/read-back | Pending; [issue 1](https://github.com/kubla/aicq/issues/1) | Actual run event; reproducible local baseline |
+| M1-02 | Integrate owner dashboard and serve local authenticated baseline | M1-01 | Pending | Browser sign-in, live event display, owner access and denial for another principal |
+| M2-01 | Package portable plugin, skills, and remote MCP connection | M1 | Pending | Installed development plugin with callable authenticated tools |
+| M2-02 | Stable identity and resumable owner workspace setup | M2-01 | Pending | Fresh/existing account paths; retry/reconnect reuses actual resources |
+| M2-03 | ChatGPT sidebar and thread shell | M2-01 | Pending | Actual supported host renders both entrypoints |
+| M3-01 | Compare annotation outboxes and shared-folder mailboxes | M2, test principals | Pending | Two-owner retrieval, third-principal denial, revocation, observed ingestion/discovery behavior |
+| M3-02 | Invitation acceptance and reciprocal connection | M3-01 | Pending | Intended recipient, interrupted setup recovery, verified narrow shares |
+| M4-01 | Durable handoff and ordinary threaded replies | M3 | Pending | Offline/restart retrieval, retry deduplication, both-owner visibility |
+| M4-02 | Returned artifact revision and continued work | M4-01 | Pending | Recipient-accessible version, linked result, safe incorporation, later-session continuation |
+| M4-03 | Exercise ChatGPT-to-Codex core exchange | M4-02 | Pending | Codex receives, responds, and returns an artifact the ChatGPT agent can use |
+| E-01 | Modern MCP protocol prerequisite | Upstream baseline | Complete prerequisite | Published commit 429da58; 132 regression tests passed; no Events capability claimed |
+| M5-01 | Generic Fulcra Events lifecycle and durable relay | E-01, M4, durable hosting/storage | Pending | Signed challenge/delivery, auth/filter boundaries, persistence, retry/replay and revocation |
+| M5-02 | Real subscribed ChatGPT workflow | M5-01 | Pending | Supported host follows owner policy on arrival; no duplicate work or reply loop |
+| M6-01 | Final UI, client walkthroughs, and release package | M4–M5 | Pending | Complete two-owner story, third-harness core test, supported-client matrix, actual review/publication status |
+
+Use smaller child tasks when a row spans multiple changes. No task moves to
+verified without inspectable evidence. An incomplete child task keeps the parent
+milestone incomplete. No fabricated completion percentages or delivery dates.
+
+## Tracking and sources of truth
+
+Fulcra `workspace/aicq/` is the canonical project record. Repository documentation
+mirrors it. Keep:
+
+- `decisions.md`: the user's exact decisions and requirements, appended over time.
+- `spec.md` and `plan.md`: intended behavior, milestone criteria, dependencies.
+- `workboard.md`: task status, blockers, and evidence references.
+- `progress.md` and `overview.md`: active run, current milestone, next action.
+- `history/`: per-run results, tested revisions/URLs, commands and observed outcomes.
+- Harness annotation: structured lifecycle events that feed the owner dashboard.
+
+Use one AICQ repository for the product, plugin, shared contracts, integration
+tests, and docs. Keep the reusable Events contribution in the existing Fulcra MCP
+fork. Git commits and eventual focused PRs reference task IDs; GitHub issues can
+mirror the board once the product repository exists, without inventing a second
+independent status ledger. The private repository exists and issue 1 tracks M1.
+Repository creation permission and Git push transport are distinct from the
+verified API write capabilities; keep those observations separate.
+
+## Build and evaluation cycle
+
+Choose the earliest incomplete milestone, verify prerequisites, record the run,
+implement a bounded change, then evaluate it separately against the spec and
+previously working behavior. Record actual outcomes and update the board and
+canonical workspace. A deployed page or passing build alone cannot complete an
+end-to-end user journey.
+
+Follow the Fulcra starter's role boundaries: Nurse for harness machinery,
+Coordinator for run state, Generator for product code, Evaluator for verification.
+Roles may run sequentially in one agent. The current defaults remain two retries
+and a 15-minute milestone-run timeout; record any necessary override before a run.
+Prepare credentials and test access before beginning a timed acceptance run.
+
+## Client experiment candidates
+
+The user reported:
+
+> Nice! On my computer I also have Claude, Claude Code, Hermes, Grok Bot, and Meta Muse to experiment with.
+
+Track ChatGPT and Codex plus those experiment candidates in a capability matrix:
+installation, authentication, setup, send/receive, artifact access, continuation,
+owner visibility, and optional background activation. Record client versions and
+actual observed results. Client presence on the user's computer is a testing
+opportunity, not verification or a release commitment for every named client.

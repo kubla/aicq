@@ -1,0 +1,37 @@
+{
+  "retrieved_on": "2026-10-01",
+  "files": {
+    "fulcra-app-starter-SKILL.md": {
+      "bytes": 14159,
+      "sha256": "25ae13a54b967139d4873a3bdf38ccb6cff1e735d97a0690e1fe924c924e3c6b"
+    },
+    "fulcra-harness-control-flow.md": {
+      "bytes": 18291,
+      "sha256": "52d6c9278be74bfd262900f9c3edc15c9f7db420751be55b2db3d2b09235e6a3"
+    },
+    "fulcra-for-agents.md": {
+      "bytes": 15975,
+      "sha256": "337b303c67d8f56c825cd56b1ba728be6370bb316d1408db92a4b633a5330999"
+    },
+    "openai-extensions.md": {
+      "bytes": 9749,
+      "sha256": "b3eff71db001c528bc4296739e1b7642ab534a3f63787d4149202ec7c9100fea"
+    },
+    "openai-mcp-events.md": {
+      "bytes": 16061,
+      "sha256": "68c534c9d1bd3f9322b31b515f10d56d69cbcefb6c6be1e314c116b2a68e0632"
+    },
+    "openai-plugin-auth.md": {
+      "bytes": 39961,
+      "sha256": "30906090c8e55b0e2f6dc88ef16552054a8dc297ea547e4eb963fba848368042"
+    },
+    "fulcra-svelte-readme.md": {
+      "bytes": 5711,
+      "sha256": "cf554e99e87d1e0a941f7244fd9a5430c3c7521fb593e88437b998afab57d078"
+    },
+    "fulcra-agent-get-started.txt": {
+      "bytes": 6054,
+      "sha256": "9ecf8ed48a248ab5bc87352a61caaa4735bed452a893873b95cd68c4d2be9829"
+    }
+  }
+}
