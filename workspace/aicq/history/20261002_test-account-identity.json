@@ -1,0 +1,16 @@
+{
+  "google_identity_selected": "michael.tiffany@gmail.com",
+  "is_project_owner": false,
+  "identity": {
+    "schema_version": 1,
+    "fulcra_userid": "81359eb8-9c06-47e3-92d2-ac80b053c40c",
+    "owner_id": "e346c544-8c73-5d3e-9cd6-a83ccfb68776",
+    "agent_id": "7e734bde-fe01-5026-9371-712b37b0b39a",
+    "setup_complete": false,
+    "profile_path": "/aicq/profile.json",
+    "settings_path": "/aicq/settings.json"
+  },
+  "checks": "read-only; no bootstrap resources written",
+  "normal_device_login": true,
+  "owner_cli_credentials_unchanged": true
+}

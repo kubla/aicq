@@ -18,11 +18,11 @@ next run only when integration prerequisites change; default timeout is 15 minut
 
 Read outstanding-issues.md for the exact SDK client and rejected loopback callback
 that need Josh/Fulcra configuration help. Platform is awaiting email MFA; no tunnel,
-runtime key, workspace association, or ChatGPT plugin is verified. Automatic
-approval review rejected reading the OpenAI MFA email and clearing the shared
-Fulcra browser SSO session. Explicit permission was requested; do not bypass or
-retry without the user's reply. The isolated second CLI login verified as owner,
-so do not mistake it for the fresh test account.
+runtime key, workspace association, or ChatGPT plugin is verified. OpenAI MFA email access remains unapproved. The user granted standing Fulcra
+logout permission; logout/new Google device login succeeded. The isolated test
+client now verifies as non-owner 81359eb8-9c06-47e3-92d2-ac80b053c40c with
+AICQ setup incomplete. No bootstrap resources were written. Read
+history/20261002_test-account-authentication.md before fresh-account evaluation.
 
 Build/install instructions: docs/mcp-development.md. Portable archive:
 .local/aicq-development-plugin.zip. Its configured stdio command uses uv with

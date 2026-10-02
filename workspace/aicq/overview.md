@@ -20,7 +20,8 @@ entrypoint calls, UI resource retrieval, process-restart identity, and the repai
 wrong-resource OAuth response. One retry remains. No M2 MARK_COMPLETE exists.
 
 Fulcra's SDK client rejects the local browser callback. Platform access awaits MFA;
-tunnel/workspace setup and separate fresh test-owner tests remain unverified.
+tunnel/workspace setup and fresh test-owner bootstrap remain unverified. A new
+Google device login now verifies the separate test principal; setup remains incomplete.
 See outstanding-issues.md and history/20261001_m2-local-plugin.md.
 
 The overnight window ended at 06:55 America/New_York; automatic continuation

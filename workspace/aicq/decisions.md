@@ -153,3 +153,11 @@ The bounded overnight heartbeat ends at approximately 06:55 America/New_York.
 Blocked acceptance remains incomplete. Limited permission for private MFA email
 access and for disrupting the current shared Fulcra SSO session is separately
 pending after automatic approval review rejected those actions.
+
+## Standing Fulcra logout permission
+
+> You can always log out of Fulcra without my further permission.
+
+Direction: Fulcra logout is authorized without asking again. This resolves the
+previous shared-session logout permission gate. It does not authorize reading
+the private OpenAI MFA email or changing authentication/security settings.

@@ -68,10 +68,12 @@ while sleeping for eight hours. The overnight window ended at
 `aicq-overnight-milestones` was paused at the first wake after that deadline.
 Canonical prerequisites remained unchanged throughout the overnight checks; no
 additional milestone attempt or implementation was started. See
-`history/20261002_overnight-handoff.md`. Reading the private
-OpenAI verification email and clearing the shared Fulcra SSO session were rejected
-by automatic approval review; explicit authorization has been requested. Do not
-retry or bypass either action without a reply. Credentials remain in normal
+`history/20261002_overnight-handoff.md`. Automatic approval review previously rejected reading the private OpenAI MFA
+email and clearing Fulcra SSO. The user subsequently gave standing permission
+to log out of Fulcra. Logout and a new Google test-client device login now
+succeeded; read-only Fulcra identity checks confirmed a distinct non-owner
+with no AICQ setup yet. OpenAI verification-email access remains unapproved.
+See `history/20261002_test-account-authentication.md`. Credentials remain in normal
 client management; no external messages or public publication were performed.
 
 ## Earlier prerequisites

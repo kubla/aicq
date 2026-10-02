@@ -31,12 +31,12 @@ does not prove ChatGPT installation, host UI rendering, linking, or refresh.
 
 ## M2: separate fresh test owner
 
-The isolated second CLI login reused the owner browser SSO. Its verified principal
-is the owner; it is not fresh non-owner evidence, and no test bootstrap was written
-through it. Automatic approval review rejected clearing the existing Fulcra SSO
-session because that could disrupt the owner's browser login. Explicit permission
-for that switch is pending. M1's earlier real Google test-account denial remains
-valid; it does not establish M2's fresh/interrupted bootstrap acceptance.
+The first isolated CLI login reused owner SSO and was not non-owner evidence.
+The user subsequently authorized Fulcra logout without further permission.
+After logout, a new normal Google device login selected michael.tiffany@gmail.com.
+Read-only checks now verify a distinct test owner, with AICQ setup incomplete.
+No bootstrap resources were written; fresh/interrupted setup acceptance still
+needs its recorded evaluation. See history/20261002_test-account-authentication.md.
 
 M2 has one retry left after the verified local repair. Wait for changed prerequisites;
 keep all required host/account checks incomplete and M3–M6 pending.
