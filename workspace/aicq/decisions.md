@@ -161,3 +161,13 @@ pending after automatic approval review rejected those actions.
 Direction: Fulcra logout is authorized without asking again. This resolves the
 previous shared-session logout permission gate. It does not authorize reading
 the private OpenAI MFA email or changing authentication/security settings.
+
+## Fulcra development deployment research
+
+> Ohhhh right. Do a research spike on how we do dev deployments at Fulcra for testing. Appx in descending order of likelihood of success, check the fulcra github repo for documentation or guidance, github issues, nuclino, Linear, and the #eng channel on Slack.
+
+Direction: research existing Fulcra testing/deployment practice in the requested
+sources before selecting a hosting approach. Findings and recommendations are in
+history/20261002_fulcra-dev-deployments.md. The user has not chosen a provider or
+authorized public publication through this request. Local-first and Josh/GCP
+infrastructure guidance remain in effect.

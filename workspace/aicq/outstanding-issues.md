@@ -6,15 +6,25 @@ No blocking M1 issue remains. Real owner and authenticated non-owner checks pass
 Four low-severity transitive cookie audit findings remain; compatible updates
 cleared high-severity findings without a forced major upgrade.
 
-## M2: Fulcra browser OAuth configuration — Josh/Fulcra help
+## M2: Fulcra browser OAuth client selection and gateway hosting
 
 The reused Fulcra SDK OAuth client `48p3VbMnr5kMuJAUe9gJ9vjmdWLdnqZt` visibly
 rejects `http://127.0.0.1:4499/callback` with “Callback URL mismatch.” The configured
-redirect URI is absent from its allowed callbacks. A compatible Fulcra application
-registration or approved callback configuration is needed. Preserve resource-bound
-OAuth and normal client credentials. Do not silently select another host or expose
-local services publicly. If browser-reachable gateway hosting is required, defer
-that infrastructure to Josh/GCP. Evidence: history/20261001_m2-callback-mismatch.jpg.
+redirect URI is absent from that client's allowed callbacks. October2 deployment
+research found production IaC already allows this exact loopback callback on the
+separate Fulcra MCP Server public client `tc92NeNkAg748rlxBbm79cKdG9AOAbfc`.
+First verify the pinned gateway's client/tenant/audience configuration and a real
+code exchange/refresh. Live Auth0 state and successful AICQ linking remain unverified;
+a new local callback registration is not yet established as necessary.
+
+For a dedicated HTTPS gateway, a service/hostname, callback registration, repository
+deployment federation, and state evaluation still need Josh/Fulcra/GCP help. Existing
+Portal Cloud Run PR previews have successful runs; MCP supplies a persistent state
+pattern. Neither is an existing AICQ deployment. Vercel app-template deployment is
+documented, while Fulcra-managed project/token provisioning remains unmerged.
+Preserve resource-bound OAuth and normal client credentials. No provider was selected
+or public exposure configured. Evidence: history/20261001_m2-callback-mismatch.jpg
+and history/20261002_fulcra-dev-deployments.md.
 
 ## M2: Platform and ChatGPT access
 

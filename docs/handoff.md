@@ -16,8 +16,12 @@ plugin/real owner/process restart checks passed. No M2 MARK_COMPLETE exists.
 One milestone retry remains; no timeout/harness repair retry consumed. Start the
 next run only when integration prerequisites change; default timeout is 15 minutes.
 
-Read outstanding-issues.md for the exact SDK client and rejected loopback callback
-that need Josh/Fulcra configuration help. Platform is awaiting email MFA; no tunnel,
+Read history/20261002_fulcra-dev-deployments.md and outstanding-issues.md. Source
+research found the existing MCP client already allows the loopback callback; the
+failed attempt selected the SDK client. Correct configuration and live exchange
+remain unverified. A dedicated Cloud Run gateway is recommended for Josh/GCP;
+Fulcra-managed Vercel provisioning remains pending. No provider/deployment was chosen.
+Platform is awaiting email MFA; no tunnel,
 runtime key, workspace association, or ChatGPT plugin is verified. OpenAI MFA email access remains unapproved. The user granted standing Fulcra
 logout permission; logout/new Google device login succeeded. The isolated test
 client now verifies as non-owner 81359eb8-9c06-47e3-92d2-ac80b053c40c with

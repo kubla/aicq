@@ -43,6 +43,14 @@ stopped, Fulcra retains shared work, but local relay execution cannot continue.
 
 ## Workstreams
 
+October2 deployment spike completed across GitHub source/discussions, Nuclino,
+Linear, and #eng. Operational Portal previews and existing MCP Cloud Run/state
+configuration provide reuse patterns. Existing MCP client IaC allows the loopback
+callback rejected by the SDK client; real linking remains unverified. Fulcra-managed
+Vercel project provisioning is pending. A dedicated AICQ gateway remains a proposal;
+no deployment, milestone attempt, or status promotion occurred. See
+history/20261002_fulcra-dev-deployments.md and outstanding-issues.md.
+
 | Workstream | Deliverable | Main milestones |
 | --- | --- | --- |
 | Foundation and development harness | Authenticated baseline, deployments, real progress dashboard | M1 |

@@ -57,9 +57,17 @@ See `history/20261001_m1-local-baseline.md`,
 
 ## Next actions
 
-Resolve the recorded Fulcra callback configuration and Platform MFA/tunnel gates;
-then resume M2's required live host/account tests in a new recorded run. Specific
-Josh/Fulcra configuration requirements are in outstanding-issues.md. Do not
+October2 research checked GitHub source/discussions, Nuclino, Linear, and #eng.
+Existing MCP client IaC allows the rejected loopback callback; the earlier attempt
+selected the SDK client. Verify correct local client configuration and real linking
+before requesting new local callback registration. Portal has operational Cloud Run
+previews; a dedicated AICQ gateway remains a proposal for Josh/GCP. Fulcra-managed
+Vercel provisioning is still pending. No deployment or milestone retry was started.
+See history/20261002_fulcra-dev-deployments.md and outstanding-issues.md.
+
+Resolve actual host reachability/authentication prerequisites, then resume M2's
+required live host/account tests in a new recorded run. Hosting could replace the
+Platform tunnel route; ChatGPT authentication/install/render/link gates remain. Do not
 advance to M3 or count local tools as completed ChatGPT integration.
 
 The user authorized Computer Use, Google test-account sign-in, and milestone work

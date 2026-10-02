@@ -73,9 +73,12 @@ live ChatGPT plugin installation is verified yet. Platform browser sign-in is
 waiting for email MFA verification; the personal Chrome ChatGPT session is logged out.
 
 Live Auth0 check: the SDK client `48p3VbMnr5kMuJAUe9gJ9vjmdWLdnqZt` rejected
-`http://127.0.0.1:4499/callback` with “Callback URL mismatch.” Josh/Fulcra help is
-needed for a suitable client and callback configuration; if the browser OAuth
-service needs hosting, use Josh's GCP help per the recorded local-first decision.
+`http://127.0.0.1:4499/callback` with “Callback URL mismatch.” October2 source
+research found that the separate production MCP public client already allows this
+callback. Check the exact adapter client/tenant/audience and real exchange before
+requesting new local callback registration. A dedicated HTTPS gateway still needs
+service/callback/state configuration using Josh's GCP help. See
+docs/research/20261002-fulcra-dev-deployments.md for existing deployment patterns.
 No alternate host or public exposure has been configured.
 
 Required remaining M2 checks: actual development installation in ChatGPT; both UI
