@@ -3,7 +3,7 @@
 import secrets
 import time
 from urllib.parse import parse_qs, urlparse
-from mcp.server.auth.provider import TokenError, construct_redirect_uri
+from mcp.server.auth.provider import AuthorizeError, TokenError, construct_redirect_uri
 from fulcra_mcp.provider import FulcraOAuthProvider
 
 
@@ -16,7 +16,9 @@ class AICQOAuthProvider(FulcraOAuthProvider):
 
     async def authorize(self, client, params):
         if params.resource != self.resource_url:
-            raise TokenError("invalid_target", "Use the advertised AICQ resource URL.")
+            raise AuthorizeError(
+                "invalid_target", "Use the advertised AICQ resource URL."
+            )
         now = time.time()
         for state, pending in list(self.authorization_resources.items()):
             if pending["expires_at"] < now:
@@ -27,7 +29,7 @@ class AICQOAuthProvider(FulcraOAuthProvider):
                 self.auth_codes.pop(code, None)
                 self.code_credentials.pop(code, None)
         if len(self.authorization_resources) + len(self.auth_codes) >= 1000:
-            raise TokenError(
+            raise AuthorizeError(
                 "temporarily_unavailable", "Too many pending sign-ins; retry later."
             )
         state = secrets.token_urlsafe(32)

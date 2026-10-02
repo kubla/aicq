@@ -9,7 +9,11 @@ authenticated non-owner isolation were exercised. No public deployment.
 
 ## Active milestone
 
-Next: M2 — plugin shell and account linking — pending.
+Active: M2 — plugin shell and account linking — incomplete.
+Attempt 1, run m2-2ad50a7c-89bc-444a-b7ab-4548aa1e15d1, failed evaluation:
+ChatGPT/OAuth/fresh-account gates blocked; wrong-resource authorization error
+requires repair. Local candidate 9161037 has verified owner setup and reconnect.
+Next is a recorded repair retry; no M2 MARK_COMPLETE.
 M1 is complete. M3–M6 are pending. Product messaging and Events are unimplemented.
 
 ## Harness state

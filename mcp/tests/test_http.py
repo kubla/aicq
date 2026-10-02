@@ -113,3 +113,38 @@ async def test_accidental_http_launch_cannot_use_stdio_owner_credentials(
         result = response.json()["result"]
         assert result["isError"]
         assert "FULCRA_ENVIRONMENT=http" in result["content"][0]["text"]
+
+
+async def test_wrong_resource_returns_actionable_oauth_error(tmp_path, monkeypatch):
+    from urllib.parse import parse_qs, urlparse
+
+    async with client(tmp_path, monkeypatch) as http:
+        registration = await http.post(
+            "/register",
+            json={
+                "redirect_uris": ["http://127.0.0.1:4498/callback"],
+                "client_name": "AICQ resource test",
+                "token_endpoint_auth_method": "none",
+                "scope": "openid",
+                "grant_types": ["authorization_code", "refresh_token"],
+                "response_types": ["code"],
+            },
+        )
+        assert registration.status_code == 201
+        response = await http.get(
+            "/authorize",
+            params={
+                "client_id": registration.json()["client_id"],
+                "redirect_uri": "http://127.0.0.1:4498/callback",
+                "response_type": "code",
+                "code_challenge": "A" * 43,
+                "code_challenge_method": "S256",
+                "scope": "openid",
+                "state": "resource-test",
+                "resource": "https://other.example/mcp",
+            },
+        )
+        assert response.status_code == 302
+        query = parse_qs(urlparse(response.headers["location"]).query)
+        assert query["error"] == ["invalid_target"]
+        assert query["state"] == ["resource-test"]

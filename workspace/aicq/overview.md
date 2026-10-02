@@ -16,6 +16,7 @@ http://127.0.0.1:6173/harness. Public deployment remains deferred.
 
 Overnight milestone continuation is active until about 06:55 America/New_York.
 
-M2 run m2-2ad50a7c-89bc-444a-b7ab-4548aa1e15d1 is inspecting the pinned Fulcra
-OAuth gateway and preparing the portable plugin. Platform sign-in reached passkey
-verification; tunnel access and ChatGPT linking remain unverified.
+M2 attempt 1 verified the extracted local plugin and real owner setup/reconnect,
+but failed full acceptance because ChatGPT/OAuth checks are blocked. Retry 1, run
+m2-fac0fd7f-faf4-44d2-938a-6490e8795e91, repairs the observed wrong-resource
+authorization error. M2 remains incomplete; later milestones are pending.

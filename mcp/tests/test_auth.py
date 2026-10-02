@@ -2,7 +2,12 @@ import time
 from unittest.mock import Mock
 
 import pytest
-from mcp.server.auth.provider import AccessToken, AuthorizationParams, TokenError
+from mcp.server.auth.provider import (
+    AccessToken,
+    AuthorizationParams,
+    AuthorizeError,
+    TokenError,
+)
 from mcp.server.auth.settings import ClientRegistrationOptions
 from mcp.shared.auth import OAuthClientInformationFull
 from pydantic import AnyHttpUrl
@@ -38,7 +43,7 @@ async def test_wrong_audience_rejected_before_authorization(tmp_path, monkeypatc
         redirect_uri=client.redirect_uris[0],
         redirect_uri_provided_explicitly=True,
     )
-    with pytest.raises(TokenError):
+    with pytest.raises(AuthorizeError):
         await provider.authorize(client, params)
     assert not provider.state_mapping
 
