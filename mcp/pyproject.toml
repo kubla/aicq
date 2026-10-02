@@ -1,0 +1,31 @@
+[project]
+name = "aicq-mcp"
+version = "0.1.0"
+description = "Local AICQ tools and MCP App using the Fulcra OAuth gateway"
+requires-python = ">=3.13"
+dependencies = [
+  "fulcra-context-mcp @ git+https://github.com/kubla/fulcra-context-mcp.git@429da58508a179cc425d10728434739ca6620e1a",
+]
+
+[project.scripts]
+aicq-mcp = "aicq_mcp.server:main"
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["aicq_mcp*"]
+
+[tool.setuptools.package-data]
+aicq_mcp = ["ui-metadata.json", "app.html"]
+
+[dependency-groups]
+dev = ["pytest>=8.4", "pytest-asyncio>=1.0", "httpx>=0.28"]
+
+[tool.uv]
+override-dependencies = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

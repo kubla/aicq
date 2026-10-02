@@ -37,6 +37,10 @@ Override recorded 2026-10-01 (America/New_York): the initial local M1 run has a
 browser authentication/evaluation in one sequential role run. Retry limits remain
 unchanged. Subsequent runs return to 15 minutes unless an override is recorded. A blocked required check leaves the milestone incomplete.
 
+Override recorded 2026-10-01: initial M2 run has a 60-minute timeout for local
+MCP gateway setup, plugin packaging, and ChatGPT/tunnel integration evaluation.
+Retry limits remain two; this does not relax any required acceptance gate.
+
 Complete Fulcra authentication, upload the plan, spec and exact
 user decisions to `workspace/aicq/`, and initialize progress/history. Bootstrap
 the harness annotation, mint a run ID, and record/read back RUN_START before

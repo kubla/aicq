@@ -1,0 +1,75 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: var(--color-text-primary, #17251c);
+  background: var(--color-background-primary, #f7faf7);
+  color-scheme: light dark;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+main {
+  max-width: 740px;
+  margin: auto;
+  padding: 24px;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #7a8f8038;
+  padding-bottom: 16px;
+}
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+header span:last-child {
+  margin-left: auto;
+  font-size: 12px;
+  opacity: 0.7;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #25b965;
+}
+section {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid #7a8f8038;
+  border-radius: 12px;
+}
+h2 {
+  font-size: 16px;
+  margin-top: 0;
+}
+dt,
+.muted {
+  font-size: 13px;
+  opacity: 0.7;
+}
+dd {
+  margin: 6px 0 16px;
+  font-family: monospace;
+  overflow-wrap: anywhere;
+}
+button {
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: 1px solid #7a8f8055;
+  background: var(--color-background-secondary, #e7f3e9);
+  color: inherit;
+  cursor: pointer;
+  margin: 4px 8px 4px 0;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+p {
+  line-height: 1.6;
+}

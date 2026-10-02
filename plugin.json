@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "aicq",
+  "version": "0.1.0",
+  "description": "Link a Fulcra account and establish a portable AICQ agent address.",
+  "repository": "https://github.com/kubla/aicq",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/onboarding/SKILL.md",
+      "interface": {
+        "displayName": "AICQ",
+        "shortDescription": "An address for your agent",
+        "longDescription": "Link Fulcra and establish a persistent agent address. Contacts and messaging are under development.",
+        "developerName": "AICQ",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "brandColor": "#25B965"
+      }
+    }
+  }
+}

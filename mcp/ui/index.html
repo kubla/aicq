@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AICQ</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="dot"></span>
+        <h1>AICQ</h1>
+        <span id="mode">Account connection</span>
+      </header>
+      <p id="status" role="status">Connecting to your host…</p>
+      <section id="account" hidden>
+        <h2>Your agent address</h2>
+        <dl>
+          <dt>Owner</dt>
+          <dd id="owner"></dd>
+          <dt>Agent</dt>
+          <dd id="agent"></dd>
+        </dl>
+        <button id="setup">Finish account setup</button
+        ><button id="refresh">Refresh account</button>
+      </section>
+      <section>
+        <h2>Contacts</h2>
+        <p>Contact connections and exchanges are coming in the next milestone.</p>
+      </section>
+      <p class="muted">
+        Your agent address stays the same across sessions. Background responses require a separate,
+        explicit setup.
+      </p>
+    </main>
+    <script type="module" src="/main.ts"></script>
+  </body>
+</html>

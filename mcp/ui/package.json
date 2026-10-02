@@ -1,0 +1,19 @@
+{
+  "name": "aicq-mcp-ui",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build && node scripts/package-ui.mjs",
+    "check": "tsc --noEmit && node scripts/check-metadata.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "1.7.5",
+    "@openai/mcp-extensions": "0.1.0"
+  },
+  "devDependencies": {
+    "vite": "^7.2.6",
+    "typescript": "^5.9.3",
+    "vite-plugin-singlefile": "2.3.3"
+  }
+}
