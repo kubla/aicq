@@ -28,7 +28,11 @@ Playground GCE creation/SSH recipe and Shell Beach command helper; this is a
 candidate for manual single-process hosting without CI/CD improvements. Owned
 DNS exists, but playground access, an available image, stable address, TLS/ingress
 and callback registration are unverified. Read
-history/20261002_fulcra-vm-hosting.md. No provider/deployment was chosen.
+history/20261002_fulcra-vm-hosting.md. Also read
+history/20261002_portal-dev-tool-mcp.md: the manual toolkit Cloud Run helper can
+avoid GitHub federation/CI/CD work and supply a stable HTTPS service URL, while
+MCP callback/state/runtime configuration remains necessary. No provider/deployment
+was chosen.
 Platform is awaiting email MFA; no tunnel,
 runtime key, workspace association, or ChatGPT plugin is verified. OpenAI MFA email access remains unapproved. The user granted standing Fulcra
 logout permission; logout/new Google device login succeeded. The isolated test

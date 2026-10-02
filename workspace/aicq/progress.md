@@ -76,6 +76,14 @@ playground access, an available image, stable addressing, ingress and TLS still
 need verification/configuration before a callback can be registered. No VM or
 hostname was created. See history/20261002_fulcra-vm-hosting.md.
 
+The toolkit's `portal-dev-tool` supplies an even smaller manual Cloud Run route:
+normal operator gcloud authentication deploys an existing image directly, without
+GitHub federation or new CI/CD. An MCP adaptation can use one stable service name
+and Cloud Run's supplied HTTPS URL, with callback/base URL and isolated persistent
+OAuth storage still configured and evaluated. The current tool instead creates a
+Portal service per image tag. No helper adaptation or deployment was performed;
+this remains an option. See history/20261002_portal-dev-tool-mcp.md.
+
 Resolve actual host reachability/authentication prerequisites, then resume M2's
 required live host/account tests in a new recorded run. Hosting could replace the
 Platform tunnel route; ChatGPT authentication/install/render/link gates remain. Do not

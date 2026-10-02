@@ -37,6 +37,15 @@ been verified. Establish VM/storage, stable addressing, TLS/ingress and the exac
 upstream callback before claiming hosting is unblocked. See
 history/20261002_fulcra-vm-hosting.md.
 
+The manual `portal-dev-tool` gcloud deployment pattern is another small hosting
+option. It does not require the GitHub federation changes described above; normal
+operator deployment/image/invocation-policy access remains unverified. A stable
+Cloud Run service supplies HTTPS without requiring custom DNS initially. An MCP
+helper still needs image/listening configuration, callback/issuer settings and
+isolated durable credential storage; existing process-local OAuth transactions
+must be tested across the chosen runtime lifecycle. See
+history/20261002_portal-dev-tool-mcp.md. No route was selected or deployed.
+
 Preserve resource-bound OAuth and normal client credentials. No provider was selected
 or public exposure configured. Evidence: history/20261001_m2-callback-mismatch.jpg
 and history/20261002_fulcra-dev-deployments.md.
