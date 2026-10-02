@@ -19,8 +19,11 @@ next run only when integration prerequisites change; default timeout is 15 minut
 Read history/20261002_fulcra-dev-deployments.md and outstanding-issues.md. Source
 research found the existing MCP client already allows the loopback callback; the
 failed attempt selected the SDK client. Correct configuration and live exchange
-remain unverified. A dedicated Cloud Run gateway is recommended for Josh/GCP;
-Fulcra-managed Vercel provisioning remains pending. No provider/deployment was chosen.
+remain unverified. Follow-up research recommends a reusable Fulcra MCP test
+service at a stable hostname first; read history/20261002_mcp-preview-design.md
+for the Portal controller, public-repo federation, ingress, OAuth and state
+differences. Josh/Fulcra/GCP bootstrap is still needed. Fulcra-managed Vercel
+provisioning remains pending. No provider/deployment was chosen.
 Platform is awaiting email MFA; no tunnel,
 runtime key, workspace association, or ChatGPT plugin is verified. OpenAI MFA email access remains unapproved. The user granted standing Fulcra
 logout permission; logout/new Google device login succeeded. The isolated test

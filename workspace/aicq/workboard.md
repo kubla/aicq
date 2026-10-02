@@ -47,9 +47,13 @@ October2 deployment spike completed across GitHub source/discussions, Nuclino,
 Linear, and #eng. Operational Portal previews and existing MCP Cloud Run/state
 configuration provide reuse patterns. Existing MCP client IaC allows the loopback
 callback rejected by the SDK client; real linking remains unverified. Fulcra-managed
-Vercel project provisioning is pending. A dedicated AICQ gateway remains a proposal;
-no deployment, milestone attempt, or status promotion occurred. See
-history/20261002_fulcra-dev-deployments.md and outstanding-issues.md.
+Vercel project provisioning is pending. Follow-up source analysis recommends a
+reusable MCP test service with a stable hostname first. Public-repo federation,
+reachable ingress, OAuth callback/state isolation and cross-process refresh
+coordination need specific work; the current Portal workflow cannot be copied
+unchanged. No deployment, milestone attempt, or status promotion occurred. See
+history/20261002_fulcra-dev-deployments.md, history/20261002_mcp-preview-design.md
+and outstanding-issues.md.
 
 | Workstream | Deliverable | Main milestones |
 | --- | --- | --- |

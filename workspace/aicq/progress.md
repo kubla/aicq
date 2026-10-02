@@ -61,8 +61,11 @@ October2 research checked GitHub source/discussions, Nuclino, Linear, and #eng.
 Existing MCP client IaC allows the rejected loopback callback; the earlier attempt
 selected the SDK client. Verify correct local client configuration and real linking
 before requesting new local callback registration. Portal has operational Cloud Run
-previews; a dedicated AICQ gateway remains a proposal for Josh/GCP. Fulcra-managed
-Vercel provisioning is still pending. No deployment or milestone retry was started.
+previews. The follow-up recommends a reusable Fulcra MCP test service at a stable
+hostname, with MCP-specific federation, OAuth and isolated state, rather than
+centering the contribution on an AICQ gateway. This remains a proposal for
+Josh/Fulcra/GCP. Fulcra-managed Vercel provisioning is still pending. No deployment
+or milestone retry was started. See history/20261002_mcp-preview-design.md.
 See history/20261002_fulcra-dev-deployments.md and outstanding-issues.md.
 
 Resolve actual host reachability/authentication prerequisites, then resume M2's

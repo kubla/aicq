@@ -171,3 +171,19 @@ sources before selecting a hosting approach. Findings and recommendations are in
 history/20261002_fulcra-dev-deployments.md. The user has not chosen a provider or
 authorized public publication through this request. Local-first and Josh/GCP
 infrastructure guidance remain in effect.
+
+## Product focus and reusable Fulcra MCP testing
+
+> That's because I want to create a user experience that is super vertically focused: people want to connect their agents and I want to help them do that without giving them the full fulcra sales pitch.
+
+> Separately, as a member of the Fulcra team, I want to use (and to help improve!) our agent-first development and our CI/CD pipelines. Our desire to upgrade the Fulcra MCP server and test it falls into that goal.
+
+> Josh's new machinery, on display with the "/preview dev" is great, but focused on portal dev. Could we use it for something like a test deployment of a new MCP server? Or do we need to ask him to make a closely related new service?
+
+Direction: investigate the actual Portal preview implementation deeply enough to
+assess reuse for a Fulcra MCP test deployment. Keep AICQ's focused user experience
+and the reusable Fulcra development contribution distinct. Source findings and a
+recommended stable-hostname MCP test service are in
+history/20261002_mcp-preview-design.md. This is research and a recommendation; no
+hosting selection, cloud provisioning, access expansion or deployment is authorized
+by this clarification.

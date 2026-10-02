@@ -17,8 +17,15 @@ First verify the pinned gateway's client/tenant/audience configuration and a rea
 code exchange/refresh. Live Auth0 state and successful AICQ linking remain unverified;
 a new local callback registration is not yet established as necessary.
 
-For a dedicated HTTPS gateway, a service/hostname, callback registration, repository
-deployment federation, and state evaluation still need Josh/Fulcra/GCP help. Existing
+For reusable Fulcra MCP testing, a separate test service/hostname, callback
+registration, scoped repository federation and isolated storage need
+Josh/Fulcra/GCP help. The current provider admits only private repos while MCP is
+public; widening it in place affects an organization-wide registry admin binding.
+The existing dev MCP service restricts direct ingress. Current MCP OAuth pending
+transactions and refresh locks are process-local; a shared GCS mount does not
+supply transactional writes or locking. Stable test hosting and the MCP fixes are
+recommendations, not implemented or live-evaluated changes. See
+history/20261002_mcp-preview-design.md. Existing
 Portal Cloud Run PR previews have successful runs; MCP supplies a persistent state
 pattern. Neither is an existing AICQ deployment. Vercel app-template deployment is
 documented, while Fulcra-managed project/token provisioning remains unmerged.
