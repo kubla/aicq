@@ -9,22 +9,24 @@ development branch is `aicq/mcp-events`.
 The product direction now includes useful work exchange alongside conversations,
 post-signup MCP/CLI resource setup, and ChatGPT-preferred delivery with Codex and
 other harness support. The workboard defines workstreams, dependencies, evidence,
-and client experiment candidates. No application implementation has started.
+and client experiment candidates. M1 implementation is in progress locally using the official Svelte template.
 
 ## Active milestone
 
-M1 — Working local baseline and harness dashboard — pending. No application milestone
+M1 — Working local baseline and harness dashboard — in progress. No application milestone
 has passed review, and no Events implementation or ChatGPT subscription has passed.
 
 ## Harness state
 
 Annotation ID: `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
 This type was created in the owner's authenticated account and must be reused.
-No milestone run has started. Source-review evidence is a preflight record, not
-an app milestone completion.
+Run: `m1-7abb2258-7b2d-44d0-bb90-7e630b431618`. Started at `2026-10-02T02:06:34.264532+00:00`.
+State: GENERATE started, attempt 1. Actual RUN_START, FIND_MILESTONE and GENERATE
+records were written and read back before cloning or writing application code.
+Source-review evidence remains preflight evidence.
 
 Configuration: two milestone retries, two repair retries, 15-minute timeout per
-milestone run. Retry count: zero. Generation and evaluation are separate roles.
+milestone run; recorded initial M1 override: 60 minutes. Retry count: zero. Generation and evaluation are separate roles.
 
 ## Verified preflight results
 

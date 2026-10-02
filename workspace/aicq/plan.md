@@ -30,9 +30,12 @@ tool evidence, then progress/history updates. One agent may execute the roles
 sequentially. Only the Nurse role creates or repairs harness machinery.
 
 Configuration: two milestone retries (three attempts total), two harness repair
-retries (three attempts total), and a 15-minute timeout per milestone run. No
-overrides have been introduced. If setup needs more time, record an explicit
-override before continuing. A blocked required check leaves the milestone incomplete.
+retries (three attempts total), and a 15-minute timeout per milestone run.
+
+Override recorded 2026-10-01 (America/New_York): the initial local M1 run has a
+60-minute timeout to cover dependency installation, dashboard integration, and
+browser authentication/evaluation in one sequential role run. Retry limits remain
+unchanged. Subsequent runs return to 15 minutes unless an override is recorded. A blocked required check leaves the milestone incomplete.
 
 Complete Fulcra authentication, upload the plan, spec and exact
 user decisions to `workspace/aicq/`, and initialize progress/history. Bootstrap
