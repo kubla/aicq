@@ -92,6 +92,13 @@ existing tickets. No deployment or milestone retry was started. See
 history/20261002_toolkit-project-tracking.md and
 https://linear.app/fulcradynamics/issue/PLAT-546/toolkit-add-a-manual-mcp-development-deployment-helper.
 
+The user then chose "Make Fulcra changes easy to run, test and review" as the
+Platform project for this set of development helpers. Created and read back
+P-PLAT-26; verified membership of PLAT-338, PLAT-259, PLAT-396, PLAT-513 and
+PLAT-546. Earlier issue statuses and ownership were preserved; the MCP helper
+remains Backlog/unassigned. See history/20261002_toolkit-project-created.md and
+https://linear.app/fulcradynamics/project/make-fulcra-changes-easy-to-run-test-and-review-59c14f60422b.
+
 Resolve actual host reachability/authentication prerequisites, then resume M2's
 required live host/account tests in a new recorded run. Hosting could replace the
 Platform tunnel route; ChatGPT authentication/install/render/link gates remain. Do not

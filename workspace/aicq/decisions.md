@@ -187,3 +187,15 @@ recommended stable-hostname MCP test service are in
 history/20261002_mcp-preview-design.md. This is research and a recommendation; no
 hosting selection, cloud provisioning, access expansion or deployment is authorized
 by this clarification.
+
+## Fulcra development tooling project
+
+> I like the sound of "Make Fulcra changes easy to run, test and review". The earlier fulcra-tools tickets clearly serve that goal and our MCP version is just another in that set
+
+Direction: group the existing Toolkit development helpers and the new MCP helper
+under the agreed Platform project outcome. Created and verified Linear project
+P-PLAT-26 with PLAT-338, PLAT-259, PLAT-396, PLAT-513 and PLAT-546. Existing
+statuses, assignments and parent relationships were preserved. Project scope and
+first-release completion criteria are recorded in
+history/20261002_toolkit-project-created.md. This tracking change does not select
+or deploy AICQ hosting, advance M2, or grant additional infrastructure access.
