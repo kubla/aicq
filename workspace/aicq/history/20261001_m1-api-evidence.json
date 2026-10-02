@@ -1,0 +1,111 @@
+[
+  {
+    "principal": "unauthenticated",
+    "path": "/api/harness/runs",
+    "status": 401
+  },
+  {
+    "principal": "invalid",
+    "path": "/api/harness/runs",
+    "status": 401
+  },
+  {
+    "principal": "owner",
+    "path": "/api/harness/runs",
+    "status": 200,
+    "run_id": "m1-7abb2258-7b2d-44d0-bb90-7e630b431618",
+    "steps": [
+      "RUN_START",
+      "FIND_MILESTONE",
+      "GENERATE",
+      "GENERATE",
+      "GENERATE",
+      "REVIEW",
+      "REVIEW"
+    ],
+    "evidence_present": true
+  },
+  {
+    "principal": "unauthenticated",
+    "path": "/api/harness/overview",
+    "status": 401
+  },
+  {
+    "principal": "invalid",
+    "path": "/api/harness/overview",
+    "status": 401
+  },
+  {
+    "principal": "owner",
+    "path": "/api/harness/overview",
+    "status": 200,
+    "canonical_file_loaded": true
+  },
+  {
+    "principal": "unauthenticated",
+    "path": "/api/harness/issues",
+    "status": 401
+  },
+  {
+    "principal": "invalid",
+    "path": "/api/harness/issues",
+    "status": 401
+  },
+  {
+    "principal": "owner",
+    "path": "/api/harness/issues",
+    "status": 200,
+    "canonical_file_loaded": true
+  },
+  {
+    "principal": "owner",
+    "path": "/api/harness/owner",
+    "status": 200,
+    "isOwner": true,
+    "configured_owner_id_not_exposed": true
+  },
+  {
+    "principal": "owner",
+    "path": "/api/user/info",
+    "status": 200,
+    "upstream_secret_not_forwarded": true
+  },
+  {
+    "principal": "forged-owner-claim",
+    "path": "/api/harness/owner",
+    "status": 401
+  },
+  {
+    "principal": "authenticated-google-test-account",
+    "path": "/api/harness/owner",
+    "status": 200,
+    "isOwner": false
+  },
+  {
+    "principal": "authenticated-google-test-account",
+    "path": "/api/harness/runs",
+    "status": 403
+  },
+  {
+    "principal": "authenticated-google-test-account",
+    "path": "/api/harness/overview",
+    "status": 403
+  },
+  {
+    "principal": "authenticated-google-test-account",
+    "path": "/api/harness/issues",
+    "status": 403
+  },
+  {
+    "principal": "authenticated-google-test-account",
+    "path": "/api/auth/check",
+    "status": 200,
+    "authenticated": true
+  },
+  {
+    "principal": "authenticated-google-test-account",
+    "path": "/harness",
+    "status": 403,
+    "owner_navigation_hidden": true
+  }
+]

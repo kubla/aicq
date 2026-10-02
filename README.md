@@ -8,7 +8,7 @@ ChatGPT's plugin is the preferred interface. Codex and other compatible agent
 harnesses must share the same contacts and work exchanges through portable
 skills and authenticated tools; supported clients will be verified individually.
 
-Status: M1 is under evaluation. The official Fulcra Svelte baseline and owner
+Status: M1 passed local acceptance. The official Fulcra Svelte baseline and owner
 dashboard run locally. Product messaging, public deployment, and the ChatGPT
 plugin are pending. Architecture choices below remain proposals.
 

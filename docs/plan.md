@@ -1,10 +1,10 @@
 # Draft implementation plan
 
-Status: the user has advanced the Fulcra direction by proposing an MCP Events fork.
-Fulcra sign-in succeeded, planning files were uploaded to `workspace/aicq/`, and
-the harness annotation was created with source-review evidence written and read
-back. No app milestone run has started. The separate MCP server fork contains a
-tested protocol-readiness commit; Events subscriptions are not implemented yet.
+Status: M1 passed the authenticated local baseline and populated owner dashboard
+gate on 2026-10-01. The user authorized continuing milestone by milestone while
+sleeping for eight hours. M2 is next. Public deployment and product messaging
+remain pending; the separate MCP protocol-readiness prerequisite still does not
+implement Events. Evaluation evidence: history/20261001_m1-local-baseline.md.
 
 ## Next design step
 
@@ -58,7 +58,9 @@ overview and evaluation result; owner navigation works; a different account is
 denied owner-only access. Record actual target URLs/revisions and observed results.
 Deployment, a build, or invented dashboard records cannot establish completion.
 
-M1 starts pending. No run or passing evaluation has been recorded.
+M1 is complete after recorded run m1-7abb2258-7b2d-44d0-bb90-7e630b431618.
+Browser sign-in, live data, canonical panels, navigation, and authenticated
+non-owner denial passed; see progress.md and the M1 history for evidence.
 
 ## M2 — Plugin shell and account linking
 

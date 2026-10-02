@@ -1,8 +1,8 @@
 # AICQ workboard
 
-Status: implementation organization prepared. No AICQ application milestone has
-started or passed. This board expands the existing milestone plan; it is not
-additional user approval of architecture choices or a completed build.
+Status: M1 passed local acceptance on 2026-10-01. M2 is next; later product
+and integration milestones remain pending. The recorded architecture proposals
+remain proposals.
 
 ## Starting information
 
@@ -61,8 +61,8 @@ Keep background activation separate from basic messaging compatibility.
 | ID | Task | Depends on | Status | Evidence required |
 | --- | --- | --- | --- | --- |
 | P-01 | Provision private kubla/aicq; prepare local-first stack | User-created repository | Complete setup prerequisite | Private visibility verified; initial content write and issue creation succeeded; local git prepared |
-| M1-01 | Start recorded harness run; initialize app from template | Harness health/read-back | Pending; [issue 1](https://github.com/kubla/aicq/issues/1) | Actual run event; reproducible local baseline |
-| M1-02 | Integrate owner dashboard and serve local authenticated baseline | M1-01 | Pending | Browser sign-in, live event display, owner access and denial for another principal |
+| M1-01 | Start recorded harness run; initialize app from template | Harness health/read-back | Complete; local M1 run verified | Recorded run m1-7abb2258-7b2d-44d0-bb90-7e630b431618; see history/20261001_m1-local-baseline.md |
+| M1-02 | Integrate owner dashboard and serve local authenticated baseline | M1-01 | Complete | Verified real owner/test-account browser sign-in, live event/panels, owner-only API and page denial; candidate fdcec13 |
 | M2-01 | Package portable plugin, skills, and remote MCP connection | M1 | Pending | Installed development plugin with callable authenticated tools |
 | M2-02 | Stable identity and resumable owner workspace setup | M2-01 | Pending | Fresh/existing account paths; retry/reconnect reuses actual resources |
 | M2-03 | ChatGPT sidebar and thread shell | M2-01 | Pending | Actual supported host renders both entrypoints |

@@ -1,38 +1,25 @@
-# Local execution handoff
+# AICQ local continuation
 
-Purpose: let a locally running Codex, Claude Code, or another compatible harness
-continue the AICQ project from recorded state. No laptop connection has been
-configured and no subagents have been started on the user's computer.
+Local workspace: /Users/mjjt/Documents/Code/aicq.
+Canonical state: authenticated Fulcra workspace/aicq/. Read AGENTS.md and all
+canonical requirements/state/history before continuing.
 
-## Transfer
+M1 passed in run `m1-7abb2258-7b2d-44d0-bb90-7e630b431618` on candidate fdcec13.
+Local app: http://127.0.0.1:6173/; owner dashboard: /harness.
+Source branch: kublascratchpad/m1-local-baseline.
+Evidence: history/20261001_m1-local-baseline.md and related API/screenshot receipts.
 
-Clone private https://github.com/kubla/aicq with an authorized GitHub client, or
-obtain a source archive prepared from this local checkout. Do not include CLI
-credential stores or runtime secret files. Open the
-project in the destination harness and read root `AGENTS.md` before making changes.
-Authenticate that client separately to Fulcra, then read `workspace/aicq/` to obtain
-the current decisions, spec, plan, progress, workboard, and relevant history.
+Next is M2: portable plugin, account linking, and local ChatGPT connectivity.
+Use a new harness run and the existing owner annotation. Default timeout is
+15 minutes; record overrides before work. Reuse the Fulcra MCP OAuth gateway.
+The separate MCP Events contribution remains in aicq/mcp-events; 429da58 is
+protocol readiness, not Events. No live AICQ ChatGPT integration is verified.
 
-Check out the recorded revision, inspect unfinished changes and blockers, and resume
-the earliest incomplete milestone. Use actual source and test evidence to reconcile
-state. The new agent does not automatically inherit this conversation or its secrets.
+The user authorized Computer Use and continuing milestone by milestone overnight
+until approximately 2026-10-02 06:55 America/New_York. Google test-account sign-in
+was used to verify non-owner denial; credentials stay in normal browser/CLI
+management. Authentication in another executor is separate. Substantial
+infrastructure work is deferred to Josh/GCP. Do not send external messages.
 
-## Current checkpoint
-
-- Product and implementation organization are documented; no app milestone has begun.
-- Local git repository initialized; the user created private `kubla/aicq`.
-  Initial planning publication is verified at commit 00a0f04; M1 is still pending.
-- GitHub CLI browser authorization completed as kubla, but subsequent REST repository
-  creation still returned HTTP 403 `Resource not accessible by integration`.
-  Subsequent branch creation/deletion, initial AICQ content writing, and issue
-  creation succeeded. Standard Git push failed with HTTP 401; use the verified
-  GitHub API publication path until that transport is resolved.
-- Local-first hosting was selected. Evaluate OpenAI Secure MCP Tunnel and OAuth
-  reachability at the integration gate; defer substantial infrastructure to Josh/GCP.
-- Existing Fulcra planning authentication and harness annotation are available here.
-  The destination client must authenticate separately.
-- The separate Fulcra MCP fork has the tested protocol prerequisite; Events are pending.
-
-Remote command access would require an explicitly configured and authorized
-connection to the laptop. Running a local harness from this checkpoint is a separate
-execution path; spawning a subagent here continues to use this workspace.
+The bounded in-chat heartbeat is aicq-overnight-milestones. Resume from canonical
+state; keep unchanged blocked checks quiet, and record exact verified outcomes.
