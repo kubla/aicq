@@ -6,8 +6,9 @@ configured and no subagents have been started on the user's computer.
 
 ## Transfer
 
-Obtain the repository once published, or a source archive prepared from this local
-checkout. Do not include CLI credential stores or runtime secret files. Open the
+Clone private https://github.com/kubla/aicq with an authorized GitHub client, or
+obtain a source archive prepared from this local checkout. Do not include CLI
+credential stores or runtime secret files. Open the
 project in the destination harness and read root `AGENTS.md` before making changes.
 Authenticate that client separately to Fulcra, then read `workspace/aicq/` to obtain
 the current decisions, spec, plan, progress, workboard, and relevant history.
@@ -20,6 +21,7 @@ state. The new agent does not automatically inherit this conversation or its sec
 
 - Product and implementation organization are documented; no app milestone has begun.
 - Local git repository initialized; the user created private `kubla/aicq`.
+  Initial planning publication is verified at commit 00a0f04; M1 is still pending.
 - GitHub CLI browser authorization completed as kubla, but subsequent REST repository
   creation still returned HTTP 403 `Resource not accessible by integration`.
   Subsequent branch creation/deletion, initial AICQ content writing, and issue

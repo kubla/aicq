@@ -66,3 +66,9 @@ subscription lifecycle before proposing upstream inclusion.
 ## Recent completions
 
 No application milestones completed.
+
+Setup: published 36 planning/instruction files to private kubla/aicq via the
+Git Data API at commit 00a0f04bb7ea10659c6667d62eaa8cd560ae18fb, verified the
+remote tree exactly matches local source, and created issue 1 for M1. Local
+main tracks origin/main; planning history is preserved locally. Normal Git
+push remains blocked by HTTP 401.

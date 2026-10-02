@@ -42,3 +42,12 @@ and push/admin access. The following actions succeeded:
 Ordinary `git push --set-upstream origin main` failed with HTTP 401. Prepared
 source publication will use Git Data API operations, then verify the remote
 commit/tree against the local source. These setup actions do not complete M1.
+
+Publication completed through the Git Data API. Commit
+00a0f04bb7ea10659c6667d62eaa8cd560ae18fb contains 36 source files. Every uploaded
+blob hash was verified against local git; the remote tree
+3775286770bc5377d0a7cd47cd8fcaa92ec94995 exactly matched local source commit
+2a85f044c57d6e2a501934d5925c02a628a72527. Remote main was read back, fetched,
+and the local branch aligned to the identical tree. Original local planning
+history remains at archive/local-planning-history. No application code or
+milestone completion is claimed by this documentation publication.
