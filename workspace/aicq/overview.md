@@ -23,5 +23,6 @@ Fulcra's SDK client rejects the local browser callback. Platform access awaits M
 tunnel/workspace setup and separate fresh test-owner tests remain unverified.
 See outstanding-issues.md and history/20261001_m2-local-plugin.md.
 
-Overnight continuation is bounded until 06:55 America/New_York. Public deployment
-and product messaging remain pending.
+The overnight window ended at 06:55 America/New_York; automatic continuation
+is stopped. Prerequisites remained unchanged; one M2 retry remains. Public
+deployment and product messaging remain pending.

@@ -35,8 +35,10 @@ account. Separate read-only fork checkout:
 429da58508a179cc425d10728434739ca6620e1a. AICQ pins its existing OAuth gateway;
 no reusable Events changes were made. No live ChatGPT AICQ integration is claimed.
 
-The authorized heartbeat `aicq-overnight-milestones` is bounded until
-2026-10-02 10:55 UTC (06:55 America/New_York). Continue earliest incomplete
-milestone when feasible; keep unchanged blocked state quiet. Keep development
+The overnight window ended at 2026-10-02 10:55 UTC (06:55 America/New_York).
+Heartbeat `aicq-overnight-milestones` is paused. No prerequisites changed during
+the overnight checks; no additional attempt was consumed. See
+history/20261002_overnight-handoff.md. Resume the earliest incomplete milestone
+when prerequisites change and further continuation is authorized. Keep development
 local-first; substantial infrastructure goes to Josh/GCP. Do not send external
 messages or publish publicly. Authentication on another executor is separate.

@@ -63,8 +63,12 @@ Josh/Fulcra configuration requirements are in outstanding-issues.md. Do not
 advance to M3 or count local tools as completed ChatGPT integration.
 
 The user authorized Computer Use, Google test-account sign-in, and milestone work
-while sleeping for eight hours. In-chat heartbeat `aicq-overnight-milestones` is
-bounded until 2026-10-02 10:55 UTC (06:55 America/New_York). Reading the private
+while sleeping for eight hours. The overnight window ended at
+2026-10-02 10:55 UTC (06:55 America/New_York). Heartbeat
+`aicq-overnight-milestones` was paused at the first wake after that deadline.
+Canonical prerequisites remained unchanged throughout the overnight checks; no
+additional milestone attempt or implementation was started. See
+`history/20261002_overnight-handoff.md`. Reading the private
 OpenAI verification email and clearing the shared Fulcra SSO session were rejected
 by automatic approval review; explicit authorization has been requested. Do not
 retry or bypass either action without a reply. Credentials remain in normal
