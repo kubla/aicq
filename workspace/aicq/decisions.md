@@ -199,3 +199,14 @@ statuses, assignments and parent relationships were preserved. Project scope and
 first-release completion criteria are recorded in
 history/20261002_toolkit-project-created.md. This tracking change does not select
 or deploy AICQ hosting, advance M2, or grant additional infrastructure access.
+
+## Polling is acceptable for initial participation
+
+> How can we change our design to not require an MCP server change? It's OK if participating agents/products use polling for now
+
+Direction: assess a design using existing Fulcra operations and client-side
+polling rather than requiring the Events server contribution. Polling is acceptable
+for now. The user has not selected between retaining AICQ's own UI/tool adapter and
+using the existing Fulcra connector plus a skill. In particular, deferring the
+embedded ChatGPT UI is a proposal, not an accepted requirement change. See
+history/20261002_polling-design.md. Existing failed evaluations remain unchanged.

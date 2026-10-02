@@ -57,6 +57,15 @@ See `history/20261001_m1-local-baseline.md`,
 
 ## Next actions
 
+The user accepts polling for now and asked for a design without MCP server
+changes. Reviewed the canonical architecture, local adapter and Fulcra Mesh
+workflow. Client-side polling can replace the Events contribution; retaining the
+custom ChatGPT UI still requires AICQ's own adapter and its hosting/authentication.
+An existing-connector-plus-skill route can avoid that new gateway if the embedded
+UI is deferred. That deferral and revised milestone gates remain proposals. See
+history/20261002_polling-design.md. No retry, server change, schedule or sharing
+grant was created.
+
 October2 research checked GitHub source/discussions, Nuclino, Linear, and #eng.
 Existing MCP client IaC allows the rejected loopback callback; the earlier attempt
 selected the SDK client. Verify correct local client configuration and real linking
