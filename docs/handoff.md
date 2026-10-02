@@ -23,7 +23,12 @@ remain unverified. Follow-up research recommends a reusable Fulcra MCP test
 service at a stable hostname first; read history/20261002_mcp-preview-design.md
 for the Portal controller, public-repo federation, ingress, OAuth and state
 differences. Josh/Fulcra/GCP bootstrap is still needed. Fulcra-managed Vercel
-provisioning remains pending. No provider/deployment was chosen.
+provisioning remains pending. Follow-up VM research found the existing Agent
+Playground GCE creation/SSH recipe and Shell Beach command helper; this is a
+candidate for manual single-process hosting without CI/CD improvements. Owned
+DNS exists, but playground access, an available image, stable address, TLS/ingress
+and callback registration are unverified. Read
+history/20261002_fulcra-vm-hosting.md. No provider/deployment was chosen.
 Platform is awaiting email MFA; no tunnel,
 runtime key, workspace association, or ChatGPT plugin is verified. OpenAI MFA email access remains unapproved. The user granted standing Fulcra
 logout permission; logout/new Google device login succeeded. The isolated test

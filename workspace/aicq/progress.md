@@ -68,6 +68,14 @@ Josh/Fulcra/GCP. Fulcra-managed Vercel provisioning is still pending. No deploym
 or milestone retry was started. See history/20261002_mcp-preview-design.md.
 See history/20261002_fulcra-dev-deployments.md and outstanding-issues.md.
 
+Follow-up VM research found Leif's established Agent Playground GCE creation/SSH
+recipe and the newer Shell Beach command generator. This supplies an existing
+Fulcra-infrastructure candidate for a manual single-process development server;
+CI/CD upgrades need not gate AICQ. Fulcra owns the devfulcra.com DNS zone, but
+playground access, an available image, stable addressing, ingress and TLS still
+need verification/configuration before a callback can be registered. No VM or
+hostname was created. See history/20261002_fulcra-vm-hosting.md.
+
 Resolve actual host reachability/authentication prerequisites, then resume M2's
 required live host/account tests in a new recorded run. Hosting could replace the
 Platform tunnel route; ChatGPT authentication/install/render/link gates remain. Do not

@@ -29,6 +29,14 @@ history/20261002_mcp-preview-design.md. Existing
 Portal Cloud Run PR previews have successful runs; MCP supplies a persistent state
 pattern. Neither is an existing AICQ deployment. Vercel app-template deployment is
 documented, while Fulcra-managed project/token provisioning remains unmerged.
+Leif's Agent Playground project (`fulcra-agent-playground-spfvm7`) provides an
+existing manual GCE testing recipe; broader CI/CD work is optional for this route.
+A Fulcra-owned hostname is feasible through existing DNS management, but no
+playground VM-to-public-HTTPS setup or current executing-client permissions have
+been verified. Establish VM/storage, stable addressing, TLS/ingress and the exact
+upstream callback before claiming hosting is unblocked. See
+history/20261002_fulcra-vm-hosting.md.
+
 Preserve resource-bound OAuth and normal client credentials. No provider was selected
 or public exposure configured. Evidence: history/20261001_m2-callback-mismatch.jpg
 and history/20261002_fulcra-dev-deployments.md.
