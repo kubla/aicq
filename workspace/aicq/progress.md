@@ -2,65 +2,78 @@
 
 ## Current status
 
-M1 passed its local acceptance gate on 2026-10-01 (America/New_York).
-The official Svelte baseline and owner-only harness dashboard are served at
-http://127.0.0.1:6173/. Browser sign-in, live records, canonical panels, and
-authenticated non-owner isolation were exercised. No public deployment.
+M1 passed local acceptance on 2026-10-01 (America/New_York). The authenticated
+baseline and populated owner dashboard run at http://127.0.0.1:6173/harness.
+Real owner and authenticated non-owner browser/API journeys passed. Public
+deployment remains deferred.
 
-## Active milestone
-
-Active: M2 — plugin shell and account linking — incomplete.
-Attempt 1, run m2-2ad50a7c-89bc-444a-b7ab-4548aa1e15d1, failed evaluation:
-ChatGPT/OAuth/fresh-account gates blocked; wrong-resource authorization error
-requires repair. Local candidate 9161037 has verified owner setup and reconnect.
-Next is a recorded repair retry; no M2 MARK_COMPLETE.
-M1 is complete. M3–M6 are pending. Product messaging and Events are unimplemented.
+M2 is incomplete. Local source candidate `9d766b9` on
+`kublascratchpad/m2-plugin-shell` passed its repaired local evaluation. The portable
+plugin exposes identity, resumable private profile/settings setup, global/thread
+entrypoint tools, and a bundled MCP App UI. Real owner setup/read-back/reuse and
+identity across fresh server processes passed. Required ChatGPT installation,
+host rendering, browser OAuth linking/refresh, and separate fresh test-owner setup
+remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 
 ## Harness state
 
-Annotation: `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
-Reuse this owner-account type. Do not create another.
-Run: `m1-7abb2258-7b2d-44d0-bb90-7e630b431618`, attempt 1. Passing REVIEW and MARK_COMPLETE recorded/read back.
-RUN_COMPLETE was written/read back as record c363bd6f-cab2-5e82-9170-7d380e4ba4a5
-and visibly rendered in the owner dashboard. Zero milestone/repair retries used.
-Default configuration: two milestone retries, two repair retries, 15-minute run
-timeout. The initial M1 run had a recorded 60-minute override; subsequent runs
-return to 15 minutes unless another override is recorded first.
+Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
+The latest run is closed; no run is active.
 
-## Recent completions
+- M1 run `m1-7abb2258-7b2d-44d0-bb90-7e630b431618`: passing REVIEW, MARK_COMPLETE,
+  and RUN_COMPLETE read back. Terminal record `c363bd6f-cab2-5e82-9170-7d380e4ba4a5`.
+  Zero retries used.
+- M2 attempt 1 `m2-2ad50a7c-89bc-444a-b7ab-4548aa1e15d1`: failed REVIEW on
+  `9161037`; local authorization error needed repair and required integration
+  checks were blocked. RUN_COMPLETE `884667bd-6042-5ae2-83be-7a983949113a` read back.
+- M2 retry 1 (attempt 2 of 3) `m2-fac0fd7f-faf4-44d2-938a-6490e8795e91`:
+  repaired candidate `9d766b9`; local checks passed, required integration checks
+  remained blocked. Failed REVIEW `d2f7ed1b-1cc5-55cc-8cd6-5a991825dd0a` and
+  RUN_COMPLETE `078eb55c-81b1-5cac-9a58-96e70cd7a175` read back at
+  2026-10-02 03:48 UTC. One milestone retry remains; no timeout or harness repair
+  retry was consumed. Wait for changed prerequisites before another attempt.
 
-- M1 source candidate: `fdcec134f149bb6f95b36c084e58b90ec9d5fd34` on local branch
-  `kublascratchpad/m1-local-baseline`. Global owner navigation and live dashboard
-  use backend Fulcra identity validation and the existing annotation.
-- Real owner Google/Fulcra browser login, logout, and fresh login passed.
-- Real Google test account signed in; owner navigation absent; /harness and
-  runs/overview/issues APIs returned 403, while its session remained authenticated.
-- Actual REVIEW progress record written/read back and verified in API and UI.
-- Independent check/lint/build passed; 6 security regression tests passed.
-- Canonical history/API evidence uploaded, downloaded, and byte-for-byte verified.
+Default configuration remains two milestone retries, two harness repair retries,
+and a 15-minute run timeout. Initial M1 and M2 60-minute overrides were recorded
+before those runs. M2 retry 1 used the default 15 minutes.
 
-Evidence: `history/20261001_m1-local-baseline.md`,
-`history/20261001_m1-api-evidence.json`, and
-`history/20261001_m1-non-owner-api.jpg`.
+## Verified evidence
+
+M1 candidate `fdcec134f149bb6f95b36c084e58b90ec9d5fd34`: fresh Google/Fulcra owner
+sign-in/logout/re-sign-in, navigation, live event display, canonical panels, and
+real test-account page/API 403 passed. Type check, lint, 6 security tests, and
+Node build passed. History and sanitized receipts were uploaded/read back.
+
+M2 candidate `9d766b9`: 10 focused tests passed. The extracted archive ran its
+exact portable manifest command with the executing client's normal owner
+credentials. Both entrypoint tools and the compiled UI resource worked; owner
+profile/settings were reused and identity survived process restart. Live HTTP
+wrong-resource authorization now returns `invalid_target` without upstream login;
+discovery and missing/invalid bearer denial passed. UI type check/build, official
+metadata/schema checks, and M1 regression checks passed during evaluation.
+
+See `history/20261001_m1-local-baseline.md`,
+`history/20261001_m2-local-plugin.md`, and their sanitized evidence files.
 
 ## Next actions
 
-Continue M2 through a new recorded run. Check local ChatGPT MCP connectivity,
-normal client authentication, stable identity, portable plugin packaging, and
-fresh/existing owner setup. Reuse the Fulcra MCP OAuth gateway; do not invent a
-second gateway without evidence it is needed. Public deployment remains deferred.
-Pause substantial infrastructure work for Josh/GCP with a concrete recorded blocker.
+Resolve the recorded Fulcra callback configuration and Platform MFA/tunnel gates;
+then resume M2's required live host/account tests in a new recorded run. Specific
+Josh/Fulcra configuration requirements are in outstanding-issues.md. Do not
+advance to M3 or count local tools as completed ChatGPT integration.
 
-The user authorized Computer Use and milestone-by-milestone work while sleeping
-for eight hours. Bounded in-chat continuation is active until 2026-10-02 10:55 UTC
-(06:55 America/New_York). Credentials remain in normal CLI/browser management.
+The user authorized Computer Use, Google test-account sign-in, and milestone work
+while sleeping for eight hours. In-chat heartbeat `aicq-overnight-milestones` is
+bounded until 2026-10-02 10:55 UTC (06:55 America/New_York). Reading the private
+OpenAI verification email and clearing the shared Fulcra SSO session were rejected
+by automatic approval review; explicit authorization has been requested. Do not
+retry or bypass either action without a reply. Credentials remain in normal
+client management; no external messages or public publication were performed.
 
 ## Earlier prerequisites
 
 Private kubla/aicq planning publication: `00a0f04bb7ea10659c6667d62eaa8cd560ae18fb`.
-The previous cloud Git push transport failed with HTTP 401; API publication
-succeeded. The local M1 candidate has not been published to GitHub yet.
-
-Separate kubla/fulcra-context-mcp branch `aicq/mcp-events`, commit `429da58`,
-provides tested FastMCP 4.0.10 / MCP 2.2.0 protocol readiness. Existing suite: 132
-passed. It is not an Events implementation or an application milestone.
+Earlier cloud Git push failed with HTTP 401; API publication succeeded. Current
+local push capability has not been retested; local application commits are unpublished.
+Separate Fulcra MCP branch `aicq/mcp-events`, prerequisite `429da58`, provides
+protocol readiness and the reused OAuth gateway. It does not implement Events.

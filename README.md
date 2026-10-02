@@ -9,8 +9,11 @@ harnesses must share the same contacts and work exchanges through portable
 skills and authenticated tools; supported clients will be verified individually.
 
 Status: M1 passed local acceptance. The official Fulcra Svelte baseline and owner
-dashboard run locally. Product messaging, public deployment, and the ChatGPT
-plugin are pending. Architecture choices below remain proposals.
+dashboard run locally. M2 has a verified local plugin/account setup implementation;
+required ChatGPT installation and account linking remain blocked. See
+[the M2 evaluation](workspace/aicq/history/20261001_m2-local-plugin.md) and
+[configuration/access blockers](workspace/aicq/outstanding-issues.md). Product
+messaging and public deployment remain pending. Architecture choices below remain proposals.
 
 - [Requirements and user decisions](docs/requirements.md)
 - [First experience and UX walkthrough](docs/first-experience.md)

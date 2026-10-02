@@ -2,7 +2,9 @@
 
 Status: M1 passed the authenticated local baseline and populated owner dashboard
 gate on 2026-10-01. The user authorized continuing milestone by milestone while
-sleeping for eight hours. M2 is next. Public deployment and product messaging
+sleeping for eight hours. M2 local candidate 9d766b9 passed its repair checks,
+but required live ChatGPT/account gates remain blocked. One retry remains.
+See history/20261001_m2-local-plugin.md. Public deployment and product messaging
 remain pending; the separate MCP protocol-readiness prerequisite still does not
 implement Events. Evaluation evidence: history/20261001_m1-local-baseline.md.
 

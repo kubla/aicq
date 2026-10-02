@@ -1,0 +1,80 @@
+{
+  "candidate": "9d766b9",
+  "milestone": "M2",
+  "milestone_complete": false,
+  "focused_tests": {
+    "passed": 10,
+    "duration_seconds": 0.88
+  },
+  "m1_regression_tests_passed": 6,
+  "real_owner_package": {
+    "candidate": "9d766b9",
+    "archive_manifest_command_exercised": true,
+    "real_owner_verified": true,
+    "both_entrypoint_tools_called": true,
+    "ui_resource_read": true,
+    "settings_and_profile_reused": true,
+    "process_restart_identity_stable": true,
+    "owner_id": "918681bf-aa1a-5a00-9e5e-b2ab5e44c282",
+    "agent_id": "3f6b6348-6114-5c2e-9e61-da45611b8235"
+  },
+  "live_wrong_resource_authorize": {
+    "wrong_resource_authorize_http_status": 302,
+    "oauth_error": "invalid_target",
+    "no_upstream_login_started": true
+  },
+  "m2_terminal_records": [
+    {
+      "record_id": "8827d0e9-d9d8-5aa0-add1-ea529d0ebf51",
+      "recorded_at": "2026-10-02T03:41:05.898466+00:00",
+      "event_id": "0943fbd2-8344-491d-bddc-3427521978a1",
+      "run_id": "m2-2ad50a7c-89bc-444a-b7ab-4548aa1e15d1",
+      "milestone": "M2",
+      "step": "REVIEW",
+      "status": "failed",
+      "detail": "M2 incomplete: host linking blocked and wrong-resource authorization error needs repair",
+      "evidence": "Evaluator inspected frozen candidate 9161037 against account, setup, UI and authentication requirements. Nine security/setup/HTTP tests passed; UI check/build and metadata/schema validation passed. Extracted development archive ran its exact manifest command, reused actual owner resources, called both entrypoint tools/read compiled UI, and retained owner/agent IDs across separate processes. M1 check/lint/6 tests/build passed, live owner/private APIs and unauthenticated/invalid denial passed, and Chrome dashboard visibly rendered this actual M2 REVIEW event and canonical panels. Live DCR/authorize probe denied wrong resource but redirected with server_error; expected invalid_target needs Generator repair. Required ChatGPT installation/UI/linking, refresh/reconnect through real OAuth, and fresh Fulcra test-owner setup are not verified. Existing SDK client rejects local callback, Platform login awaits MFA, and test-account switching was blocked by automatic approval review. Keep M2 incomplete."
+    },
+    {
+      "record_id": "884667bd-6042-5ae2-83be-7a983949113a",
+      "recorded_at": "2026-10-02T03:41:08.422908+00:00",
+      "event_id": "0e77b4fc-f4f2-43be-a536-6ee9ab0c639b",
+      "run_id": "m2-2ad50a7c-89bc-444a-b7ab-4548aa1e15d1",
+      "milestone": "M2",
+      "step": "RUN_COMPLETE",
+      "status": "completed",
+      "detail": "Coordinator left M2 incomplete; one recorded repair retry is selected",
+      "evidence": "Failed REVIEW evidence was inspected. No MARK_COMPLETE is permitted: required host/account journeys remain blocked, and the authorization error contract needs a code repair. Attempt 1 ends through RUN_COMPLETE because retries remain. Candidate 9161037 and local evidence are preserved. Next run repairs the concrete invalid-target error; unrelated infrastructure is deferred to Josh/Fulcra configuration help."
+    },
+    {
+      "record_id": "d2f7ed1b-1cc5-55cc-8cd6-5a991825dd0a",
+      "recorded_at": "2026-10-02T03:48:29.5017+00:00",
+      "event_id": "c889c55f-9898-4ebb-b9bf-7eff100e508c",
+      "run_id": "m2-fac0fd7f-faf4-44d2-938a-6490e8795e91",
+      "milestone": "M2",
+      "step": "REVIEW",
+      "status": "failed",
+      "detail": "M2 local repair passed; required ChatGPT and fresh-account journeys remain blocked",
+      "evidence": "Evaluator independently exercised candidate 9d766b9. Live DCR/authorize now returns HTTP 302 with error=invalid_target for the wrong resource and no upstream login. Ten focused tests passed in 0.88s. Extracted repaired archive ran its configured uv/stdin MCP command against the real owner account, reused private profile/settings, called global/thread tools, read bundled UI, and retained owner/agent IDs across fresh server processes. Earlier attempt verified unchanged M1 source checks, six security tests, build, live private API denial and actual dashboard evidence display. Required ChatGPT installation and host rendering, real gateway OAuth linking/refresh/reconnect, and separate fresh test-owner/interrupted setup remain unverified. Auth0 SDK client rejects local callback. OpenAI MFA offers email but automatic approval review rejected reading the private verification email; Platform tunnel access/key/workspace association remain unverified. Automatic review also rejected logging out the shared Fulcra browser session, so the isolated test client remains the owner principal and is not used as fresh test-owner evidence. Keep M2 incomplete; no MARK_COMPLETE."
+    },
+    {
+      "record_id": "078eb55c-81b1-5cac-9a58-96e70cd7a175",
+      "recorded_at": "2026-10-02T03:48:31.883851+00:00",
+      "event_id": "c043ab60-27a5-4f55-8b90-88ca81a8443e",
+      "run_id": "m2-fac0fd7f-faf4-44d2-938a-6490e8795e91",
+      "milestone": "M2",
+      "step": "RUN_COMPLETE",
+      "status": "completed",
+      "detail": "M2 retry closed with local repair verified; milestone still incomplete",
+      "evidence": "Coordinator inspected failed REVIEW and preserved all required blocked checks. Retry 1 (attempt 2 of 3) fixed the concrete authorization error and passed local package/security checks. One milestone retry remains; no timeout or harness repair retry consumed. Further retry waits for changed integration prerequisites rather than repeating unchanged blocks. M1 remains complete; M3-M6 remain pending. Canonical progress/history/issues will carry the callback configuration, Platform MFA/tunnel, and test-account browser-session approval requirements."
+    }
+  ],
+  "blocked_checks": [
+    "ChatGPT development plugin installation",
+    "actual host sidebar/thread rendering",
+    "real browser OAuth linking/refresh/reconnect",
+    "separate fresh test-owner bootstrap and interrupted setup"
+  ],
+  "milestone_retries_used": 1,
+  "milestone_retries_remaining": 1
+}

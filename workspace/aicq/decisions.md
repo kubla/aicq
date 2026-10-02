@@ -137,3 +137,19 @@ HTTP 403. This retry is complete; no further login is pending.
 Context: private kubla/aicq became accessible. Read access, temporary branch
 creation/deletion, initial content writing, and issue creation were exercised
 successfully; ordinary Git push failed with HTTP 401.
+
+## Google test account and overnight continuation
+
+> Good news: I made *another* test Fulcra account using Google OAuth using my michael.tiffany@gmail.com identity. The reason this is good news is that you log in yourself now without me being around to authorize your use of the 1Password CLI. Just choose authentication through Google and choose michael.tiffany@gmail.com to use the test account
+
+Direction: use Google authentication with the named identity for the test account;
+verify the actual principal before using it as non-owner evidence. This avoids
+requiring 1Password CLI approval for the test sign-in.
+
+> In a few minutes, I'm going to sleep for 8 hours, so hopefully no further tasks will gate on approval. I'm impressed with your work so far. If you complete M1, work diligently milestone by milestone until I wake up
+
+Direction: after M1 passes, continue through recorded milestones while feasible.
+The bounded overnight heartbeat ends at approximately 06:55 America/New_York.
+Blocked acceptance remains incomplete. Limited permission for private MFA email
+access and for disrupting the current shared Fulcra SSO session is separately
+pending after automatic approval review rejected those actions.

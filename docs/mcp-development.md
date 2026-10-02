@@ -70,7 +70,7 @@ requires a Platform tunnel ID, runtime key and intended workspace association.
 It provides MCP transport, while the browser-facing OAuth service still needs
 reachable endpoints. No tunnel, runtime key, target workspace association or
 live ChatGPT plugin installation is verified yet. Platform browser sign-in is
-waiting for passkey verification; the personal Chrome ChatGPT session is logged out.
+waiting for email MFA verification; the personal Chrome ChatGPT session is logged out.
 
 Live Auth0 check: the SDK client `48p3VbMnr5kMuJAUe9gJ9vjmdWLdnqZt` rejected
 `http://127.0.0.1:4499/callback` with “Callback URL mismatch.” Josh/Fulcra help is

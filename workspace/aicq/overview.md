@@ -1,22 +1,27 @@
 # AICQ development
 
-**Status:** M1 passed local acceptance. M2 implementation is in progress.
+**Status:** M1 passed. M2 local implementation is verified; live integration is blocked.
 
-- M1 — authenticated local baseline and owner dashboard: complete
-- M2 — plugin shell and account linking: in progress
+- M1 — authenticated local baseline and populated owner dashboard: complete
+- M2 — plugin shell and account linking: incomplete; configuration/access gates
 - M3 — contact and mailbox feasibility: pending
 - M4 — durable agent messaging: pending
 - M5 — subscribed message-triggered work: pending
 - M6 — usability and distribution: pending
 
-Run `m1-7abb2258-7b2d-44d0-bb90-7e630b431618` verified owner sign-in, live event display, canonical
-panels, navigation, and denial for an authenticated non-owner. Type checking,
-lint, six security tests, and the Node build passed. Local target:
-http://127.0.0.1:6173/harness. Public deployment remains deferred.
+M1 verified real owner sign-in, live events, canonical panels, navigation, and
+page/API denial for an authenticated non-owner. Type check, lint, six security
+tests, and Node build passed. Local target: http://127.0.0.1:6173/harness.
 
-Overnight milestone continuation is active until about 06:55 America/New_York.
+M2 retry 1, run `m2-fac0fd7f-faf4-44d2-938a-6490e8795e91`, closed with failed
+REVIEW because required live ChatGPT/account checks remain blocked. Candidate
+`9d766b9` passed ten focused tests, real owner setup/reuse, extracted plugin
+entrypoint calls, UI resource retrieval, process-restart identity, and the repaired
+wrong-resource OAuth response. One retry remains. No M2 MARK_COMPLETE exists.
 
-M2 attempt 1 verified the extracted local plugin and real owner setup/reconnect,
-but failed full acceptance because ChatGPT/OAuth checks are blocked. Retry 1, run
-m2-fac0fd7f-faf4-44d2-938a-6490e8795e91, repairs the observed wrong-resource
-authorization error. M2 remains incomplete; later milestones are pending.
+Fulcra's SDK client rejects the local browser callback. Platform access awaits MFA;
+tunnel/workspace setup and separate fresh test-owner tests remain unverified.
+See outstanding-issues.md and history/20261001_m2-local-plugin.md.
+
+Overnight continuation is bounded until 06:55 America/New_York. Public deployment
+and product messaging remain pending.

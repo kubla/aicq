@@ -1,25 +1,42 @@
 # AICQ local continuation
 
-Local workspace: /Users/mjjt/Documents/Code/aicq.
-Canonical state: authenticated Fulcra workspace/aicq/. Read AGENTS.md and all
-canonical requirements/state/history before continuing.
+Workspace: /Users/mjjt/Documents/Code/aicq. Canonical owner Fulcra files:
+workspace/aicq/. Read AGENTS.md and authenticated canonical requirements/state/history.
 
-M1 passed in run `m1-7abb2258-7b2d-44d0-bb90-7e630b431618` on candidate fdcec13.
-Local app: http://127.0.0.1:6173/; owner dashboard: /harness.
-Source branch: kublascratchpad/m1-local-baseline.
-Evidence: history/20261001_m1-local-baseline.md and related API/screenshot receipts.
+M1 is complete; evidence: history/20261001_m1-local-baseline.md.
+M2 remains incomplete; source branch `kublascratchpad/m2-plugin-shell`, verified
+local candidate `9d766b9`. Evidence: history/20261001_m2-local-plugin.md and
+20261001_m2-local-evidence.json. Local dashboard: http://127.0.0.1:6173/harness;
+HTTP MCP gateway: http://127.0.0.1:4499/mcp. Both are loopback-only.
 
-Next is M2: portable plugin, account linking, and local ChatGPT connectivity.
-Use a new harness run and the existing owner annotation. Default timeout is
-15 minutes; record overrides before work. Reuse the Fulcra MCP OAuth gateway.
-The separate MCP Events contribution remains in aicq/mcp-events; 429da58 is
-protocol readiness, not Events. No live AICQ ChatGPT integration is verified.
+M2 attempt 1 and retry 1 are closed. Latest run
+`m2-fac0fd7f-faf4-44d2-938a-6490e8795e91` has failed REVIEW plus RUN_COMPLETE
+`078eb55c-81b1-5cac-9a58-96e70cd7a175`, read back. Ten focused tests and extracted
+plugin/real owner/process restart checks passed. No M2 MARK_COMPLETE exists.
+One milestone retry remains; no timeout/harness repair retry consumed. Start the
+next run only when integration prerequisites change; default timeout is 15 minutes.
 
-The user authorized Computer Use and continuing milestone by milestone overnight
-until approximately 2026-10-02 06:55 America/New_York. Google test-account sign-in
-was used to verify non-owner denial; credentials stay in normal browser/CLI
-management. Authentication in another executor is separate. Substantial
-infrastructure work is deferred to Josh/GCP. Do not send external messages.
+Read outstanding-issues.md for the exact SDK client and rejected loopback callback
+that need Josh/Fulcra configuration help. Platform is awaiting email MFA; no tunnel,
+runtime key, workspace association, or ChatGPT plugin is verified. Automatic
+approval review rejected reading the OpenAI MFA email and clearing the shared
+Fulcra browser SSO session. Explicit permission was requested; do not bypass or
+retry without the user's reply. The isolated second CLI login verified as owner,
+so do not mistake it for the fresh test account.
 
-The bounded in-chat heartbeat is aicq-overnight-milestones. Resume from canonical
-state; keep unchanged blocked checks quiet, and record exact verified outcomes.
+Build/install instructions: docs/mcp-development.md. Portable archive:
+.local/aicq-development-plugin.zip. Its configured stdio command uses uv with
+--frozen --no-editable in mcp/. Preserve normal executing-client credential storage;
+never transfer cookies/tokens between browser, CLI, executor, or another agent.
+
+Reuse `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed` in the real owner's
+account. Separate read-only fork checkout:
+/Users/mjjt/Documents/Code/aicq-fulcra-mcp-reference, branch aicq/mcp-events at
+429da58508a179cc425d10728434739ca6620e1a. AICQ pins its existing OAuth gateway;
+no reusable Events changes were made. No live ChatGPT AICQ integration is claimed.
+
+The authorized heartbeat `aicq-overnight-milestones` is bounded until
+2026-10-02 10:55 UTC (06:55 America/New_York). Continue earliest incomplete
+milestone when feasible; keep unchanged blocked state quiet. Keep development
+local-first; substantial infrastructure goes to Josh/GCP. Do not send external
+messages or publish publicly. Authentication on another executor is separate.

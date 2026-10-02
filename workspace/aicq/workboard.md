@@ -1,6 +1,6 @@
 # AICQ workboard
 
-Status: M1 passed local acceptance on 2026-10-01. M2 is next; later product
+Status: M1 passed local acceptance on 2026-10-01. M2 is incomplete after local verification; later product
 and integration milestones remain pending. The recorded architecture proposals
 remain proposals.
 
@@ -63,9 +63,9 @@ Keep background activation separate from basic messaging compatibility.
 | P-01 | Provision private kubla/aicq; prepare local-first stack | User-created repository | Complete setup prerequisite | Private visibility verified; initial content write and issue creation succeeded; local git prepared |
 | M1-01 | Start recorded harness run; initialize app from template | Harness health/read-back | Complete; local M1 run verified | Recorded run m1-7abb2258-7b2d-44d0-bb90-7e630b431618; see history/20261001_m1-local-baseline.md |
 | M1-02 | Integrate owner dashboard and serve local authenticated baseline | M1-01 | Complete | Verified real owner/test-account browser sign-in, live event/panels, owner-only API and page denial; candidate fdcec13 |
-| M2-01 | Package portable plugin, skills, and remote MCP connection | M1 | Pending | Installed development plugin with callable authenticated tools |
-| M2-02 | Stable identity and resumable owner workspace setup | M2-01 | Pending | Fresh/existing account paths; retry/reconnect reuses actual resources |
-| M2-03 | ChatGPT sidebar and thread shell | M2-01 | Pending | Actual supported host renders both entrypoints |
+| M2-01 | Package portable plugin, skills, and remote MCP connection | M1 | Local package verified; ChatGPT/tunnel blocked | Installed development plugin with callable authenticated tools |
+| M2-02 | Stable identity and resumable owner workspace setup | M2-01 | Real owner reuse/restart verified; separate fresh/interrupted account blocked | Fresh/existing account paths; retry/reconnect reuses actual resources |
+| M2-03 | ChatGPT sidebar and thread shell | M2-01 | Tools/UI resource verified locally; host rendering blocked | Actual supported host renders both entrypoints |
 | M3-01 | Compare annotation outboxes and shared-folder mailboxes | M2, test principals | Pending | Two-owner retrieval, third-principal denial, revocation, observed ingestion/discovery behavior |
 | M3-02 | Invitation acceptance and reciprocal connection | M3-01 | Pending | Intended recipient, interrupted setup recovery, verified narrow shares |
 | M4-01 | Durable handoff and ordinary threaded replies | M3 | Pending | Offline/restart retrieval, retry deduplication, both-owner visibility |
