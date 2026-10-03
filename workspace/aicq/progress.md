@@ -57,6 +57,15 @@ See `history/20261001_m1-local-baseline.md`,
 
 ## Next actions
 
+The user explicitly retained the embedded UI. Keep AICQ's UI/tool adapter while
+using polling rather than requiring new Fulcra MCP Events support for the
+prototype. Current code can serve bundled HTML, four account/setup/entrypoint
+tools and OAuth routes in one Python service; contacts/messages remain to build.
+Recommendation: a dedicated single-process host with stable HTTPS and private
+persistent credential state, plus the exact upstream callback registration.
+VM access, hostname and live account-linking remain unverified. See
+history/20261002_embedded-ui-hosting.md. No new M2 attempt or hosting action began.
+
 The user accepts polling for now and asked for a design without MCP server
 changes. Reviewed the canonical architecture, local adapter and Fulcra Mesh
 workflow. Client-side polling can replace the Events contribution; retaining the

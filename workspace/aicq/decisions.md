@@ -210,3 +210,14 @@ for now. The user has not selected between retaining AICQ's own UI/tool adapter 
 using the existing Fulcra connector plus a skill. In particular, deferring the
 embedded ChatGPT UI is a proposal, not an accepted requirement change. See
 history/20261002_polling-design.md. Existing failed evaluations remain unchanged.
+
+## Retain the embedded UI
+
+> I think the embedded UI is an important part of this product idea. Let’s keep it. What kind of hosting does that require? What do we need to host and test a prototype?
+
+Decision: retain the embedded ChatGPT UI and AICQ's own UI/tool adapter. The
+existing-connector-only route that defers the panel is not selected. Polling remains
+acceptable for initial participation; the Fulcra MCP Events contribution need not
+gate that prototype. Hosting requirements and a recommended single-process VM
+experiment are in history/20261002_embedded-ui-hosting.md. No provider, hostname,
+cloud provisioning or deployment was selected or performed through this request.
