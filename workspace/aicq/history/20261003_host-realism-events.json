@@ -1,0 +1,222 @@
+[
+  {
+    "record_id": "62879755-86dc-53ab-bfd9-0b2dc4b21184",
+    "recorded_at": "2026-10-03T21:28:18.732972+00:00",
+    "event_id": "be5881f0-14d4-4790-94ee-8cf8ff9ab4f3",
+    "run_id": "ux-p08-95e7a983-ef0b-4428-915e-67f8158d200d",
+    "milestone": "UX-P08",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "Nurse: authenticated canonical reconciliation and official visual reference review complete; starting authorized host realism pass.",
+    "evidence": "Canonical plan, spec, decisions, progress, workboard, overview and UX-P07 history byte matched. UX-P08 45-minute override saved/read back. Official mention, thread and context screenshots visually inspected. Existing Site public revision 2, version 4 source 8746394ffaa29b732d787d6acbbc20da180ec3da reconciled. No live integration."
+  },
+  {
+    "record_id": "1f0c2a33-75bb-5caa-8c07-3dd900b607f2",
+    "recorded_at": "2026-10-03T21:29:43.808132+00:00",
+    "event_id": "62b0023a-9c2e-4244-9b83-e9f23f5b2131",
+    "run_id": "ux-p08-95e7a983-ef0b-4428-915e-67f8158d200d",
+    "milestone": "UX-P08",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "Coordinator: selected UX-P08 realism revision; product milestones remain unchanged.",
+    "evidence": "User explicitly requested realistic @AICQ highlighting and other detail corrections. Confirmed defects: raw mention text and separate chip, repeated @ insertion, absent dictation icon, history starting a new session, spreadsheet opened as plain-text editor, receipt status for prepared requests, draft/scroll loss on unrelated navigation."
+  },
+  {
+    "record_id": "be8b2c94-4ff1-574e-964c-0590aa449244",
+    "recorded_at": "2026-10-03T21:30:22.311336+00:00",
+    "event_id": "1494beff-c974-4974-8cf3-0d43fda19ce0",
+    "run_id": "ux-p08-95e7a983-ef0b-4428-915e-67f8158d200d",
+    "milestone": "UX-P08",
+    "step": "GENERATE",
+    "status": "started",
+    "detail": "Generator: revising native mention treatment and audited host/details on the existing worked example.",
+    "evidence": "Official 05-composer-mention uses blue inline plugin text and neutral picker above composer; 02-thread-tray supplies icon/tab/composer cues. Changes will remain self-contained and preserve the recorded UX-P07 interaction contract."
+  },
+  {
+    "record_id": "16de82fc-77fd-5125-bf87-465808e45afd",
+    "recorded_at": "2026-10-03T21:34:22.354694+00:00",
+    "event_id": "e105b34b-c953-46ba-8cb7-65be7c6084a7",
+    "run_id": "ux-p08-95e7a983-ef0b-4428-915e-67f8158d200d",
+    "milestone": "UX-P08",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Generator: candidate uses blue inline @AICQ highlights, native composer details and a spreadsheet preview; ready for separate evaluation.",
+    "evidence": "Node syntax and diff checks passed. Host reference treatment covers composer and sent mentions, contact selection without duplicate tokens, native Enter/Shift+Enter, neutral context chip, microphone icon disabled outside prototype scope, history dialog instead of new session, spreadsheet sheets, status labels and preserved scroll. Initial local browser render loaded."
+  },
+  {
+    "record_id": "aa19c2d8-c49b-5d69-87cf-d2e551397140",
+    "recorded_at": "2026-10-03T21:34:38.325684+00:00",
+    "event_id": "9f49547d-37cb-48d9-8bd8-75a9dac53fa0",
+    "run_id": "ux-p08-95e7a983-ef0b-4428-915e-67f8158d200d",
+    "milestone": "UX-P08",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Evaluator: independently inspecting the loaded source and actual browser surfaces against official host references.",
+    "evidence": "Initial render and anchored contact picker observed. Evaluation will exercise edited and repeated mentions, keyboard submission, spreadsheet sheets, history/context, existing coordination, invitations and narrow layouts. Native publication remains pending."
+  },
+  {
+    "record_id": "1788e838-ad38-5a1a-a44c-ca26f222d135",
+    "recorded_at": "2026-10-03T21:37:18.513859+00:00",
+    "event_id": "b3891ba2-7149-4b63-b127-cb0d4f22b376",
+    "run_id": "ux-p08-95e7a983-ef0b-4428-915e-67f8158d200d",
+    "milestone": "UX-P08",
+    "step": "REVIEW",
+    "status": "failed",
+    "detail": "Evaluator: primary flow passed, but mention dismissal and a status detail require repair before publication.",
+    "evidence": "Actual browser: selected @AICQ blue in draft/sent text; Shift+Enter retained draft; Enter sent once; calendar invitation confirmed once; Summary/Assumptions/Sensitivity sheet previews and context/history worked. Escape in mention search left picker visible. Inspector mislabeled completed exchange Not started. Solo user bubble stretched beyond the 650px transcript measure. Evidence host-realism-initial-observations.json; source 873a841d73d9abb04910639ffeafcdd64ff11240afbc89e43a8d6bb06aff6f82. Not published."
+  },
+  {
+    "record_id": "006d9e55-657a-5c16-ad85-6712d3332e25",
+    "recorded_at": "2026-10-03T21:37:38.28789+00:00",
+    "event_id": "dd5e58e7-d6ca-4335-8ad5-efa93d7b2edb",
+    "run_id": "ux-p08-95e7a983-ef0b-4428-915e-67f8158d200d",
+    "milestone": "UX-P08",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "Nurse: initial UX-P08 run closed on retry branch; one repair retry will be used.",
+    "evidence": "Failed REVIEW preserved mention Escape, status-inspector and transcript-measure findings. No MARK_COMPLETE and no publication. Core modeled behavior passed; M2 retry unchanged."
+  },
+  {
+    "record_id": "bedbdaf8-ad37-567c-b5fa-48e51f825476",
+    "recorded_at": "2026-10-03T21:37:54.068021+00:00",
+    "event_id": "de77849b-992e-409b-b30d-c2ca4745ad00",
+    "run_id": "ux-p08-5fefa822-920d-45fc-9e05-e4afe5d97f14",
+    "milestone": "UX-P08",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "Nurse: start UX-P08 retry 1 for observed realism defects; prerequisite/auth state unchanged.",
+    "evidence": "Initial failed REVIEW and terminal event read back. Canonical 45-minute override and two-retry configuration remain. One retry used; no product milestone retry. Actual browser evidence retained."
+  },
+  {
+    "record_id": "a61145ed-ea4d-513f-8a6b-fd95a555b4d8",
+    "recorded_at": "2026-10-03T21:38:28.924296+00:00",
+    "event_id": "1721f143-ae94-4f70-98e9-585f580aceb8",
+    "run_id": "ux-p08-5fefa822-920d-45fc-9e05-e4afe5d97f14",
+    "milestone": "UX-P08",
+    "step": "GENERATE",
+    "status": "started",
+    "detail": "Generator: repair observed picker dismissal, status and transcript-width findings; check editing continuity.",
+    "evidence": "Initial actual UI evidence preserved. Will add Escape/search keyboard behavior, hide removed recipient metadata, constrain user bubbles, use work status in inspector and retain bottom position when changing pane width."
+  },
+  {
+    "record_id": "c0f829eb-40c1-5fca-8505-6eba1e90828f",
+    "recorded_at": "2026-10-03T21:39:14.628341+00:00",
+    "event_id": "8c5378ff-06d8-45c0-9eb9-2b70bac3880d",
+    "run_id": "ux-p08-5fefa822-920d-45fc-9e05-e4afe5d97f14",
+    "milestone": "UX-P08",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Generator: repair candidate ready; syntax and diff checks passed.",
+    "evidence": "Escape closes mentions from search, Enter selects matching contact, removed mentions hide recipient metadata, user bubbles follow the transcript measure, status inspector uses current work state. Existing modeled flows and native highlighting retained. Candidate SHA256 6eeaa71c28f583e8373fd9c89f347dca831541fb524cf904ca959b6b55d39e8e."
+  },
+  {
+    "record_id": "a8dd888b-0ad1-5867-88ed-80a059014d7f",
+    "recorded_at": "2026-10-03T21:39:45.395532+00:00",
+    "event_id": "8b3082bf-d256-41f9-afc4-4c9b0d5ea147",
+    "run_id": "ux-p08-5fefa822-920d-45fc-9e05-e4afe5d97f14",
+    "milestone": "UX-P08",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Evaluator: fresh browser reload of the repair candidate; verifying remaining realism and behavior gates.",
+    "evidence": "Typed @ picker opens, Escape now dismisses while retaining draft; search Enter chooses Bob, one blue @AICQ token inserted; deleting the mention hides recipient metadata and removes highlight. Rechecking repetition, ordinary typing, context/history, spreadsheet, policy and narrow layouts before publication."
+  },
+  {
+    "record_id": "a0bd31e4-3c4d-54c1-8c2b-4c37c8e1f1ce",
+    "recorded_at": "2026-10-03T21:42:26.420346+00:00",
+    "event_id": "190dbbde-ef10-4f14-9483-38e5b9c77ae5",
+    "run_id": "ux-p08-5fefa822-920d-45fc-9e05-e4afe5d97f14",
+    "milestone": "UX-P08",
+    "step": "REVIEW",
+    "status": "failed",
+    "detail": "Evaluator: repaired mention behavior passed; retained launch-review summary still contradicts the actual document date.",
+    "evidence": "Actual Review with Bob journey: request v3 October 15, agent retrieves/returns revision; summary says newer launch stays October 20 while transcript and returned revision show October 15. This pre-existing summary defect requires dynamic source values. Mention dismissal/editing/repeated selection, keyboard send, context draft retention, spreadsheets and approval-only checks passed. Not published."
+  },
+  {
+    "record_id": "0747f0f3-67c0-5e7f-b525-8fb6fbc5629e",
+    "recorded_at": "2026-10-03T21:42:47.874739+00:00",
+    "event_id": "7edabc08-1be8-4483-860d-aef3e347d081",
+    "run_id": "ux-p08-5fefa822-920d-45fc-9e05-e4afe5d97f14",
+    "milestone": "UX-P08",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "Nurse: UX-P08 retry 1 closed on retry branch after the retained-review contradiction.",
+    "evidence": "Failed REVIEW read back; no MARK_COMPLETE or publication. Final allowed retry will correct the dynamic review summary and complete remaining gates. M2 retry unchanged."
+  },
+  {
+    "record_id": "78ded0a6-3314-525f-aa08-7e6c9c070e40",
+    "recorded_at": "2026-10-03T21:43:25.428483+00:00",
+    "event_id": "52ccfeb4-07ab-4feb-95ad-e219b98f21e0",
+    "run_id": "ux-p08-1b4465a4-f85f-4c8f-921b-91010fc1859b",
+    "milestone": "UX-P08",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "Nurse: start final UX-P08 retry for date-summary realism and remaining final verification.",
+    "evidence": "Two prior attempts closed with actual failed REVIEW evidence. Final permitted retry, same 45-minute override. M2 unchanged. No earlier candidate published."
+  },
+  {
+    "record_id": "0a6a984e-2f06-5ed7-a74e-0851cce6fb02",
+    "recorded_at": "2026-10-03T21:43:44.858339+00:00",
+    "event_id": "54900ba2-dd7b-4f49-ab8d-ac6226046be4",
+    "run_id": "ux-p08-1b4465a4-f85f-4c8f-921b-91010fc1859b",
+    "milestone": "UX-P08",
+    "step": "GENERATE",
+    "status": "started",
+    "detail": "Generator: replace the hardcoded launch summary with current document data and make the primary drafted @AICQ invocation visible on entry.",
+    "evidence": "Observed review transcript and returned revision both show October 15; summary must agree with actual selected document/version. Preserve the evaluated mention/composer repairs and all autonomy behavior."
+  },
+  {
+    "record_id": "f030710b-56c9-5a27-81f7-300cb225505f",
+    "recorded_at": "2026-10-03T21:44:20.798521+00:00",
+    "event_id": "bf5e0912-1da3-4abc-9887-5f466e0f781a",
+    "run_id": "ux-p08-1b4465a4-f85f-4c8f-921b-91010fc1859b",
+    "milestone": "UX-P08",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Generator: final candidate ready for separate evaluation; exact launch summary is derived from the selected current document.",
+    "evidence": "Node syntax and diff checks passed. Primary finance draft starts with blue inline @AICQ. Existing highlight/keyboard/history/spreadsheet/context changes retained. Active canonical overview uploaded and byte-read back."
+  },
+  {
+    "record_id": "4f4284ea-5d34-5073-996c-f6db92014c57",
+    "recorded_at": "2026-10-03T21:44:57.807588+00:00",
+    "event_id": "c90f2438-a910-42e6-9ac7-c40db312b76d",
+    "run_id": "ux-p08-1b4465a4-f85f-4c8f-921b-91010fc1859b",
+    "milestone": "UX-P08",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Evaluator: final candidate reloaded and date-summary repair observed in both review scenarios.",
+    "evidence": "Final SHA256 fb3733278a122ccf8273a691bebf4d14830e17aaf255ee236233d075a0af9b53. Entry draft has blue @AICQ; ordinary v3 review summary retains October 15; changed v4 summary retains October 20; Apply changes produces v5 October 20 launch/October 19 webinar. Completing invitation, mention, coordination and responsive evidence."
+  },
+  {
+    "record_id": "5ece3271-e14a-5cd4-80e4-02efe3f7f62d",
+    "recorded_at": "2026-10-03T21:50:42.334832+00:00",
+    "event_id": "9e94778c-b152-4a74-986d-0e79e4692c21",
+    "run_id": "ux-p08-1b4465a4-f85f-4c8f-921b-91010fc1859b",
+    "milestone": "UX-P08",
+    "step": "REVIEW",
+    "status": "completed",
+    "detail": "Evaluator: final realism candidate passed actual browser verification and native public publication.",
+    "evidence": "SHA256 fb3733278a122ccf8273a691bebf4d14830e17aaf255ee236233d075a0af9b53. Blue @AICQ in draft/sent text, repeated/deleted/typed mentions, search Enter/Escape, Enter versus Shift+Enter, empty send, draft/context/history continuity, current Completed status and one invitation, consistent spreadsheet sheets, approval-only preparation, autonomous flow while chatting, October 15/20 summary and v5 reconciliation, independent Hermes recipient acceptance passed. 390px journey: document width 390, footer no overflow, latest result at bottom. No console errors; Node syntax/diff checks passed. Resize preserves pixel scroll and may require scrolling; narrow chrome extrapolated. Native Sites version 5, deployment appgdep_6ac1788900e881918e7eeb9dcc959d5a succeeded on source e6b3ab97780011847674797a4e630d63ee4badba. Actual observations and screenshots retained. No live integration."
+  },
+  {
+    "record_id": "c2905480-3efa-5c6d-ad07-8a72e9286eb4",
+    "recorded_at": "2026-10-03T21:51:02.307918+00:00",
+    "event_id": "a952fb44-68b7-4ba7-9e22-e9ac3683711b",
+    "run_id": "ux-p08-1b4465a4-f85f-4c8f-921b-91010fc1859b",
+    "milestone": "UX-P08",
+    "step": "MARK_COMPLETE",
+    "status": "completed",
+    "detail": "Coordinator: UX-P08 host-realism revision complete after separate verification and public publication.",
+    "evidence": "Final passing REVIEW read back; native version 5 deployment appgdep_6ac1788900e881918e7eeb9dcc959d5a succeeded. Exact reviewed HTML/archive match. Two UX-only retries used; M2 remains incomplete with one retry. Live host integration unverified."
+  },
+  {
+    "record_id": "29ba9b49-99cd-5663-ac35-b7abb456a9fd",
+    "recorded_at": "2026-10-03T21:51:46.908983+00:00",
+    "event_id": "094f39fe-e884-461f-aab0-7e6546144382",
+    "run_id": "ux-p08-1b4465a4-f85f-4c8f-921b-91010fc1859b",
+    "milestone": "UX-P08",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "Nurse: UX-P08 final retry closed after passing separate evaluation, mark-complete and native publication.",
+    "evidence": "Final REVIEW and MARK_COMPLETE read back; two UX-only retries used. Failed candidates retained and unpublished. Temporary browser closed, viewport reset, localhost server stopped and unused Sites waiting process terminated. Exact status and sanitized evidence will be mirrored in canonical Fulcra. M2 unchanged."
+  }
+]

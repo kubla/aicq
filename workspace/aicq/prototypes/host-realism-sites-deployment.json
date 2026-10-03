@@ -1,0 +1,43 @@
+{
+  "audience": "public",
+  "source": {
+    "project_id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896",
+    "checkout_path": "/Users/mjjt/Documents/Code/aicq-prototype-site",
+    "commit_sha": "e6b3ab97780011847674797a4e630d63ee4badba",
+    "archive": "/private/tmp/aicq-host-realism-site.tar.gz"
+  },
+  "saved_version": {
+    "id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896~appgver_371ade0907a081919a5661c6bfc4fb75",
+    "project_id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896",
+    "version_number": 5,
+    "source": {
+      "commit_sha": "e6b3ab97780011847674797a4e630d63ee4badba"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000009100822fa46e6d96ed068065",
+      "content_hash": "sha256:6d9d40d1c8e481e65d2f7b6693f5afecdcd3f1a0e6a6e85fd6ae3ca0ac72415d",
+      "size_bytes": 522240,
+      "file_count": 6
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ac1788900e881918e7eeb9dcc959d5a",
+    "project_id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896",
+    "title": "AICQ · Interaction studies",
+    "version_id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896~appgver_371ade0907a081919a5661c6bfc4fb75",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://aicq-interaction-studies.mtiffany.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ac11b43d7e0819198f3007c5cf6a896",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-03T21:50:09.287126+00:00"
+  },
+  "source_sha256": "fb3733278a122ccf8273a691bebf4d14830e17aaf255ee236233d075a0af9b53",
+  "scope": "Fictional HTML prototype; pinned official reference fidelity, not installed-client or live integration verification."
+}

@@ -103,3 +103,14 @@ context popover and mention picker. Record client version, plugin variant,
 theme, window dimensions and the actions actually performed. Save new captures
 separately with sanitized content and provenance. Retain these pinned source
 images for comparison. Verify client-specific appearance before replacing rules.
+
+## Applied mention treatment
+
+UX-P08 gives Alice’s worked example blue inline @AICQ text in the composer and
+sent message, following the plugin-text treatment in `05-composer-mention.png`.
+The picker uses neutral resource rows and sits directly above the composer. Keep
+selected mentions distinct from removable model-context attachments; do not use
+Fulcra mint actions or app avatars as native mention styling. The textarea display
+layer and small selected-contact metadata are prototype approximations. This
+still uses pinned official reference images, not a current installed-client capture.
+See `../../prototypes/host-realism-notes.md` for the broader audit and limits.

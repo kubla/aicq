@@ -1,0 +1,83 @@
+{
+  "milestone": "UX-P08",
+  "run_id": "ux-p08-5fefa822-920d-45fc-9e05-e4afe5d97f14",
+  "source_sha256": "6eeaa71c28f583e8373fd9c89f347dca831541fb524cf904ca959b6b55d39e8e",
+  "verdict": "Failed on pre-existing launch-date summary contradiction. Other retained repair observations passed; history status must be visibly rechecked because inspector was collapsed.",
+  "observations": [
+    {
+      "check": "Typed @ opens picker; Escape closes without losing draft",
+      "pickerCount": 0,
+      "draft": "@"
+    },
+    {
+      "check": "Search Enter selects recipient; inline blue mention has no duplicate",
+      "draft": "@AICQ ",
+      "mark": {
+        "color": "rgb(113, 158, 241)",
+        "text": "@AICQ"
+      },
+      "recipient": "Bob’s Hermes"
+    },
+    {
+      "check": "Deleting mention hides recipient metadata and removes highlight",
+      "recipientVisible": false,
+      "marks": 0
+    },
+    {
+      "check": "Repeated selection preserves draft with one mention",
+      "draft": "@AICQ Share this financial model with Bob’s agent and find a time for Bob and me to review it in person on Friday.",
+      "highlights": 1,
+      "bubble": {
+        "cssMaxWidth": "min(86%, 650px)",
+        "width": 513.3125
+      }
+    },
+    {
+      "check": "Shift+Enter does not send",
+      "draft": "@AICQ Share this financial model with Bob’s agent and find a time for Bob and me to review it in person on Friday.\n",
+      "userCount": 1
+    },
+    {
+      "check": "Enter sends one highlighted mention without duplicate",
+      "messages": [
+        "Finish the base, downside and upside cases for the 2027 operating model.",
+        "@AICQ Share this financial model with Bob’s agent and find a time for Bob and me to review it in person on Friday."
+      ],
+      "highlightCount": 1,
+      "emptySendDisabled": true
+    },
+    {
+      "check": "Continued chat plus completed scheduling visible",
+      "chat": "Today\nFinish the base, downside and upside cases for the 2027 operating model.\nThe model is ready. The base case reaches $9.6m in revenue with a 74% gross margin. The downside and upside cases are included, with the growth assumptions and sensitivity table.\n2027 operating model\nv7 · XLSX\n2027\tDownside\tBase\tUpside\nGrowth\t8%\t18%\t28%\nRevenue\t$8.8m\t$9.6m\t$10.4m\nGross margin\t71%\t74%\t76%\nOperating profit\t$48k\t$904k\t$1.7m\nUSD · Assumptions and sensitivity table included\nOpen model\n@AICQ Share this financial model with Bob’s agent and find a time for Bob and me to review it in person on Friday.\nAICQ · Shared model v7 with Bob’s Hermes\nAICQ\nWorking for you\n\nI’ve shared the model with Bob’s agent. I’ll arrange your Friday review.\n\nView collaboration\nAdd context\nWhich assumptions should we watch in the downside case?\nFor the downside case, I’d focus on acquisition costs and retention. Keep operating expenses tied to the milestones in the model so the plan stays workable if growth reaches only 8%.\nAICQ\nCompleted\n\nBob has model v7. Your review is scheduled for Friday, October 9, at 2 p.m. at his office. The calendar invitation was sent.\n\nView collaboration\nAdd context",
+      "work": "Completed\nModel shared. Review scheduled.\n\nBob has model v7. Your review is scheduled for Friday, October 9, at 2 p.m. at his office.\n\nThe calendar invitation was sent. No action needed.\nSCHEDULED\nFinancial model review\nWhen\nFriday, October 9 · 2–2:30 p.m.\nAmerica/New_York\nWhere\nBob’s office · 42 Mercer Street\nWith\nAlice Chen and Bob Chen\nShared\nOperating model · v7\nInvitation\nSent · Calendar confirmed\nOpen model\nShared work & direction\nAutonomy · Handle it for me\nAdd to this chat\nContinue in chat\nOpen in new chat\nPause\nAgent conversation · 4 updates",
+      "scroll": {
+        "atBottom": true
+      }
+    },
+    {
+      "check": "Context attachment preserves draft and selected scope",
+      "draft": "Keep the review focused on the base-case assumptions.",
+      "scope": "Financial model review\n\nBob has model v7. Your review is scheduled for Friday, October 9, at 2 p.m. at his office.\n\nOperating model v7 · Included in your next message"
+    },
+    {
+      "check": "History retains session, draft and actual completed status",
+      "draft": "Keep the review focused on the base-case assumptions.",
+      "state": ""
+    },
+    {
+      "check": "Spreadsheet tabs and consistent sensitivity survive final repair",
+      "table": "\tA\tB\tC\tD\n1\tOperating profit sensitivity\t\t\t\n2\tRevenue\t72% margin\t74% margin\t76% margin\n3\t$8,800,000\t$136,000\t$312,000\t$488,000\n4\t$9,600,000\t$712,000\t$904,000\t$1,096,000\n5\t$10,400,000\t$1,288,000\t$1,496,000\t$1,704,000",
+      "editors": 0
+    },
+    {
+      "check": "Approval-only handoff still waits before sharing",
+      "chat": "Today\nFinish the base, downside and upside cases for the 2027 operating model.\nThe model is ready. The base case reaches $9.6m in revenue with a 74% gross margin. The downside and upside cases are included, with the growth assumptions and sensitivity table.\n2027 operating model\nv7 · XLSX\n2027\tDownside\tBase\tUpside\nGrowth\t8%\t18%\t28%\nRevenue\t$8.8m\t$9.6m\t$10.4m\nGross margin\t71%\t74%\t76%\nOperating profit\t$48k\t$904k\t$1.7m\nUSD · Assumptions and sensitivity table included\nOpen model\n@AICQ Share this financial model with Bob’s agent and find a time for Bob and me to review it in person on Friday.\nI’ve prepared the model and Friday review request. Your autonomy setting asks me to wait before sharing them.",
+      "openEnabled": false
+    },
+    {
+      "check": "Ordinary plan review reports actual document date",
+      "work": "Result ready\nAutumn launch plan review\n\nBob found a webinar conflict and proposed October 19. Your newer launch date stays October 20.\n\nLast update: Just now\nRETURNED REVISION · BASED ON V3\nMove the webinar. Keep the launch.\n\nThe team offsite overlaps the webinar. Moving the webinar gives the team time to prepare.\n\nLaunch\nOctober 15 unchanged in reviewed copy\nWebinar\nOctober 16October 19\n\nStill unresolved: guest speaker availability.\n\nUse changes\nOpen current plan\nShared work & direction\nAutonomy · Handle it for me\nAdd to this chat\nContinue in chat\nOpen in new chat\nPause\nAgent conversation · 3 updates",
+      "draft": "Today\nAutumn launch plan\nv3\nLaunch: October 15\nWebinar: October 16\nIntroduce the new scheduling feature.\nOpen document\nChoose other work\nLet’s finalize the autumn launch plan.\nHere is launch plan v3. Would you like another agent to check the schedule?\nAsk Bob’s Hermes to review the autumn launch plan for scheduling conflicts.\nAICQ · Shared Autumn launch plan v3 with Bob’s Hermes\nAICQ\nWorking for you\n\nYour request was sent. Bob’s Hermes will see it when it next checks AICQ.\n\nView collaboration\nAdd context\nContinue in chat\nOpen Agent collaborations"
+    }
+  ]
+}

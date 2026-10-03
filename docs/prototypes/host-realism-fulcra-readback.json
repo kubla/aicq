@@ -1,0 +1,110 @@
+[
+  {
+    "path": "workspace/aicq/plan.md",
+    "sha256": "20208132ecf4cfd0b9f24e5f4146bf638238b72d2c0582ac96bedd681d39d574",
+    "size": 18927,
+    "verified_at": "2026-10-03T21:54:52.437532+00:00"
+  },
+  {
+    "path": "workspace/aicq/progress.md",
+    "sha256": "0f88dca04470f64e42b37d2cb9b8ac7fba227e75b826f977e1e879351e2fbfe0",
+    "size": 15104,
+    "verified_at": "2026-10-03T21:54:54.739457+00:00"
+  },
+  {
+    "path": "workspace/aicq/workboard.md",
+    "sha256": "67c9f505cb5fe1838a4eb74a252da02c634bd646bbba40a3097861b87cbe4f88",
+    "size": 14398,
+    "verified_at": "2026-10-03T21:54:56.849169+00:00"
+  },
+  {
+    "path": "workspace/aicq/overview.md",
+    "sha256": "0207e751488ff3b1615e4a0c3644be72ab1ad4494c6cf26dcf4d90da7195d0e6",
+    "size": 921,
+    "verified_at": "2026-10-03T21:54:58.628406+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-v3.html",
+    "sha256": "fb3733278a122ccf8273a691bebf4d14830e17aaf255ee236233d075a0af9b53",
+    "size": 167397,
+    "verified_at": "2026-10-03T21:55:01.193789+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-v3-notes.md",
+    "sha256": "4d7d979ec2d184b2bb5b4b9b643a7973761e4b633d1f0ab86a7387852b4c1e98",
+    "size": 865,
+    "verified_at": "2026-10-03T21:55:03.431891+00:00"
+  },
+  {
+    "path": "workspace/aicq/history/20261003_host-realism.md",
+    "sha256": "d8cf2c51a862d5501854f23ef8ae6c9cb0515d221c4c2785b5c7270b2854c3fd",
+    "size": 4545,
+    "verified_at": "2026-10-03T21:55:05.351928+00:00"
+  },
+  {
+    "path": "workspace/aicq/history/20261003_host-realism-events.json",
+    "sha256": "8a022ba9453460b29dd172f290c4275c7478944c8ecd1b41e634963771012e59",
+    "size": 15299,
+    "verified_at": "2026-10-03T21:55:07.391206+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/host-realism-completed.png",
+    "sha256": "d090e584909818859b88bb7aac60731dfce78e0202a267e5ad0a695fe7ad1dbf",
+    "size": 195617,
+    "verified_at": "2026-10-03T21:55:09.836903+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/host-realism-initial-observations.json",
+    "sha256": "cf2fd7be8bfb644816d175721e6d7987d847931f8ca474324ecec0ac67e56e14",
+    "size": 6612,
+    "verified_at": "2026-10-03T21:55:11.532237+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/host-realism-mention.png",
+    "sha256": "08f54fd7cd43715765d219fb4ebe31b213d4a83939829d675fb33ef9f6df8fef",
+    "size": 133658,
+    "verified_at": "2026-10-03T21:55:14.031507+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/host-realism-narrow.png",
+    "sha256": "8b6e292fc4943a2f79a1a5e69b491638b6176e183a173b0f0c6010f95eaea245",
+    "size": 170972,
+    "verified_at": "2026-10-03T21:55:16.054228+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/host-realism-notes.md",
+    "sha256": "a1d89da5f09ad261221238fc2d5274d6803112040948f37f508ab5af28b5132f",
+    "size": 4334,
+    "verified_at": "2026-10-03T21:55:18.073868+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/host-realism-observations.json",
+    "sha256": "a8f0b449b1a5160224ec3c47d5b823fa33823e248e1a52fe871f5cfc7dd3fa67",
+    "size": 15040,
+    "verified_at": "2026-10-03T21:55:19.937418+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/host-realism-retry1-observations.json",
+    "sha256": "13933f1a6dfb67b56e6884bf1cbc99c2e27f905fd97490e059ba24c0fb58471f",
+    "size": 6939,
+    "verified_at": "2026-10-03T21:55:22.445561+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/host-realism-sites-deployment.json",
+    "sha256": "ed2fccb002ce46374cb91b0db9fdf98b0bc6dd93e69ea393eff0799fcc8dc0fe",
+    "size": 1791,
+    "verified_at": "2026-10-03T21:55:24.407123+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/host-realism-spreadsheet.png",
+    "sha256": "3e197400d338815333c654bcec35d6ddc07a6325c8edad7316f69e78fcf95e9a",
+    "size": 162079,
+    "verified_at": "2026-10-03T21:55:27.179844+00:00"
+  },
+  {
+    "path": "workspace/aicq/design-references/openai-host/README.md",
+    "sha256": "1707bb046dd1107415a01febbe9cc7ce4541ddc098f77a2fae6018bfd450237b",
+    "size": 8053,
+    "verified_at": "2026-10-03T21:55:29.359673+00:00"
+  }
+]

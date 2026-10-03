@@ -18,11 +18,10 @@ remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 ## Harness state
 
 Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
-The latest run is UX-P07 retry 2, closed at 2026-10-03T19:56:50.496446+00:00;
-no run is active. Passing REVIEW `6a472839-764e-5e6e-ac77-f2027e4c3819`,
-MARK_COMPLETE `790e6f93-8203-5f1b-b333-ff76a3a9b2ba` and RUN_COMPLETE
-`5777a73f-33b9-59ae-976b-362e8787b5c9` were read back. Two UX-only retries
-used; M2 retry count unchanged. See history/20261003_autonomous-collaboration.md.
+The latest run is UX-P08 retry 2, closed at 2026-10-03T21:51:46.908983+00:00; no run is active.
+Passing REVIEW `5ece3271-e14a-5cd4-80e4-02efe3f7f62d`, MARK_COMPLETE `c2905480-3efa-5c6d-ad07-8a72e9286eb4` and
+RUN_COMPLETE `29ba9b49-99cd-5663-ac35-b7abb456a9fd` were read back. Two UX-only retries used;
+M2 retry count unchanged. See history/20261003_host-realism.md.
 
 - UX-P03 retry `ux-p03-f8c30fc1-0cbf-4de2-bc18-c876c3165901`: passing
   REVIEW, MARK_COMPLETE and RUN_COMPLETE read back; terminal record
@@ -65,6 +64,15 @@ See `history/20261001_m1-local-baseline.md`,
 `history/20261001_m2-local-plugin.md`, and their sanitized evidence files.
 
 ## Interaction prototype
+
+UX-P08 (2026-10-03): published the host realism pass at the existing public Alice
+route. @AICQ uses native blue inline highlighting in drafts/sent messages; picker,
+keyboard, context/history controls, bubbles, status copy and spreadsheet preview
+were corrected. Actual desktop and 390px journeys passed, alongside invitations,
+coordination and retained review/version conflict. Two UX-only retries closed;
+M2 remains incomplete with one retry. See
+`history/20261003_host-realism.md` and `prototypes/host-realism-notes.md`.
+
 
 UX-P07 (2026-10-03): canonical spec and decisions were saved and read back before
 prototype edits. Alice’s example now leads with agents’ current work and completed

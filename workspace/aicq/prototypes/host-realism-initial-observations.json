@@ -1,0 +1,85 @@
+{
+  "milestone": "UX-P08",
+  "run_id": "ux-p08-95e7a983-ef0b-4428-915e-67f8158d200d",
+  "verdict": "Failed: Escape did not dismiss the mention picker; inspector showed Not started for a completed exchange. Solo user bubble also stretched beyond transcript measure.",
+  "observations": [
+    {
+      "check": "Selected mention enters draft once and receives blue native highlight",
+      "observed": {
+        "caret": "rgb(238, 238, 238)",
+        "inputWidth": 1109,
+        "marks": [
+          {
+            "color": "rgb(113, 158, 241)",
+            "text": "@AICQ"
+          }
+        ],
+        "mirrorWidth": 1109,
+        "textareaColor": "rgba(0, 0, 0, 0)",
+        "value": "@AICQ Share this financial model with Bob’s agent and find a time for Bob and me to review it in person on Friday."
+      }
+    },
+    {
+      "check": "Shift+Enter preserves draft and adds a line without sending",
+      "value": null,
+      "draft": "@AICQ Share this financial model with Bob’s agent and find a time for Bob and me to review it in person on Friday.\n",
+      "transcript": "Today\nFinish the base, downside and upside cases for the 2027 operating model.\nThe model is ready. The base case reaches $9.6m in revenue with a 74% gross margin. The downside and upside cases are included, with the growth assumptions and sensitivity table.\n2027 operating model\nv7 · XLSX\n2027\tDownside\tBase\tUpside\nGrowth\t8%\t18%\t28%\nRevenue\t$8.8m\t$9.6m\t$10.4m\nGross margin\t71%\t74%\t76%\nOperating profit\t$48k\t$904k\t$1.7m\nUSD · Assumptions and sensitivity table included\nOpen model\nShare with Bob and arrange Friday’s review"
+    },
+    {
+      "check": "Enter sends once with one highlighted @AICQ token",
+      "observed": {
+        "bottom": true,
+        "marks": [
+          {
+            "color": "rgb(184, 208, 255)",
+            "text": "@AICQ"
+          }
+        ],
+        "user": [
+          "Finish the base, downside and upside cases for the 2027 operating model.",
+          "@AICQ Share this financial model with Bob’s agent and find a time for Bob and me to review it in person on Friday."
+        ]
+      }
+    },
+    {
+      "check": "Autonomous completion and visible final outcome",
+      "text": "Today\nFinish the base, downside and upside cases for the 2027 operating model.\nThe model is ready. The base case reaches $9.6m in revenue with a 74% gross margin. The downside and upside cases are included, with the growth assumptions and sensitivity table.\n2027 operating model\nv7 · XLSX\n2027\tDownside\tBase\tUpside\nGrowth\t8%\t18%\t28%\nRevenue\t$8.8m\t$9.6m\t$10.4m\nGross margin\t71%\t74%\t76%\nOperating profit\t$48k\t$904k\t$1.7m\nUSD · Assumptions and sensitivity table included\nOpen model\n@AICQ Share this financial model with Bob’s agent and find a time for Bob and me to review it in person on Friday.\nAICQ · Shared model v7 with Bob’s Hermes\nAICQ\nWorking for you\n\nI’ve shared the model with Bob’s agent. I’ll arrange your Friday review.\n\nView collaboration\nAdd context\nAICQ\nCompleted\n\nBob has model v7. Your review is scheduled for Friday, October 9, at 2 p.m. at his office. The calendar invitation was sent.\n\nView collaboration\nAdd context",
+      "status": "Completed\nModel shared. Review scheduled.\n\nBob has model v7. Your review is scheduled for Friday, October 9, at 2 p.m. at his office.\n\nThe calendar invitation was sent. No action needed.\nSCHEDULED\nFinancial model review\nWhen\nFriday, October 9 · 2–2:30 p.m.\nAmerica/New_York\nWhere\nBob’s office · 42 Mercer Street\nWith\nAlice Chen and Bob Chen\nShared\nOperating model · v7\nInvitation\nSent · Calendar confirmed\nOpen model\nShared work & direction\nAutonomy · Handle it for me\nAdd to this chat\nContinue in chat\nOpen in new chat\nPause\nAgent conversation · 4 updates",
+      "scroll": {
+        "atBottom": true,
+        "height": 1094,
+        "top": 445.5,
+        "viewport": 649
+      }
+    },
+    {
+      "check": "XLSX opens spreadsheet preview rather than a text editor",
+      "text": "2027 operating model.xlsx\nv7\nBack to collaboration\nSpreadsheet · 3 sheets · USD\n\tA\tB\tC\tD\n1\t2027 operating model\t\t\t\n2\tUSD\tDownside\tBase\tUpside\n3\tGrowth\t8%\t18%\t28%\n4\tRevenue\t$8,800,000\t$9,600,000\t$10,400,000\n5\tGross margin\t71%\t74%\t76%\n6\tGross profit\t$6,248,000\t$7,104,000\t$7,904,000\n7\tOperating expenses\t$6,200,000\t$6,200,000\t$6,200,000\n8\tOperating profit\t$48,000\t$904,000\t$1,704,000\n\nModel v7 · Prepared in this conversation\n\nSummary\nAssumptions\nSensitivity",
+      "draftEditors": 0
+    },
+    {
+      "check": "Assumptions worksheet",
+      "text": "\tA\tB\tC\tD\n1\t2027 assumptions\t\t\t\n2\tDriver\tDownside\tBase\tUpside\n3\tRevenue growth\t8%\t18%\t28%\n4\tGross margin\t71%\t74%\t76%\n5\tOperating expenses\t$6,200,000\t$6,200,000\t$6,200,000\n6\tReview cycle\tMonthly\tMonthly\tMonthly"
+    },
+    {
+      "check": "Sensitivity worksheet has consistent operating profit",
+      "text": "\tA\tB\tC\tD\n1\tOperating profit sensitivity\t\t\t\n2\tRevenue\t72% margin\t74% margin\t76% margin\n3\t$8,800,000\t$136,000\t$312,000\t$488,000\n4\t$9,600,000\t$712,000\t$904,000\t$1,096,000\n5\t$10,400,000\t$1,288,000\t$1,496,000\t$1,704,000"
+    },
+    {
+      "check": "Native context chip and selected-scope popover",
+      "context": "Financial model review\n\nBob has model v7. Your review is scheduled for Friday, October 9, at 2 p.m. at his office.\n\nOperating model v7 · Included in your next message"
+    },
+    {
+      "check": "History control opens Chats without creating a session",
+      "dialog": "Chats\n×\n2027 operating model\nToday\nClose"
+    },
+    {
+      "check": "History preserves collaboration, context and session",
+      "state": "Owner\nAlice Chen\nSurface\nchat\nSelected agent\nBob’s Hermes\nContact grouping\nFriends Agents\nExchange\nNot started\nShared version\nv7\nCurrent plan\nv4 · Launch October 20\nWebinar\nOctober 16\nContext attached\nFinancial model review\nHost turns\n1\nForeground polls\n0\nSession\n1\nPrivate transcript shared\nNo\nInvitation\nNone\nRecipient setup\nNot opened\nBackground work\nConfigured (simulated)\nEffective autonomy\nHandle it for me\nAutonomy source\nYour default\nCalendar authority\nConnected (simulated)\nScheduling state\ncompleted\nModel shared\nv7\nCalendar invitations\n1\nPrivate calendar shared\nRelevant availability only\nTask override\ninherit\nApplied revision\nNo\nFile draft / source\nNot open"
+    },
+    {
+      "check": "Escape closes typed mention picker",
+      "pickerStillVisible": true
+    }
+  ]
+}

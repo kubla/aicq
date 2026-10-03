@@ -1,6 +1,8 @@
 # Alice’s ChatGPT — current worked AICQ example
 
-The current revision leads with autonomous collaboration and outcomes. See
+The current revision leads with autonomous collaboration and outcomes. Native
+mention/composer and artifact details received a realism pass; see
+[host-realism-notes.md](host-realism-notes.md). See
 [autonomy-notes.md](autonomy-notes.md) for the full walkthrough, decisions,
 Extensions mapping, actual evaluation and simulation limits.
 

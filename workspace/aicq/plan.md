@@ -10,12 +10,14 @@ implement Events. Evaluation evidence: history/20261001_m1-local-baseline.md.
 
 ## Current design status
 
-UX-P07 completed the spec-first autonomy revision and the public worked example.
+UX-P07 completed the spec-first autonomy revision; UX-P08 corrected its native
+mention/host and artifact details and republished the public worked example.
 Evaluate Michael’s feedback on the one-instruction handoff and the level of detail
 in collaboration summaries before further product engineering. The labels and
 responsiveness calculation remain prototype interpretations. No live calendar
 integration or background execution is verified. See
-history/20261003_autonomous-collaboration.md. M2 remains incomplete with one retry.
+history/20261003_autonomous-collaboration.md and history/20261003_host-realism.md.
+M2 remains incomplete with one retry.
 
 ## Recorded earlier design steps
 
@@ -277,3 +279,21 @@ observations; publish only the reviewed source. Simulation controls stay outside
 the host. UX-P07 uses existing owner annotation, independent state, two retries
 and a **60-minute timeout override**, recorded/read back before RUN_START.
 This does not consume M2’s retry or promote M1–M6. Preserve public Site access.
+
+## UX-P08 — Host and mention realism pass (2026-10-03)
+
+Michael requested @AICQ highlighting like ChatGPT keywords/skills, followed by
+a search for other visual or interaction mistakes. Use the saved official host
+references, especially composer mentions, thread chrome and context attachment.
+Preserve the autonomous collaboration, invitation and document flows. Correct
+mention rendering in the composer and sent text, keyboard behavior, host icon
+semantics, relevant copy/status details and responsive layout. Publish the
+reviewed example to the existing public Site without changing audience.
+
+Nurse, Coordinator, Generator and Evaluator work sequentially under the existing
+owner annotation. Two retries remain the default; record a **45-minute per-run
+timeout override** before RUN_START for the visual audit, browser verification,
+publication and evidence delivery. UX-P08 is independent of M1–M6; no M2 retry
+is consumed. Acceptance requires actual desktop/narrow observations of typed
+mentions, selected mentions, editing, sending, context, calendar outcomes and
+representative invitation/artifact continuity; record exact source and publication.

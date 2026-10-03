@@ -6,6 +6,15 @@ remain proposals.
 
 ## Design experiment
 
+UX-P08 (2026-10-03): published the host realism pass at the existing public Alice
+route. @AICQ uses native blue inline highlighting in drafts/sent messages; picker,
+keyboard, context/history controls, bubbles, status copy and spreadsheet preview
+were corrected. Actual desktop and 390px journeys passed, alongside invitations,
+coordination and retained review/version conflict. Two UX-only retries closed;
+M2 remains incomplete with one retry. See
+`history/20261003_host-realism.md` and `prototypes/host-realism-notes.md`.
+
+
 UX-P07 (2026-10-03): canonical spec and decisions were saved and read back before
 prototype edits. Alice’s example now leads with agents’ current work and completed
 outcomes. It includes autonomy controls, typical responsiveness, a completed model
