@@ -18,11 +18,10 @@ remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 ## Harness state
 
 Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
-The latest run is UX-P05 retry 1, closed at 2026-10-03 17:44:12 UTC; no run is active.
-Passing REVIEW f473bfe9-429d-5cac-8233-c16edd418010, MARK_COMPLETE
-8da0020f-5d79-56bd-a53b-316e91088557 and RUN_COMPLETE
-3a78f9c7-fa87-5d0a-97f4-188ff2591732 read back. One UX-P05 retry used;
-M2 retry count unchanged. See history/20261003_alice-worked-example.md.
+The latest run is UX-P06 retry 1, closed at 2026-10-03T18:39:48.672387+00:00; no run is active.
+Passing REVIEW 1c3c69f5-e52c-5a43-b50f-d2a447056ab3, MARK_COMPLETE 21026429-8f5f-510f-9f55-acd23b8b1d4e
+and RUN_COMPLETE 60b192ca-2455-5702-97d0-0f80d96886db read back.
+One UX-P06 retry used; M2 retry count unchanged. See history/20261003_alice-realism.md.
 
 - UX-P03 retry `ux-p03-f8c30fc1-0cbf-4de2-bc18-c876c3165901`: passing
   REVIEW, MARK_COMPLETE and RUN_COMPLETE read back; terminal record
@@ -208,3 +207,12 @@ One UX-only retry repaired receipt routing; passing REVIEW, MARK_COMPLETE and
 RUN_COMPLETE read back. M2 remains incomplete with one retry; no live integration
 claimed. Existing studies and owner-private audience preserved. See
 `history/20261003_alice-worked-example.md` and `prototypes/alice-v3-notes.md`.
+
+UX-P06 (2026-10-03): corrected product copy/viewpoints across Alice’s worked
+example and republished /alice.html. Demo narration is outside the product;
+recipient app choice and account controls belong to the recipient. Account and
+contact settings are separate. One prototype retry repaired a clipped narrow
+recipient card; browser review and native deployment passed. Passing REVIEW,
+MARK_COMPLETE and RUN_COMPLETE read back; terminal 60b192ca-2455-5702-97d0-0f80d96886db.
+No active run; M2 remains incomplete with one retry. See
+`history/20261003_alice-realism.md` and `prototypes/alice-realism-notes.md`.

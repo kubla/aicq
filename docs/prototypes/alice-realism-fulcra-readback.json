@@ -1,0 +1,92 @@
+[
+  {
+    "path": "workspace/aicq/plan.md",
+    "sha256": "45426d31723560efb0d8066c2b0a665d1072e8ff1b17168b191774967dab31da",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/decisions.md",
+    "sha256": "bd5d435fba304fa2bf4486875a0d79bc0458760ad4cdcfb4d7fc3fdcc0ca61ca",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/progress.md",
+    "sha256": "cd18f068efc2d27449ef2c3d0cf1b26ad784fbb71b500237fb3e7e7d78326dc3",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/workboard.md",
+    "sha256": "31c7583aeff0dadcee22ddfc6002b929b5b46c9ed7598fbbb11c22396118f353",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/overview.md",
+    "sha256": "dc0836b121bb2827612791df551bc56b5f486a68561f180d62b2e8ce6686a566",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/history/20261003_alice-realism.md",
+    "sha256": "001c39bc1d7253f1d04de2f442d6a7f2a5faf505e7b0504ea2efd76d0dfc789f",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/history/20261003_alice-realism-events.json",
+    "sha256": "f30d87fc57e4ef7db2bd66aaa9097bb2c7540c0b7e8ba819147f1ec193b9454c",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-v3.html",
+    "sha256": "c24862c403e24ef7283d583a90c6e7a10d06025b465a2cfd0a43b8b3f868d061",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-v3-notes.md",
+    "sha256": "119f42a04fbf468b917a572ceb473af9f97af52b8fd3ee829d86fa441e4cb810",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-realism-invitation-detail.png",
+    "sha256": "5eefb75f6108284f3f82d3c7f506ec9036a7c0f08187c20d450d666b972c72a8",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-realism-invite.png",
+    "sha256": "ec171cb5b55543a41d50e93e8ae46ec3858337e2d704f18292fba76a579e6b02",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-realism-narrow.png",
+    "sha256": "f42f0cca67c3abb9dce0778c26bb98e893a7b4986a8f3ce4f4fcb342d781f13c",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-realism-notes.md",
+    "sha256": "98b61b64244f521b89d3313b58e2e85f956dcabc2b09e48f4368dedec37aaa31",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-realism-observations.json",
+    "sha256": "3c274dac30dca6b0f69bac06d08cad95ee0b2dca2e64f0cc9d6c9d21c91c90f7",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-realism-recipient-narrow-repaired.png",
+    "sha256": "3c8f93fc1a5b7afe90e9f025f1ae854e1901d5189557d2ba418b79892b08084c",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-realism-recipient-narrow.png",
+    "sha256": "f84796c7c32e5a869b95e2f263988dba89c1c0c735f099f9baa9d73ffa15d3c4",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-realism-recipient.png",
+    "sha256": "63fd504544df86cde4c911c61c03dabf943b77f3fc2bb4bb4d2b4c4fd8ba11ab",
+    "readBack": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-realism-sites-deployment.json",
+    "sha256": "6bc5e610883d18aa24b87e4549538dceb3bea826377281f681c0a7d539a605f0",
+    "readBack": true
+  }
+]

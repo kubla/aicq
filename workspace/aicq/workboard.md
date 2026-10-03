@@ -179,3 +179,12 @@ One UX-only retry repaired receipt routing; passing REVIEW, MARK_COMPLETE and
 RUN_COMPLETE read back. M2 remains incomplete with one retry; no live integration
 claimed. Existing studies and owner-private audience preserved. See
 `history/20261003_alice-worked-example.md` and `prototypes/alice-v3-notes.md`.
+
+UX-P06 (2026-10-03): corrected product copy/viewpoints across Alice’s worked
+example and republished /alice.html. Demo narration is outside the product;
+recipient app choice and account controls belong to the recipient. Account and
+contact settings are separate. One prototype retry repaired a clipped narrow
+recipient card; browser review and native deployment passed. Passing REVIEW,
+MARK_COMPLETE and RUN_COMPLETE read back; terminal 60b192ca-2455-5702-97d0-0f80d96886db.
+No active run; M2 remains incomplete with one retry. See
+`history/20261003_alice-realism.md` and `prototypes/alice-realism-notes.md`.

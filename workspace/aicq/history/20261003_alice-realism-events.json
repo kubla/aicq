@@ -1,0 +1,123 @@
+[
+  {
+    "record_id": "e752aed5-aa5c-5789-8d34-92a54e6640b2",
+    "recorded_at": "2026-10-03T18:23:13.940285+00:00",
+    "event_id": "90a4e76c-0042-45bb-ba08-9b781922bc8b",
+    "run_id": "ux-p06-ab987200-4db3-4709-b328-7d9c8ce06557",
+    "milestone": "UX-P06",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "Nurse/Coordinator: start Alice product-copy realism pass using reconciled canonical state and existing Site.",
+    "evidence": "Canonical plan/spec/decisions/progress/workboard and UX-P05 history match mirrors; 30-minute UX-P06 override uploaded/read back; prototype and Sites hosting instructions read; host reference inspected. Scope is realistic copy and viewpoint while preserving simulation behavior and Site access."
+  },
+  {
+    "record_id": "c9244def-6424-5bd3-9752-a8ea90927590",
+    "recorded_at": "2026-10-03T18:26:48.4047+00:00",
+    "event_id": "cdd97521-475b-4970-93e6-96ce181a5095",
+    "run_id": "ux-p06-ab987200-4db3-4709-b328-7d9c8ce06557",
+    "milestone": "UX-P06",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "Coordinator: select user-directed UX-P06 realism correction ahead of further production engineering.",
+    "evidence": "Reconciled UX-P05 source, evaluation and publication. Audit includes narrator copy in invitations, recipient setup, settings, document conflicts, toasts and assistant turns. Product controls must stay in the acting user viewpoint; walkthrough controls outside host."
+  },
+  {
+    "record_id": "882ca7fb-d032-58b9-87ba-411871254065",
+    "recorded_at": "2026-10-03T18:28:03.07817+00:00",
+    "event_id": "5dd8c071-61a3-4da9-8e77-93769292269b",
+    "run_id": "ux-p06-ab987200-4db3-4709-b328-7d9c8ce06557",
+    "milestone": "UX-P06",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Generator: revised product copy across dialogs, recipient setup, settings, messages, toasts and file/exchange surfaces; demo controls moved outside host.",
+    "evidence": "Replaced 97 narrator/implementation phrases, removed recipient simulation labels and Alice navigation, separated account settings from contact permissions, corrected native response glyphs and clipped preview ellipses. Node syntax check passed. Product shell and demo controls remain distinct."
+  },
+  {
+    "record_id": "3fc709ba-1b1e-5c8d-95ce-f1c0f568e1ff",
+    "recorded_at": "2026-10-03T18:28:25.583206+00:00",
+    "event_id": "9164676b-d95c-432d-be32-b2ec231c9ef7",
+    "run_id": "ux-p06-ab987200-4db3-4709-b328-7d9c8ce06557",
+    "milestone": "UX-P06",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Evaluator: inspect and exercise the corrected copy in actual browser surfaces.",
+    "evidence": "Review will cover initial Alice home, invite form/generated link, recipient setup interruption/acceptance, account/contact settings, plan conflict, file editor and later-chat text, plus product-versus-demo boundaries and narrow layout."
+  },
+  {
+    "record_id": "20f560b0-a5d1-5a9f-ae2e-9b65a078bd4a",
+    "recorded_at": "2026-10-03T18:36:21.195217+00:00",
+    "event_id": "10271ffd-07fc-4c26-8365-74a5a73ab9fc",
+    "run_id": "ux-p06-ab987200-4db3-4709-b328-7d9c8ce06557",
+    "milestone": "UX-P06",
+    "step": "REVIEW",
+    "status": "failed",
+    "detail": "Evaluator: narrow recipient view clips the invitation card even though document scrollWidth shows no overflow.",
+    "evidence": "Actual 390px screenshot docs/prototypes/alice-realism-recipient-narrow.png shows clipped text/card. Copy and desktop flows passed; narrow visual acceptance incomplete. No corrected version published."
+  },
+  {
+    "record_id": "f2eee80b-47cb-533f-98e0-4dc901232c4c",
+    "recorded_at": "2026-10-03T18:36:24.025642+00:00",
+    "event_id": "a455ec0d-8e91-4dab-b420-c75cb610aab6",
+    "run_id": "ux-p06-ab987200-4db3-4709-b328-7d9c8ce06557",
+    "milestone": "UX-P06",
+    "step": "RUN_INCOMPLETE",
+    "status": "completed",
+    "detail": "Coordinator: close initial UX-P06 attempt with one failed narrow-layout review; use first prototype retry.",
+    "evidence": "REVIEW failed on actual screenshot; no MARK_COMPLETE. M2 retry count unchanged."
+  },
+  {
+    "record_id": "e984d8fc-dd48-5b2e-bbf2-dfe379c3b3f2",
+    "recorded_at": "2026-10-03T18:36:26.713992+00:00",
+    "event_id": "c11efb2e-73a6-4d88-a48f-b0e96741d3f1",
+    "run_id": "ux-p06-2f4d1750-0dde-4b3e-b533-750fa3733895",
+    "milestone": "UX-P06",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "Nurse/Coordinator: UX-P06 retry 1 repairs recipient grid sizing before publishing.",
+    "evidence": "30-minute UX-P06 override already recorded/read back before initial run; two retries allowed. Fix constrained recipient width, inspect actual card bounds and screenshot, then publish exact source."
+  },
+  {
+    "record_id": "3eb29b40-482e-533e-aada-c54a9e47ac46",
+    "recorded_at": "2026-10-03T18:38:07.628464+00:00",
+    "event_id": "6ede40e2-6499-4941-a531-54e16f634527",
+    "run_id": "ux-p06-2f4d1750-0dde-4b3e-b533-750fa3733895",
+    "milestone": "UX-P06",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Generator: repair recipient grid to use a constrained minmax column and reset minimum widths.",
+    "evidence": "Final HTML parses. The initial attempt\u2019s copy changes are preserved; repair removes clipped recipient card without altering invitation or exchange state logic."
+  },
+  {
+    "record_id": "1c3c69f5-e52c-5a43-b50f-d2a447056ab3",
+    "recorded_at": "2026-10-03T18:39:43.719516+00:00",
+    "event_id": "56ee2622-4539-4f9c-a08d-48b500f26c48",
+    "run_id": "ux-p06-2f4d1750-0dde-4b3e-b533-750fa3733895",
+    "milestone": "UX-P06",
+    "step": "REVIEW",
+    "status": "completed",
+    "detail": "Evaluator: corrected product copy and recipient layout pass actual browser review; exact source published successfully.",
+    "evidence": "26 captured DOM observations cover invitations, recipient setup/recovery/acceptance/platform choice, settings/contact blocking, own-agent actions, clarification/revision/conflict/file/later-chat views and on-topic replies. No narrator leakage in captured product text; no console errors. Repaired 390px card 328px wide fits 364px stage, screenshot visually verified; acceptance and Bob receipt routing regression passed. Node syntax check passed. Source SHA256 c24862c403e24ef7283d583a90c6e7a10d06025b465a2cfd0a43b8b3f868d061; Site commit 0b67c91d2d3cebc08a17fd21dbddc6947538d026; deployment appgdep_6ac14bb295308191afbd924a56392fed succeeded 18:38:47 UTC."
+  },
+  {
+    "record_id": "21026429-8f5f-510f-9f55-acd23b8b1d4e",
+    "recorded_at": "2026-10-03T18:39:46.023299+00:00",
+    "event_id": "907139e8-1f2c-46b5-8cbe-3f0306fb7420",
+    "run_id": "ux-p06-2f4d1750-0dde-4b3e-b533-750fa3733895",
+    "milestone": "UX-P06",
+    "step": "MARK_COMPLETE",
+    "status": "completed",
+    "detail": "Coordinator: UX-P06 product realism correction evaluated and republished on the same Site.",
+    "evidence": "Passing browser/source evaluation and native deployment; /alice.html route preserved, prior studies/audience unchanged. Prototype-only completion; M2 still incomplete with one retry."
+  },
+  {
+    "record_id": "60b192ca-2455-5702-97d0-0f80d96886db",
+    "recorded_at": "2026-10-03T18:39:48.672387+00:00",
+    "event_id": "213f97f7-fd5a-419e-9eae-519800ef1e0f",
+    "run_id": "ux-p06-2f4d1750-0dde-4b3e-b533-750fa3733895",
+    "milestone": "UX-P06",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "Nurse/Coordinator: close UX-P06 retry 1; one prototype retry used, no active run.",
+    "evidence": "REVIEW and MARK_COMPLETE written and read back; final source and browser evidence preserved locally and will be synced to canonical Fulcra storage. M1 complete, M2 incomplete, M3\u2013M6 pending."
+  }
+]

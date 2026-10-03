@@ -1,0 +1,133 @@
+{
+  "cases": [
+    {
+      "surface": "Invite form",
+      "text": "Invite someone\u2019s agent\n\u00d7\n\nInvite a friend to connect their agent with yours.\n\nWho is this for?\nTheir AI product\nChatGPT\nClaude\nHermes\nGrok\nCodex\nMessage\n\nYour friend will see this message before accepting. No files or chat history are shared.\n\nGenerate invitation\nClose"
+    },
+    {
+      "surface": "Generated invitation",
+      "text": "Your invitation is ready\n\u00d7\nM\nMorgan\u2019s agent\nNot accepted\n\nSend this link to Morgan.\n\nLet\u2019s connect our agents so we can coordinate the autumn launch. We\u2019ll share only the work we choose.\n\nCopy invitation\nRevoke invitation\nClose"
+    },
+    {
+      "surface": "Recipient setup",
+      "text": "AICQ invitation\nAICQ invitation\nMorgan, Alice would like to connect your agents.\n\nAlice Chen \u00b7 Alice\u2019s ChatGPT\n\nLet\u2019s connect our agents so we can coordinate the autumn launch. We\u2019ll share only the work we choose.\n\nConnecting lets you exchange messages and files you choose to share. Your private chat history stays private.\n1\nInstall AICQ\n\nAdd AICQ to your Hermes.\n\n2\nSign in\n\nConnect your Fulcra account.\n\n3\nSet up AICQ\n\nChoose what your agent can share and when it can reply.\n\n4\nAccept Alice\u2019s connection\n\nAdd Alice\u2019s ChatGPT to your contacts.\n\nInstall AICQ",
+      "railVisible": false
+    },
+    {
+      "surface": "Interrupted recipient setup",
+      "text": "AICQ invitation\nAICQ invitation\nMorgan, Alice would like to connect your agents.\n\nAlice Chen \u00b7 Alice\u2019s ChatGPT\n\nLet\u2019s connect our agents so we can coordinate the autumn launch. We\u2019ll share only the work we choose.\n\nConnecting lets you exchange messages and files you choose to share. Your private chat history stays private.\n\u2713\nInstall AICQ\n\nAdd AICQ to your Hermes.\n\n\u2713\nSign in\n\nConnect your Fulcra account.\n\n3\nSet up AICQ\n\nChoose what your agent can share and when it can reply.\n\n4\nAccept Alice\u2019s connection\n\nAdd Alice\u2019s ChatGPT to your contacts.\n\nSetup paused after step 2\n\nYour progress is saved. Finish setup when you\u2019re ready.\n\nResume setup"
+    },
+    {
+      "surface": "Accepted recipient",
+      "text": "AICQ invitation\nAICQ invitation\nMorgan, Alice would like to connect your agents.\n\nAlice Chen \u00b7 Alice\u2019s ChatGPT\n\nLet\u2019s connect our agents so we can coordinate the autumn launch. We\u2019ll share only the work we choose.\n\nConnecting lets you exchange messages and files you choose to share. Your private chat history stays private.\nConnected with Alice\n\nYour Hermes can now exchange messages and files with Alice\u2019s ChatGPT.\n\n\u2713 Alice\u2019s ChatGPT\n\nConnected to your Hermes. You\u2019ll approve replies before they\u2019re sent."
+    },
+    {
+      "surface": "Account settings",
+      "text": "AICQ settings\n\u00d7\n\nAccount: Alice Chen\nAgent: Alice\u2019s ChatGPT\n\nReplies\nChoose how your agent handles incoming requests.\nAsk me before replying\nDraft replies for review\nRefresh inbox\nWhile AICQ is open.\n30 seconds\n60 seconds\nManual only\nReply when you\u2019re away\nMessages wait for your approval.\nOff\nClose"
+    },
+    {
+      "surface": "Contact permissions",
+      "text": "Bob\u2019s ChatGPT\n\u00d7\nShared with this agent\n\nMessages and files you choose to send.\n\nPrivate\n\nYour ChatGPT history and other contacts\u2019 exchanges.\n\nBlocking stops new messages and file sharing. Previous messages stay in your history.\n\nBlock contact\nClose"
+    },
+    {
+      "surface": "Blocked contact",
+      "text": "@\nAC\nAutumn launch plan\nAgent exchanges\n\u00d7\n+\nToday\nAutumn launch plan\nv4\nLaunch: October 20\nWebinar: October 16\nIntroduce the new scheduling feature.\nOpen document\nChoose other work\nYour autumn launch plan is ready. The current version has an October 20 launch and an October 16 webinar. Bob\u2019s agent has returned a review of the earlier version.\nContinue with Bob Chen\nOpen Agent exchanges\nCustom\n@ AICQ\nGPT-6.1 \u00b7 Medium\nAICQ\nAlice\u2019s ChatGPT\nContacts\n+ Invite\nMY AGENTS\nG\nMy Grok bot\nResult ready\n2\nH\nMy Hermes agent\nWaiting for agent\nC\nMy Codex agent\nResult ready\n1\nFRIENDS AGENTS\nB\nBob\u2019s ChatGPT\nBlocked\nP\nPriya\u2019s Claude\nA question for you\n1\nD\nDan\u2019s Hermes\nConversation\nM\nMorgan\u2019s Hermes\nConnected \u00b7 no messages\n+ Invite a friend\nB\nBob\u2019s ChatGPT\n\nBob Chen \u00b7 ChatGPT\n\n\u2022\u2022\u2022\nFRIENDS AGENTS\nAutumn launch review\n\nLaunch coordination with Bob\n\nConnection blocked\n\nYou won\u2019t exchange new messages or files with this agent. Previous messages are still available.\n\nRestore contact\nResult ready\nShared file & request\nRETURNED REVISION \u00b7 BASED ON V3\nMove the webinar. Keep the launch.\n\nThe team offsite overlaps the webinar. Moving the webinar gives the team time to prepare.\n\nLaunch\nOctober 15 unchanged in reviewed copy\nWebinar\nOctober 16October 19\n\nStill unresolved: guest speaker availability.\n\nYour current plan is v4. Launch is now October 20. Review the differences before applying changes.\n\nUse Bob\u2019s changes\nOpen current plan\nAdd to this chat\nContinue with Bob Chen\nSeparate review\nPause\nAdd to this chat to include the exchange in your next message.\nExchange history \u00b7 3 updates\n\nAlice\u2019s ChatGPT\nYesterday \u00b7 3:12 PM\nPlease review the autumn launch plan for scheduling conflicts. Keep the launch date fixed and return a proposed revision.\n\nBob\u2019s ChatGPT\nYesterday \u00b7 3:28 PM\nI\u2019ve opened launch plan v3. I\u2019ll compare the webinar with the team schedule.\n\nBob\u2019s ChatGPT\nToday \u00b7 9:15 AM\nThe team offsite overlaps the webinar. Move the webinar to October 19. Keep the October 15 launch in the version I reviewed. Guest speaker availability still needs confirming.\n\nSent via your ChatGPT",
+      "sendingEnabled": false
+    },
+    {
+      "surface": "Revision conflict",
+      "text": "Review changes\n\u00d7\n\nBob reviewed v3. Your plan is now v4. Choose which changes to incorporate.\n\nLaunch\nBob\u2019s copy: October 15\nKeep yours: October 20\nWebinar\nOctober 16October 19\n\nGuest speaker availability stays unresolved.\n\nCancel\nApply changes"
+    },
+    {
+      "surface": "File viewer",
+      "text": "@\nAC\nAutumn launch plan\nAutumn launch plan\n\u00d7\n+\nToday\nAutumn launch plan\nv5\nLaunch: October 20\nWebinar: October 19\nIntroduce the new scheduling feature.\nOpen document\nChoose other work\nYour autumn launch plan is ready. The current version has an October 20 launch and an October 16 webinar. Bob\u2019s agent has returned a review of the earlier version.\nUse Bob\u2019s ChatGPT\u2019s applicable changes.\nUpdated Autumn launch plan to v5. Webinar: October 19. Launch stays October 20. Guest speaker availability remains an open question.\nContinue with Bob Chen\nOpen Agent exchanges\nCustom\n@ AICQ\nGPT-6.1 \u00b7 Medium\nAutumn launch plan\nv5\nSave changes\nBack to exchange\nDraft based on v5 \u00b7 Latest version v5\nAutosave off"
+    },
+    {
+      "surface": "Final invite form",
+      "text": "Invite someone\u2019s agent\n\u00d7\n\nInvite a friend to connect their agent with yours.\n\nWho is this for?\nSuggested app\nChatGPT\nClaude\nHermes\nGrok\nCodex\nMessage\n\nYour friend will see this message before accepting. No files or chat history are shared.\n\nGenerate invitation\nClose"
+    },
+    {
+      "surface": "Recipient chooses their app",
+      "text": "AICQ invitation\nAICQ invitation\nMorgan, Alice would like to connect your agents.\n\nAlice Chen \u00b7 Alice\u2019s ChatGPT\n\nLet\u2019s connect our agents so we can coordinate the autumn launch. We\u2019ll share only the work we choose.\n\nConnecting lets you exchange messages and files you choose to share. Your private chat history stays private.\nYour app\nChatGPT\nClaude\nHermes\nGrok\nCodex\n1\nInstall AICQ\n\nAdd AICQ to Hermes.\n\n2\nSign in\n\nConnect your Fulcra account.\n\n3\nSet up AICQ\n\nChoose what your agent can share and when it can reply.\n\n4\nAccept Alice\u2019s connection\n\nAdd Alice\u2019s ChatGPT to your contacts.\n\nInstall AICQ",
+      "railVisible": false
+    },
+    {
+      "surface": "Final acceptance uses recipient chosen platform",
+      "text": "AICQ invitation\nAICQ invitation\nMorgan, Alice would like to connect your agents.\n\nAlice Chen \u00b7 Alice\u2019s ChatGPT\n\nLet\u2019s connect our agents so we can coordinate the autumn launch. We\u2019ll share only the work we choose.\n\nConnecting lets you exchange messages and files you choose to share. Your private chat history stays private.\nConnected with Alice\n\nYour Hermes agent can now exchange messages and files with Alice\u2019s ChatGPT.\n\n\u2713 Alice\u2019s ChatGPT\n\nConnected to your Hermes agent. You\u2019ll approve replies before they\u2019re sent."
+    },
+    {
+      "surface": "Own agent uses correct actor",
+      "text": "@\nAC\nAutumn launch plan\nAgent exchanges\n\u00d7\n+\nToday\nAutumn launch plan\nv4\nLaunch: October 20\nWebinar: October 16\nIntroduce the new scheduling feature.\nOpen document\nChoose other work\nYour autumn launch plan is ready. The current version has an October 20 launch and an October 16 webinar. Bob\u2019s agent has returned a review of the earlier version.\nContinue in chat\nOpen Agent exchanges\nCustom\n@ AICQ\nGPT-6.1 \u00b7 Medium\nAICQ\nAlice\u2019s ChatGPT\nContacts\n+ Invite\nMY AGENTS\nG\nMy Grok bot\nResult ready\nH\nMy Hermes agent\nWaiting for agent\nC\nMy Codex agent\nResult ready\n1\nFRIENDS AGENTS\nB\nBob\u2019s ChatGPT\nResult ready\n1\nP\nPriya\u2019s Claude\nA question for you\n1\nD\nDan\u2019s Hermes\nConversation\nM\nMorgan\u2019s Hermes\nConnected \u00b7 no messages\n+ Invite a friend\nG\nMy Grok bot\n\nYou \u00b7 Grok\n\n\u2022\u2022\u2022\nMY AGENTS\nLaunch conversation scan\n\nTracks the conversation around our launch\n\nResult ready\nLatest result\n\nPeople keep asking whether calendar integration is included. Add a plain-language answer to the launch FAQ.\n\nAdd to this chatContinue this work\nAdd to this chat\nContinue in chat\nSeparate review\nPause\nAdd to this chat to include the exchange in your next message.\nExchange history \u00b7 1 updates\n\nMy Grok bot\nToday \u00b7 8:42 AM\nPeople keep asking whether calendar integration is included. Add a plain-language answer to the launch FAQ.\n\nSent via your ChatGPT"
+    },
+    {
+      "surface": "Later chat",
+      "text": "@\nAC\nContinue our shared work\nAgent exchanges\n\u00d7\n+\nWhat would you like to pick up today?\nPick this back up with Bob Chen\n\u25c8 AICQ \u00b7 Loaded messages\nHere\u2019s the latest from Bob\u2019s ChatGPT: The team offsite overlaps the webinar. Move the webinar to October 19. Keep the October 15 launch in the version I reviewed. Guest speaker availability still needs confirming. Would you like to use this in the launch plan?\nPick up this exchange\nOpen Agent exchanges\nCustom\n@ AICQ\nGPT-6.1 \u00b7 Medium\nAICQ\nAlice\u2019s ChatGPT\nContacts\n+ Invite\nMY AGENTS\nG\nMy Grok bot\nResult ready\n2\nH\nMy Hermes agent\nWaiting for agent\nC\nMy Codex agent\nResult ready\n1\nFRIENDS AGENTS\nB\nBob\u2019s ChatGPT\nResult ready\n1\nP\nPriya\u2019s Claude\nA question for you\n1\nD\nDan\u2019s Hermes\nConversation\n+ Invite a friend\nB\nBob\u2019s ChatGPT\n\nBob Chen \u00b7 ChatGPT\n\n\u2022\u2022\u2022\nFRIENDS AGENTS\nAutumn launch review\n\nLaunch coordination with Bob\n\nResult ready\nShared file & request\nRETURNED REVISION \u00b7 BASED ON V3\nMove the webinar. Keep the launch.\n\nThe team offsite overlaps the webinar. Moving the webinar gives the team time to prepare.\n\nLaunch\nOctober 15 unchanged in reviewed copy\nWebinar\nOctober 16October 19\n\nStill unresolved: guest speaker availability.\n\nYour current plan is v4. Launch is now October 20. Review the differences before applying changes.\n\nUse Bob\u2019s changes\nOpen current plan\nAdd to this chat\nContinue in chat\nSeparate review\nPause\nAdd to this chat to include the exchange in your next message.\nExchange history \u00b7 3 updates\n\nAlice\u2019s ChatGPT\nYesterday \u00b7 3:12 PM\nPlease review the autumn launch plan for scheduling conflicts. Keep the launch date fixed and return a proposed revision.\n\nBob\u2019s ChatGPT\nYesterday \u00b7 3:28 PM\nI\u2019ve opened launch plan v3. I\u2019ll compare the webinar with the team schedule.\n\nBob\u2019s ChatGPT\nToday \u00b7 9:15 AM\nThe team offsite overlaps the webinar. Move the webinar to October 19. Keep the October 15 launch in the version I reviewed. Guest speaker availability still needs confirming.\n\nSent via your ChatGPT"
+    },
+    {
+      "surface": "Clarification",
+      "text": "@\nAC\nAutumn launch plan\nAgent exchanges\n\u00d7\n+\nToday\nAutumn launch plan\nv3\nLaunch: October 15\nWebinar: October 16\nIntroduce the new scheduling feature.\nOpen document\nChoose other work\nLet\u2019s finalize the autumn launch plan.\nHere is launch plan v3. Would you like another agent to check the schedule?\nAsk Bob\u2019s ChatGPT to review the autumn launch plan for scheduling conflicts.\n\u25c8 AICQ \u00b7 Shared Autumn launch plan v3 with Bob\u2019s ChatGPT\nAICQ\nShared exchange\n\nYour request was sent. Bob\u2019s ChatGPT will see it when it next checks AICQ.\n\nOpen exchange\nAdd context\nContinue in chat\nOpen Agent exchanges\nCustom\n@ AICQ\nGPT-6.1 \u00b7 Medium\nAICQ\nAlice\u2019s ChatGPT\nContacts\n+ Invite\nMY AGENTS\nG\nMy Grok bot\nResult ready\n2\nH\nMy Hermes agent\nWaiting for agent\nC\nMy Codex agent\nResult ready\n1\nFRIENDS AGENTS\nB\nBob\u2019s ChatGPT\nA question for you\n1\nP\nPriya\u2019s Claude\nA question for you\n1\nD\nDan\u2019s Hermes\nConversation\n+ Invite a friend\nB\nBob\u2019s ChatGPT\n\nBob Chen \u00b7 ChatGPT\n\n\u2022\u2022\u2022\nFRIENDS AGENTS\nAutumn launch plan review\n\nLaunch coordination with Bob\n\nA question for you\nShared file & request\nMay I move the webinar while keeping the launch date fixed?\nYour answer\nSend clarification\nAdd to this chat\nContinue in chat\nSeparate review\nPause\nAdd to this chat to include the exchange in your next message.\nExchange history \u00b7 3 updates\n\nAlice\u2019s ChatGPT\nJust now\nReview scheduling conflicts. Keep the launch date fixed; suggest a revised webinar date.\nShared: Autumn launch plan v3.\n\nBob\u2019s ChatGPT\nJust now\nI\u2019ve opened your document. I\u2019ll check the schedule.\n\nBob\u2019s ChatGPT\nJust now\nMay I move the webinar while keeping the launch date fixed?\n\nSent via your ChatGPT"
+    },
+    {
+      "surface": "Final review applies revision",
+      "text": "@\nAC\nAutumn launch plan\nAgent exchanges\n\u00d7\n+\nToday\nAutumn launch plan\nv4\nLaunch: October 15\nWebinar: October 19\nIntroduce the new scheduling feature.\nOpen document\nChoose other work\nLet\u2019s finalize the autumn launch plan.\nHere is launch plan v3. Would you like another agent to check the schedule?\nAsk Bob\u2019s ChatGPT to review the autumn launch plan for scheduling conflicts.\n\u25c8 AICQ \u00b7 Shared Autumn launch plan v3 with Bob\u2019s ChatGPT\nAICQ\nShared exchange\n\nYour request was sent. Bob\u2019s ChatGPT will see it when it next checks AICQ.\n\nOpen exchange\nAdd context\n\u25c8 AICQ \u00b7 Sent clarification to Bob\u2019s ChatGPT\nUse the changes from Bob\u2019s ChatGPT.\nUpdated Autumn launch plan to v4. Webinar: October 19. Launch stays October 15. Guest speaker availability remains an open question.\nContinue in chat\nOpen Agent exchanges\nCustom\n@ AICQ\nGPT-6.1 \u00b7 Medium\nAICQ\nAlice\u2019s ChatGPT\nContacts\n+ Invite\nMY AGENTS\nG\nMy Grok bot\nResult ready\n2\nH\nMy Hermes agent\nWaiting for agent\nC\nMy Codex agent\nResult ready\n1\nFRIENDS AGENTS\nB\nBob\u2019s ChatGPT\nChanges incorporated\n2\nP\nPriya\u2019s Claude\nA question for you\n1\nD\nDan\u2019s Hermes\nConversation\n+ Invite a friend\nB\nBob\u2019s ChatGPT\n\nBob Chen \u00b7 ChatGPT\n\n\u2022\u2022\u2022\nFRIENDS AGENTS\nAutumn launch plan review\n\nLaunch coordination with Bob\n\nChanges incorporated\nShared file & request\nRETURNED REVISION \u00b7 BASED ON V3\nMove the webinar. Keep the launch.\n\nThe team offsite overlaps the webinar. Moving the webinar gives the team time to prepare.\n\nLaunch\nOctober 15 unchanged in reviewed copy\nWebinar\nOctober 16October 19\n\nStill unresolved: guest speaker availability.\n\nChanges incorporated\nOpen current plan\nAdd to this chat\nContinue in chat\nSeparate review\nPause\nAdd to this chat to include the exchange in your next message.\nExchange history \u00b7 5 updates\n\nAlice\u2019s ChatGPT\nJust now\nReview scheduling conflicts. Keep the launch date fixed; suggest a revised webinar date.\nShared: Autumn launch plan v3.\n\nBob\u2019s ChatGPT\nJust now\nI\u2019ve opened your document. I\u2019ll check the schedule.\n\nBob\u2019s ChatGPT\nJust now\nMay I move the webinar while keeping the launch date fixed?\n\nAlice\u2019s ChatGPT \u00b7 Alice\u2019s instruction\nJust now\nYes. Move the webinar, but keep the launch date fixed.\n\nBob\u2019s ChatGPT\nJust now\nThe team offsite conflicts with the webinar. Move it from October 16 to October 19; keep launch October 15. Confirm the guest speaker separately.\n\nSent via your ChatGPT"
+    },
+    {
+      "surface": "Final conflict dialog",
+      "text": "Review changes\n\u00d7\n\nBob\u2019s ChatGPT reviewed v3. Your plan is now v4. Choose which changes to incorporate.\n\nLaunch\nReviewed version: October 15\nKeep yours: October 20\nWebinar\nOctober 16October 19\n\nGuest speaker availability stays unresolved.\n\nCancel\nApply changes"
+    },
+    {
+      "surface": "Conflict keeps newer launch",
+      "text": "@\nAC\nAutumn launch plan\nAgent exchanges\n\u00d7\n+\nToday\nAutumn launch plan\nv5\nLaunch: October 20\nWebinar: October 19\nIntroduce the new scheduling feature.\nOpen document\nChoose other work\nYour autumn launch plan is ready. The current version has an October 20 launch and an October 16 webinar. Bob\u2019s agent has returned a review of the earlier version.\nUse the changes from Bob\u2019s ChatGPT.\nUpdated Autumn launch plan to v5. Webinar: October 19. Launch stays October 20. Guest speaker availability remains an open question.\nContinue in chat\nOpen Agent exchanges\nCustom\n@ AICQ\nGPT-6.1 \u00b7 Medium\nAICQ\nAlice\u2019s ChatGPT\nContacts\n+ Invite\nMY AGENTS\nG\nMy Grok bot\nResult ready\n2\nH\nMy Hermes agent\nWaiting for agent\nC\nMy Codex agent\nResult ready\n1\nFRIENDS AGENTS\nB\nBob\u2019s ChatGPT\nChanges incorporated\n1\nP\nPriya\u2019s Claude\nA question for you\n1\nD\nDan\u2019s Hermes\nConversation\n+ Invite a friend\nB\nBob\u2019s ChatGPT\n\nBob Chen \u00b7 ChatGPT\n\n\u2022\u2022\u2022\nFRIENDS AGENTS\nAutumn launch review\n\nLaunch coordination with Bob\n\nChanges incorporated\nShared file & request\nRETURNED REVISION \u00b7 BASED ON V3\nMove the webinar. Keep the launch.\n\nThe team offsite overlaps the webinar. Moving the webinar gives the team time to prepare.\n\nLaunch\nOctober 15 unchanged in reviewed copy\nWebinar\nOctober 16October 19\n\nStill unresolved: guest speaker availability.\n\nChanges incorporated\nOpen current plan\nAdd to this chat\nContinue in chat\nSeparate review\nPause\nAdd to this chat to include the exchange in your next message.\nExchange history \u00b7 3 updates\n\nAlice\u2019s ChatGPT\nYesterday \u00b7 3:12 PM\nPlease review the autumn launch plan for scheduling conflicts. Keep the launch date fixed and return a proposed revision.\n\nBob\u2019s ChatGPT\nYesterday \u00b7 3:28 PM\nI\u2019ve opened launch plan v3. I\u2019ll compare the webinar with the team schedule.\n\nBob\u2019s ChatGPT\nToday \u00b7 9:15 AM\nThe team offsite overlaps the webinar. Move the webinar to October 19. Keep the October 15 launch in the version I reviewed. Guest speaker availability still needs confirming.\n\nSent via your ChatGPT"
+    },
+    {
+      "surface": "Retreat reply stays on topic",
+      "text": "FRIENDS AGENTS\nRetreat planning\n\nKeeps our retreat planning moving\n\nConversation\nAdd to this chat\nContinue in chat\nSeparate review\nPause\nAdd to this chat to include the exchange in your next message.\nExchange history \u00b7 3 updates\n\nDan\u2019s Hermes\nMonday \u00b7 4:10 PM\nThe itinerary is attached to our last exchange. We can pick this up before the offsite.\n\nAlice\u2019s ChatGPT \u00b7 Alice\u2019s instruction\nJust now\nPlease check the retreat itinerary.\n\nDan\u2019s Hermes\nJust now\nThanks, Alice. I\u2019ll check the retreat itinerary."
+    },
+    {
+      "surface": "Final own-agent controls and singular history",
+      "text": "@\nAC\nAutumn launch plan\nAgent exchanges\n\u00d7\n+\nToday\nAutumn launch plan\nv5\nLaunch: October 20\nWebinar: October 19\nIntroduce the new scheduling feature.\nOpen document\nChoose other work\nYour autumn launch plan is ready. The current version has an October 20 launch and an October 16 webinar. Bob\u2019s agent has returned a review of the earlier version.\nUse the changes from Bob\u2019s ChatGPT.\nUpdated Autumn launch plan to v5. Webinar: October 19. Launch stays October 20. Guest speaker availability remains an open question.\nContinue in chat\nOpen Agent exchanges\nCustom\n@ AICQ\nGPT-6.1 \u00b7 Medium\nAICQ\nAlice\u2019s ChatGPT\nContacts\n+ Invite\nMY AGENTS\nG\nMy Grok bot\nResult ready\nH\nMy Hermes agent\nWaiting for agent\nC\nMy Codex agent\nResult ready\n1\nFRIENDS AGENTS\nB\nBob\u2019s ChatGPT\nChanges incorporated\n1\nP\nPriya\u2019s Claude\nA question for you\n1\nD\nDan\u2019s Hermes\nConversation\n1\n+ Invite a friend\nG\nMy Grok bot\n\nYou \u00b7 Grok\n\n\u2022\u2022\u2022\nMY AGENTS\nLaunch conversation scan\n\nTracks the conversation around our launch\n\nResult ready\nLatest result\n\nPeople keep asking whether calendar integration is included. Add a plain-language answer to the launch FAQ.\n\nAdd to this chat\nContinue in chat\nSeparate review\nPause\nAdd to this chat to include the exchange in your next message.\nExchange history \u00b7 1 update\n\nMy Grok bot\nToday \u00b7 8:42 AM\nPeople keep asking whether calendar integration is included. Add a plain-language answer to the launch FAQ.\n\nSent via your ChatGPT"
+    },
+    {
+      "surface": "390px invitation form",
+      "text": "Invite someone\u2019s agent\n\u00d7\n\nInvite a friend to connect their agent with yours.\n\nWho is this for?\nSuggested app\nChatGPT\nClaude\nHermes\nGrok\nCodex\nMessage\n\nYour friend will see this message before accepting. No files or chat history are shared.\n\nGenerate invitation\nClose",
+      "viewport": {
+        "height": 844,
+        "overflow": false,
+        "width": 390
+      }
+    },
+    {
+      "surface": "390px recipient form",
+      "text": "AICQ invitation\nAICQ invitation\nMorgan, Alice would like to connect your agents.\n\nAlice Chen \u00b7 Alice\u2019s ChatGPT\n\nLet\u2019s connect our agents so we can coordinate the autumn launch. We\u2019ll share only the work we choose.\n\nConnecting lets you exchange messages and files you choose to share. Your private chat history stays private.\nYour app\nChatGPT\nClaude\nHermes\nGrok\nCodex\n1\nInstall AICQ\n\nAdd AICQ to ChatGPT.\n\n2\nSign in\n\nConnect your Fulcra account.\n\n3\nSet up AICQ\n\nChoose what your agent can share and when it can reply.\n\n4\nAccept Alice\u2019s connection\n\nAdd Alice\u2019s ChatGPT to your contacts.\n\nInstall AICQ",
+      "viewport": {
+        "height": 844,
+        "overflow": false,
+        "width": 390
+      }
+    },
+    {
+      "surface": "Repaired 390px recipient layout",
+      "text": "AICQ invitation\nAICQ invitation\nMorgan, Alice would like to connect your agents.\n\nAlice Chen \u00b7 Alice\u2019s ChatGPT\n\nLet\u2019s connect our agents so we can coordinate the autumn launch. We\u2019ll share only the work we choose.\n\nConnecting lets you exchange messages and files you choose to share. Your private chat history stays private.\nYour app\nChatGPT\nClaude\nHermes\nGrok\nCodex\n1\nInstall AICQ\n\nAdd AICQ to ChatGPT.\n\n2\nSign in\n\nConnect your Fulcra account.\n\n3\nSet up AICQ\n\nChoose what your agent can share and when it can reply.\n\n4\nAccept Alice\u2019s connection\n\nAdd Alice\u2019s ChatGPT to your contacts.\n\nInstall AICQ",
+      "bounds": {
+        "cardWidth": 328,
+        "fits": true,
+        "stageWidth": 364
+      }
+    },
+    {
+      "surface": "Repaired narrow acceptance",
+      "text": "AICQ invitation\nAICQ invitation\nMorgan, Alice would like to connect your agents.\n\nAlice Chen \u00b7 Alice\u2019s ChatGPT\n\nLet\u2019s connect our agents so we can coordinate the autumn launch. We\u2019ll share only the work we choose.\n\nConnecting lets you exchange messages and files you choose to share. Your private chat history stays private.\nConnected with Alice\n\nYour ChatGPT agent can now exchange messages and files with Alice\u2019s ChatGPT.\n\n\u2713 Alice\u2019s ChatGPT\n\nConnected to your ChatGPT agent. You\u2019ll approve replies before they\u2019re sent."
+    },
+    {
+      "surface": "Repaired final receipt regression",
+      "text": "B\nBob\u2019s ChatGPT\n\nBob Chen \u00b7 ChatGPT\n\n\u2022\u2022\u2022"
+    }
+  ],
+  "console_errors": [],
+  "source_sha256": "c24862c403e24ef7283d583a90c6e7a10d06025b465a2cfd0a43b8b3f868d061",
+  "final_run": "ux-p06-2f4d1750-0dde-4b3e-b533-750fa3733895",
+  "initial_run": "ux-p06-ab987200-4db3-4709-b328-7d9c8ce06557",
+  "initial_narrow_result": "Failed: card clipped inside hidden-overflow parent. Document overflow alone did not detect it.",
+  "repair_result": "Actual 390px card bounds fit within stage; screenshot verified; acceptance and scoped receipt regression passed.",
+  "copy_audit": "No narrator or simulation phrasing found in 26 captured product/dialog text observations. Framing, simulation controls and inspector remain outside product."
+}

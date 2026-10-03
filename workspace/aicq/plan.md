@@ -234,3 +234,16 @@ review, Sites publication and canonical delivery. Independent UX-P05 does not
 consume M2's remaining retry. Acceptance: actual browser walkthroughs across
 happy path, invitation/resume, conflict, isolation of selected context, contact
 navigation and narrow layout; exact source/deployment evidence and readbacks.
+
+## UX-P06 — Product copy realism pass (2026-10-03)
+
+User requested all realism mistakes corrected in Alice’s worked example, including
+third-person narration on her invitation page. Audit app/host dialogs, chat replies,
+settings, files, notifications, recipient setup and action labels. Address the current
+user directly, use concrete status/action language, and move prototype-only steps
+and explanations outside the depicted product. Preserve interactive flows and
+existing Site routes/audience; publish the correction to /alice.html. Evaluate
+actual invitation, recipient, exchange and conflict surfaces plus responsive layout.
+Nurse/Coordinator/Generator/Evaluator operate sequentially. UX-P06 uses two retries
+and a 30-minute run timeout override, recorded and read back before RUN_START.
+No M2 retry or product milestone promotion.

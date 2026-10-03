@@ -287,3 +287,10 @@ This expands the prototype story to multiple named agents per owner; it does
 not establish that the production identity model supports them yet.
 Implementation interpretation: add /alice.html to the existing Site, retain
 its other pages/audience, and use clearly labeled fictional simulation.
+
+### 2026-10-03 — Realistic product copy
+
+User: “Do a pass to correct all realism mistakes.” Alice’s actual invitation page
+would not say “Make a connection Alice can send to a friend.” Replace narrative
+prototype exposition throughout the worked experience with copy its current user
+would see. Keep simulation explanation and walkthrough controls outside product UI.
