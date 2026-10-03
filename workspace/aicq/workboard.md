@@ -6,6 +6,11 @@ remain proposals.
 
 ## Design experiment
 
+Host appearance reference (2026-10-03): nine OpenAI source screenshots and durable
+layout guidance saved. Installed-client Computer Use was blocked; fallback images
+are labeled. Future mockups consult `host-ui-reference.md`. The existing HTML
+studies await a host fidelity pass; no product implementation attempt was started.
+
 UX-P02: seven hook-specific HTML examples and source-grounded contract mapping
 built; mechanical browser evaluation passed after one prototype retry. Owner
 review and live Extensions support remain open. Source:

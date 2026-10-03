@@ -57,6 +57,13 @@ See `history/20261001_m1-local-baseline.md`,
 
 ## Interaction prototype
 
+2026-10-03: saved a desktop host visual reference with nine pinned OpenAI Bits &
+Bolts screenshots, gallery, provenance/hashes, sampled colors and layout rules.
+Computer Use refused access to the installed ChatGPT/Codex app, so no live plugin
+capture was obtained. AGENTS.md directs future mockups to consult this reference.
+Existing prototypes still need a host fidelity pass. See `host-ui-reference.md`
+and `history/20261003_host-ui-reference.md`. No product run or M2 retry occurred.
+
 UX-P02 now provides seven Extensions-specific examples in
 `mcp/ui/prototypes/extensions-v2.html`, on local throwaway branch
 `kublascratchpad/ux-extensions-v2`. Pinned official spec: ca16cb3. Global/sidebar

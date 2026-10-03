@@ -1,0 +1,140 @@
+{
+  "recorded_at": "2026-10-03T11:47:41.122617+00:00",
+  "files": [
+    {
+      "local": "docs/design-references/openai-host/01-global-library.png",
+      "canonical": "workspace/aicq/design-references/openai-host/01-global-library.png",
+      "sha256": "d92041130dcdc461f325187f45c6c66d344f3a91164c45168fb7fe53854080b7",
+      "bytes": 975674,
+      "readback": "matched"
+    },
+    {
+      "local": "docs/design-references/openai-host/02-thread-tray.png",
+      "canonical": "workspace/aicq/design-references/openai-host/02-thread-tray.png",
+      "sha256": "93bfc9ee05dd5a20f62751c77d0c4b7261807f98c1b5175d68cd52ef364a4671",
+      "bytes": 939224,
+      "readback": "matched"
+    },
+    {
+      "local": "docs/design-references/openai-host/03-file-viewer.png",
+      "canonical": "workspace/aicq/design-references/openai-host/03-file-viewer.png",
+      "sha256": "628042226d0e927ee731f36473dfcc45abf8ee26bfb27ad043da3888f1720406",
+      "bytes": 789887,
+      "readback": "matched"
+    },
+    {
+      "local": "docs/design-references/openai-host/05-composer-mention.png",
+      "canonical": "workspace/aicq/design-references/openai-host/05-composer-mention.png",
+      "sha256": "0b6a16eaff090a1beafe0cb11785f2de5fb31b12d744dd4659302e09505c1b95",
+      "bytes": 485467,
+      "readback": "matched"
+    },
+    {
+      "local": "docs/design-references/openai-host/07-settings-entrypoint.png",
+      "canonical": "workspace/aicq/design-references/openai-host/07-settings-entrypoint.png",
+      "sha256": "4e48b06c19785ed5c55f0ec3dd6932b3e9fa0f5b0fff7b9359058ed26028534b",
+      "bytes": 657577,
+      "readback": "matched"
+    },
+    {
+      "local": "docs/design-references/openai-host/08-model-context-attachments.png",
+      "canonical": "workspace/aicq/design-references/openai-host/08-model-context-attachments.png",
+      "sha256": "43f72a9ed058347e220e4d9d77975d8edef8a4b9eb03154bd7ed756aa5c558a8",
+      "bytes": 844246,
+      "readback": "matched"
+    },
+    {
+      "local": "docs/design-references/openai-host/11-display-modes.png",
+      "canonical": "workspace/aicq/design-references/openai-host/11-display-modes.png",
+      "sha256": "d60ff877d3ac113da9499a0cf7daef7df53f4f79010fa617a21d757b05cccd7c",
+      "bytes": 1104184,
+      "readback": "matched"
+    },
+    {
+      "local": "docs/design-references/openai-host/12-plugin-onboarding.png",
+      "canonical": "workspace/aicq/design-references/openai-host/12-plugin-onboarding.png",
+      "sha256": "797377b8f2b78029743dbd23ca86c669f78412033cfe382ad7902bc3b6b20b7d",
+      "bytes": 671137,
+      "readback": "matched"
+    },
+    {
+      "local": "docs/design-references/openai-host/13-form-resource-picker.png",
+      "canonical": "workspace/aicq/design-references/openai-host/13-form-resource-picker.png",
+      "sha256": "b0eaee059f815b96abc547df375e65fdc1a290a7c3d3b48f2fa158671c0de22b",
+      "bytes": 1161214,
+      "readback": "matched"
+    },
+    {
+      "local": "docs/design-references/openai-host/README.md",
+      "canonical": "workspace/aicq/design-references/openai-host/README.md",
+      "sha256": "6098f49f528180c38dd0ba8f8d257e69bea6754f4e881fcbd60f0eb1566a6a9f",
+      "bytes": 7315,
+      "readback": "matched"
+    },
+    {
+      "local": "docs/design-references/openai-host/host-tokens.css",
+      "canonical": "workspace/aicq/design-references/openai-host/host-tokens.css",
+      "sha256": "b3c878acbc27bc0c4c31cac6c3dba64c0442fcf979a57fb1723057a69f90779c",
+      "bytes": 737,
+      "readback": "matched"
+    },
+    {
+      "local": "docs/design-references/openai-host/index.html",
+      "canonical": "workspace/aicq/design-references/openai-host/index.html",
+      "sha256": "0cb92da56c110b10567c8623c8ea8e3e8d3875af1f401d800de36d4466d0447b",
+      "bytes": 9115,
+      "readback": "matched"
+    },
+    {
+      "local": "docs/design-references/openai-host/manifest.json",
+      "canonical": "workspace/aicq/design-references/openai-host/manifest.json",
+      "sha256": "651c58eb58cf39001a911ef530d71124e13f45c1af9d466d93d1308c00af2244",
+      "bytes": 8817,
+      "readback": "matched"
+    },
+    {
+      "local": "workspace/aicq/plan.md",
+      "canonical": "workspace/aicq/plan.md",
+      "sha256": "69d25f50d32704439b562f7b13256d5a2014d7bc5450f9eac5e71310794fa3fe",
+      "bytes": 11805,
+      "readback": "matched"
+    },
+    {
+      "local": "workspace/aicq/decisions.md",
+      "canonical": "workspace/aicq/decisions.md",
+      "sha256": "60a5e0a6b2733eca6d3773b2ed64986be75305d5aa0c1ae1ec2ed9285d2efbe5",
+      "bytes": 13748,
+      "readback": "matched"
+    },
+    {
+      "local": "workspace/aicq/progress.md",
+      "canonical": "workspace/aicq/progress.md",
+      "sha256": "cfb05ea8c8355337ea8370d0b1841d2bf34baeede8c92167e25e52c30df7141e",
+      "bytes": 11072,
+      "readback": "matched"
+    },
+    {
+      "local": "workspace/aicq/workboard.md",
+      "canonical": "workspace/aicq/workboard.md",
+      "sha256": "5ad23fe4ad458c7582c2c5a1a164555851021d7657603a783b2579c48c9fc61c",
+      "bytes": 11058,
+      "readback": "matched"
+    },
+    {
+      "local": "workspace/aicq/host-ui-reference.md",
+      "canonical": "workspace/aicq/host-ui-reference.md",
+      "sha256": "639aaf9c46c7e51bc2578a6e1155a570390548b56f947960d7c230cba587b16c",
+      "bytes": 2033,
+      "readback": "matched"
+    },
+    {
+      "local": "workspace/aicq/history/20261003_host-ui-reference.md",
+      "canonical": "workspace/aicq/history/20261003_host-ui-reference.md",
+      "sha256": "3ca324c4921e128654cae8f70dc51539d374ebd521acedc28ba0a2c472fe8838",
+      "bytes": 3449,
+      "readback": "matched"
+    }
+  ],
+  "live_plugin_verified": false,
+  "milestone_retry_consumed": false
+}

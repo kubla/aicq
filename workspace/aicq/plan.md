@@ -10,6 +10,12 @@ implement Events. Evaluation evidence: history/20261001_m1-local-baseline.md.
 
 ## Next design step
 
+2026-10-03 direction: make future mockups visually realistic using installed Bits
+& Bolts/host inspection, or web screenshots if inspection fails. The installed app
+was blocked by Computer Use policy. Saved the authorized official-image fallback
+and concrete reference rules in `host-ui-reference.md`. Apply the reference in
+the next HTML iteration; existing prototypes were not restyled in this task.
+
 UX-P02 (2026-10-02): match prototype interactions to the user-requested OpenAI
 MCP Extensions specification, pinned at ca16cb3bc015baaa1b849082d8755bbef18770cb.
 Explore global navigation, thread tabs, inline/fullscreen resources, visible model

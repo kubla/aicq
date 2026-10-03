@@ -1,5 +1,10 @@
 # AICQ interaction studies
 
+For host appearance, consult [the OpenAI host reference](../design-references/openai-host/README.md)
+and [its screenshot gallery](../design-references/openai-host/index.html) before
+revising either prototype. The existing prototypes explore behavior; their host
+chrome predates this visual reference and still needs a fidelity pass.
+
 Open `../../mcp/ui/prototypes/interaction-v1.html` directly in a browser. It is
 one HTML file with inline CSS and JavaScript; no install, build, authentication
 or service is needed. State lives in memory and resets on reload.

@@ -1,6 +1,10 @@
 # AICQ agent instructions
 
 Canonical workspace: `workspace/aicq/` in the owner's Fulcra File Store.
+Before creating or revising ChatGPT/Codex mockups, read
+`docs/design-references/openai-host/README.md` and inspect the matching screenshots.
+Use their host layout and controls; distinguish official reference images from
+installed-client observations and simulated AICQ behavior.
 Skill: [Fulcra App Starter](https://github.com/fulcradynamics/community-skills/blob/main/skills/fulcra-app-starter/SKILL.md).
 Local reference snapshots: `docs/references/fulcra-app-starter-SKILL.md` and
 `docs/references/fulcra-harness-control-flow.md`.

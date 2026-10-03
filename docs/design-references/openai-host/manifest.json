@@ -1,0 +1,252 @@
+{
+  "recorded_at": "2026-10-03T11:42:40.474505+00:00",
+  "source_owner": "OpenAI",
+  "source_repository": "https://github.com/openai/mcp-extensions",
+  "source_spec": "https://github.com/openai/mcp-extensions/blob/ca16cb3bc015baaa1b849082d8755bbef18770cb/docs/spec.md",
+  "source_revision": "ca16cb3bc015baaa1b849082d8755bbef18770cb",
+  "live_capture_count": 0,
+  "installed_client_verified": false,
+  "installed_skill_version": "bits-and-bolts-remote/1.0.23",
+  "reference_plugin_label": "Bits & Bolts Local",
+  "computer_use": [
+    {
+      "action": "cua.getState",
+      "result": "ChatGPT app present; Codex MCP Apps surface has no tabs.",
+      "privacy": "Unrelated inventory titles are omitted from durable artifacts."
+    },
+    {
+      "action": "cua.getApp(\"com.openai.codex\")",
+      "result": "Computer Use is not allowed to use the app 'com.openai.codex' for safety reasons.",
+      "status": "blocked_by_computer_use_app_policy"
+    }
+  ],
+  "scale": {
+    "source_pixels": [
+      3328,
+      2128
+    ],
+    "normalization": "Divide source coordinates by 2 for an illustrative 1664x1064 mock canvas. This is a design convention, not a verified device pixel ratio.",
+    "approximate_source_bounds": {
+      "window": [
+        64,
+        64,
+        3264,
+        2064
+      ],
+      "rail": [
+        64,
+        152,
+        168,
+        2064
+      ],
+      "thread_topbar": [
+        168,
+        64,
+        3264,
+        152
+      ],
+      "thread_chat": [
+        168,
+        152,
+        1722,
+        2064
+      ],
+      "thread_app": [
+        1724,
+        152,
+        3264,
+        2064
+      ],
+      "thread_composer": [
+        208,
+        1830,
+        1680,
+        2026
+      ]
+    }
+  },
+  "palette_samples": [
+    {
+      "file": "02-thread-tray.png",
+      "point": [
+        100,
+        1000
+      ],
+      "hex": "#242424",
+      "role": "rail"
+    },
+    {
+      "file": "02-thread-tray.png",
+      "point": [
+        300,
+        1000
+      ],
+      "hex": "#181818",
+      "role": "content"
+    },
+    {
+      "file": "02-thread-tray.png",
+      "point": [
+        1722,
+        600
+      ],
+      "hex": "#2b2b2b",
+      "role": "divider"
+    },
+    {
+      "file": "02-thread-tray.png",
+      "point": [
+        250,
+        1960
+      ],
+      "hex": "#363636",
+      "role": "composer"
+    },
+    {
+      "file": "02-thread-tray.png",
+      "point": [
+        1000,
+        350
+      ],
+      "hex": "#223d72",
+      "role": "user_message"
+    },
+    {
+      "file": "01-global-library.png",
+      "point": [
+        100,
+        1000
+      ],
+      "hex": "#212121",
+      "role": "global_rail"
+    },
+    {
+      "file": "01-global-library.png",
+      "point": [
+        300,
+        1000
+      ],
+      "hex": "#171717",
+      "role": "global_content"
+    }
+  ],
+  "assets": [
+    {
+      "file": "01-global-library.png",
+      "title": "Global library",
+      "observation": "Native icon rail, global title, full-area library and floating composer.",
+      "classification": "official_reference_screenshot",
+      "source": "https://raw.githubusercontent.com/openai/mcp-extensions/ca16cb3bc015baaa1b849082d8755bbef18770cb/docs/resources/01-global-library.png",
+      "source_revision": "ca16cb3bc015baaa1b849082d8755bbef18770cb",
+      "width": 3328,
+      "height": 2128,
+      "bytes": 975674,
+      "sha256": "d92041130dcdc461f325187f45c6c66d344f3a91164c45168fb7fe53854080b7",
+      "visually_inspected": true
+    },
+    {
+      "file": "02-thread-tray.png",
+      "title": "Parts Tray beside a chat",
+      "observation": "Native content tab with close control; roughly equal chat/app columns and composer within the chat.",
+      "classification": "official_reference_screenshot",
+      "source": "https://raw.githubusercontent.com/openai/mcp-extensions/ca16cb3bc015baaa1b849082d8755bbef18770cb/docs/resources/02-thread-tray.png",
+      "source_revision": "ca16cb3bc015baaa1b849082d8755bbef18770cb",
+      "width": 3328,
+      "height": 2128,
+      "bytes": 939224,
+      "sha256": "93bfc9ee05dd5a20f62751c77d0c4b7261807f98c1b5175d68cd52ef364a4671",
+      "visually_inspected": true
+    },
+    {
+      "file": "03-file-viewer.png",
+      "title": "File viewer",
+      "observation": "A file link in chat opens a named content tab beside the conversation.",
+      "classification": "official_reference_screenshot",
+      "source": "https://raw.githubusercontent.com/openai/mcp-extensions/ca16cb3bc015baaa1b849082d8755bbef18770cb/docs/resources/03-file-viewer.png",
+      "source_revision": "ca16cb3bc015baaa1b849082d8755bbef18770cb",
+      "width": 3328,
+      "height": 2128,
+      "bytes": 789887,
+      "sha256": "628042226d0e927ee731f36473dfcc45abf8ee26bfb27ad043da3888f1720406",
+      "visually_inspected": true
+    },
+    {
+      "file": "05-composer-mention.png",
+      "title": "Composer mention picker",
+      "observation": "Search results sit directly above the composer; the selected plugin mention appears in its text.",
+      "classification": "official_reference_screenshot",
+      "source": "https://raw.githubusercontent.com/openai/mcp-extensions/ca16cb3bc015baaa1b849082d8755bbef18770cb/docs/resources/05-composer-mention.png",
+      "source_revision": "ca16cb3bc015baaa1b849082d8755bbef18770cb",
+      "width": 3328,
+      "height": 2128,
+      "bytes": 485467,
+      "sha256": "0b6a16eaff090a1beafe0cb11785f2de5fb31b12d744dd4659302e09505c1b95",
+      "visually_inspected": true
+    },
+    {
+      "file": "07-settings-entrypoint.png",
+      "title": "Plugin settings",
+      "observation": "Plugin detail page, server row, grouped settings, right-aligned selectors and switches.",
+      "classification": "official_reference_screenshot",
+      "source": "https://raw.githubusercontent.com/openai/mcp-extensions/ca16cb3bc015baaa1b849082d8755bbef18770cb/docs/resources/07-settings-entrypoint.png",
+      "source_revision": "ca16cb3bc015baaa1b849082d8755bbef18770cb",
+      "width": 3328,
+      "height": 2128,
+      "bytes": 657577,
+      "sha256": "4e48b06c19785ed5c55f0ec3dd6932b3e9fa0f5b0fff7b9359058ed26028534b",
+      "visually_inspected": true
+    },
+    {
+      "file": "08-model-context-attachments.png",
+      "title": "Context attachment popover",
+      "observation": "A removable Context chip reveals text, resource links, embedded data and image items.",
+      "classification": "official_reference_screenshot",
+      "source": "https://raw.githubusercontent.com/openai/mcp-extensions/ca16cb3bc015baaa1b849082d8755bbef18770cb/docs/resources/08-model-context-attachments.png",
+      "source_revision": "ca16cb3bc015baaa1b849082d8755bbef18770cb",
+      "width": 3328,
+      "height": 2128,
+      "bytes": 844246,
+      "sha256": "43f72a9ed058347e220e4d9d77975d8edef8a4b9eb03154bd7ed756aa5c558a8",
+      "visually_inspected": true
+    },
+    {
+      "file": "11-display-modes.png",
+      "title": "Inline and fullscreen",
+      "observation": "An inline app card remains in chat while another app occupies the right content pane.",
+      "classification": "official_reference_screenshot",
+      "source": "https://raw.githubusercontent.com/openai/mcp-extensions/ca16cb3bc015baaa1b849082d8755bbef18770cb/docs/resources/11-display-modes.png",
+      "source_revision": "ca16cb3bc015baaa1b849082d8755bbef18770cb",
+      "width": 3328,
+      "height": 2128,
+      "bytes": 1104184,
+      "sha256": "d60ff877d3ac113da9499a0cf7daef7df53f4f79010fa617a21d757b05cccd7c",
+      "visually_inspected": true
+    },
+    {
+      "file": "12-plugin-onboarding.png",
+      "title": "Onboarding dialog",
+      "observation": "Centered dialog over a blurred plugin page; defer and setup actions.",
+      "classification": "official_reference_screenshot",
+      "source": "https://raw.githubusercontent.com/openai/mcp-extensions/ca16cb3bc015baaa1b849082d8755bbef18770cb/docs/resources/12-plugin-onboarding.png",
+      "source_revision": "ca16cb3bc015baaa1b849082d8755bbef18770cb",
+      "width": 3328,
+      "height": 2128,
+      "bytes": 671137,
+      "sha256": "797377b8f2b78029743dbd23ca86c669f78412033cfe382ad7902bc3b6b20b7d",
+      "visually_inspected": true
+    },
+    {
+      "file": "13-form-resource-picker.png",
+      "title": "Resource picker",
+      "observation": "A form card appears in the chat column while the app library remains visible beside it.",
+      "classification": "official_reference_screenshot",
+      "source": "https://raw.githubusercontent.com/openai/mcp-extensions/ca16cb3bc015baaa1b849082d8755bbef18770cb/docs/resources/13-form-resource-picker.png",
+      "source_revision": "ca16cb3bc015baaa1b849082d8755bbef18770cb",
+      "width": 3328,
+      "height": 2128,
+      "bytes": 1161214,
+      "sha256": "b0eaee059f815b96abc547df375e65fdc1a290a7c3d3b48f2fa158671c0de22b",
+      "visually_inspected": true
+    }
+  ]
+}

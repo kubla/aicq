@@ -241,3 +241,16 @@ relevant host interactions. Michael prefers an app in sidebar navigation. Specif
 hook choices remain proposals to test. The current pinned spec uses a global
 entrypoint for navigation and inline/fullscreen display modes; it does not define
 a sidebar display mode. UX-P02 keeps prototypes local and live integration open.
+
+## Ground mockups in real host appearance
+
+User direction, 2026-10-03: inspect the installed Bits & Bolts plugin and
+ChatGPT/Codex host through Computer Use, capturing sidebar and chat-side library
+screens. Use realistic web screenshots if that fails, and save durable project
+references so future mockups look realistic.
+
+Computer Use rejected access to `com.openai.codex`. Saved nine official OpenAI
+reference screenshots and layout guidance instead. Future host mockups must read
+`docs/design-references/openai-host/README.md` and inspect matching images. These
+are source images of Bits & Bolts Local, not live installed Remote captures.
+Existing prototypes await a visual fidelity pass. No milestone or retry changed.
