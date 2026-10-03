@@ -10,6 +10,19 @@ implement Events. Evaluation evidence: history/20261001_m1-local-baseline.md.
 
 ## Next design step
 
+UX-P02 (2026-10-02): match prototype interactions to the user-requested OpenAI
+MCP Extensions specification, pinned at ca16cb3bc015baaa1b849082d8755bbef18770cb.
+Explore global navigation, thread tabs, inline/fullscreen resources, visible model
+context, explicit active/new-thread messages, mention search, file-resource
+conflicts, settings/onboarding and unsupported-host fallbacks. Build a local
+self-contained HTML interaction lab with exact illustrative payloads and simulated
+host behavior. Acceptance: browser exercises each chosen hook and its capability
+limits; documentation separates spec facts from AICQ proposals and live verification.
+This independent design run uses the existing annotation, separate UX-P02 state,
+two retries, and a 45-minute timeout override recorded before RUN_START. It does
+not consume M2 retries or promote any product milestone. Sidebar navigation is
+preferred by the user; the spec defines no sidebar display mode.
+
 User direction recorded 2026-10-02: prioritize interaction design with HTML
 prototypes before committing to heavyweight software engineering.
 

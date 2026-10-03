@@ -231,3 +231,13 @@ an embedded review exchange using sample data. Retain the embedded UI; polling
 remains acceptable. Live implementation and M2 acceptance remain incomplete.
 Browser evaluation can verify the prototype controls; Michael's review must still
 validate the interaction design. This experiment does not spend the final M2 retry.
+
+## Match the prototypes to Extensions affordances
+
+> Cool. Next, look at the affordances in https://github.com/openai/mcp-extensions/blob/main/docs/spec.md and think through what we should use for this app: for instance, should we be a sidebar app? (I think so). Get very specific with your prototype by matching it to the actual interaction types we get through Extensions. You may need to make multiple examples to explore different ideas for different hooks.
+
+Direction: investigate the exact Extensions contract and build examples of the
+relevant host interactions. Michael prefers an app in sidebar navigation. Specific
+hook choices remain proposals to test. The current pinned spec uses a global
+entrypoint for navigation and inline/fullscreen display modes; it does not define
+a sidebar display mode. UX-P02 keeps prototypes local and live integration open.

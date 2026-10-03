@@ -1,0 +1,275 @@
+{
+  "status": "Illustrative proposed contracts; not installed or deployed. Tool names except aicq_open/aicq_thread are new proposals.",
+  "source_revision": "ca16cb3bc015baaa1b849082d8755bbef18770cb",
+  "entrypoints": [
+    {
+      "name": "aicq_open",
+      "title": "AICQ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "_meta": {
+        "ui": {
+          "resourceUri": "ui://aicq/exchanges"
+        },
+        "openai/ui": {
+          "entrypoints": [
+            {
+              "type": "global"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "aicq_thread",
+      "title": "Agent exchanges",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "_meta": {
+        "ui": {
+          "resourceUri": "ui://aicq/exchanges"
+        },
+        "openai/ui": {
+          "entrypoints": [
+            {
+              "type": "thread"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "ui_resource_content": {
+    "uri": "ui://aicq/exchanges",
+    "mimeType": "text/html;profile=mcp-app",
+    "text": "<!-- Prototype resource placeholder -->",
+    "_meta": {
+      "openai/ui": {
+        "availableDisplayModes": [
+          "inline",
+          "fullscreen"
+        ],
+        "preferredDisplayMode": "fullscreen"
+      }
+    }
+  },
+  "app_initialize_capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "mention_tool": {
+    "name": "aicq_mentions",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "_meta": {
+      "openai/extensions": {
+        "mentions/search": {}
+      },
+      "ui": {
+        "visibility": [
+          "app"
+        ]
+      }
+    }
+  },
+  "mention_result": {
+    "content": [],
+    "structuredContent": {
+      "items": [
+        {
+          "type": "resource_link",
+          "uri": "aicq://contacts/alice",
+          "name": "Alice’s agent"
+        }
+      ]
+    }
+  },
+  "native_settings_capability": {
+    "extensions": {
+      "openai/settings": {
+        "readTool": "aicq_settings_read",
+        "updateTool": "aicq_settings_update"
+      }
+    }
+  },
+  "native_settings_read_tool": {
+    "name": "aicq_settings_read",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": true
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "object"
+        },
+        "values": {
+          "type": "object"
+        },
+        "layout": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "required": [
+        "schema",
+        "values"
+      ]
+    }
+  },
+  "native_settings_result": {
+    "content": [],
+    "structuredContent": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "background_responses": {
+            "type": "boolean",
+            "title": "Permit unattended responses"
+          },
+          "poll_seconds": {
+            "type": "integer",
+            "title": "Foreground poll interval",
+            "minimum": 15,
+            "maximum": 300
+          }
+        }
+      },
+      "values": {
+        "background_responses": false,
+        "poll_seconds": 30
+      },
+      "layout": [
+        {
+          "kind": "group",
+          "title": "Agent behavior",
+          "items": [
+            {
+              "kind": "property",
+              "property": "background_responses"
+            },
+            {
+              "kind": "property",
+              "property": "poll_seconds"
+            },
+            {
+              "kind": "tool",
+              "tool": "aicq_contact_controls",
+              "title": "Contact permissions"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "settings_update_arguments": {
+    "set": {
+      "poll_seconds": 60
+    }
+  },
+  "optional_file_entrypoint": {
+    "name": "aicq_review_file",
+    "title": "Review snapshot",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "file": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "resourceUri": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "resourceUri"
+          ]
+        }
+      },
+      "required": [
+        "file"
+      ]
+    },
+    "_meta": {
+      "ui": {
+        "resourceUri": "ui://aicq/review-file"
+      },
+      "openai/ui": {
+        "entrypoints": [
+          {
+            "type": "file",
+            "extensions": [
+              ".aicq"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "manifest_onboarding": {
+    "extensions": {
+      "com.openai": {
+        "onboardingSkill": "./skills/setup/SKILL.md"
+      }
+    }
+  },
+  "not_available_in_pinned_extensions": [
+    "sidebar display mode",
+    "pip in ChatGPT",
+    "ui/message send:false",
+    "mobile target:new",
+    "Android app deep links",
+    "individual mentions outside desktop",
+    "generic writes to arbitrary resource URIs"
+  ],
+  "inline_receipt_tool": {
+    "name": "aicq_send",
+    "_meta": {
+      "ui": {
+        "resourceUri": "ui://aicq/receipt"
+      }
+    },
+    "note": "Proposed portable send tool; real input schema and durable messaging remain to implement."
+  },
+  "inline_receipt_resource_content": {
+    "uri": "ui://aicq/receipt",
+    "mimeType": "text/html;profile=mcp-app",
+    "text": "<!-- Receipt renderer placeholder -->",
+    "_meta": {
+      "openai/ui": {
+        "availableDisplayModes": [
+          "inline",
+          "fullscreen"
+        ],
+        "preferredDisplayMode": "inline"
+      }
+    }
+  }
+}

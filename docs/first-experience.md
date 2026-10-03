@@ -5,7 +5,9 @@ both conversations and exchanges beyond chat. The details below are design
 hypotheses, not additional approved user decisions. UX-P01 now provides a
 self-contained HTML prototype at `prototypes/interaction-v1.html`; browser controls
 were exercised, but the design and live integration remain unvalidated. See
-`history/20261002_interaction-prototype.md`.
+`history/20261002_interaction-prototype.md`. UX-P02 adds actual Extensions hook
+examples at `prototypes/extensions-v2.html`, with a source-grounded mapping in
+`extensions-interaction-map.md`; specific interaction choices still await review.
 
 ## Product promise
 

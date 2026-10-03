@@ -1,0 +1,159 @@
+{
+  "source_sha256": "733e2ff0e344e64a14bfbfa03bf46c80f6debff6b9900ee5b7c9b71ed0f77ef1",
+  "events": [
+    {
+      "record_id": "132c0289-ab41-5fec-92e2-7f69086f7dcf",
+      "recorded_at": "2026-10-03T03:12:14.874156+00:00",
+      "event_id": "12797ef8-10ec-4425-b4bf-37c4688f9905",
+      "run_id": "ux-p02-db441f1f-43b3-42f2-96d2-15532505d98a",
+      "milestone": "UX-P02",
+      "step": "RUN_START",
+      "status": "started",
+      "detail": "Nurse: start Extensions-grounded prototype experiment",
+      "evidence": "Canonical requirements/status/history refreshed and matched; UX-P01 closed; scope and 45-minute timeout uploaded/read back. Official spec pinned ca16cb3bc015baaa1b849082d8755bbef18770cb. Existing annotation and independent UX-P02 state reused."
+    },
+    {
+      "record_id": "83ca8792-0265-5248-b1c0-f4a4048ffcfa",
+      "recorded_at": "2026-10-03T03:12:17.740486+00:00",
+      "event_id": "59f8e714-7ab5-46d3-be78-96e593861f51",
+      "run_id": "ux-p02-db441f1f-43b3-42f2-96d2-15532505d98a",
+      "milestone": "UX-P02",
+      "step": "FIND_MILESTONE",
+      "status": "completed",
+      "detail": "Coordinator: select UX-P02 from user design direction; preserve M2 state",
+      "evidence": "Source contract specifies global/thread/file entrypoints, inline/fullscreen modes, context replacement, active/new messages and platform limitations. No sidebar mode or send:false exists in pinned schema."
+    },
+    {
+      "record_id": "d779e539-afb5-5080-abba-c4453b465493",
+      "recorded_at": "2026-10-03T03:12:20.62704+00:00",
+      "event_id": "bc937998-a338-49b3-96db-64e5776471e1",
+      "run_id": "ux-p02-db441f1f-43b3-42f2-96d2-15532505d98a",
+      "milestone": "UX-P02",
+      "step": "GENERATE",
+      "status": "started",
+      "detail": "Generator: build host-hook lab and recommendation mapping",
+      "evidence": "Read pinned entrypoint, display, model-context, messages, mentions, form, file-write and settings schemas. Prototype will separate app context from host threads and tool-only fallback."
+    },
+    {
+      "record_id": "13eb257b-e061-55d2-bad5-5b9665bc5a99",
+      "recorded_at": "2026-10-03T03:20:22.851178+00:00",
+      "event_id": "607f4c93-36a8-4aa2-b017-a20dc9ed1565",
+      "run_id": "ux-p02-db441f1f-43b3-42f2-96d2-15532505d98a",
+      "milestone": "UX-P02",
+      "step": "GENERATE",
+      "status": "completed",
+      "detail": "Generator: seven Extensions-specific examples implemented in one local HTML lab",
+      "evidence": "mcp/ui/prototypes/extensions-v2.html includes global/thread/inline, mentions, form fallback, ETag file conflict, onboarding/native settings; capability profiles desktop/web/iOS/Android/tools-only; pure in-memory transitions, readable state and exact illustrative payload trace. Official global and thread screenshots inspected."
+    },
+    {
+      "record_id": "96877ea8-d138-5b49-bc1e-243705d8bb3a",
+      "recorded_at": "2026-10-03T03:20:25.647248+00:00",
+      "event_id": "0c17486f-8ac2-401f-bc44-51baf89815aa",
+      "run_id": "ux-p02-db441f1f-43b3-42f2-96d2-15532505d98a",
+      "milestone": "UX-P02",
+      "step": "REVIEW",
+      "status": "started",
+      "detail": "Evaluator: separate browser pass against pinned Extensions contract",
+      "evidence": "Candidate written; required checks include no background turn on selection/context/poll, chip-removal notifications, separate thread instances, fullscreen refusal, iOS message content, mobile unsupported hooks, file conflict and native settings partial updates."
+    },
+    {
+      "record_id": "ac92be0a-d6b1-5dc3-949d-1ae3fa3192ae",
+      "recorded_at": "2026-10-03T03:29:16.570291+00:00",
+      "event_id": "68d91a44-e723-4deb-a8f4-8bf97f1e85d7",
+      "run_id": "ux-p02-db441f1f-43b3-42f2-96d2-15532505d98a",
+      "milestone": "UX-P02",
+      "step": "REVIEW",
+      "status": "failed",
+      "detail": "Evaluator: initial candidate failed first browser render; repaired candidate requires fresh acceptance",
+      "evidence": "First load of extensions-v2.html returned SyntaxError Unexpected token in resource-form construction. Generator repaired syntax and refined request/response IDs, global document isolation, profile labeling and composer placement; preliminary flows exercised, but initial candidate is not accepted."
+    },
+    {
+      "record_id": "307413df-0c30-5749-bf66-1001f3015ac8",
+      "recorded_at": "2026-10-03T03:29:19.829121+00:00",
+      "event_id": "7c863282-5008-465e-9508-12bdf225d1db",
+      "run_id": "ux-p02-db441f1f-43b3-42f2-96d2-15532505d98a",
+      "milestone": "UX-P02",
+      "step": "RUN_COMPLETE",
+      "status": "completed",
+      "detail": "Coordinator: close initial UX-P02 attempt with one prototype retry to use",
+      "evidence": "Initial browser render failed; repaired prototype exists. This experiment has two retries; only UX-P02 attempt1 closes failed. M2 final retry and product milestones unchanged."
+    },
+    {
+      "record_id": "a93ee956-fbac-58fd-81b3-8a3a964e2d8f",
+      "recorded_at": "2026-10-03T03:29:22.239211+00:00",
+      "event_id": "74ce72ad-f6c2-412c-97ed-7c2bd00569db",
+      "run_id": "ux-p02-15577fad-88f8-4db3-a162-0191fd145eb3",
+      "milestone": "UX-P02",
+      "step": "RUN_START",
+      "status": "started",
+      "detail": "Nurse: start UX-P02 retry1 for repaired, frozen prototype",
+      "evidence": "Previous UX-P02 terminal record read back; repaired HTML syntax check passed and preliminary browser flows worked. Same 45-minute experiment override and existing owner annotation; no M2 retry consumed."
+    },
+    {
+      "record_id": "3f4c7f9e-67c4-54c0-aefa-372f053211c1",
+      "recorded_at": "2026-10-03T03:29:25.462157+00:00",
+      "event_id": "9745cb24-adf7-4a2c-b518-cf05a11ccff1",
+      "run_id": "ux-p02-15577fad-88f8-4db3-a162-0191fd145eb3",
+      "milestone": "UX-P02",
+      "step": "FIND_MILESTONE",
+      "status": "completed",
+      "detail": "Coordinator: select UX-P02 retry1; evaluate repaired candidate",
+      "evidence": "Seven hook examples and source-grounded notes/contracts available. Initial syntax failure remains recorded; final evaluation must recheck repaired fields and lifecycle behavior."
+    },
+    {
+      "record_id": "19691798-c7a2-5cff-857f-e6750231be8d",
+      "recorded_at": "2026-10-03T03:29:28.502751+00:00",
+      "event_id": "41d9ffa3-43b2-476f-8683-12e6ed8f4284",
+      "run_id": "ux-p02-15577fad-88f8-4db3-a162-0191fd145eb3",
+      "milestone": "UX-P02",
+      "step": "GENERATE",
+      "status": "completed",
+      "detail": "Generator: repaired prototype candidate ready",
+      "evidence": "Resource-form syntax fixed; context replacement and UI/message documented; response IDs correspond to original requests, including delayed form response; separate inline receipt resource; global/private-chat boundary; iOS readable text fallback; source and metadata fixture ready."
+    },
+    {
+      "record_id": "e80267bc-7f20-535c-84d2-a895932e73dd",
+      "recorded_at": "2026-10-03T03:29:31.007189+00:00",
+      "event_id": "42ddbaf1-4e35-44ae-83ad-0281382835ed",
+      "run_id": "ux-p02-15577fad-88f8-4db3-a162-0191fd145eb3",
+      "milestone": "UX-P02",
+      "step": "REVIEW",
+      "status": "started",
+      "detail": "Evaluator: fresh browser acceptance of repaired Extensions lab",
+      "evidence": "Begin fresh load and verify each hook, capability fallback, no implicit activation, native settings partial updates and file conflict. No live Extensions integration or design acceptance claimed."
+    },
+    {
+      "record_id": "8bd981c5-adea-51c7-b9e0-5db12f873190",
+      "recorded_at": "2026-10-03T03:31:51.252985+00:00",
+      "event_id": "a551efe1-9e08-4ef6-bfcc-f3eea17b487e",
+      "run_id": "ux-p02-15577fad-88f8-4db3-a162-0191fd145eb3",
+      "milestone": "UX-P02",
+      "step": "GENERATE",
+      "status": "completed",
+      "detail": "Generator: final payload and platform refinements captured",
+      "evidence": "Final HTML SHA256 67? hash will be recorded by Evaluator from file; file entrypoint now has an initial tool result, portable send returns a selected-artifact receipt, permanent-tab label limited to Desktop; other accepted hook paths unchanged. Documentation explains proposed resources and registered-server MRTR limits."
+    },
+    {
+      "record_id": "e535d65e-d4be-5370-85e5-35a86475a839",
+      "recorded_at": "2026-10-03T03:34:50.731122+00:00",
+      "event_id": "9c7e4a8e-f6c5-4438-b4a9-50da77416b56",
+      "run_id": "ux-p02-15577fad-88f8-4db3-a162-0191fd145eb3",
+      "milestone": "UX-P02",
+      "step": "REVIEW",
+      "status": "completed",
+      "detail": "Evaluator: corrected Extensions prototype passed mechanical browser acceptance",
+      "evidence": "Final HTML SHA256 733e2ff0e344e64a14bfbfa03bf46c80f6debff6b9900ee5b7c9b71ed0f77ef1. Sixteen browser cases captured in docs/prototypes/extensions-v2-browser-evidence.json: quiet global polling/context/removal; per-thread instances/context replacement; active/new messages; display refusal; deep-link route; desktop mentions; direct form preview with matching response ID; iOS text/active-only and Android fallback; tools-only send; file conflict/reconcile; native settings partial updates/onboarding/modal. Desktop1440 and mobile390 screenshots inspected; no console errors since final reload. Prior GENERATE 67? fragment is not a source identifier and is superseded by this exact hash. Live host integration and owner design validation remain unverified."
+    },
+    {
+      "record_id": "0d2f41aa-3c53-531b-ba7a-069ca1130978",
+      "recorded_at": "2026-10-03T03:34:52.954302+00:00",
+      "event_id": "8d147de5-027a-474c-8b7f-706d462d4f21",
+      "run_id": "ux-p02-15577fad-88f8-4db3-a162-0191fd145eb3",
+      "milestone": "UX-P02",
+      "step": "RUN_COMPLETE",
+      "status": "completed",
+      "detail": "Coordinator: close UX-P02 retry1; deliver seven hook examples and recommendation",
+      "evidence": "Prototype and exact proposed metadata/payload mapping ready; initial rendering failure remains recorded, one UX-only retry used. No M1\u2013M6 milestone promoted, no M2 retry consumed, no production code or real permissions/deployment changed. Source/evidence to be saved in canonical workspace and local branch."
+    }
+  ]
+}

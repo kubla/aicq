@@ -6,6 +6,12 @@ remain proposals.
 
 ## Design experiment
 
+UX-P02: seven hook-specific HTML examples and source-grounded contract mapping
+built; mechanical browser evaluation passed after one prototype retry. Owner
+review and live Extensions support remain open. Source:
+`prototypes/extensions-v2.html`; recommendation: `extensions-interaction-map.md`;
+evidence: `history/20261002_extensions-prototype.md`. No M2 retry consumed.
+
 UX-P01: self-contained HTML review exchange built and mechanically verified in
 browser. Awaiting Michael's interaction review. This is separate from M1–M6;
 M2 remains incomplete with one retry. Source: `prototypes/interaction-v1.html`;

@@ -27,3 +27,14 @@ persistence is implemented. M2 remains incomplete. Keep this throwaway prototype
 separate from application source until an interaction is validated.
 
 Canonical record: workspace/aicq/history/20261002_interaction-prototype.md.
+
+## Extensions study 02
+
+Open `../../mcp/ui/prototypes/extensions-v2.html` directly. Seven examples map
+AICQ to the actual Extensions hooks; use the host capability selector and the
+payload inspector. Notes: `extensions-v2-notes.md`. Proposed metadata:
+`extensions-v2-contracts.json`. Browser observations:
+`extensions-v2-browser-evidence.json`. This HTML calls no host bridge or service.
+
+Recommend global navigation + Agent exchanges thread tab + inline receipts.
+These hook choices await owner review; real installed-host support remains open.

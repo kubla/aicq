@@ -57,6 +57,17 @@ See `history/20261001_m1-local-baseline.md`,
 
 ## Interaction prototype
 
+UX-P02 now provides seven Extensions-specific examples in
+`mcp/ui/prototypes/extensions-v2.html`, on local throwaway branch
+`kublascratchpad/ux-extensions-v2`. Pinned official spec: ca16cb3. Global/sidebar
+navigation, thread tabs, inline/fullscreen, context/message actions, mentions,
+forms, file conflicts and settings/onboarding are modeled with exact illustrative
+payloads and capability fallbacks. Sixteen browser cases and responsive layouts
+were exercised; live host integration and owner design validation remain open.
+Initial render failed; a recorded UX-only retry repaired and passed the prototype.
+One prototype retry was used; M2's remaining retry is unchanged. See
+`history/20261002_extensions-prototype.md` and `extensions-interaction-map.md`.
+
 UX-P01 delivered a local, self-contained HTML prototype on throwaway branch
 `kublascratchpad/ux-prototype-v1`. Browser evaluation verified sharing, retrieval,
 clarification, revision use, changed-source reconciliation, pause/resume, simulated

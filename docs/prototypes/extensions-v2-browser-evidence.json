@@ -1,0 +1,183 @@
+{
+  "source": "simulated browser interactions, not real MCP transport",
+  "cases": [
+    {
+      "case": "Global: service reply does not wake chat; poll and explicit use",
+      "state": "Active host conversation\naicq\nApp surface\nglobal\nCurrent display mode\nfullscreen\nHost available modes\ninline, fullscreen\nSelected app contact\nAlice\nComposer context\nNone\nHost turns started\n1\nForeground polls\n1\nApp knows private transcript\nNo\nReply in service / app\ntrue / true\nFile draft / host version\nv3 / v3\nUnattended runtime\nNot configured\nCapability profile\ndesktop",
+      "payloads": [
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 8,\n  \"result\": {}\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 8,\n  \"method\": \"ui/message\",\n  \"params\": {\n    \"role\": \"user\",\n    \"content\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"Use Alice’s returned revision for exchange ex-24, based on launch plan v3. Compare it with the current document before applying; preserve my newer launch date.\"\n      },\n      {\n        \"type\": \"resource_link\",\n        \"uri\": \"aicq://exchanges/ex-24\",\n        \"name\": \"Autumn launch review\",\n        \"description\": \"Alice reviewed launch plan v3. Keep launch October 15; move webinar October 16 to October 19. Guest speaker availability is unresolved.\"\n      }\n    ],\n    \"_meta\": {\n      \"openai/message\": {\n        \"target\": \"active\",\n        \"send\": true\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"ui/notifications/host-context-changed\",\n  \"params\": {\n    \"openai/modelContext\": null\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 5,\n  \"result\": {\n    \"_meta\": {\n      \"openai/modelContext\": {\n        \"updateId\": \"context-5\"\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 5,\n  \"method\": \"ui/update-model-context\",\n  \"params\": {\n    \"content\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"Alice reviewed launch plan v3. Keep launch October 15; move webinar October 16 to October 19. Guest speaker availability is unresolved.\",\n        \"_meta\": {\n          \"openai/title\": \"Alice · Autumn launch review\"\n        }\n      }\n    ]\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 3,\n  \"result\": {\n    \"revisionReady\": true,\n    \"cursor\": \"cursor-5\"\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 3,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_poll\",\n    \"arguments\": {\n      \"cursor\": \"cursor-4\"\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"contacts\": [\n        \"Alice\",\n        \"Ravi\"\n      ],\n      \"exchangeIds\": [\n        \"ex-24\",\n        \"ex-25\"\n      ],\n      \"revisionReady\": false\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_open\",\n    \"arguments\": {}\n  }\n}"
+      ]
+    },
+    {
+      "case": "Thread instances, replacement, active message",
+      "state": "Active host conversation\nlaunch\nApp surface\nthread\nCurrent display mode\nfullscreen\nHost available modes\ninline, fullscreen\nSelected app contact\nAlice\nComposer context\nRavi · Budget check\nHost turns started\n1\nForeground polls\n0\nApp knows private transcript\nNo\nReply in service / app\ntrue / true\nFile draft / host version\nv3 / v3\nUnattended runtime\nNot configured\nCapability profile\ndesktop",
+      "payloads": [
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 11,\n  \"result\": {}\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 11,\n  \"method\": \"ui/message\",\n  \"params\": {\n    \"role\": \"user\",\n    \"content\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"Use Alice’s returned revision for exchange ex-24, based on launch plan v3. Compare it with the current document before applying; preserve my newer launch date.\"\n      },\n      {\n        \"type\": \"resource_link\",\n        \"uri\": \"aicq://exchanges/ex-24\",\n        \"name\": \"Autumn launch review\",\n        \"description\": \"Alice reviewed launch plan v3. Keep launch October 15; move webinar October 16 to October 19. Guest speaker availability is unresolved.\"\n      }\n    ],\n    \"_meta\": {\n      \"openai/message\": {\n        \"target\": \"active\",\n        \"send\": true\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 9,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"contacts\": [\n        \"Alice\",\n        \"Ravi\"\n      ],\n      \"exchangeIds\": [\n        \"ex-24\",\n        \"ex-25\"\n      ],\n      \"revisionReady\": true\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 9,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_thread\",\n    \"arguments\": {}\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 7,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"contacts\": [\n        \"Alice\",\n        \"Ravi\"\n      ],\n      \"exchangeIds\": [\n        \"ex-24\",\n        \"ex-25\"\n      ],\n      \"revisionReady\": true\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 7,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_thread\",\n    \"arguments\": {}\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 5,\n  \"result\": {\n    \"_meta\": {\n      \"openai/modelContext\": {\n        \"updateId\": \"context-5\"\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 5,\n  \"method\": \"ui/update-model-context\",\n  \"params\": {\n    \"content\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"Ravi asks whether the launch budget includes contractor time. No budget revision is ready.\",\n        \"_meta\": {\n          \"openai/title\": \"Ravi · Budget check\"\n        }\n      }\n    ]\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 3,\n  \"result\": {\n    \"_meta\": {\n      \"openai/modelContext\": {\n        \"updateId\": \"context-3\"\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 3,\n  \"method\": \"ui/update-model-context\",\n  \"params\": {\n    \"content\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"Alice reviewed launch plan v3. Keep launch October 15; move webinar October 16 to October 19. Guest speaker availability is unresolved.\",\n        \"_meta\": {\n          \"openai/title\": \"Alice · Autumn launch review\"\n        }\n      }\n    ]\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"contacts\": [\n        \"Alice\",\n        \"Ravi\"\n      ],\n      \"exchangeIds\": [\n        \"ex-24\",\n        \"ex-25\"\n      ],\n      \"revisionReady\": true\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_thread\",\n    \"arguments\": {}\n  }\n}"
+      ]
+    },
+    {
+      "case": "New conversation message",
+      "state": "Active host conversation\nreview\nApp surface\nthread\nCurrent display mode\nfullscreen\nHost available modes\ninline, fullscreen\nSelected app contact\nAlice\nComposer context\nNone\nHost turns started\n2\nForeground polls\n0\nApp knows private transcript\nNo\nReply in service / app\ntrue / true\nFile draft / host version\nv3 / v3\nUnattended runtime\nNot configured\nCapability profile\ndesktop",
+      "payloads": [
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 13,\n  \"result\": {}\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 13,\n  \"method\": \"ui/message\",\n  \"params\": {\n    \"role\": \"user\",\n    \"content\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"Start a separate review of Alice’s exchange ex-24. Retrieve its versioned artifact and unresolved questions.\"\n      },\n      {\n        \"type\": \"resource_link\",\n        \"uri\": \"aicq://exchanges/ex-24\",\n        \"name\": \"Autumn launch review\",\n        \"description\": \"Alice reviewed launch plan v3. Keep launch October 15; move webinar October 16 to October 19. Guest speaker availability is unresolved.\"\n      }\n    ],\n    \"_meta\": {\n      \"openai/message\": {\n        \"target\": \"new\",\n        \"send\": true\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 11,\n  \"result\": {}\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 11,\n  \"method\": \"ui/message\",\n  \"params\": {\n    \"role\": \"user\",\n    \"content\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"Use Alice’s returned revision for exchange ex-24, based on launch plan v3. Compare it with the current document before applying; preserve my newer launch date.\"\n      },\n      {\n        \"type\": \"resource_link\",\n        \"uri\": \"aicq://exchanges/ex-24\",\n        \"name\": \"Autumn launch review\",\n        \"description\": \"Alice reviewed launch plan v3. Keep launch October 15; move webinar October 16 to October 19. Guest speaker availability is unresolved.\"\n      }\n    ],\n    \"_meta\": {\n      \"openai/message\": {\n        \"target\": \"active\",\n        \"send\": true\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 9,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"contacts\": [\n        \"Alice\",\n        \"Ravi\"\n      ],\n      \"exchangeIds\": [\n        \"ex-24\",\n        \"ex-25\"\n      ],\n      \"revisionReady\": true\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 9,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_thread\",\n    \"arguments\": {}\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 7,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"contacts\": [\n        \"Alice\",\n        \"Ravi\"\n      ],\n      \"exchangeIds\": [\n        \"ex-24\",\n        \"ex-25\"\n      ],\n      \"revisionReady\": true\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 7,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_thread\",\n    \"arguments\": {}\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 5,\n  \"result\": {\n    \"_meta\": {\n      \"openai/modelContext\": {\n        \"updateId\": \"context-5\"\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 5,\n  \"method\": \"ui/update-model-context\",\n  \"params\": {\n    \"content\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"Ravi asks whether the launch budget includes contractor time. No budget revision is ready.\",\n        \"_meta\": {\n          \"openai/title\": \"Ravi · Budget check\"\n        }\n      }\n    ]\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 3,\n  \"result\": {\n    \"_meta\": {\n      \"openai/modelContext\": {\n        \"updateId\": \"context-3\"\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 3,\n  \"method\": \"ui/update-model-context\",\n  \"params\": {\n    \"content\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"Alice reviewed launch plan v3. Keep launch October 15; move webinar October 16 to October 19. Guest speaker availability is unresolved.\",\n        \"_meta\": {\n          \"openai/title\": \"Alice · Autumn launch review\"\n        }\n      }\n    ]\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"contacts\": [\n        \"Alice\",\n        \"Ravi\"\n      ],\n      \"exchangeIds\": [\n        \"ex-24\",\n        \"ex-25\"\n      ],\n      \"revisionReady\": true\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_thread\",\n    \"arguments\": {}\n  }\n}"
+      ]
+    },
+    {
+      "case": "Host refuses fullscreen",
+      "state": "Active host conversation\nlaunch\nApp surface\ninline\nCurrent display mode\ninline\nHost available modes\ninline, fullscreen\nSelected app contact\nAlice\nComposer context\nNone\nHost turns started\n0\nForeground polls\n0\nApp knows private transcript\nNo\nReply in service / app\nfalse / false\nFile draft / host version\nv3 / v3\nUnattended runtime\nNot configured\nCapability profile\ndesktop",
+      "payloads": [
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"ui/notifications/host-context-changed\",\n  \"params\": {\n    \"displayMode\": \"inline\"\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"result\": {\n    \"mode\": \"inline\"\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"ui/request-display-mode\",\n  \"params\": {\n    \"mode\": \"fullscreen\"\n  }\n}"
+      ]
+    },
+    {
+      "case": "Desktop deep-link route",
+      "state": "Active host conversation\naicq\nApp surface\nglobal\nCurrent display mode\nfullscreen\nHost available modes\ninline, fullscreen\nSelected app contact\nAlice\nComposer context\nNone\nHost turns started\n0\nForeground polls\n0\nApp knows private transcript\nNo\nReply in service / app\nfalse / false\nFile draft / host version\nv3 / v3\nUnattended runtime\nNot configured\nCapability profile\ndesktop",
+      "payloads": [
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"ui/notifications/host-context-changed\",\n  \"params\": {\n    \"openai/deepLink\": {\n      \"url\": \"/exchanges/ex-24\"\n    }\n  }\n}",
+        "{\n  \"url\": \"codex://plugins/aicq@aicq-dev/app/aicq_open?path=%2Fexchanges%2Fex-24\"\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"ui/notifications/host-context-changed\",\n  \"params\": {\n    \"displayMode\": \"inline\"\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"result\": {\n    \"mode\": \"inline\"\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"ui/request-display-mode\",\n  \"params\": {\n    \"mode\": \"fullscreen\"\n  }\n}"
+      ]
+    },
+    {
+      "case": "Desktop mention typeahead",
+      "state": "Active host conversation\nlaunch\nApp surface\nmentions\nCurrent display mode\nfullscreen\nHost available modes\ninline, fullscreen\nSelected app contact\nAlice\nComposer context\nAlice’s agent\nHost turns started\n0\nForeground polls\n0\nApp knows private transcript\nNo\nReply in service / app\nfalse / false\nFile draft / host version\nv3 / v3\nUnattended runtime\nNot configured\nCapability profile\ndesktop",
+      "payloads": [
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 3,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"items\": [\n        {\n          \"type\": \"resource_link\",\n          \"uri\": \"aicq://contacts/alice\",\n          \"name\": \"Alice’s agent\"\n        }\n      ]\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 3,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_mentions\",\n    \"arguments\": {\n      \"query\": \"Ali\"\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"items\": [\n        {\n          \"type\": \"resource_link\",\n          \"uri\": \"aicq://contacts/alice\",\n          \"name\": \"Alice’s agent\"\n        },\n        {\n          \"type\": \"resource_link\",\n          \"uri\": \"aicq://contacts/ravi\",\n          \"name\": \"Ravi’s agent\"\n        }\n      ]\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_mentions\",\n    \"arguments\": {\n      \"query\": \"\"\n    }\n  }\n}"
+      ]
+    },
+    {
+      "case": "Direct-MCP form and preview; delayed response matches original form ID",
+      "state": "Active host conversation\nlaunch\nApp surface\nclarify\nCurrent display mode\nfullscreen\nHost available modes\ninline, fullscreen\nSelected app contact\nAlice\nComposer context\nNone\nHost turns started\n0\nForeground polls\n0\nApp knows private transcript\nNo\nReply in service / app\nfalse / false\nFile draft / host version\nv3 / v3\nUnattended runtime\nNot configured\nCapability profile\ndesktop",
+      "payloads": [
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"result\": {\n    \"action\": \"accept\",\n    \"content\": {\n      \"document\": \"aicq://artifacts/launch/v4\"\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 2,\n  \"result\": {\n    \"contents\": [\n      {\n        \"uri\": \"aicq://artifacts/launch/v3\",\n        \"text\": \"Launch October 15. Webinar October 16.\"\n      }\n    ]\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 2,\n  \"method\": \"resources/read\",\n  \"params\": {\n    \"uri\": \"aicq://artifacts/launch/v3\"\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"openai/elicitation/create\",\n  \"params\": {\n    \"mode\": \"form\",\n    \"message\": \"Which version should Alice’s agent review?\",\n    \"requestedSchema\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"document\": {\n          \"type\": \"string\",\n          \"title\": \"Document to share\",\n          \"format\": \"uri\",\n          \"x-openai-input\": {\n            \"type\": \"resource\",\n            \"options\": [\n              {\n                \"uri\": \"aicq://artifacts/launch/v3\",\n                \"name\": \"launch-v3\",\n                \"title\": \"Launch plan · v3\",\n                \"_meta\": {\n                  \"openai/preview\": {\n                    \"target\": {\n                      \"type\": \"resource_link\",\n                      \"uri\": \"aicq://artifacts/launch/v3\",\n                      \"name\": \"Launch plan v3\"\n                    }\n                  }\n                }\n              },\n              {\n                \"uri\": \"aicq://artifacts/launch/v4\",\n                \"name\": \"launch-v4\",\n                \"title\": \"Launch plan · v4\"\n              }\n            ]\n          }\n        }\n      },\n      \"required\": [\n        \"document\"\n      ]\n    }\n  }\n}"
+      ]
+    },
+    {
+      "case": "iOS active-only messages and readable text replacing resource link",
+      "state": "Active host conversation\nlaunch\nApp surface\nthread\nCurrent display mode\nfullscreen\nHost available modes\ninline, fullscreen\nSelected app contact\nAlice\nComposer context\nNone\nHost turns started\n1\nForeground polls\n0\nApp knows private transcript\nNo\nReply in service / app\ntrue / true\nFile draft / host version\nv3 / v3\nUnattended runtime\nNot configured\nCapability profile\nios",
+      "payloads": [
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 3,\n  \"result\": {}\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 3,\n  \"method\": \"ui/message\",\n  \"params\": {\n    \"role\": \"user\",\n    \"content\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"Use Alice’s returned revision for exchange ex-24, based on launch plan v3. Compare it with the current document before applying; preserve my newer launch date.\"\n      },\n      {\n        \"type\": \"text\",\n        \"text\": \"Alice reviewed launch plan v3. Keep launch October 15; move webinar October 16 to October 19. Guest speaker availability is unresolved. Exchange reference: aicq://exchanges/ex-24\"\n      }\n    ],\n    \"_meta\": {\n      \"openai/message\": {\n        \"target\": \"active\",\n        \"send\": true\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"contacts\": [\n        \"Alice\",\n        \"Ravi\"\n      ],\n      \"exchangeIds\": [\n        \"ex-24\",\n        \"ex-25\"\n      ],\n      \"revisionReady\": true\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_thread\",\n    \"arguments\": {}\n  }\n}"
+      ]
+    },
+    {
+      "case": "Mobile conversational clarification; no form request",
+      "state": "Active host conversation\nlaunch\nApp surface\nclarify\nCurrent display mode\nfullscreen\nHost available modes\ninline, fullscreen\nSelected app contact\nAlice\nComposer context\nNone\nHost turns started\n1\nForeground polls\n0\nApp knows private transcript\nNo\nReply in service / app\nfalse / false\nFile draft / host version\nv3 / v3\nUnattended runtime\nNot configured\nCapability profile\nios",
+      "payloads": []
+    },
+    {
+      "case": "Android deep-link fallback",
+      "visible": "Deep links are not supported in this profile. Open AICQ through navigation and select the exchange.\n Host keeps inline",
+      "state": "Active host conversation\nlaunch\nApp surface\ninline\nCurrent display mode\ninline\nHost available modes\ninline, fullscreen\nSelected app contact\nAlice\nComposer context\nNone\nHost turns started\n0\nForeground polls\n0\nApp knows private transcript\nNo\nReply in service / app\nfalse / false\nFile draft / host version\nv3 / v3\nUnattended runtime\nNot configured\nCapability profile\nandroid"
+    },
+    {
+      "case": "Portable tools without OpenAI UI",
+      "state": "Active host conversation\nlaunch\nApp surface\ninline\nCurrent display mode\ninline\nHost available modes\nNot assumed\nSelected app contact\nAlice\nComposer context\nNone\nHost turns started\n1\nForeground polls\n0\nApp knows private transcript\nNo\nReply in service / app\nfalse / false\nFile draft / host version\nv3 / v3\nUnattended runtime\nNot configured\nCapability profile\ntools",
+      "payloads": [
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"result\": {\n    \"content\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"Selected artifact shared with Alice’s agent; waiting for retrieval.\"\n      }\n    ],\n    \"structuredContent\": {\n      \"exchangeId\": \"ex-24\",\n      \"sharedArtifactUri\": \"aicq://artifacts/launch/v4\",\n      \"status\": \"waiting\"\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_send\",\n    \"arguments\": {\n      \"contactId\": \"alice\",\n      \"artifactUri\": \"aicq://artifacts/launch/v4\",\n      \"request\": \"Retrieve exchange ex-24 and share only launch plan v4.\"\n    }\n  }\n}"
+      ]
+    },
+    {
+      "case": "File version conflict before overwrite",
+      "state": "Active host conversation\nlaunch\nApp surface\nfile\nCurrent display mode\nfullscreen\nHost available modes\ninline, fullscreen\nSelected app contact\nAlice\nComposer context\nNone\nHost turns started\n0\nForeground polls\n0\nApp knows private transcript\nNo\nReply in service / app\nfalse / false\nFile draft / host version\nv3 / v4\nUnattended runtime\nNot configured\nCapability profile\ndesktop",
+      "payloads": [
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 6,\n  \"result\": {\n    \"outcome\": \"conflict\",\n    \"etag\": \"v4\"\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 6,\n  \"method\": \"openai/resources/write\",\n  \"params\": {\n    \"uri\": \"host-resource://launch-review\",\n    \"ifMatch\": \"v3\",\n    \"text\": \"Launch: October 15\\nWebinar: October 19\"\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 4,\n  \"result\": {\n    \"contents\": [\n      {\n        \"uri\": \"host-resource://launch-review\",\n        \"text\": \"Launch October 15; webinar October 16\",\n        \"_meta\": {\n          \"openai/resource\": {\n            \"writable\": true,\n            \"etag\": \"v3\"\n          }\n        }\n      }\n    ]\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 4,\n  \"method\": \"resources/read\",\n  \"params\": {\n    \"uri\": \"host-resource://launch-review\",\n    \"_meta\": {\n      \"openai/resource\": {\n        \"representation\": \"text\"\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"ui/notifications/tool-input\",\n  \"params\": {\n    \"arguments\": {\n      \"file\": {\n        \"name\": \"launch-review.aicq\",\n        \"resourceUri\": \"host-resource://launch-review\"\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"snapshot\": true\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_review_file\",\n    \"arguments\": {\n      \"file\": {\n        \"name\": \"launch-review.aicq\",\n        \"resourceUri\": \"host-resource://launch-review\"\n      }\n    }\n  }\n}"
+      ]
+    },
+    {
+      "case": "Reconciled file saved with latest ETag",
+      "state": "Active host conversation\nlaunch\nApp surface\nfile\nCurrent display mode\nfullscreen\nHost available modes\ninline, fullscreen\nSelected app contact\nAlice\nComposer context\nNone\nHost turns started\n0\nForeground polls\n0\nApp knows private transcript\nNo\nReply in service / app\nfalse / false\nFile draft / host version\nv5 / v5\nUnattended runtime\nNot configured\nCapability profile\ndesktop",
+      "payloads": [
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 10,\n  \"result\": {\n    \"outcome\": \"saved\",\n    \"etag\": \"v5\"\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 10,\n  \"method\": \"openai/resources/write\",\n  \"params\": {\n    \"uri\": \"host-resource://launch-review\",\n    \"ifMatch\": \"v4\",\n    \"text\": \"Launch: October 20\\nWebinar: October 22\"\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 8,\n  \"result\": {\n    \"contents\": [\n      {\n        \"uri\": \"host-resource://launch-review\",\n        \"text\": \"Launch October 20; webinar October 16\",\n        \"_meta\": {\n          \"openai/resource\": {\n            \"writable\": true,\n            \"etag\": \"v4\"\n          }\n        }\n      }\n    ]\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 8,\n  \"method\": \"resources/read\",\n  \"params\": {\n    \"uri\": \"host-resource://launch-review\",\n    \"_meta\": {\n      \"openai/resource\": {\n        \"representation\": \"text\"\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 6,\n  \"result\": {\n    \"outcome\": \"conflict\",\n    \"etag\": \"v4\"\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 6,\n  \"method\": \"openai/resources/write\",\n  \"params\": {\n    \"uri\": \"host-resource://launch-review\",\n    \"ifMatch\": \"v3\",\n    \"text\": \"Launch: October 15\\nWebinar: October 19\"\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 4,\n  \"result\": {\n    \"contents\": [\n      {\n        \"uri\": \"host-resource://launch-review\",\n        \"text\": \"Launch October 15; webinar October 16\",\n        \"_meta\": {\n          \"openai/resource\": {\n            \"writable\": true,\n            \"etag\": \"v3\"\n          }\n        }\n      }\n    ]\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 4,\n  \"method\": \"resources/read\",\n  \"params\": {\n    \"uri\": \"host-resource://launch-review\",\n    \"_meta\": {\n      \"openai/resource\": {\n        \"representation\": \"text\"\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"ui/notifications/tool-input\",\n  \"params\": {\n    \"arguments\": {\n      \"file\": {\n        \"name\": \"launch-review.aicq\",\n        \"resourceUri\": \"host-resource://launch-review\"\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"snapshot\": true\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_review_file\",\n    \"arguments\": {\n      \"file\": {\n        \"name\": \"launch-review.aicq\",\n        \"resourceUri\": \"host-resource://launch-review\"\n      }\n    }\n  }\n}"
+      ]
+    },
+    {
+      "case": "Web file handler disabled",
+      "openEnabled": false
+    },
+    {
+      "case": "Native settings effective values, partial updates and onboarding skill",
+      "state": "Active host conversation\nlaunch\nApp surface\nsettings\nCurrent display mode\nfullscreen\nHost available modes\ninline, fullscreen\nSelected app contact\nAlice\nComposer context\nNone\nHost turns started\n1\nForeground polls\n0\nApp knows private transcript\nNo\nReply in service / app\nfalse / false\nFile draft / host version\nv3 / v3\nUnattended runtime\nNot configured\nCapability profile\nweb",
+      "payloads": [
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 6,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"values\": {\n        \"background_responses\": true,\n        \"poll_seconds\": 60\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 6,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_settings_update\",\n    \"arguments\": {\n      \"set\": {\n        \"background_responses\": true\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 4,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"values\": {\n        \"background_responses\": true,\n        \"poll_seconds\": 60\n      }\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 4,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_settings_update\",\n    \"arguments\": {\n      \"set\": {\n        \"poll_seconds\": 60\n      }\n    }\n  }\n}",
+        "{\n  \"extensions\": {\n    \"com.openai\": {\n      \"onboardingSkill\": \"./skills/setup/SKILL.md\"\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"result\": {\n    \"content\": [],\n    \"structuredContent\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"background_responses\": {\n            \"type\": \"boolean\",\n            \"title\": \"Permit unattended responses\"\n          },\n          \"poll_seconds\": {\n            \"type\": \"integer\",\n            \"title\": \"Foreground poll interval\",\n            \"minimum\": 15,\n            \"maximum\": 300\n          }\n        }\n      },\n      \"values\": {\n        \"background_responses\": true,\n        \"poll_seconds\": 60\n      },\n      \"layout\": [\n        {\n          \"kind\": \"group\",\n          \"title\": \"Agent behavior\",\n          \"items\": [\n            {\n              \"kind\": \"property\",\n              \"property\": \"background_responses\"\n            },\n            {\n              \"kind\": \"property\",\n              \"property\": \"poll_seconds\"\n            },\n            {\n              \"kind\": \"tool\",\n              \"tool\": \"aicq_contact_controls\",\n              \"title\": \"Contact permissions\"\n            }\n          ]\n        }\n      ]\n    }\n  }\n}",
+        "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"aicq_settings_read\",\n    \"arguments\": {}\n  }\n}"
+      ]
+    },
+    {
+      "case": "Settings MCP App modal",
+      "visible": "SETTINGS ACTION · MCP APP MODAL\nContact permissions\n\nAlice is connected to the dedicated exchange. Connecting does not authorize unattended tool use.\n\nShared: selected messages and artifact versions\nNot shared: private host conversations\nBackground runtime: not configured\nDone"
+    }
+  ],
+  "html_sha256": "733e2ff0e344e64a14bfbfa03bf46c80f6debff6b9900ee5b7c9b71ed0f77ef1",
+  "extensions_source_revision": "ca16cb3bc015baaa1b849082d8755bbef18770cb",
+  "url": "http://127.0.0.1:6188/extensions-v2.html",
+  "desktop_viewport": "1440x1060",
+  "mobile_viewport": "390x844",
+  "runtime_errors_since_final_reload": []
+}
