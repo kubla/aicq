@@ -1,0 +1,25 @@
+{
+  "id": "appgdep_6ac11c04f6a48191b5a39058f4547add",
+  "project_id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896",
+  "title": "AICQ · Interaction studies",
+  "version_id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896~appgver_a67e4d53d88c8191ac080d53913aefc9",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://aicq-interaction-studies.mtiffany.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6ac11b43d7e0819198f3007c5cf6a896",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-10-03T15:15:25.221950+00:00",
+  "source_commit": "be1e82a9f02133b87d9b01cac3803d4ffa09415e",
+  "source_checkout": "/Users/mjjt/Documents/Code/aicq-prototype-site",
+  "prototype_commit": "cccc298",
+  "access": "private",
+  "routes": [
+    "/",
+    "/extensions-v2.html",
+    "/interaction-v1.html"
+  ],
+  "static_only": true
+}

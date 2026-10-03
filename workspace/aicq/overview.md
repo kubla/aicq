@@ -23,3 +23,9 @@ and explicit host turns are distinct actions. This remains a design proposal.
 No M2 retry, production change, live delivery, access expansion or deployment
 occurred. Previous UX-P01 remains available. Hosting/account prerequisites remain
 in outstanding-issues.md. The overnight continuation is stopped.
+
+UX-P04 sharing edition published privately at
+https://aicq-interaction-studies.mtiffany.chatgpt.site with both interactive studies.
+Use native Site sharing controls to grant viewers access. Deployment succeeded;
+no actual agent messaging or live integration is hosted. Zero retries; M2 unchanged.
+See `history/20261003_prototype-site.md`.

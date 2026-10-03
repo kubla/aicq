@@ -267,3 +267,11 @@ reference screenshots and layout guidance instead. Future host mockups must read
 `docs/design-references/openai-host/README.md` and inspect matching images. These
 are source images of Bits & Bolts Local, not live installed Remote captures.
 Existing prototypes await a visual fidelity pass. No milestone or retry changed.
+
+## 2026-10-03 — Share the prototypes through ChatGPT Sites
+
+The user requested: “Deploy to ChatGPT Sites (make a new one) so I can share with others”.
+This authorizes a new hosted sharing edition of the existing simulated HTML
+studies. It does not authorize deploying the product backend or treating M2
+as complete. The Site starts private with native sharing controls; no external
+viewer invitations or public access change were requested by name.

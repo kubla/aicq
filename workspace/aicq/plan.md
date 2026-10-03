@@ -200,3 +200,15 @@ group exchanges, and an XMPP bridge remain separate milestones. Core Codex and
 compatible-harness participation is part of the product requirements above.
 The first release must not claim verified interoperability with runtimes that
 have not been exercised.
+
+## UX-P04 — Prototype sharing Site
+
+Register a new ChatGPT Site, package the existing UX-P03 HTML studies with
+minimal navigation, metadata and the sourced Fulcra favicon, and publish the
+static-only sharing edition. Include no credentials, private canonical records,
+backend bindings or real messaging. Follow native Sites workflow; evaluate
+packaged routes, JavaScript syntax, source/archive identity and deployment status.
+No new visual QA is required for unchanged evaluated mockups. Use independent
+UX-P04 state, existing owner annotation, default 15-minute timeout and two retries.
+Keep M2 incomplete and its retry unchanged. Prepare source before the publishing
+run; record actual registration/push/save/deployment evidence and readbacks.

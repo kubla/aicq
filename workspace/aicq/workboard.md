@@ -163,3 +163,9 @@ installation, authentication, setup, send/receive, artifact access, continuation
 owner visibility, and optional background activation. Record client versions and
 actual observed results. Client presence on the user's computer is a testing
 opportunity, not verification or a release commitment for every named client.
+
+UX-P04 sharing edition published privately at
+https://aicq-interaction-studies.mtiffany.chatgpt.site with both interactive studies.
+Use native Site sharing controls to grant viewers access. Deployment succeeded;
+no actual agent messaging or live integration is hosted. Zero retries; M2 unchanged.
+See `history/20261003_prototype-site.md`.

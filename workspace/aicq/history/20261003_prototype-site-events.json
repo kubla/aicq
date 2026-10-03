@@ -1,0 +1,79 @@
+[
+  {
+    "record_id": "d24b46bd-d556-54cb-abaa-5695c1362bb5",
+    "recorded_at": "2026-10-03T15:13:43.580838+00:00",
+    "event_id": "cf6af025-750b-44c1-af29-6df537fbd661",
+    "run_id": "ux-p04-9071d0f3-b4e1-4f6b-a436-1cc2d81dde7e",
+    "milestone": "UX-P04",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "Publish the prepared UX-P03 mockups as a new static ChatGPT Site, default 15-minute timeout and two retries.",
+    "evidence": "Canonical plan and decisions reconciled/uploaded/read back; new private Site appgprj_6ac11b43d7e0819198f3007c5cf6a896 registered. Prepared source includes only fictional HTML mockups, study navigation, favicon and Rubik license."
+  },
+  {
+    "record_id": "98a0d923-2781-5089-8609-bc1b298f815c",
+    "recorded_at": "2026-10-03T15:13:48.523306+00:00",
+    "event_id": "b45fb0db-5b54-4678-b03c-78dea3523a6e",
+    "run_id": "ux-p04-9071d0f3-b4e1-4f6b-a436-1cc2d81dde7e",
+    "milestone": "UX-P04",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "Coordinator selects independent UX-P04 sharing delivery, leaving all product milestone gates unchanged.",
+    "evidence": "User explicitly requested a new ChatGPT Site for sharing. M2 incomplete, one retry; no real product backend or messaging deployment."
+  },
+  {
+    "record_id": "8be113fb-0cd3-5de8-909e-70f3b93d95bf",
+    "recorded_at": "2026-10-03T15:13:54.285829+00:00",
+    "event_id": "40997ab0-89b4-4c73-bfa0-1896864a1c17",
+    "run_id": "ux-p04-9071d0f3-b4e1-4f6b-a436-1cc2d81dde7e",
+    "milestone": "UX-P04",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Prepared the static sharing edition from cccc298 with three HTML routes and supplied Fulcra favicon.",
+    "evidence": "Source at /Users/mjjt/Documents/Code/aicq-prototype-site; no private workspace records, credentials or runtime bindings. All inline scripts parse via Node --check; manifest static.directory is dist."
+  },
+  {
+    "record_id": "75c0c2a3-a5bd-5666-9b86-023a68997a5c",
+    "recorded_at": "2026-10-03T15:14:58.411543+00:00",
+    "event_id": "9a275c85-4bf5-40c6-bfe3-89273c43f468",
+    "run_id": "ux-p04-9071d0f3-b4e1-4f6b-a436-1cc2d81dde7e",
+    "milestone": "UX-P04",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Evaluator verifies static route responses, JavaScript syntax, Sites source/archive identity and terminal deployment status.",
+    "evidence": "Local root and both study URLs returned HTTP 200 with expected full HTML; inline scripts parsed; no backend or private data included. Native Sites publishing workflow is running."
+  },
+  {
+    "record_id": "1aa3bd8b-6064-56ad-8831-1c551146b4ed",
+    "recorded_at": "2026-10-03T15:16:14.239505+00:00",
+    "event_id": "729dae79-9c9c-4f95-9d98-3ded4a1a8858",
+    "run_id": "ux-p04-9071d0f3-b4e1-4f6b-a436-1cc2d81dde7e",
+    "milestone": "UX-P04",
+    "step": "REVIEW",
+    "status": "completed",
+    "detail": "Static sharing Site deployment verified succeeded through native Sites result.",
+    "evidence": "Site appgprj_6ac11b43d7e0819198f3007c5cf6a896; source be1e82a9f02133b87d9b01cac3803d4ffa09415e; archive packaged from exact pushed source; saved version appgprj_6ac11b43d7e0819198f3007c5cf6a896~appgver_a67e4d53d88c8191ac080d53913aefc9; deployment appgdep_6ac11c04f6a48191b5a39058f4547add succeeded at https://aicq-interaction-studies.mtiffany.chatgpt.site. Private access preserved. Local routes HTTP 200 and JavaScript syntax verified. No live AICQ integration claim."
+  },
+  {
+    "record_id": "0d21c66f-536c-5801-a06c-ffde901ab4ff",
+    "recorded_at": "2026-10-03T15:16:19.551836+00:00",
+    "event_id": "4aa2b216-ffa5-4652-a669-be07cb7deff7",
+    "run_id": "ux-p04-9071d0f3-b4e1-4f6b-a436-1cc2d81dde7e",
+    "milestone": "UX-P04",
+    "step": "MARK_COMPLETE",
+    "status": "completed",
+    "detail": "Coordinator marks independent UX-P04 prototype sharing Site delivery complete.",
+    "evidence": "New private ChatGPT Site successfully published with both simulated studies; native sharing controls allow owner to invite viewers. No public access or invitations changed. M2 remains incomplete with one retry."
+  },
+  {
+    "record_id": "3bca8789-b649-5153-b1c6-6dbb75ae3e03",
+    "recorded_at": "2026-10-03T15:16:24.575041+00:00",
+    "event_id": "9f339d51-2a50-49db-85d6-27b46b3119d8",
+    "run_id": "ux-p04-9071d0f3-b4e1-4f6b-a436-1cc2d81dde7e",
+    "milestone": "UX-P04",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "Closed UX-P04 with verified successful Site deployment, zero retries.",
+    "evidence": "https://aicq-interaction-studies.mtiffany.chatgpt.site; terminal deployment appgdep_6ac11c04f6a48191b5a39058f4547add succeeded. Exact source, version and deployment identifiers will be preserved in canonical history and local repository mirrors."
+  }
+]

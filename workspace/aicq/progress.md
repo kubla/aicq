@@ -188,3 +188,9 @@ Earlier cloud Git push failed with HTTP 401; API publication succeeded. Current
 local push capability has not been retested; local application commits are unpublished.
 Separate Fulcra MCP branch `aicq/mcp-events`, prerequisite `429da58`, provides
 protocol readiness and the reused OAuth gateway. It does not implement Events.
+
+UX-P04 sharing edition published privately at
+https://aicq-interaction-studies.mtiffany.chatgpt.site with both interactive studies.
+Use native Site sharing controls to grant viewers access. Deployment succeeded;
+no actual agent messaging or live integration is hosted. Zero retries; M2 unchanged.
+See `history/20261003_prototype-site.md`.
