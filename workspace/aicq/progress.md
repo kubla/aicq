@@ -18,7 +18,11 @@ remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 ## Harness state
 
 Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
-The latest run is closed; no run is active.
+The latest run is UX-P05 retry 1, closed at 2026-10-03 17:44:12 UTC; no run is active.
+Passing REVIEW f473bfe9-429d-5cac-8233-c16edd418010, MARK_COMPLETE
+8da0020f-5d79-56bd-a53b-316e91088557 and RUN_COMPLETE
+3a78f9c7-fa87-5d0a-97f4-188ff2591732 read back. One UX-P05 retry used;
+M2 retry count unchanged. See history/20261003_alice-worked-example.md.
 
 - UX-P03 retry `ux-p03-f8c30fc1-0cbf-4de2-bc18-c876c3165901`: passing
   REVIEW, MARK_COMPLETE and RUN_COMPLETE read back; terminal record
@@ -194,3 +198,13 @@ https://aicq-interaction-studies.mtiffany.chatgpt.site with both interactive stu
 Use native Site sharing controls to grant viewers access. Deployment succeeded;
 no actual agent messaging or live integration is hosted. Zero retries; M2 unchanged.
 See `history/20261003_prototype-site.md`.
+
+UX-P05 (2026-10-03): Alice’s worked ChatGPT example published at
+https://aicq-interaction-studies.mtiffany.chatgpt.site/alice.html on the existing Site.
+My Agents/Friends Agents, six populated exchanges, invitation recipient walkthrough,
+review/clarification/revision conflict, file editing, owner controls and later-session
+continuation are interactive simulations. Desktop and narrow browser review passed.
+One UX-only retry repaired receipt routing; passing REVIEW, MARK_COMPLETE and
+RUN_COMPLETE read back. M2 remains incomplete with one retry; no live integration
+claimed. Existing studies and owner-private audience preserved. See
+`history/20261003_alice-worked-example.md` and `prototypes/alice-v3-notes.md`.

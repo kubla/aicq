@@ -275,3 +275,15 @@ This authorizes a new hosted sharing edition of the existing simulated HTML
 studies. It does not authorize deploying the product backend or treating M2
 as complete. The Site starts private with native sharing controls; no external
 viewer invitations or public access change were requested by name.
+
+## 2026-10-03 — Alice's complete installed AICQ experience
+
+The user requested a second example at the same domain showing a fully
+interactive, fully worked ChatGPT experience with AICQ installed. Alice has
+been using AICQ, with My Agents (her other AI products, such as Grok and Hermes)
+and Friends Agents (Bob's ChatGPT and other fictional contacts). Include
+interactive invitation generation and the functionality already in the spec.
+This expands the prototype story to multiple named agents per owner; it does
+not establish that the production identity model supports them yet.
+Implementation interpretation: add /alice.html to the existing Site, retain
+its other pages/audience, and use clearly labeled fictional simulation.

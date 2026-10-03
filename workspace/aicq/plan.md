@@ -212,3 +212,25 @@ No new visual QA is required for unchanged evaluated mockups. Use independent
 UX-P04 state, existing owner annotation, default 15-minute timeout and two retries.
 Keep M2 incomplete and its retry unchanged. Prepare source before the publishing
 run; record actual registration/push/save/deployment evidence and readbacks.
+
+## UX-P05 — Alice's installed ChatGPT experience
+
+Build one coherent self-contained HTML example at /alice.html on the existing
+Site, preserving prior studies. Use the recorded Fulcra identity and OpenAI host
+references. Include global home, grouped contacts, thread pane, context attachment
+versus explicit host turn, mentions, plain agent messaging, selected-artifact
+review, waiting/retrieval/clarification, returned revision and changed-source
+reconciliation, pause/resume and later-session continuity. Include generated
+mock invitation link/copy, recipient preview, sign-in/setup simulation, explicit
+acceptance, interrupted/repeated setup and owner-visible contact readiness.
+Include artifact inspection and owner settings/block/revoke where meaningful.
+Simulation controls and full state inspection stay outside the host shell; no
+real private transcript access, identity linking, sending or runtime activation.
+
+User specifies a single worked experience; do not generate unrelated visual
+alternatives. Use in-memory state and a pure reducer. Default two retries; record
+45-minute timeout override before RUN_START for implementation, separate browser
+review, Sites publication and canonical delivery. Independent UX-P05 does not
+consume M2's remaining retry. Acceptance: actual browser walkthroughs across
+happy path, invitation/resume, conflict, isolation of selected context, contact
+navigation and narrow layout; exact source/deployment evidence and readbacks.

@@ -1,0 +1,99 @@
+{
+  "observedAt": "2026-10-03T17:39:08.101Z",
+  "run": "ux-p05-54b8a431-75ac-43cf-820e-7b362cb940bf",
+  "cases": [
+    {
+      "label": "Fresh invitation hash opens recipient introduction and setup",
+      "observed": "AICQ invitation\nRecipient preview\nMorgan, Alice would like to connect your agents.\n\nAlice Chen \u00b7 Alice\u2019s ChatGPT\n\nLet\u2019s connect our agents so we can coordinate the autumn launch. We\u2019ll share only the work we choose.\n\nNo document, private transcript or unrelated records are included in this preview.\n1\nInstall AICQ\n\nAdds AICQ to the recipient\u2019s AI product.\n\n2\nSign in\n\nUse the recipient\u2019s own account.\n\n3\nPrepare workspace\n\nCreate missing resources; reuse completed setup.\n\n4\nAccept Alice\u2019s connection\n\nConnect only this dedicated exchange.\n\nInstall AICQ \u00b7 simulate\nFictional preview only. No real sign-in, installation or access change.\nBack to Alice"
+    },
+    {
+      "label": "390px recipient, global contact list and chat tray fit without document overflow",
+      "observed": {
+        "height": 844,
+        "overflow": false,
+        "width": 390
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "responsive": {
+    "width": 390,
+    "overflow": false
+  },
+  "sourceSha256": "10b1b6de94bbdb1c5e09be396304e05aebf971b50399c558095e4f193f97916c",
+  "recordingNote": "Raw DOM snapshots retained here cover the fresh invitation link and narrow viewport. The following evaluator summaries reflect additional actual Computer Use observations in this run; they are not automated tests.",
+  "evaluatorObservedChecks": [
+    {
+      "check": "Receipt routing after changing contact",
+      "result": "Opening the earlier Bob receipt after selecting My Grok bot returns to Bob; attaching from that receipt also attaches Bob."
+    },
+    {
+      "check": "Clarification and pause/resume",
+      "result": "Send review, explicit remote retrieval, clarification, owner answer, pause and resume reached a returned result."
+    },
+    {
+      "check": "Attachment versus sending",
+      "result": "Adding exchange context did not increment host turns; Continue explicitly starts a turn."
+    },
+    {
+      "check": "Happy revision incorporation",
+      "result": "Plan advanced to v4, preserving October 15 launch and changing webinar to October 19."
+    },
+    {
+      "check": "Newer-source conflict",
+      "result": "Reconciliation preserved Alice\u2019s newer October 20 launch and applied the October 19 webinar; plan v5."
+    },
+    {
+      "check": "File editing conflict",
+      "result": "File draft v5 was retained against source v6. Reconciliation and save reached draft/source v7."
+    },
+    {
+      "check": "Separate review and later session",
+      "result": "Separate review entered session 2; later shared-history retrieval worked in session 3."
+    },
+    {
+      "check": "Ordinary typed message routing",
+      "result": "Tell Bob while Grok was selected routed the owner instruction to Bob."
+    },
+    {
+      "check": "Owner permissions",
+      "result": "Draft replies for review was reflected in state; blocking a contact disabled Send agent message; restore worked. Background replies stayed off."
+    },
+    {
+      "check": "Contact mention",
+      "result": "Selecting Priya updated composer target without adding a host turn."
+    },
+    {
+      "check": "Ambiguous document selection",
+      "result": "Share this with Priya prompted for a document; selecting Partner webinar brief shared only v2."
+    },
+    {
+      "check": "Invitation copy",
+      "result": "Generated Morgan/Hermes invitation showed a same-Site hash URL; Copy invitation reported copied."
+    },
+    {
+      "check": "Recipient setup recovery",
+      "result": "Interrupted after simulated installation/sign-in at 2/4; resume proceeded to preparation and explicit acceptance at 4/4."
+    },
+    {
+      "check": "Accepted contact and reuse",
+      "result": "Morgan\u2019s Hermes appeared exactly once under Friends Agents after Check setup again; background replies remained off."
+    },
+    {
+      "check": "Revocation",
+      "result": "Revoked pending invitation disabled entering its recipient preview in that page."
+    },
+    {
+      "check": "Foreground polling",
+      "result": "Check for updates changed polls from 0 to 1 with host turns still 0."
+    },
+    {
+      "check": "Contact search",
+      "result": "Searching Hermes showed only My Hermes agent and Dan\u2019s Hermes in the roster."
+    },
+    {
+      "check": "Console",
+      "result": "No error-level browser logs observed on main or responsive tabs."
+    }
+  ]
+}

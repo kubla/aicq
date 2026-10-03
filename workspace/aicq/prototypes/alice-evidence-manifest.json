@@ -1,0 +1,50 @@
+{
+  "alice-attempt1-observations.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "alice-browser-observations.json": {
+    "sha256": "30283656c89c43921d8298d7e6960a7fc4149be8205b12bb658c7bc5f9d2bd1b",
+    "bytes": 4623
+  },
+  "alice-home-narrow.png": {
+    "sha256": "8f6164f0499fdf23625a2c8ce9ca36ab5dd451a1b927e6f7c46aa59c5549d0b4",
+    "bytes": 161351
+  },
+  "alice-home.png": {
+    "sha256": "d4db0b2242cd06e2e01925bb1b7ef4789f7c2dadac5d1ddc66c24d5db1464b51",
+    "bytes": 158082
+  },
+  "alice-invitation.png": {
+    "sha256": "9e09fc918466936c36e37f7b7d003a1f159af0e6d935ea01319cb36aada1b8ba",
+    "bytes": 66655
+  },
+  "alice-recipient-narrow.png": {
+    "sha256": "8fd1889cd54db305d76ca9297041eb9b1c031f817de8e877f568a9ed8bc35b66",
+    "bytes": 93090
+  },
+  "alice-recipient.png": {
+    "sha256": "ab905fd12c06bbdd2bdd57d9c0e32e1b18b139ec3bc5e7cb2081c6af09049c9f",
+    "bytes": 128112
+  },
+  "alice-reconcile.png": {
+    "sha256": "bb8b0a337d14e484d348574feed8c472ca2f90f5cade979ae08b98e501583bba",
+    "bytes": 59389
+  },
+  "alice-thread-narrow.png": {
+    "sha256": "3a61440b0d242a3395d4dccb1f42cb04ef3f28c254d08aec73e97a75c35c2fbd",
+    "bytes": 120088
+  },
+  "alice-thread.png": {
+    "sha256": "337ce4a1d6b940149bf678fd9af938cb1986a0e498b8e085f071404637cd24c1",
+    "bytes": 161989
+  },
+  "alice-v3-notes.md": {
+    "sha256": "22131e3363dd036e0459101a367855f755048712ff3332787d6268475cc67ba6",
+    "bytes": 4350
+  },
+  "alice-window.png": {
+    "sha256": "c2f0041ea843fff3f2e0d167989f4e3ecbefd9fc3c74486aec52cba259a6bbb3",
+    "bytes": 104274
+  }
+}

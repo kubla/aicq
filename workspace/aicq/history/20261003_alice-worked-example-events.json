@@ -1,0 +1,156 @@
+[
+  {
+    "record_id": "185999ce-9553-5618-9fa9-f85e147c76c2",
+    "recorded_at": "2026-10-03T17:09:45.875429+00:00",
+    "event_id": "9d42bb7c-8883-4f2d-bf59-45975f3b6f7f",
+    "run_id": "ux-p05-722543da-a64b-4102-a808-050b76fd7c27",
+    "milestone": "UX-P05",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "Build and publish Alice\u2019s fully worked interactive installed-AICQ ChatGPT example, independent UX-P05.",
+    "evidence": "Canonical records reconciled and scope/45-minute timeout override read back; existing private Site opened at be1e82a9f02133b87d9b01cac3803d4ffa09415e. One coherent prototype, default two retries, no M2 attempt."
+  },
+  {
+    "record_id": "0e50ed85-1744-58c1-a3d8-7748a08dd6dc",
+    "recorded_at": "2026-10-03T17:09:51.1321+00:00",
+    "event_id": "19e120b5-1496-48fa-9b9d-44bc3fed525e",
+    "run_id": "ux-p05-722543da-a64b-4102-a808-050b76fd7c27",
+    "milestone": "UX-P05",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "Coordinator selects UX-P05; Generator builds coherent fictional Alice workspace and Evaluator verifies separately.",
+    "evidence": "My Agents and Friends Agents grouped roster, invitation generation/recipient setup, complete exchanges, artifact/context/host hooks, owner controls, narrow layout and native Sites publication are in scope."
+  },
+  {
+    "record_id": "9722dacf-9b34-5966-a37c-8f599f80e380",
+    "recorded_at": "2026-10-03T17:09:56.575464+00:00",
+    "event_id": "e4e163ee-8cb4-4384-9e45-81915cdfc79e",
+    "run_id": "ux-p05-722543da-a64b-4102-a808-050b76fd7c27",
+    "milestone": "UX-P05",
+    "step": "GENERATE",
+    "status": "started",
+    "detail": "Implement self-contained Alice experience with a pure in-memory reducer and realistic host shell.",
+    "evidence": "Source target mcp/ui/prototypes/alice-v3.html; existing Site route /alice.html; preserve prior studies. Original Fulcra logo and Rubik font, no remote dependencies or real messaging."
+  },
+  {
+    "record_id": "062d7e37-cf67-515a-84ea-d407bfab0648",
+    "recorded_at": "2026-10-03T17:24:48.964951+00:00",
+    "event_id": "48686adf-81c0-4c99-adb2-d697e48bf4da",
+    "run_id": "ux-p05-722543da-a64b-4102-a808-050b76fd7c27",
+    "milestone": "UX-P05",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Built Alice\u2019s complete interactive fictional workspace with a pure reducer, invitation recipient preview and coherent host/app surfaces.",
+    "evidence": "mcp/ui/prototypes/alice-v3.html is self-contained; Node syntax check passes. Six seeded grouped contacts, free typed instructions and mentions, selected artifacts, complete review/clarification/conflict flows, owner controls and invitation/setup/resume are implemented. No real service calls."
+  },
+  {
+    "record_id": "0fe61280-e914-5b6b-a12f-0baa6ded6eed",
+    "recorded_at": "2026-10-03T17:24:54.772501+00:00",
+    "event_id": "1eb8471f-0f9d-4933-b9ee-10bd90a23df2",
+    "run_id": "ux-p05-722543da-a64b-4102-a808-050b76fd7c27",
+    "milestone": "UX-P05",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Evaluator performs separate actual browser walkthroughs and captures exact DOM state and screenshots, then verifies Sites publication.",
+    "evidence": "Earlier generation-time inspection exercised happy review and changed-source guard. Candidate now includes contact-name resolution and honest no-exchange state. Reload before independent candidate review."
+  },
+  {
+    "record_id": "d0321d4c-2d8e-5064-970a-02465c93df6c",
+    "recorded_at": "2026-10-03T17:28:31.666251+00:00",
+    "event_id": "96dfaba8-00cb-4a20-ad88-744d6d683546",
+    "run_id": "ux-p05-722543da-a64b-4102-a808-050b76fd7c27",
+    "milestone": "UX-P05",
+    "step": "REVIEW",
+    "status": "failed",
+    "detail": "A Bob send receipt opened the currently selected Grok exchange after switching contacts instead of preserving Bob as its target.",
+    "evidence": "Actual browser: Review with Bob > send review > select My Grok bot > Open exchange receipt; inspected selected agent remains My Grok bot. Other invitation/review/conflict checks passed, but scoped receipt routing fails required context identity."
+  },
+  {
+    "record_id": "8f06749a-ffc1-5759-828b-a19e74eb872c",
+    "recorded_at": "2026-10-03T17:28:37.196517+00:00",
+    "event_id": "aa6b742a-2ca0-44ae-9927-59bb5698f4d6",
+    "run_id": "ux-p05-722543da-a64b-4102-a808-050b76fd7c27",
+    "milestone": "UX-P05",
+    "step": "RUN_INCOMPLETE",
+    "status": "failed",
+    "detail": "Closed UX-P05 attempt 1; repair receipt contact binding on UX-only retry 1 of 2.",
+    "evidence": "Preserve actual failed observation and candidate before repair. M2 and its remaining retry unchanged."
+  },
+  {
+    "record_id": "7c9d4e10-50a6-5d44-86c6-ba506de98362",
+    "recorded_at": "2026-10-03T17:28:42.349954+00:00",
+    "event_id": "502be486-2417-4a4f-8f3b-05f5316e2a98",
+    "run_id": "ux-p05-54b8a431-75ac-43cf-820e-7b362cb940bf",
+    "milestone": "UX-P05",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "UX-P05 retry 1 of 2 repairs receipt contact identity and finishes browser checks and publication.",
+    "evidence": "Existing 45-minute override recorded before initial RUN_START; source remains local prototype. No M2 attempt. Prior failure will remain in durable events and evidence."
+  },
+  {
+    "record_id": "f1280ed5-87af-5042-a659-2fee9e3ce221",
+    "recorded_at": "2026-10-03T17:28:47.925339+00:00",
+    "event_id": "6971ba0a-57f3-4128-bfd9-800a122fe8da",
+    "run_id": "ux-p05-54b8a431-75ac-43cf-820e-7b362cb940bf",
+    "milestone": "UX-P05",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "Coordinator retains UX-P05 with scoped receipt routing repair required.",
+    "evidence": "Original contact must be bound to each host receipt regardless of later app selection; final remaining owner/file/narrow checks and same-Site deployment remain."
+  },
+  {
+    "record_id": "bd101667-4714-5aa9-9fe5-048c6086fcda",
+    "recorded_at": "2026-10-03T17:29:41.771079+00:00",
+    "event_id": "a645b326-570d-48aa-8575-a4f5ba77f30e",
+    "run_id": "ux-p05-54b8a431-75ac-43cf-820e-7b362cb940bf",
+    "milestone": "UX-P05",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Bound each host receipt to its original contact and artifact exchange; distinguish result readiness from revision readiness.",
+    "evidence": "Receipt stores its contact id; Open exchange and Add context resolve that id independently of current app selection. Existing-exchange chat suggestions continue rather than implicitly restart. Node syntax check passes."
+  },
+  {
+    "record_id": "b64b7383-1baf-5e9a-9480-04ba51ce9b5f",
+    "recorded_at": "2026-10-03T17:29:48.396792+00:00",
+    "event_id": "edcf8f9e-ce73-425c-9d67-dd3d1daff7d5",
+    "run_id": "ux-p05-54b8a431-75ac-43cf-820e-7b362cb940bf",
+    "milestone": "UX-P05",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Separate Evaluator rechecks receipt identity and representative regressions on the repaired candidate.",
+    "evidence": "Reload fresh candidate; retain failed attempt browser observations separately. Complete invitation, conflict, file, mention, settings and narrow browser checks, then verify the exact Site deployment."
+  },
+  {
+    "record_id": "f473bfe9-429d-5cac-8233-c16edd418010",
+    "recorded_at": "2026-10-03T17:42:12.157357+00:00",
+    "event_id": "f14e19f3-97ad-4756-8483-97bdde3239e3",
+    "run_id": "ux-p05-54b8a431-75ac-43cf-820e-7b362cb940bf",
+    "milestone": "UX-P05",
+    "step": "REVIEW",
+    "status": "completed",
+    "detail": "Evaluator: repaired Alice prototype passed scoped receipts, grouped contacts, invitation/setup, document review, conflict safety, continuation and responsive checks; same-Site deployment succeeded.",
+    "evidence": "Source SHA256 10b1b6de94bbdb1c5e09be396304e05aebf971b50399c558095e4f193f97916c; actual browser observations and screenshots in docs/prototypes/alice-*; Node syntax check passed; all four local Site routes returned 200; source 92abc18bcd0fb0bbfcc4dd810430e8212486d946; deployment appgdep_6ac13e48c4588191bf6d8fc2ba485ec6 succeeded at 17:41:35 UTC; simulated workflows only, M2 remains incomplete."
+  },
+  {
+    "record_id": "8da0020f-5d79-56bd-a53b-316e91088557",
+    "recorded_at": "2026-10-03T17:43:39.990636+00:00",
+    "event_id": "6892245a-0aec-4c3c-a0f0-f4216177392a",
+    "run_id": "ux-p05-54b8a431-75ac-43cf-820e-7b362cb940bf",
+    "milestone": "UX-P05",
+    "step": "MARK_COMPLETE",
+    "status": "completed",
+    "detail": "Coordinator: UX-P05 worked Alice example is evaluated and deployed on the existing Site; previous studies and audience preserved.",
+    "evidence": "Passing REVIEW f473bfe9-429d-5cac-8233-c16edd418010; direct route https://aicq-interaction-studies.mtiffany.chatgpt.site/alice.html; native deployment appgdep_6ac13e48c4588191bf6d8fc2ba485ec6 succeeded; M2 remains incomplete, no product milestone promoted."
+  },
+  {
+    "record_id": "3a78f9c7-fa87-5d0a-97f4-188ff2591732",
+    "recorded_at": "2026-10-03T17:44:12.136374+00:00",
+    "event_id": "50cf8628-25f9-4617-ae56-26126bb6f409",
+    "run_id": "ux-p05-54b8a431-75ac-43cf-820e-7b362cb940bf",
+    "milestone": "UX-P05",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "Nurse/Coordinator: UX-P05 retry closed after passing review and same-Site publication. One prototype retry used; no active run.",
+    "evidence": "REVIEW f473bfe9-429d-5cac-8233-c16edd418010 and MARK_COMPLETE 8da0020f-5d79-56bd-a53b-316e91088557 read back. M2 still incomplete with one retry remaining; M3\u2013M6 pending. Source and evidence will be mirrored to canonical workspace/aicq/."
+  }
+]

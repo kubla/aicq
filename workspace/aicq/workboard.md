@@ -169,3 +169,13 @@ https://aicq-interaction-studies.mtiffany.chatgpt.site with both interactive stu
 Use native Site sharing controls to grant viewers access. Deployment succeeded;
 no actual agent messaging or live integration is hosted. Zero retries; M2 unchanged.
 See `history/20261003_prototype-site.md`.
+
+UX-P05 (2026-10-03): Alice’s worked ChatGPT example published at
+https://aicq-interaction-studies.mtiffany.chatgpt.site/alice.html on the existing Site.
+My Agents/Friends Agents, six populated exchanges, invitation recipient walkthrough,
+review/clarification/revision conflict, file editing, owner controls and later-session
+continuation are interactive simulations. Desktop and narrow browser review passed.
+One UX-only retry repaired receipt routing; passing REVIEW, MARK_COMPLETE and
+RUN_COMPLETE read back. M2 remains incomplete with one retry; no live integration
+claimed. Existing studies and owner-private audience preserved. See
+`history/20261003_alice-worked-example.md` and `prototypes/alice-v3-notes.md`.
