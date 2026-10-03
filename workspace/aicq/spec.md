@@ -1,4 +1,141 @@
-# Requirements and decisions
+# AICQ product specification
+
+Updated 2026-10-03. The approved product direction is autonomous collaboration
+between people’s agents, with inspectable work and outcomes. The interaction
+prototype is simulated; it has not verified live account linking, messaging,
+background execution, or calendar access. M1 is complete; M2 remains incomplete
+with one retry; M3–M6 are pending. See [progress](progress.md) for evidence and
+[plan](plan.md) for the current implementation/harness configuration. Earlier
+HTML studies remain historical design evidence, not the current UX contract.
+
+## Product promise and owner experience
+
+AICQ connects the agent helping you now to your other agents and other people’s
+agents. Give an instruction about the work you are already doing; the agents
+exchange the selected work, resolve routine coordination, and report the outcome.
+Owners can inspect, redirect, pause, or revoke collaboration. Ongoing work should
+require human attention only when the configured authority or available context
+cannot resolve a choice.
+
+The main human surface is a window on work being done on the owner’s behalf.
+Use current purpose, progress, next step, completed outcome, and last activity.
+Do not lead with an inbox, unread counts, read/mark-read chores, or a queue of
+messages that owners must process. Messages remain inspectable evidence beneath
+the work summary. Technical inboxes/cursors remain transport details.
+
+The roster retains My Agents and Friends Agents. Each contact shows its current
+collaboration or a quiet state, and typical response time when there is enough
+observed history. Example: “Finding a time for Friday’s model review” and
+“Typically replies within a minute.” Quiet state: “No active collaboration ·
+Last worked together yesterday.” Opening a contact leads with what the agents
+are doing, the next expected action, and any specific decision for the owner.
+An owner may still give direction or send an ordinary note without a task form.
+
+## Autonomy and authority
+
+The user requires a scale of autonomy, including fully autonomous work within
+permissions, checking on judgment calls, and draft-only behavior. The following
+labels and default/override mechanics are prototype design interpretations:
+
+| Mode | Behavior |
+| --- | --- |
+| Handle it for me | Complete authorized work using established preferences. Ask only when missing information, permissions, or constraints prevent completion. |
+| Check with me on judgment calls | Complete routine steps; ask about consequential choices not settled by the task or preferences. |
+| Prepare for my approval | Prepare an explicit proposal and wait before outward replies or commitments. |
+
+Prototype default: Handle it for me. An owner can set an account default, a contact
+override, and a task override. A task uses its explicit override, else its contact
+override, else the account default. Show the effective mode and its source. An
+override never grants access to additional files, tools, accounts, or calendars.
+Policy changes are checked before the next outward action; they cannot unsend
+prior messages or cancel existing commitments implicitly. Pause/block wins over
+all modes. Both owners’ authority applies independently; Alice cannot choose Bob’s.
+
+**Confirmed decision:** once calendar access and meeting preferences are established,
+an agent can arrange an ordinary meeting, including sending the calendar invitation,
+without asking its owner again. This includes exchanging permitted availability,
+agreeing a time/location consistent with both owners’ constraints, and placing the
+meeting on the calendar through an authorized tool. It does not imply that AICQ
+has a calendar integration today. Explicit task direction can settle a judgment
+call; a routine meeting must not gain an extra approval merely because it involves
+another person. A departure from preferences, such as Friday being impossible,
+requires a focused decision under the relevant policy.
+
+Autonomy and availability are separate. Authorized polling, a runner, or a verified
+host activation can continue work while the owner is away. An installed plugin
+alone cannot do this. If the agent cannot run, show “Waiting for [agent] to return,”
+not “Working,” and preserve the request for its next authorized session. AICQ’s
+human UI must not need to remain open for a configured agent to participate.
+
+## Collaboration state and evidence
+
+A collaboration has a purpose, participating addresses, selected artifact versions,
+constraints, effective policy, current work state, next action, owner decisions,
+and outcome. This is an owner-facing layer over durable exchanges, not a new
+transport choice. Proposed states: waiting for agent, working, decision needed,
+prepared for approval, completed, paused, and unable to complete. An idle contact
+has no active collaboration and a truthful last-activity time. A returned artifact
+may be ready to use before the larger task is completed; distinguish those states.
+
+Status comes from actual work updates. A storage receipt means persisted; a
+recipient-accessible artifact means access is established; an agent consumption
+receipt means opened; a response means the agent replied. None alone proves a
+meeting is scheduled. Show a completed scheduling result only after the agreed
+slot/location, authorized calendar write/read-back, and invitation result are
+established. If calendar creation is uncertain, reconcile it before retrying so
+one instruction cannot create duplicate meetings. Do not expose a failure as success.
+
+A focused owner decision includes the question, reason it remains unresolved,
+agent recommendation, and the action approval permits. Successful routine work
+can produce a quiet inline result in the originating chat and a completed outcome
+in AICQ. Notification timing/channels remain design questions; do not invent a
+second mandatory human inbox or require owners to read every exchanged message.
+
+Responsiveness is an observed estimate, separate from presence and current work.
+Prototype calculation proposal: median elapsed request-to-first-substantive-reply
+for up to the last 20 completed samples in the past 30 days; omit storage receipts,
+human page views, and auto-acks. At least five samples are needed for an estimate.
+Expose sample count and window on inspection, approximate the label, and use
+“Not enough history yet” otherwise. Never imply a guarantee or silently count a
+pending request as a fast reply; show that request’s waiting time separately.
+The numeric examples in the prototype are fictional, not measured telemetry.
+
+## Primary walkthrough: share completed work and arrange its review
+
+Alice finishes a financial model in ChatGPT. The model is the current unambiguous
+artifact. She selects AICQ/Bob’s contact through the desktop @ affordance and says:
+
+> @AICQ Share this financial model with Bob’s agent and find a time for Bob and me to review it in person on Friday.
+
+1. The originating agent resolves the authorized Bob contact and exact model
+   version. It sends that model and the review/coordination request, not Alice’s
+   private transcript or unrelated documents. Ask about “this” only if ambiguous.
+2. Alice gets a compact receipt: “I’ve shared the model with Bob’s agent. I’ll
+   arrange your Friday review.” She stays in the current ChatGPT conversation;
+   opening AICQ is optional. No separate send/share/scheduling wizard is required.
+3. Under both owners’ permissions and preferences, the agents consume the model,
+   exchange only relevant availability, agree Friday’s time and in-person location,
+   and create/send the ordinary calendar invitation. This may span sessions.
+4. Alice can keep working while AICQ shows the status of that collaboration.
+   A configured agent continues independently of whether she opens the app.
+5. The completed result says, for example: “Bob has the model. Your review is
+   scheduled for Friday at 2 p.m. at his office.” The result contains the model
+   version, timezone, attendees, location, and inspectable delivery/calendar evidence.
+6. Alternative: Friday is unavailable. Ask the particular judgment call and offer
+   the recommendation; do not silently change Friday to Monday. Approval-only
+   mode instead presents the proposed outward handoff/meeting action before sending.
+7. Alternative: Bob’s agent is offline. Show waiting and its observed typical
+   response time. Preserve the work; do not require Alice to repeatedly check.
+
+Prototype acceptance: one instruction, no artifact picker when the model is clear,
+chat continuation while work progresses, artifact/direction isolation, autonomous
+completion without a routine reapproval, meaningful judgment-call handling,
+approval-only behavior, offline/quiet states, responsiveness context, policy
+precedence, and inspectable history. All calendar and runner steps in HTML are
+explicitly simulated outside the depicted product. Live acceptance must exercise
+those steps with separate authenticated owners and actual authorized tools.
+
+# Recorded original requirements
 
 ## User requirements
 
@@ -22,15 +159,16 @@ These are excerpts from the user's initial request, preserving their wording:
 
 > We could even use Fulcra for messaging, which could elegantly handle agents not being online all the time.
 
-Neither XMPP nor a Fulcra messaging backend has been selected by the user.
-No framework, hosting provider, repository destination, or license has been selected.
+The transport/schema choice remains open. The private repository and local-first
+development direction are recorded in decisions.md. License remains open.
 
 ## Follow-up direction
 
 > I’m excited! The Fulcra MCP server is open source, so we can make a fork implementing MCP Events and if it’s great we can push it to main
 
-Proceed with the Fulcra MCP Events contribution as the delivery foundation for
-AICQ. Keep the contribution reusable by other Fulcra clients. Upstream inclusion
+The original direction proposed Fulcra MCP Events as a delivery foundation.
+Subsequent user decisions accept polling for initial participation, so an MCP
+server change is not a prerequisite for the prototype or core collaboration. Keep the contribution reusable by other Fulcra clients. Upstream inclusion
 is conditional on quality and review; this does not authorize a direct main-branch
 push now. Reuse the existing `kubla/fulcra-context-mcp` fork and prepare a separate
 development branch.
@@ -96,13 +234,14 @@ identifiers. Verify individual integrations before claiming support.
 
 ## Proposed owner controls
 
-Contact acceptance, selected-content sharing, permitted agent reply behavior,
-pause/resume, block/revoke, unread status, and a clear exchange timeline. A remote
+Contact acceptance, selected-content sharing, effective collaboration autonomy,
+pause/resume, block/revoke, work/outcome summaries, and inspectable exchange history. A remote
 message supplies context or a request; it does not expand the recipient's authority
 to use tools. Automatic agent conversations have a bounded turn budget and a
 correlation ID so receipt notifications cannot create endless reply loops.
 
-These interpretations and controls are draft design choices awaiting review.
+The autonomy/work direction above is user-approved. Specific vocabulary, policy
+precedence and responsiveness calculation are design interpretations to evaluate.
 
 # Architecture proposal
 
@@ -148,9 +287,9 @@ The exact OpenAI extension page requested by the user documents:
 
 | Extension | AICQ use |
 | --- | --- |
-| Global/sidebar entrypoint | Buddy list, unread messages and conversation history |
-| Thread entrypoint | “Agent chat” panel beside the current ChatGPT conversation |
-| Structured settings | Owner preferences and agent response policy |
+| Global/sidebar entrypoint | Grouped contacts, current collaborations and completed outcomes |
+| Thread entrypoint | Collaboration status/results beside the current ChatGPT conversation |
+| Structured settings | Owner collaboration autonomy, permissions and preferences |
 | Deep links | Open a particular exchange from a tool result |
 | Model-App Context | Attach explicitly selected messages or artifacts to the current chat |
 | Composer mentions | Select an AICQ contact or exchange on desktop |
@@ -163,9 +302,9 @@ Check host capabilities and support a tool-only workflow where extensions are
 unavailable. The requested page says composer mentions are desktop-only and web
 extensions for Free and Go users are coming soon.
 
-An ICQ-inspired presentation can use a compact contact roster, green presence
-indicator, unread badges and a chronological transcript while respecting the
-host theme. “Available” is an expiring observation about an attached session or
+An ICQ-inspired presentation uses a compact contact roster with work summaries
+and observed responsiveness. Put the chronological transcript beneath the status
+and outcome, without unread badges or human message-processing chores. “Available” is an expiring observation about an attached session or
 active subscription. It must not imply a permanently running agent.
 
 ## Delivery across agent harnesses
@@ -358,157 +497,23 @@ the recommendation toward XMPP or a transport bridge.
 No latency, delivery guarantee, federation coverage, or production scalability
 claim has been established by this documentation review.
 
-# Draft implementation plan
+# Implementation plan and verified progress
 
-Status: the user has advanced the Fulcra direction by proposing an MCP Events fork.
-Fulcra sign-in succeeded, planning files were uploaded to `workspace/aicq/`, and
-the harness annotation was created with source-review evidence written and read
-back. No app milestone run has started. The separate MCP server fork contains a
-tested protocol-readiness commit; Events subscriptions are not implemented yet.
+[plan.md](plan.md) is the current milestone/harness plan; [progress.md](progress.md)
+is the evidence-backed status. M1 passed; M2 is incomplete with one retry. UX-P07
+is a separate spec/prototype revision, not a product milestone or M2 retry.
+Polling is acceptable initially; reusable Events work remains separate in the MCP
+fork. M4/M6 must include the work/outcome and autonomy contract above. Real calendar
+execution and background support are separate implementation/acceptance work,
+not capabilities established by this HTML revision. Keep local-first development
+and escalate substantial infrastructure work for Josh/GCP rather than choosing
+another provider silently.
 
-## Next design step
+# Supporting walkthrough: a review that becomes useful work
 
-The user wants both agent conversation and exchanges beyond chat, designed from
-the owner experience backward. Use the [first-experience walkthrough](first-experience.md)
-to sketch a review request, clarification, returned artifact, and later-session
-continuation. Compare messaging patterns after this design is concrete. This is
-planning work; M1 remains the first application implementation milestone.
-
-The [workboard](workboard.md) expands the milestones into workstreams and initial
-tasks with evidence requirements. The user created private `kubla/aicq`; API
-read/write access is verified, though agent-side repository creation and normal
-Git push failed. Issue 1 tracks M1. Hosting is local-first; defer GCP to Josh if
-integration requires substantial infrastructure. Client candidates are recorded there.
-
-## Harness
-
-Follow [Fulcra App Starter](https://github.com/fulcradynamics/community-skills/blob/main/skills/fulcra-app-starter/SKILL.md)
-and its [harness control flow](https://github.com/fulcradynamics/community-skills/blob/main/skills/fulcra-app-starter/references/harness-control-flow.md).
-
-Every milestone runs through generation and a separate evaluation pass with real
-tool evidence, then progress/history updates. One agent may execute the roles
-sequentially. Only the Nurse role creates or repairs harness machinery.
-
-Configuration: two milestone retries (three attempts total), two harness repair
-retries (three attempts total), and a 15-minute timeout per milestone run. No
-overrides have been introduced. If setup needs more time, record an explicit
-override before continuing. A blocked required check leaves the milestone incomplete.
-
-Complete Fulcra authentication, upload the plan, spec and exact
-user decisions to `workspace/aicq/`, and initialize progress/history. Bootstrap
-the harness annotation, mint a run ID, and record/read back RUN_START before
-cloning or writing application code. Use the actual template README values:
-it currently names `PUBLIC_FULCRA_API_ENDPOINT` and uses port 6173; the skill's
-example environment variable and test port are not authoritative over the template.
-
-## M1 — Working local baseline and harness dashboard
-
-Customize the official Svelte template's owner shell, verify sign-in, serve a
-reproducible local baseline, and integrate the owner-only harness dashboard during
-the same run. The user's local-first hosting direction replaces the starter's
-deployed-baseline target with the local target for this milestone. Keep all
-recording, evaluation, and owner-access requirements. Public hosting is deferred.
-
-Acceptance: real browser sign-in and authenticated UI work; harness events can
-be written and read back; the locally served dashboard displays those actual events,
-overview and evaluation result; owner navigation works; a different account is
-denied owner-only access. Record actual target URLs/revisions and observed results.
-Deployment, a build, or invented dashboard records cannot establish completion.
-
-M1 starts pending. No run or passing evaluation has been recorded.
-
-## M2 — Plugin shell and account linking
-
-Expose the MCP endpoint, sidebar and thread entrypoints; connect the MCP App UI;
-prove OpenAI-compatible account linking and stable AICQ owner/agent identity.
-Package an onboarding skill that resumes an invitation and initializes missing
-owner-scoped application resources using authenticated Fulcra MCP operations.
-Test OpenAI's documented Secure MCP Tunnel for developer-mode access to a local
-MCP server. It needs Platform tunnel access and a runtime API key, plus the intended
-workspace association. OAuth discovery can traverse the tunnel, but its browser
-authorization endpoints and callbacks still need reachable URLs. Do not claim
-the tunnel by itself solves auth or public distribution. If resolving these
-requires substantial infrastructure work, record the blocker and pause that work
-until the user can get Josh's help with GCP; do not silently choose another host.
-
-Acceptance: install a development plugin in ChatGPT, open both entrypoints, link
-the intended Fulcra account, survive refresh/reconnect without changing identity,
-and reject unauthorized or wrong-audience credentials. Retest the M1 experience.
-Verify fresh-account bootstrap, existing-account reuse, and interrupted/repeated
-setup recovery. Pairwise sharing and the first useful reply are evaluated in the
-subsequent two-owner milestones.
-
-## M3 — Contact and mailbox feasibility
-
-Use two test owners to establish a contact connection and reciprocal, isolated
-Fulcra message streams. Measure write-to-query delay and discovery behavior.
-
-Acceptance: both owners inspect the same exchange; a third owner cannot read
-it; unrelated conversations stay isolated; revocation blocks future retrieval;
-schema/sharing limits are documented. Validate actual supported API contracts.
-If the mailbox approach fails these gates, record the evidence and propose a
-storage revision before implementing messaging features.
-
-## M4 — Durable agent messaging
-
-Implement contact resolution, explicit-content handoffs, offline inbox retrieval,
-reply threading, versioned artifacts, returned proposals, receipts and owner controls.
-
-Acceptance: “share this with Alice's agent” resolves an authorized Alice, delivers
-the chosen content, appears to both owners and can receive a threaded reply.
-Disconnect the recipient, send, restart services, and verify later retrieval.
-Complete the proposed review walkthrough: return an inspectable artifact revision
-linked to the original request, let the sending agent use it under owner direction,
-and retrieve the result and unresolved questions in a later session.
-Exercise repeated sends, uncertain persistence, duplicate discovery, attachment
-permissions, ambiguous names and blocked contacts. Do not report an agent
-acknowledgment until the recipient explicitly consumes the message.
-
-## M5 — Subscribed message-triggered work
-
-Implement MCP Events discovery and subscription lifecycle plus a persistent
-delivery worker in the existing Fulcra MCP server fork. Keep generic Fulcra change
-events reusable upstream; choose their scope after validating the messaging model.
-AICQ owns message interpretation and response policies. Commit `429da58` establishes
-MCP 2 protocol readiness with regression coverage; Events are still unimplemented.
-Owners opt into monitored conversations and response policies.
-
-Acceptance: real ChatGPT Work subscription verifies its callback; a matching
-message triggers the configured workflow; an unrelated or unauthorized message
-does not. Verify restart recovery, expiration/refresh, revocation, duplicate and
-out-of-order deliveries, and bounded agent reply loops. Confirm offline messages
-remain retrievable when no supported subscription exists.
-
-## M6 — Usability and distribution
-
-Refine the ICQ-inspired roster and transcript, onboarding, deep links and native
-settings. Add desktop composer mentions with a capability-aware fallback.
-Package the portable plugin, document remote MCP and CLI-backed setup paths,
-and run two-owner acceptance walkthroughs across supported harnesses.
-
-Acceptance: both owners can connect, send, observe, pause and resume through the
-intended ChatGPT experience; the full tool workflow remains usable without optional
-extensions; setup and hosting requirements are documented. Public listing or
-publication must use the chosen account and comply with the actual platform flow.
-Verify a ChatGPT agent sends a handoff to a Codex agent, Codex returns a usable
-artifact, and both owners can inspect the exchange. Exercise the core workflow
-in a representative additional MCP-capable harness and verify continuation after
-switching harnesses without creating another owner identity or losing context.
-Document the exact tested clients and each client's background-execution support.
-
-## Later transport work
-
-Further runtime-specific activation adapters, multiple named agents per owner,
-group exchanges, and an XMPP bridge remain separate milestones. Core Codex and
-compatible-harness participation is part of the product requirements above.
-The first release must not claim verified interoperability with runtimes that
-have not been exercised.
-
-# First experience: a review that becomes useful work
-
-Status: proposed UX walkthrough, informed by the user's requirement to support
-both conversations and exchanges beyond chat. The details below are design
-hypotheses, not additional approved user decisions. No prototype has been built.
+Status: supporting design walkthrough, exercised in simulated HTML studies.
+The primary value demonstration is the one-instruction model handoff/scheduling
+above. Apply its autonomy/work contract here too; live integration is unverified.
 
 ## Product promise
 
@@ -556,7 +561,7 @@ AICQ contact. He says:
 
 | Surface | What the owner should understand immediately |
 | --- | --- |
-| Contact roster | Who is connected, what arrived, and which collaborations need attention |
+| Contact roster | Who is connected, what work is progressing/completed, and typical responsiveness |
 | Collaboration view | Purpose, participating agents, exchanged messages, current progress, and questions for the owner |
 | Result view | Returned artifact, version reviewed, proposed changes, rationale, and actions to use the result in the current chat |
 
@@ -575,9 +580,10 @@ relationship to the work.
 - **Work update:** a stated acknowledgment, progress report, question, or result.
   Persisted messages and callback receipts alone cannot imply this progress.
 
-The first design should demonstrate waiting, working, input needed, result ready,
-and paused. These are proposed owner-facing states; the delivery implementation
-will also need separate persistence and retrieval receipts.
+The design demonstrates waiting, working, decision needed, prepared for approval,
+result ready/completed, and paused. Ordinary coordination follows the effective
+autonomy policy; messages remain evidence beneath that state. The delivery
+implementation keeps separate persistence and retrieval receipts.
 
 ## Design walkthrough checks
 
@@ -609,8 +615,9 @@ implement Events or the AICQ app.
 
 # Invitation and first-use setup
 
-Status: design proposal incorporating the user's clarification about post-signup
-setup. No AICQ setup skill or bootstrap tool has been implemented or tested yet.
+Status: resumable setup is locally implemented/evaluated in M2 candidate 9d766b9.
+Live ChatGPT/account linking and fresh-owner acceptance remain unverified. This
+section proposes cross-owner setup; HTML invitation flows are simulated.
 
 ## User direction
 
@@ -636,9 +643,9 @@ AICQ contacts, message channels, artifacts, or subscriptions.
    created under that owner's credentials and authorization.
 5. Read back the workspace manifest, channel metadata, and incoming/outgoing share
    scope. A write receipt alone does not establish a usable two-way connection.
-6. Open the pending request in the recipient's agent session. Initial work runs
-   with the recipient's direction. Optional Events subscriptions have their own
-   supported setup and response policy.
+6. Open the pending request in the recipient's agent session. Initial work follows
+   the recipient’s independently chosen autonomy and sharing policy. Availability
+   requires a configured runner/polling or verified optional Events activation.
 
 Proposed visible progress: Signed in; Preparing your workspace; Connecting with
 Bob; Ready. If one side is missing, report the specific pending step and provide
@@ -684,5 +691,5 @@ Test a fresh account through its first useful reply, an existing account through
 reuse, interrupted setup through resume, and repeated setup without duplicate
 contacts or channels. Confirm both owners can inspect the exchange, a third owner
 cannot retrieve it, and optional background work remains disabled until configured.
-The starter's authenticated baseline and dashboard remain the first implementation
-milestone; this document is planning, not a completed application milestone.
+The authenticated local baseline/dashboard passed M1. These later acceptance
+checks remain separate from the simulated interaction prototype.

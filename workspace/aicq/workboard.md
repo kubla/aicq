@@ -6,6 +6,16 @@ remain proposals.
 
 ## Design experiment
 
+UX-P07 (2026-10-03): canonical spec and decisions were saved and read back before
+prototype edits. Alice’s example now leads with agents’ current work and completed
+outcomes. It includes autonomy controls, typical responsiveness, a completed model
+shared through one instruction, routine meeting coordination, judgment/approval/
+waiting states, and fresh-chat continuation. Browser evaluation and public Sites
+version 4 publication passed. Two UX-only retries were used and closed; M2's
+remaining retry is unchanged. No live host, calendar or agent execution is claimed.
+See `history/20261003_autonomous-collaboration.md` and `prototypes/autonomy-notes.md`.
+
+
 UX-P03 (2026-10-03): both HTML studies now use the sourced Fulcra logo, Rubik,
 mint actions, violet selection and charcoal app surfaces inside a native-style
 OpenAI host. Browser review exercised existing simulated flows and desktop/narrow

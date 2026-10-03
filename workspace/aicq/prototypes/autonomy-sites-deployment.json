@@ -1,0 +1,43 @@
+{
+  "audience": "public",
+  "source": {
+    "project_id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896",
+    "checkout_path": "/Users/mjjt/Documents/Code/aicq-prototype-site",
+    "commit_sha": "8746394ffaa29b732d787d6acbbc20da180ec3da",
+    "archive": "/private/tmp/aicq-autonomy-site-deploy.tar.gz"
+  },
+  "saved_version": {
+    "id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896~appgver_a10ea80479c4819191d5ab31b0e0ef5c",
+    "project_id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896",
+    "version_number": 4,
+    "source": {
+      "commit_sha": "8746394ffaa29b732d787d6acbbc20da180ec3da"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000004ae081f592745962cb50201a",
+      "content_hash": "sha256:7a94099d027233143a24a9fc705d72cd5a4fa374e223d6b38f2692c39dc487a7",
+      "size_bytes": 501760,
+      "file_count": 6
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ac15daf0fc0819182df791b8918dc27",
+    "project_id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896",
+    "title": "AICQ · Interaction studies",
+    "version_id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896~appgver_a10ea80479c4819191d5ab31b0e0ef5c",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://aicq-interaction-studies.mtiffany.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ac11b43d7e0819198f3007c5cf6a896",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-03T19:55:33.455977+00:00"
+  },
+  "source_sha256": "24ed0e28e9a0f498271102a24deb7a18818eb7a5f85b83945ef87850c7983c8d",
+  "scope": "Fictional self-contained HTML prototype. No live host/agent/calendar."
+}

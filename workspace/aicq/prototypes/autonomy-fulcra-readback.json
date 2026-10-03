@@ -1,0 +1,140 @@
+[
+  {
+    "path": "workspace/aicq/plan.md",
+    "sha256": "727c3c4ed1635aa0b4caaf082ca9870d6f500d867aa04dc6e831568764cf2563",
+    "size": 17654,
+    "verified_at": "2026-10-03T19:58:50.251393+00:00"
+  },
+  {
+    "path": "workspace/aicq/spec.md",
+    "sha256": "aa52e61fe5c2454e430c3206fb181779c25f182dc5358026daa411a13846d3a4",
+    "size": 40647,
+    "verified_at": "2026-10-03T19:58:52.625493+00:00"
+  },
+  {
+    "path": "workspace/aicq/decisions.md",
+    "sha256": "5db9518ecf8d9f8af20a123cf33c570dfdeb60a806d2a69ab688b0014f8e8fcf",
+    "size": 18048,
+    "verified_at": "2026-10-03T19:58:55.149598+00:00"
+  },
+  {
+    "path": "workspace/aicq/progress.md",
+    "sha256": "55dd27031661a2e55f38b11813cb1344be1f08e9fe6dca9ba9570803f07eea12",
+    "size": 14591,
+    "verified_at": "2026-10-03T19:58:57.256755+00:00"
+  },
+  {
+    "path": "workspace/aicq/workboard.md",
+    "sha256": "8277a5a2eef288a2a5a7ec0c9274abeb27c16f27b072ba62770f88c7afbb74c8",
+    "size": 13873,
+    "verified_at": "2026-10-03T19:58:59.562576+00:00"
+  },
+  {
+    "path": "workspace/aicq/overview.md",
+    "sha256": "ab9d229ae38bb3115868b33eb6b4213069320fb3cdae07b769f33e8922113f9e",
+    "size": 3510,
+    "verified_at": "2026-10-03T19:59:01.508469+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-v3.html",
+    "sha256": "24ed0e28e9a0f498271102a24deb7a18818eb7a5f85b83945ef87850c7983c8d",
+    "size": 155719,
+    "verified_at": "2026-10-03T19:59:03.582241+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/alice-v3-notes.md",
+    "sha256": "6c65af0973c14ee0e521034fea9d4f1d327c9390f51ae013555060afe865368b",
+    "size": 743,
+    "verified_at": "2026-10-03T19:59:05.593745+00:00"
+  },
+  {
+    "path": "workspace/aicq/history/20261003_autonomous-collaboration.md",
+    "sha256": "c6cae5105c8389d091e3eafcbe02371ce53e6e9026515d1ea12930b56ff4103e",
+    "size": 4113,
+    "verified_at": "2026-10-03T19:59:07.343110+00:00"
+  },
+  {
+    "path": "workspace/aicq/history/20261003_autonomous-collaboration-events.json",
+    "sha256": "33b3fc7fe0e2fa92f4748a081c03258b6cf447bda68955aef6e8d4ac7825caeb",
+    "size": 16642,
+    "verified_at": "2026-10-03T19:59:09.411480+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/autonomy-completed.png",
+    "sha256": "47dc08c0f90aa50005ff0636cd3daeab51db4bdbc904ea718d1970471a5be7d3",
+    "size": 198944,
+    "verified_at": "2026-10-03T19:59:12.178224+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/autonomy-home.png",
+    "sha256": "b4ee6b4f8bda1cfc5613e23632ca5f851d42e500943596b79cb1e3a9c23b65ef",
+    "size": 169666,
+    "verified_at": "2026-10-03T19:59:14.185945+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/autonomy-initial-observations.json",
+    "sha256": "eef242ac677d257202ebb234df6a11f317b68c0aad40d65603a65083b0780f9c",
+    "size": 17846,
+    "verified_at": "2026-10-03T19:59:16.456537+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/autonomy-judgment.png",
+    "sha256": "26fb4b1c4367abac20ce326f029c434d9e169de17500d76d9a11d94a2c06c591",
+    "size": 191205,
+    "verified_at": "2026-10-03T19:59:19.123184+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/autonomy-model-mention.png",
+    "sha256": "3644e97fc31f08656a3f37b443cb134b63154baef072f0c0c91492b22ede5639",
+    "size": 132923,
+    "verified_at": "2026-10-03T19:59:21.368223+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/autonomy-narrow-judgment.png",
+    "sha256": "d0b11f097f42cfe4b91332b16569f66c6b791ba253c55c46182c2881ad4898a4",
+    "size": 129699,
+    "verified_at": "2026-10-03T19:59:23.680097+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/autonomy-notes.md",
+    "sha256": "3604995a3cae702a8011ea22e8cc45567c7599b0f576167b5d8f1a74a9a06fbf",
+    "size": 5168,
+    "verified_at": "2026-10-03T19:59:25.780414+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/autonomy-observations.json",
+    "sha256": "416af6930ac34742df607af2077d22b1e19a25427a689fc089beac1fec272ae5",
+    "size": 46263,
+    "verified_at": "2026-10-03T19:59:28.016978+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/autonomy-result-detail.png",
+    "sha256": "367b815e94c94bdacf54624332a0b2132c52f66fbba1463192a660ddbaa03e1e",
+    "size": 124179,
+    "verified_at": "2026-10-03T19:59:30.355773+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/autonomy-retry1-observations.json",
+    "sha256": "d1a51e933a19c13d7bf42edb82a10488f7137399a7708c2121c28cbd6265d3df",
+    "size": 35478,
+    "verified_at": "2026-10-03T19:59:32.828068+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/autonomy-settings.png",
+    "sha256": "6982294082138e44aba21bce4561014dec89ef33f29c334120b8f57c4a311137",
+    "size": 118433,
+    "verified_at": "2026-10-03T19:59:35.153867+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/autonomy-sites-deployment.json",
+    "sha256": "82491cad96f105f519674e1a1e57d289090c6d8db26f358ce3fc325b4e52d3c5",
+    "size": 1747,
+    "verified_at": "2026-10-03T19:59:37.680348+00:00"
+  },
+  {
+    "path": "workspace/aicq/prototypes/autonomy-spec-first-readback.json",
+    "sha256": "8355dead3c18a024a964ddb5e7dc1643c22c76a9b5e227b313d192a7a693a912",
+    "size": 348,
+    "verified_at": "2026-10-03T19:59:39.927755+00:00"
+  }
+]

@@ -18,10 +18,11 @@ remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 ## Harness state
 
 Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
-The latest run is UX-P06 retry 1, closed at 2026-10-03T18:39:48.672387+00:00; no run is active.
-Passing REVIEW 1c3c69f5-e52c-5a43-b50f-d2a447056ab3, MARK_COMPLETE 21026429-8f5f-510f-9f55-acd23b8b1d4e
-and RUN_COMPLETE 60b192ca-2455-5702-97d0-0f80d96886db read back.
-One UX-P06 retry used; M2 retry count unchanged. See history/20261003_alice-realism.md.
+The latest run is UX-P07 retry 2, closed at 2026-10-03T19:56:50.496446+00:00;
+no run is active. Passing REVIEW `6a472839-764e-5e6e-ac77-f2027e4c3819`,
+MARK_COMPLETE `790e6f93-8203-5f1b-b333-ff76a3a9b2ba` and RUN_COMPLETE
+`5777a73f-33b9-59ae-976b-362e8787b5c9` were read back. Two UX-only retries
+used; M2 retry count unchanged. See history/20261003_autonomous-collaboration.md.
 
 - UX-P03 retry `ux-p03-f8c30fc1-0cbf-4de2-bc18-c876c3165901`: passing
   REVIEW, MARK_COMPLETE and RUN_COMPLETE read back; terminal record
@@ -65,6 +66,16 @@ See `history/20261001_m1-local-baseline.md`,
 
 ## Interaction prototype
 
+UX-P07 (2026-10-03): canonical spec and decisions were saved and read back before
+prototype edits. Alice’s example now leads with agents’ current work and completed
+outcomes. It includes autonomy controls, typical responsiveness, a completed model
+shared through one instruction, routine meeting coordination, judgment/approval/
+waiting states, and fresh-chat continuation. Browser evaluation and public Sites
+version 4 publication passed. Two UX-only retries were used and closed; M2's
+remaining retry is unchanged. No live host, calendar or agent execution is claimed.
+See `history/20261003_autonomous-collaboration.md` and `prototypes/autonomy-notes.md`.
+
+
 UX-P03 (2026-10-03): both HTML studies now use the sourced Fulcra logo, Rubik,
 mint actions, violet selection and charcoal app surfaces inside a native-style
 OpenAI host. Browser review exercised existing simulated flows and desktop/narrow
@@ -100,8 +111,9 @@ was promoted or M2 retry consumed. See `history/20261002_interaction-prototype.m
 ## Next actions
 
 Prioritize iteration on the prototype before further heavyweight engineering,
-as directed by the user. Try the review, question, changed-document and later
-session scenarios. Use feedback to choose the interaction; keep production
+as directed by the user. Try the model-sharing/scheduling, judgment, approval-only and waiting
+scenarios, alongside the existing review and invitation flows. Use feedback to
+choose the interaction; keep production
 requirements distinct from mechanically verified simulated controls.
 
 

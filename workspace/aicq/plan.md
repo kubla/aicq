@@ -8,7 +8,16 @@ See history/20261001_m2-local-plugin.md. Public deployment and product messaging
 remain pending; the separate MCP protocol-readiness prerequisite still does not
 implement Events. Evaluation evidence: history/20261001_m1-local-baseline.md.
 
-## Next design step
+## Current design status
+
+UX-P07 completed the spec-first autonomy revision and the public worked example.
+Evaluate Michael’s feedback on the one-instruction handoff and the level of detail
+in collaboration summaries before further product engineering. The labels and
+responsiveness calculation remain prototype interpretations. No live calendar
+integration or background execution is verified. See
+history/20261003_autonomous-collaboration.md. M2 remains incomplete with one retry.
+
+## Recorded earlier design steps
 
 UX-P03 (2026-10-03): apply the user's Fulcra Context Web design reference and
 Fulcra logo to both existing HTML studies, together with the saved OpenAI host
@@ -247,3 +256,24 @@ actual invitation, recipient, exchange and conflict surfaces plus responsive lay
 Nurse/Coordinator/Generator/Evaluator operate sequentially. UX-P06 uses two retries
 and a 30-minute run timeout override, recorded and read back before RUN_START.
 No M2 retry or product milestone promotion.
+
+## UX-P07 — Autonomous collaboration and one-instruction handoff (2026-10-03)
+
+Update the canonical spec before prototype implementation, following the user's
+confirmed direction: work/outcomes lead, autonomy governs collaboration, and
+routine authorized calendar coordination completes without another approval.
+Then revise Alice’s /alice.html example on the existing public Site. Preserve
+invitation, artifact/version, pause/block, context and host-layout behavior. Add
+a finished financial-model chat, desktop @ selection, one instruction sharing
+the selected model and arranging an in-person Friday review, ongoing work,
+confirmed outcome, and inspectable decision/waiting states. Contact rows show
+current work and observed typical responsiveness. No real calendar or delivery.
+
+Acceptance: separately evaluate the spec for contradictions, then exercise the
+prototype in a browser: autonomous completion, judgment call, approval-only,
+unavailable agent, contact navigation, artifact scope, pause/resume, invitation,
+existing review/conflict and desktop/narrow layouts. Save screenshots and actual
+observations; publish only the reviewed source. Simulation controls stay outside
+the host. UX-P07 uses existing owner annotation, independent state, two retries
+and a **60-minute timeout override**, recorded/read back before RUN_START.
+This does not consume M2’s retry or promote M1–M6. Preserve public Site access.

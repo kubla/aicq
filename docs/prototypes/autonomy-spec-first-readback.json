@@ -1,0 +1,12 @@
+[
+  {
+    "path": "workspace/aicq/spec.md",
+    "sha256": "aa52e61fe5c2454e430c3206fb181779c25f182dc5358026daa411a13846d3a4",
+    "verifiedBeforePrototypeEdits": true
+  },
+  {
+    "path": "workspace/aicq/decisions.md",
+    "sha256": "5db9518ecf8d9f8af20a123cf33c570dfdeb60a806d2a69ab688b0014f8e8fcf",
+    "verifiedBeforePrototypeEdits": true
+  }
+]

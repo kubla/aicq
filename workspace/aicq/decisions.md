@@ -294,3 +294,41 @@ User: “Do a pass to correct all realism mistakes.” Alice’s actual invitati
 would not say “Make a connection Alice can send to a friend.” Replace narrative
 prototype exposition throughout the worked experience with copy its current user
 would see. Keep simulation explanation and walkthrough controls outside product UI.
+
+## 2026-10-03 — Public prototype access
+
+User: “If so, let’s remove it”, referring to ChatGPT sign-in for the shared
+prototype. Native Sites access changed from owner-only custom to public at
+2026-10-03T18:53:58.290700+00:00, revision 2, then get_site confirmed public.
+This applies to the static studies on that domain, not the real product/backend.
+
+## 2026-10-03 — Autonomous collaboration is the product value
+
+User: “I don't want it to feel like this is another thing they have to monitor
+that is filled with work for them. It should be more like your window on the
+work that is being done on your behalf.”
+
+Direction: lead with agents’ collaborative work/status/outcomes, not a human
+inbox. Expose differing autonomy levels and useful observed response-time context
+for contacts. Preserve inspectable conversations beneath the work summary.
+
+User example: “Share this with Bob's agent and find a time for Bob and I to review
+in person on Friday.” Show a completed financial model in ChatGPT, @ invocation,
+selected-artifact handoff and autonomous coordination through one instruction.
+
+Assistant asked: “once Alice has granted calendar access and stated her
+preferences, should arranging an ordinary meeting—including sending the calendar
+invitation—be something her agent completes without asking again?”
+
+User: “Yes yes yes! I am jumping up and down with excitement”
+
+Confirmed: routine meeting coordination and invitation sending proceed without
+reapproval under established authority/preferences. This is a product requirement,
+not permission for this executor to modify a real calendar during mockup work.
+
+User: “Beautiful. I think you should update the spec first, then update the prototype”
+
+Order: persist/reconcile the revised canonical spec before editing prototype code.
+Mode labels, default Handle it for me, account/contact/task override precedence,
+median response-time calculation and exact example details are implementation
+interpretations for this prototype, not separately dictated user choices.
