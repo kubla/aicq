@@ -20,6 +20,11 @@ remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
 The latest run is closed; no run is active.
 
+- UX-P03 retry `ux-p03-f8c30fc1-0cbf-4de2-bc18-c876c3165901`: passing
+  REVIEW, MARK_COMPLETE and RUN_COMPLETE read back; terminal record
+  `039f07af-c39f-5639-bfe1-45220f74ae96`. One UX retry after a browser
+  inspection timeout; M2 retry count unchanged. See history/20261003_fulcra-prototype.md.
+
 - M1 run `m1-7abb2258-7b2d-44d0-bb90-7e630b431618`: passing REVIEW, MARK_COMPLETE,
   and RUN_COMPLETE read back. Terminal record `c363bd6f-cab2-5e82-9170-7d380e4ba4a5`.
   Zero retries used.
@@ -57,11 +62,18 @@ See `history/20261001_m1-local-baseline.md`,
 
 ## Interaction prototype
 
+UX-P03 (2026-10-03): both HTML studies now use the sourced Fulcra logo, Rubik,
+mint actions, violet selection and charcoal app surfaces inside a native-style
+OpenAI host. Browser review exercised existing simulated flows and desktop/narrow
+layouts. See `history/20261003_fulcra-prototype.md` and `fulcra-design-reference.md`.
+Owner design review and live integration remain open. One UX-only retry followed
+a browser-inspection timeout; M2's remaining retry is unchanged.
+
 2026-10-03: saved a desktop host visual reference with nine pinned OpenAI Bits &
 Bolts screenshots, gallery, provenance/hashes, sampled colors and layout rules.
 Computer Use refused access to the installed ChatGPT/Codex app, so no live plugin
 capture was obtained. AGENTS.md directs future mockups to consult this reference.
-Existing prototypes still need a host fidelity pass. See `host-ui-reference.md`
+UX-P03 subsequently applied a host fidelity and Fulcra styling pass. See `host-ui-reference.md`
 and `history/20261003_host-ui-reference.md`. No product run or M2 retry occurred.
 
 UX-P02 now provides seven Extensions-specific examples in

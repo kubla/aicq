@@ -1,5 +1,10 @@
 # AICQ through the actual Extensions hooks
 
+Visual revision 2026-10-03: both existing studies now use the sourced Fulcra
+logo and app tokens inside a screenshot-derived native-style host shell.
+See `fulcra-evaluation.md` and `../design-references/fulcra/README.md`.
+Earlier UX-P02 screenshots and hashes remain historical evidence.
+
 Recommendation: put AICQ in the host's main navigation with a global entrypoint,
 and provide a thread entrypoint titled **Agent exchanges** beside existing work.
 Use compact inline receipts for model-initiated sends. The global home is for

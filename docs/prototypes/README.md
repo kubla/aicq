@@ -2,8 +2,10 @@
 
 For host appearance, consult [the OpenAI host reference](../design-references/openai-host/README.md)
 and [its screenshot gallery](../design-references/openai-host/index.html) before
-revising either prototype. The existing prototypes explore behavior; their host
-chrome predates this visual reference and still needs a fidelity pass.
+revising either prototype. Both studies received a host appearance and Fulcra
+styling pass in UX-P03. Read [the Fulcra reference](../design-references/fulcra/README.md)
+for app tokens and sourced logo assets. [Current evaluation](fulcra-evaluation.md)
+records screenshots, source hashes, simulated-flow checks and remaining limits.
 
 Open `../../mcp/ui/prototypes/interaction-v1.html` directly in a browser. It is
 one HTML file with inline CSS and JavaScript; no install, build, authentication

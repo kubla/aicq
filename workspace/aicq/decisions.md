@@ -1,5 +1,18 @@
 # Decisions
 
+## Fulcra visual identity for AICQ prototypes
+
+User direction, 2026-10-03:
+
+> Cool. Pull relevant design cues from https://github.com/kubla/fulcra-design-reference/blob/main/context-web/DESIGN.md and use the Fulcra logo
+
+Use the existing Fulcra logo rather than inventing an AICQ mark for this pass.
+Apply relevant Context Web cues to AICQ's app content while preserving the
+OpenAI host appearance. The GitHub guide was authenticated and read at blob
+`f2eabbe3d5b389d222016f43b308e96941cae8e9`, tree revision
+`3f54e39d927b2d954897b82b9ba8ba315ea283ab`. Its alpha status remains explicit.
+Logo use in the prototype does not rename AICQ or promote any product milestone.
+
 ## Initial project request
 
 # Requirements and decisions

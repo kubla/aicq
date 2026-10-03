@@ -89,10 +89,11 @@ Each output must state whether it is a **mockup**, **official reference** or
 **observed installed-client capture**, plus which host/theme it represents. Keep
 API compatibility and live AICQ acceptance separate from visual fidelity.
 
-The existing `interaction-v1.html` and `extensions-v2.html` have not received this
-fidelity pass. Their behavior evaluation remains valid for their simulated flows;
-their generic light host shell is an earlier design study. Use this reference
-for the next revision rather than treating either existing shell as authoritative.
+UX-P03 applied this reference to `interaction-v1.html` and `extensions-v2.html`:
+neutral host chrome, native-style tabs/composer and app/chat division. Fulcra
+styling belongs inside AICQ content; see [the Fulcra reference](../fulcra/README.md)
+and [current prototype evidence](../../prototypes/fulcra-evaluation.md).
+These remain simulated approximations, not installed-client captures.
 
 ## Refreshing this reference
 

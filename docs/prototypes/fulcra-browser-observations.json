@@ -1,0 +1,1128 @@
+[
+  {
+    "label": "Global arrival does not start a host turn",
+    "observed": {
+      "fields": [
+        {
+          "name": "Active host conversation",
+          "value": "aicq"
+        },
+        {
+          "name": "App surface",
+          "value": "global"
+        },
+        {
+          "name": "Current display mode",
+          "value": "fullscreen"
+        },
+        {
+          "name": "Host available modes",
+          "value": "inline, fullscreen"
+        },
+        {
+          "name": "Selected app contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Composer context",
+          "value": "None"
+        },
+        {
+          "name": "Host turns started",
+          "value": "0"
+        },
+        {
+          "name": "Foreground polls",
+          "value": "0"
+        },
+        {
+          "name": "App knows private transcript",
+          "value": "No"
+        },
+        {
+          "name": "Reply in service / app",
+          "value": "true / false"
+        },
+        {
+          "name": "File draft / host version",
+          "value": "v3 / v3"
+        },
+        {
+          "name": "Unattended runtime",
+          "value": "Not configured"
+        },
+        {
+          "name": "Capability profile",
+          "value": "desktop"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · Extensions interaction lab"
+    }
+  },
+  {
+    "label": "Global polling and visible context without a turn",
+    "observed": {
+      "fields": [
+        {
+          "name": "Active host conversation",
+          "value": "aicq"
+        },
+        {
+          "name": "App surface",
+          "value": "global"
+        },
+        {
+          "name": "Current display mode",
+          "value": "fullscreen"
+        },
+        {
+          "name": "Host available modes",
+          "value": "inline, fullscreen"
+        },
+        {
+          "name": "Selected app contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Composer context",
+          "value": "Alice · Autumn launch review"
+        },
+        {
+          "name": "Host turns started",
+          "value": "0"
+        },
+        {
+          "name": "Foreground polls",
+          "value": "1"
+        },
+        {
+          "name": "App knows private transcript",
+          "value": "No"
+        },
+        {
+          "name": "Reply in service / app",
+          "value": "true / true"
+        },
+        {
+          "name": "File draft / host version",
+          "value": "v3 / v3"
+        },
+        {
+          "name": "Unattended runtime",
+          "value": "Not configured"
+        },
+        {
+          "name": "Capability profile",
+          "value": "desktop"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · Extensions interaction lab"
+    }
+  },
+  {
+    "label": "Thread tab and removable context popover",
+    "observed": {
+      "fields": [
+        {
+          "name": "Active host conversation",
+          "value": "launch"
+        },
+        {
+          "name": "App surface",
+          "value": "thread"
+        },
+        {
+          "name": "Current display mode",
+          "value": "fullscreen"
+        },
+        {
+          "name": "Host available modes",
+          "value": "inline, fullscreen"
+        },
+        {
+          "name": "Selected app contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Composer context",
+          "value": "Alice · Autumn launch review"
+        },
+        {
+          "name": "Host turns started",
+          "value": "0"
+        },
+        {
+          "name": "Foreground polls",
+          "value": "0"
+        },
+        {
+          "name": "App knows private transcript",
+          "value": "No"
+        },
+        {
+          "name": "Reply in service / app",
+          "value": "true / true"
+        },
+        {
+          "name": "File draft / host version",
+          "value": "v3 / v3"
+        },
+        {
+          "name": "Unattended runtime",
+          "value": "Not configured"
+        },
+        {
+          "name": "Capability profile",
+          "value": "desktop"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · Extensions interaction lab"
+    }
+  },
+  {
+    "label": "Explicit continue starts one host turn",
+    "observed": {
+      "fields": [
+        {
+          "name": "Active host conversation",
+          "value": "launch"
+        },
+        {
+          "name": "App surface",
+          "value": "thread"
+        },
+        {
+          "name": "Current display mode",
+          "value": "fullscreen"
+        },
+        {
+          "name": "Host available modes",
+          "value": "inline, fullscreen"
+        },
+        {
+          "name": "Selected app contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Composer context",
+          "value": "None"
+        },
+        {
+          "name": "Host turns started",
+          "value": "1"
+        },
+        {
+          "name": "Foreground polls",
+          "value": "0"
+        },
+        {
+          "name": "App knows private transcript",
+          "value": "No"
+        },
+        {
+          "name": "Reply in service / app",
+          "value": "true / true"
+        },
+        {
+          "name": "File draft / host version",
+          "value": "v3 / v3"
+        },
+        {
+          "name": "Unattended runtime",
+          "value": "Not configured"
+        },
+        {
+          "name": "Capability profile",
+          "value": "desktop"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · Extensions interaction lab"
+    }
+  },
+  {
+    "label": "Separate review targets new conversation",
+    "observed": {
+      "fields": [
+        {
+          "name": "Active host conversation",
+          "value": "review"
+        },
+        {
+          "name": "App surface",
+          "value": "thread"
+        },
+        {
+          "name": "Current display mode",
+          "value": "fullscreen"
+        },
+        {
+          "name": "Host available modes",
+          "value": "inline, fullscreen"
+        },
+        {
+          "name": "Selected app contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Composer context",
+          "value": "None"
+        },
+        {
+          "name": "Host turns started",
+          "value": "2"
+        },
+        {
+          "name": "Foreground polls",
+          "value": "0"
+        },
+        {
+          "name": "App knows private transcript",
+          "value": "No"
+        },
+        {
+          "name": "Reply in service / app",
+          "value": "true / true"
+        },
+        {
+          "name": "File draft / host version",
+          "value": "v3 / v3"
+        },
+        {
+          "name": "Unattended runtime",
+          "value": "Not configured"
+        },
+        {
+          "name": "Capability profile",
+          "value": "desktop"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · Extensions interaction lab"
+    }
+  },
+  {
+    "label": "Desktop mention selects authorized contact without sending",
+    "observed": {
+      "fields": [
+        {
+          "name": "Active host conversation",
+          "value": "launch"
+        },
+        {
+          "name": "App surface",
+          "value": "mentions"
+        },
+        {
+          "name": "Current display mode",
+          "value": "fullscreen"
+        },
+        {
+          "name": "Host available modes",
+          "value": "inline, fullscreen"
+        },
+        {
+          "name": "Selected app contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Composer context",
+          "value": "Alice’s agent"
+        },
+        {
+          "name": "Host turns started",
+          "value": "0"
+        },
+        {
+          "name": "Foreground polls",
+          "value": "0"
+        },
+        {
+          "name": "App knows private transcript",
+          "value": "No"
+        },
+        {
+          "name": "Reply in service / app",
+          "value": "false / false"
+        },
+        {
+          "name": "File draft / host version",
+          "value": "v3 / v3"
+        },
+        {
+          "name": "Unattended runtime",
+          "value": "Not configured"
+        },
+        {
+          "name": "Capability profile",
+          "value": "desktop"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · Extensions interaction lab"
+    }
+  },
+  {
+    "label": "Inline expansion state preserved",
+    "observed": {
+      "fields": [
+        {
+          "name": "Active host conversation",
+          "value": "launch"
+        },
+        {
+          "name": "App surface",
+          "value": "inline"
+        },
+        {
+          "name": "Current display mode",
+          "value": "fullscreen"
+        },
+        {
+          "name": "Host available modes",
+          "value": "inline, fullscreen"
+        },
+        {
+          "name": "Selected app contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Composer context",
+          "value": "None"
+        },
+        {
+          "name": "Host turns started",
+          "value": "0"
+        },
+        {
+          "name": "Foreground polls",
+          "value": "0"
+        },
+        {
+          "name": "App knows private transcript",
+          "value": "No"
+        },
+        {
+          "name": "Reply in service / app",
+          "value": "false / false"
+        },
+        {
+          "name": "File draft / host version",
+          "value": "v3 / v3"
+        },
+        {
+          "name": "Unattended runtime",
+          "value": "Not configured"
+        },
+        {
+          "name": "Capability profile",
+          "value": "desktop"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · Extensions interaction lab"
+    }
+  },
+  {
+    "label": "Version selection after resource preview",
+    "observed": {
+      "fields": [
+        {
+          "name": "Active host conversation",
+          "value": "launch"
+        },
+        {
+          "name": "App surface",
+          "value": "clarify"
+        },
+        {
+          "name": "Current display mode",
+          "value": "fullscreen"
+        },
+        {
+          "name": "Host available modes",
+          "value": "inline, fullscreen"
+        },
+        {
+          "name": "Selected app contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Composer context",
+          "value": "None"
+        },
+        {
+          "name": "Host turns started",
+          "value": "0"
+        },
+        {
+          "name": "Foreground polls",
+          "value": "0"
+        },
+        {
+          "name": "App knows private transcript",
+          "value": "No"
+        },
+        {
+          "name": "Reply in service / app",
+          "value": "false / false"
+        },
+        {
+          "name": "File draft / host version",
+          "value": "v3 / v3"
+        },
+        {
+          "name": "Unattended runtime",
+          "value": "Not configured"
+        },
+        {
+          "name": "Capability profile",
+          "value": "desktop"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · Extensions interaction lab"
+    }
+  },
+  {
+    "label": "File conflict retains draft",
+    "observed": {
+      "fields": [
+        {
+          "name": "Active host conversation",
+          "value": "launch"
+        },
+        {
+          "name": "App surface",
+          "value": "file"
+        },
+        {
+          "name": "Current display mode",
+          "value": "fullscreen"
+        },
+        {
+          "name": "Host available modes",
+          "value": "inline, fullscreen"
+        },
+        {
+          "name": "Selected app contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Composer context",
+          "value": "None"
+        },
+        {
+          "name": "Host turns started",
+          "value": "0"
+        },
+        {
+          "name": "Foreground polls",
+          "value": "0"
+        },
+        {
+          "name": "App knows private transcript",
+          "value": "No"
+        },
+        {
+          "name": "Reply in service / app",
+          "value": "false / false"
+        },
+        {
+          "name": "File draft / host version",
+          "value": "v3 / v4"
+        },
+        {
+          "name": "Unattended runtime",
+          "value": "Not configured"
+        },
+        {
+          "name": "Capability profile",
+          "value": "desktop"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · Extensions interaction lab"
+    }
+  },
+  {
+    "label": "Reconciled file saved with current version",
+    "observed": {
+      "fields": [
+        {
+          "name": "Active host conversation",
+          "value": "launch"
+        },
+        {
+          "name": "App surface",
+          "value": "file"
+        },
+        {
+          "name": "Current display mode",
+          "value": "fullscreen"
+        },
+        {
+          "name": "Host available modes",
+          "value": "inline, fullscreen"
+        },
+        {
+          "name": "Selected app contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Composer context",
+          "value": "None"
+        },
+        {
+          "name": "Host turns started",
+          "value": "0"
+        },
+        {
+          "name": "Foreground polls",
+          "value": "0"
+        },
+        {
+          "name": "App knows private transcript",
+          "value": "No"
+        },
+        {
+          "name": "Reply in service / app",
+          "value": "false / false"
+        },
+        {
+          "name": "File draft / host version",
+          "value": "v5 / v5"
+        },
+        {
+          "name": "Unattended runtime",
+          "value": "Not configured"
+        },
+        {
+          "name": "Capability profile",
+          "value": "desktop"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · Extensions interaction lab"
+    }
+  },
+  {
+    "label": "Setup reuse and contact permission modal",
+    "observed": {
+      "fields": [
+        {
+          "name": "Active host conversation",
+          "value": "launch"
+        },
+        {
+          "name": "App surface",
+          "value": "settings"
+        },
+        {
+          "name": "Current display mode",
+          "value": "fullscreen"
+        },
+        {
+          "name": "Host available modes",
+          "value": "inline, fullscreen"
+        },
+        {
+          "name": "Selected app contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Composer context",
+          "value": "None"
+        },
+        {
+          "name": "Host turns started",
+          "value": "1"
+        },
+        {
+          "name": "Foreground polls",
+          "value": "0"
+        },
+        {
+          "name": "App knows private transcript",
+          "value": "No"
+        },
+        {
+          "name": "Reply in service / app",
+          "value": "false / false"
+        },
+        {
+          "name": "File draft / host version",
+          "value": "v3 / v3"
+        },
+        {
+          "name": "Unattended runtime",
+          "value": "Not configured"
+        },
+        {
+          "name": "Capability profile",
+          "value": "desktop"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · Extensions interaction lab"
+    }
+  },
+  {
+    "label": "Study 01 composer starts selected-work exchange",
+    "observed": {
+      "fields": [
+        {
+          "name": "Selected contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Exchange",
+          "value": "Waiting for Alice’s agent"
+        },
+        {
+          "name": "Shared document",
+          "value": "v3"
+        },
+        {
+          "name": "Current document",
+          "value": "v3 · Launch October 15"
+        },
+        {
+          "name": "Returned work",
+          "value": "No revision yet"
+        },
+        {
+          "name": "Applied to your work",
+          "value": "No"
+        },
+        {
+          "name": "Host session",
+          "value": "Current chat"
+        },
+        {
+          "name": "Recipient activity",
+          "value": "No retrieval observed"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · An exchange worth having"
+    }
+  },
+  {
+    "label": "Clarification, pause/resume and returned revision preserved",
+    "observed": {
+      "fields": [
+        {
+          "name": "Selected contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Exchange",
+          "value": "Revision used"
+        },
+        {
+          "name": "Shared document",
+          "value": "v3"
+        },
+        {
+          "name": "Current document",
+          "value": "v4 · Launch October 15"
+        },
+        {
+          "name": "Returned work",
+          "value": "Revision of v3"
+        },
+        {
+          "name": "Applied to your work",
+          "value": "Yes"
+        },
+        {
+          "name": "Host session",
+          "value": "Current chat"
+        },
+        {
+          "name": "Recipient activity",
+          "value": "Retrieval observed"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · An exchange worth having"
+    }
+  },
+  {
+    "label": "Newer source requires reconciliation",
+    "observed": {
+      "fields": [
+        {
+          "name": "Selected contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Exchange",
+          "value": "Reconcile with your current plan"
+        },
+        {
+          "name": "Shared document",
+          "value": "v3"
+        },
+        {
+          "name": "Current document",
+          "value": "v4 · Launch October 20"
+        },
+        {
+          "name": "Returned work",
+          "value": "Revision of v3"
+        },
+        {
+          "name": "Applied to your work",
+          "value": "No"
+        },
+        {
+          "name": "Host session",
+          "value": "Current chat"
+        },
+        {
+          "name": "Recipient activity",
+          "value": "Retrieval observed"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · An exchange worth having"
+    }
+  },
+  {
+    "label": "Reconciliation keeps October 20 launch",
+    "observed": {
+      "fields": [
+        {
+          "name": "Selected contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Exchange",
+          "value": "Revision used"
+        },
+        {
+          "name": "Shared document",
+          "value": "v3"
+        },
+        {
+          "name": "Current document",
+          "value": "v5 · Launch October 20"
+        },
+        {
+          "name": "Returned work",
+          "value": "Revision of v3"
+        },
+        {
+          "name": "Applied to your work",
+          "value": "Yes"
+        },
+        {
+          "name": "Host session",
+          "value": "Current chat"
+        },
+        {
+          "name": "Recipient activity",
+          "value": "Retrieval observed"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · An exchange worth having"
+    }
+  },
+  {
+    "label": "Later session retrieves existing exchange",
+    "observed": {
+      "fields": [
+        {
+          "name": "Selected contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Exchange",
+          "value": "Revision ready"
+        },
+        {
+          "name": "Shared document",
+          "value": "v3"
+        },
+        {
+          "name": "Current document",
+          "value": "v3 · Launch October 15"
+        },
+        {
+          "name": "Returned work",
+          "value": "Revision of v3"
+        },
+        {
+          "name": "Applied to your work",
+          "value": "No"
+        },
+        {
+          "name": "Host session",
+          "value": "Current chat"
+        },
+        {
+          "name": "Recipient activity",
+          "value": "Retrieval observed"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · An exchange worth having"
+    }
+  },
+  {
+    "label": "Mock invitation and ordinary message remain available",
+    "observed": {
+      "fields": [
+        {
+          "name": "Selected contact",
+          "value": "Morgan"
+        },
+        {
+          "name": "Exchange",
+          "value": "Revision ready"
+        },
+        {
+          "name": "Shared document",
+          "value": "v3"
+        },
+        {
+          "name": "Current document",
+          "value": "v3 · Launch October 15"
+        },
+        {
+          "name": "Returned work",
+          "value": "Revision of v3"
+        },
+        {
+          "name": "Applied to your work",
+          "value": "No"
+        },
+        {
+          "name": "Host session",
+          "value": "Current chat"
+        },
+        {
+          "name": "Recipient activity",
+          "value": "Retrieval observed"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · An exchange worth having"
+    }
+  },
+  {
+    "label": "Study 01 desktop styling",
+    "observed": {
+      "appFont": "Rubik, -apple-system, \"system-ui\", sans-serif",
+      "appLogo": "rgb(86, 214, 183)",
+      "fonts": [],
+      "hostFont": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+      "overflow": false,
+      "rail": 52,
+      "selected": "rgba(123, 97, 255, 0.133)",
+      "topbar": 44
+    }
+  },
+  {
+    "label": "Extensions desktop styling",
+    "observed": {
+      "action": "rgb(86, 214, 183)",
+      "appFont": "Rubik, -apple-system, \"system-ui\", sans-serif",
+      "appLogo": "rgb(86, 214, 183)",
+      "appSurface": "rgb(22, 22, 29)",
+      "appWidth": 667,
+      "chatWidth": 667,
+      "composerChip": "Context ×Alice · Autumn launch reviewAlice reviewed launch plan v3. Keep launch October 15; move webinar October 16 to October 19. Guest speaker availability is unresolved.",
+      "hostFont": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+    }
+  },
+  {
+    "label": "Exchange at 390px",
+    "observed": {
+      "fields": [
+        {
+          "name": "Selected contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Exchange",
+          "value": "Revision ready"
+        },
+        {
+          "name": "Shared document",
+          "value": "v3"
+        },
+        {
+          "name": "Current document",
+          "value": "v4 · Launch October 20"
+        },
+        {
+          "name": "Returned work",
+          "value": "Revision of v3"
+        },
+        {
+          "name": "Applied to your work",
+          "value": "No"
+        },
+        {
+          "name": "Host session",
+          "value": "Current chat"
+        },
+        {
+          "name": "Recipient activity",
+          "value": "Retrieval observed"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · An exchange worth having"
+    }
+  },
+  {
+    "label": "Extensions thread at 390px",
+    "observed": {
+      "fields": [
+        {
+          "name": "Active host conversation",
+          "value": "launch"
+        },
+        {
+          "name": "App surface",
+          "value": "thread"
+        },
+        {
+          "name": "Current display mode",
+          "value": "fullscreen"
+        },
+        {
+          "name": "Host available modes",
+          "value": "inline, fullscreen"
+        },
+        {
+          "name": "Selected app contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Composer context",
+          "value": "Alice · Autumn launch review"
+        },
+        {
+          "name": "Host turns started",
+          "value": "0"
+        },
+        {
+          "name": "Foreground polls",
+          "value": "0"
+        },
+        {
+          "name": "App knows private transcript",
+          "value": "No"
+        },
+        {
+          "name": "Reply in service / app",
+          "value": "true / true"
+        },
+        {
+          "name": "File draft / host version",
+          "value": "v3 / v3"
+        },
+        {
+          "name": "Unattended runtime",
+          "value": "Not configured"
+        },
+        {
+          "name": "Capability profile",
+          "value": "desktop"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · Extensions interaction lab"
+    }
+  },
+  {
+    "label": "Final global desktop",
+    "observed": {
+      "fields": [
+        {
+          "name": "Active host conversation",
+          "value": "aicq"
+        },
+        {
+          "name": "App surface",
+          "value": "global"
+        },
+        {
+          "name": "Current display mode",
+          "value": "fullscreen"
+        },
+        {
+          "name": "Host available modes",
+          "value": "inline, fullscreen"
+        },
+        {
+          "name": "Selected app contact",
+          "value": "Alice"
+        },
+        {
+          "name": "Composer context",
+          "value": "None"
+        },
+        {
+          "name": "Host turns started",
+          "value": "0"
+        },
+        {
+          "name": "Foreground polls",
+          "value": "1"
+        },
+        {
+          "name": "App knows private transcript",
+          "value": "No"
+        },
+        {
+          "name": "Reply in service / app",
+          "value": "true / true"
+        },
+        {
+          "name": "File draft / host version",
+          "value": "v3 / v3"
+        },
+        {
+          "name": "Unattended runtime",
+          "value": "Not configured"
+        },
+        {
+          "name": "Capability profile",
+          "value": "desktop"
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "title": "AICQ · Extensions interaction lab"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-03T14:07:42.798281+00:00",
+  "source_sha256": {
+    "interaction-v1.html": "448546d4a0359f278228e376ceaad4b823d2ae8bc6fa042c7abec3eef82b09cd",
+    "extensions-v2.html": "fc6d1908f6027fe58172760323d0ff2cb1fb6a2113271033712d988c85b31df1"
+  },
+  "logo_geometry_matches_original": {
+    "fulcra-logo-mono.svg": true,
+    "fulcra-logo-mint.svg": true
+  },
+  "embedded_font_matches_source": {
+    "interaction-v1.html": true,
+    "extensions-v2.html": true
+  },
+  "browser_observation_count": 22,
+  "observed_horizontal_overflow": [],
+  "console_error_checks": {
+    "interaction-v1": [],
+    "extensions-v2": [],
+    "extensions-v2-narrow": []
+  },
+  "screenshots": {
+    "fulcra-global-desktop.png": "2d4d153a713b9bb5926d6b5cc479137a3705526ee8c99f67fa39770da40f5139",
+    "fulcra-thread-desktop.png": "eb54d4a1d52951d05d0cfa829290376c7322d7fd7b4bf53993196b5b21f80aa8",
+    "fulcra-exchange-desktop.png": "ab2e4ed7106054d1c2d938f9aeab017ea0f1abfdd8390eedf2fc4a72b5730451",
+    "fulcra-exchange-narrow.png": "5b46d857b2607b66a5debbef300a0c2a87120ac6aca5c92639ff7ecbbf71606b",
+    "fulcra-thread-narrow.png": "dad0513d98f78223928172d5a137bd50722558ed2bbe38e2fb497461aac040ee",
+    "fulcra-global-window.png": "7c8119e32b05acc64c8ff8b1fc6ef8240edcbc58d9cecf2269766c4921dad133"
+  },
+  "limits": [
+    "Simulated behavior; no live host integration",
+    "Narrow layout extrapolated",
+    "Platform font identity not verified; CDP inspection stalled"
+  ]
+}

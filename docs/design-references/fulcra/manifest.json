@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-03T13:11:03.714366+00:00",
+  "guide": {
+    "url": "https://github.com/kubla/fulcra-design-reference/blob/main/context-web/DESIGN.md",
+    "tree_revision": "3f54e39d927b2d954897b82b9ba8ba315ea283ab",
+    "blob_sha": "f2eabbe3d5b389d222016f43b308e96941cae8e9",
+    "status": "alpha",
+    "authenticated": true
+  },
+  "logo": {
+    "sha": "f2a5b18b1285f7693a63cdc5fd21f8492aa56ad1",
+    "html_url": "https://github.com/ashfulcra/fulcra-tools/blob/c67aa1accbb9ffc7a0a3ab81ea20c21de6969e16/packages/menubar/fulcra_menubar/assets/source/fulcra-logo.svg",
+    "path": "packages/menubar/fulcra_menubar/assets/source/fulcra-logo.svg"
+  },
+  "logo_derivatives": "Original paths and viewBox preserved; monochrome uses currentColor, app variant uses mint. No new AICQ symbol.",
+  "font": {
+    "family": "Rubik",
+    "weights": "300\u2013900 variable, latin",
+    "url": "https://fonts.gstatic.com/s/rubik/v31/iJWKBXyIfDnIV7nBrXw.woff2",
+    "license": "SIL Open Font License 1.1; Rubik-OFL.txt",
+    "embedded_in_both_prototypes": true
+  },
+  "assets": {
+    "Rubik-OFL.txt": "472cbe7c25441df63e9c7864b43eb3c0f4b3df950c66a76224e6cfe1eae843fb",
+    "context-web-DESIGN.md": "319a3f65814036984c0ffadc9e0f8e459e372262b3813482a5153df02fe37be7",
+    "fulcra-logo-mint.svg": "00dbaeb3852a74f50beeecbecd8e488d9ded4c7f52df2ebdeaf0de8c50807bf7",
+    "fulcra-logo-mono.svg": "7e0e183ada58fa5f95fd999d897a50304f1c77b92f5586950e2fb7eebe89c36a",
+    "fulcra-logo-original.svg": "2e01d290f1eec2e9d1bcd2f148ee5dbaf22751ecb00b1d999c183f3f77a06a1a",
+    "rubik-latin.woff2": "691cd1d9b4c0cdf31a1dcf04259c86f92c85e69f6622abab7964d81e36890691"
+  }
+}

@@ -5,6 +5,8 @@ Before creating or revising ChatGPT/Codex mockups, read
 `docs/design-references/openai-host/README.md` and inspect the matching screenshots.
 Use their host layout and controls; distinguish official reference images from
 installed-client observations and simulated AICQ behavior.
+For AICQ app styling, also read `docs/design-references/fulcra/README.md`.
+Use its sourced Fulcra logo and app tokens; preserve the native host styling.
 Skill: [Fulcra App Starter](https://github.com/fulcradynamics/community-skills/blob/main/skills/fulcra-app-starter/SKILL.md).
 Local reference snapshots: `docs/references/fulcra-app-starter-SKILL.md` and
 `docs/references/fulcra-harness-control-flow.md`.

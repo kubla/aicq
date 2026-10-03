@@ -1,7 +1,8 @@
 # AICQ development
 
-**Status:** Interaction design first. UX-P02 offers seven Extensions-specific
-HTML examples; mechanical browser evaluation passed after one prototype retry.
+**Status:** Interaction design first. UX-P03 applies Fulcra identity and a
+source-grounded OpenAI host shell to both HTML studies. Browser checks passed
+for the simulated flows and desktop/narrow layouts.
 Owner design validation and live host integration remain open.
 
 - M1 — authenticated local baseline and owner dashboard: complete
@@ -13,7 +14,8 @@ Owner design validation and live host integration remain open.
 
 Prototype: `prototypes/extensions-v2.html`; contract mapping:
 `extensions-interaction-map.md`. History/evidence:
-`history/20261002_extensions-prototype.md`.
+`history/20261002_extensions-prototype.md` and
+`history/20261003_fulcra-prototype.md`.
 
 Recommend global AICQ navigation, an Agent exchanges thread tab and inline
 receipts. No sidebar display mode exists in the pinned spec; context attachments

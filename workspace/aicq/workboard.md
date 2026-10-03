@@ -6,10 +6,17 @@ remain proposals.
 
 ## Design experiment
 
+UX-P03 (2026-10-03): both HTML studies now use the sourced Fulcra logo, Rubik,
+mint actions, violet selection and charcoal app surfaces inside a native-style
+OpenAI host. Browser review exercised existing simulated flows and desktop/narrow
+layouts. See `history/20261003_fulcra-prototype.md` and `fulcra-design-reference.md`.
+Owner design review and live integration remain open. One UX-only retry followed
+a browser-inspection timeout; M2's remaining retry is unchanged.
+
 Host appearance reference (2026-10-03): nine OpenAI source screenshots and durable
 layout guidance saved. Installed-client Computer Use was blocked; fallback images
-are labeled. Future mockups consult `host-ui-reference.md`. The existing HTML
-studies await a host fidelity pass; no product implementation attempt was started.
+are labeled. Future mockups consult `host-ui-reference.md`. UX-P03 subsequently applied those cues to both HTML studies; no product
+implementation attempt was started.
 
 UX-P02: seven hook-specific HTML examples and source-grounded contract mapping
 built; mechanical browser evaluation passed after one prototype retry. Owner

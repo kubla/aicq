@@ -1,0 +1,121 @@
+{
+  "recorded_at": "2026-10-03T14:11:15.113314+00:00",
+  "verified_files": [
+    {
+      "remote": "workspace/aicq/plan.md",
+      "sha256": "70355600fe507192ce378b17f363a96052bdb406a4f2a8a857313e090748e1fe"
+    },
+    {
+      "remote": "workspace/aicq/decisions.md",
+      "sha256": "3be9dcb44a7c866b6c6fda01c841c81aa47047ca25b43c715c8f17becf00150a"
+    },
+    {
+      "remote": "workspace/aicq/progress.md",
+      "sha256": "2e0c66efaf50a201bf8187a65239bb5790f20f0eafac770659827f900aca65db"
+    },
+    {
+      "remote": "workspace/aicq/workboard.md",
+      "sha256": "455bf3cc51f611222943599d295cfb16c7e04630881eda45b0392c3d4239ff01"
+    },
+    {
+      "remote": "workspace/aicq/overview.md",
+      "sha256": "a210a0d18a7cc2d69737a26ede74681c40fb4c63de8594266826b19d3d7393c1"
+    },
+    {
+      "remote": "workspace/aicq/host-ui-reference.md",
+      "sha256": "63d56c15f195081ced9d9328312dd749b76294a74555736e482a1a9ac6db9e3b"
+    },
+    {
+      "remote": "workspace/aicq/fulcra-design-reference.md",
+      "sha256": "45065860bdf2bb1c7587e0658a1ec1632e81a461077c125789981fc5f9d92ec0"
+    },
+    {
+      "remote": "workspace/aicq/history/20261003_fulcra-prototype.md",
+      "sha256": "679cf50d5d5f13c53cc1f0b8eeb428bf0a3da561ed990e0bfda1f18b6479c77a"
+    },
+    {
+      "remote": "workspace/aicq/history/20261003_fulcra-prototype-events.json",
+      "sha256": "674fc362e16bd3c93e487bb1aa02aed275ab8d3cc7592b81f6343390730599a4"
+    },
+    {
+      "remote": "workspace/aicq/design-references/fulcra/README.md",
+      "sha256": "00bbb36cfc46daa24354afcf308349f4bb923a39fdb31ffe71b5a26e5b50b86c"
+    },
+    {
+      "remote": "workspace/aicq/design-references/fulcra/Rubik-OFL.txt",
+      "sha256": "472cbe7c25441df63e9c7864b43eb3c0f4b3df950c66a76224e6cfe1eae843fb"
+    },
+    {
+      "remote": "workspace/aicq/design-references/fulcra/context-web-DESIGN.md",
+      "sha256": "319a3f65814036984c0ffadc9e0f8e459e372262b3813482a5153df02fe37be7"
+    },
+    {
+      "remote": "workspace/aicq/design-references/fulcra/fulcra-logo-mint.svg",
+      "sha256": "00dbaeb3852a74f50beeecbecd8e488d9ded4c7f52df2ebdeaf0de8c50807bf7"
+    },
+    {
+      "remote": "workspace/aicq/design-references/fulcra/fulcra-logo-mono.svg",
+      "sha256": "7e0e183ada58fa5f95fd999d897a50304f1c77b92f5586950e2fb7eebe89c36a"
+    },
+    {
+      "remote": "workspace/aicq/design-references/fulcra/fulcra-logo-original.svg",
+      "sha256": "2e01d290f1eec2e9d1bcd2f148ee5dbaf22751ecb00b1d999c183f3f77a06a1a"
+    },
+    {
+      "remote": "workspace/aicq/design-references/fulcra/manifest.json",
+      "sha256": "e58beea66ace308fe69431a011d25bea6bbcfc3b607c32df7160336f67f6f7d4"
+    },
+    {
+      "remote": "workspace/aicq/design-references/fulcra/rubik-latin.woff2",
+      "sha256": "691cd1d9b4c0cdf31a1dcf04259c86f92c85e69f6622abab7964d81e36890691"
+    },
+    {
+      "remote": "workspace/aicq/prototypes/interaction-v1.html",
+      "sha256": "448546d4a0359f278228e376ceaad4b823d2ae8bc6fa042c7abec3eef82b09cd"
+    },
+    {
+      "remote": "workspace/aicq/prototypes/extensions-v2.html",
+      "sha256": "fc6d1908f6027fe58172760323d0ff2cb1fb6a2113271033712d988c85b31df1"
+    },
+    {
+      "remote": "workspace/aicq/prototypes/fulcra-browser-observations.json",
+      "sha256": "c16f5a6c4ab352ce5acbc676a705f6467d66a0ee6c4f76d631a9ebc4f5f137fe"
+    },
+    {
+      "remote": "workspace/aicq/prototypes/fulcra-evaluation.json",
+      "sha256": "c305e51a79df35db253002263729ec2cb5674246b01fe7c0541162da7115e41d"
+    },
+    {
+      "remote": "workspace/aicq/prototypes/fulcra-evaluation.md",
+      "sha256": "bf137f392086f0488b7b7c519aef407a71564e9ef99aedea5353541042b452f9"
+    },
+    {
+      "remote": "workspace/aicq/prototypes/fulcra-exchange-desktop.png",
+      "sha256": "ab2e4ed7106054d1c2d938f9aeab017ea0f1abfdd8390eedf2fc4a72b5730451"
+    },
+    {
+      "remote": "workspace/aicq/prototypes/fulcra-exchange-narrow.png",
+      "sha256": "5b46d857b2607b66a5debbef300a0c2a87120ac6aca5c92639ff7ecbbf71606b"
+    },
+    {
+      "remote": "workspace/aicq/prototypes/fulcra-global-desktop.png",
+      "sha256": "2d4d153a713b9bb5926d6b5cc479137a3705526ee8c99f67fa39770da40f5139"
+    },
+    {
+      "remote": "workspace/aicq/prototypes/fulcra-global-window.png",
+      "sha256": "7c8119e32b05acc64c8ff8b1fc6ef8240edcbc58d9cecf2269766c4921dad133"
+    },
+    {
+      "remote": "workspace/aicq/prototypes/fulcra-thread-desktop.png",
+      "sha256": "eb54d4a1d52951d05d0cfa829290376c7322d7fd7b4bf53993196b5b21f80aa8"
+    },
+    {
+      "remote": "workspace/aicq/prototypes/fulcra-thread-narrow.png",
+      "sha256": "dad0513d98f78223928172d5a137bd50722558ed2bbe38e2fb497461aac040ee"
+    },
+    {
+      "remote": "workspace/aicq/prototypes/README.md",
+      "sha256": "ff73b001f70a58209e0fcd46139d4bab6640be596061bf81643127986908ecc0"
+    }
+  ]
+}

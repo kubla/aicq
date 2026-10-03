@@ -27,7 +27,8 @@ fonts are labeled; sampled colors have source coordinates. Desktop screenshots
 do not verify mobile layout, light theme, installed-client support or AICQ integration.
 
 This was reference gathering and project documentation. Existing prototypes were
-not redesigned in this task. Their earlier host shells still need a fidelity pass.
+not redesigned in this task. UX-P03 subsequently applied this reference and Fulcra app styling to both studies;
+see `history/20261003_fulcra-prototype.md`.
 No product implementation run, milestone promotion or M2 retry occurred. M1 is
 complete, M2 incomplete with one retry remaining; M3–M6 remain pending.
 

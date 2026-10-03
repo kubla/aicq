@@ -10,11 +10,23 @@ implement Events. Evaluation evidence: history/20261001_m1-local-baseline.md.
 
 ## Next design step
 
+UX-P03 (2026-10-03): apply the user's Fulcra Context Web design reference and
+Fulcra logo to both existing HTML studies, together with the saved OpenAI host
+appearance reference. Preserve their existing simulated interactions. Use a
+neutral native host shell and Fulcra styling inside AICQ content. The fixed brand
+direction replaces generic styling alternatives for this pass. Acceptance:
+inspect both prototypes in a browser, verify logo/font rendering and host/app
+styling boundaries, exercise representative existing flows, inspect desktop and
+narrow layouts, and record artifacts/source provenance. User design validation
+and live host/account acceptance remain open. Independent UX-P03 uses the
+existing annotation and separate state, two retries, and a 45-minute timeout
+override recorded before RUN_START. It does not consume M2's remaining retry.
+
 2026-10-03 direction: make future mockups visually realistic using installed Bits
 & Bolts/host inspection, or web screenshots if inspection fails. The installed app
 was blocked by Computer Use policy. Saved the authorized official-image fallback
 and concrete reference rules in `host-ui-reference.md`. Apply the reference in
-the next HTML iteration; existing prototypes were not restyled in this task.
+UX-P03; the reference-gathering task itself did not restyle the prototypes.
 
 UX-P02 (2026-10-02): match prototype interactions to the user-requested OpenAI
 MCP Extensions specification, pinned at ca16cb3bc015baaa1b849082d8755bbef18770cb.
