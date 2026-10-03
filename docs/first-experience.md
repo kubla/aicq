@@ -2,7 +2,10 @@
 
 Status: proposed UX walkthrough, informed by the user's requirement to support
 both conversations and exchanges beyond chat. The details below are design
-hypotheses, not additional approved user decisions. No prototype has been built.
+hypotheses, not additional approved user decisions. UX-P01 now provides a
+self-contained HTML prototype at `prototypes/interaction-v1.html`; browser controls
+were exercised, but the design and live integration remain unvalidated. See
+`history/20261002_interaction-prototype.md`.
 
 ## Product promise
 

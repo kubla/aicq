@@ -221,3 +221,13 @@ acceptable for initial participation; the Fulcra MCP Events contribution need no
 gate that prototype. Hosting requirements and a recommended single-process VM
 experiment are in history/20261002_embedded-ui-hosting.md. No provider, hostname,
 cloud provisioning or deployment was selected or performed through this request.
+
+## Prototype the interaction before more engineering
+
+> The interaction design will make the difference between a hit product and a flop. Let’s focus there with HTML prototypes so that we can iterate quickly before committing to heavyweight software engineering.
+
+Decision: prioritize local, throwaway HTML interaction prototypes. UX-P01 explores
+an embedded review exchange using sample data. Retain the embedded UI; polling
+remains acceptable. Live implementation and M2 acceptance remain incomplete.
+Browser evaluation can verify the prototype controls; Michael's review must still
+validate the interaction design. This experiment does not spend the final M2 retry.

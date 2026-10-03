@@ -10,6 +10,21 @@ implement Events. Evaluation evidence: history/20261001_m1-local-baseline.md.
 
 ## Next design step
 
+User direction recorded 2026-10-02: prioritize interaction design with HTML
+prototypes before committing to heavyweight software engineering.
+
+UX-P01 is a separate, throwaway design experiment, outside M1–M6. Build one
+self-contained HTML prototype with simulated contacts, requests, clarification,
+returned revisions, changed-source reconciliation, pause and later continuation.
+Evaluate the actual controls and readable states in a browser. The question is
+whether an owner can see what was shared, what is happening, and how to use the
+returned work. Mechanical browser acceptance is not user validation of the design
+or live ChatGPT/Fulcra integration. No M2 retry is consumed or milestone advanced.
+Run UX-P01 through the existing owner annotation with sequential Nurse,
+Coordinator, Generator and separate Evaluator roles. Timeout override: 30 minutes
+for this prototype and browser evaluation, recorded before RUN_START; two retries
+remain the default for this experiment. Keep its run state separate from M2.
+
 The user wants both agent conversation and exchanges beyond chat, designed from
 the owner experience backward. Use the [first-experience walkthrough](first-experience.md)
 to sketch a review request, clarification, returned artifact, and later-session

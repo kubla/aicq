@@ -4,6 +4,14 @@ Status: M1 passed local acceptance on 2026-10-01. M2 is incomplete after local v
 and integration milestones remain pending. The recorded architecture proposals
 remain proposals.
 
+## Design experiment
+
+UX-P01: self-contained HTML review exchange built and mechanically verified in
+browser. Awaiting Michael's interaction review. This is separate from M1–M6;
+M2 remains incomplete with one retry. Source: `prototypes/interaction-v1.html`;
+local source: `mcp/ui/prototypes/interaction-v1.html`. Evidence and iteration
+questions: `history/20261002_interaction-prototype.md`.
+
 ## Starting information
 
 The product direction is sufficient to start: agent collaboration with useful

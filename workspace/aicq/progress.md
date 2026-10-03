@@ -55,7 +55,22 @@ metadata/schema checks, and M1 regression checks passed during evaluation.
 See `history/20261001_m1-local-baseline.md`,
 `history/20261001_m2-local-plugin.md`, and their sanitized evidence files.
 
+## Interaction prototype
+
+UX-P01 delivered a local, self-contained HTML prototype on throwaway branch
+`kublascratchpad/ux-prototype-v1`. Browser evaluation verified sharing, retrieval,
+clarification, revision use, changed-source reconciliation, pause/resume, simulated
+new sessions, ordinary chat, mock invitation and desktop/mobile rendering.
+Design validation by Michael and live host integration remain open. No milestone
+was promoted or M2 retry consumed. See `history/20261002_interaction-prototype.md`.
+
 ## Next actions
+
+Prioritize iteration on the prototype before further heavyweight engineering,
+as directed by the user. Try the review, question, changed-document and later
+session scenarios. Use feedback to choose the interaction; keep production
+requirements distinct from mechanically verified simulated controls.
+
 
 The user explicitly retained the embedded UI. Keep AICQ's UI/tool adapter while
 using polling rather than requiring new Fulcra MCP Events support for the

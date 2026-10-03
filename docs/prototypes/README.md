@@ -1,0 +1,29 @@
+# AICQ interaction studies
+
+Open `../../mcp/ui/prototypes/interaction-v1.html` directly in a browser. It is
+one HTML file with inline CSS and JavaScript; no install, build, authentication
+or service is needed. State lives in memory and resets on reload.
+
+Question: can an owner share selected work, follow the exchange and use the
+returned work without managing a task system?
+
+Try Review a plan, A question comes back, Your document changed, and Return
+tomorrow. Free play supports contact switching, notes, pause/resume and a mock
+invitation. The bottom prototype controls stand in for another agent; they
+perform no network calls. New session simulates continuation within this page,
+not persistence across reloads. Inspect the exchange state shows current/shared
+versions and observed retrieval.
+
+Hypotheses to review:
+
+- Asking the host agent to share sends directly, with an inspectable receipt.
+- People remain the navigation; documents and returned changes anchor the exchange.
+- A newer source document requires reconciliation before using a revision.
+- Waiting reports lack of retrieval; it does not suggest an inactive agent is working.
+
+These are prototype choices awaiting Michael's review. Browser control checks
+passed; no real agent delivery, ChatGPT rendering, contact permissions or Fulcra
+persistence is implemented. M2 remains incomplete. Keep this throwaway prototype
+separate from application source until an interaction is validated.
+
+Canonical record: workspace/aicq/history/20261002_interaction-prototype.md.

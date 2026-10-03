@@ -1,6 +1,12 @@
 # AICQ development
 
-**Status:** M1 passed. M2 local implementation is verified; live integration is blocked.
+**Status:** Interaction design is the current focus. UX-P01 HTML prototype is
+available for owner review. Its controls were verified in a browser; design
+validation and live integration remain open. M1 passed; M2 remains incomplete.
+
+Prototype: `prototypes/interaction-v1.html`. Local source:
+`mcp/ui/prototypes/interaction-v1.html`, branch `kublascratchpad/ux-prototype-v1`.
+History: `history/20261002_interaction-prototype.md`. No M2 retry consumed.
 
 - M1 — authenticated local baseline and populated owner dashboard: complete
 - M2 — plugin shell and account linking: incomplete; configuration/access gates
