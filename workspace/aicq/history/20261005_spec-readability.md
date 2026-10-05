@@ -81,3 +81,14 @@ stale M1 status/polling prerequisite sentence in both copies. Relative files,
 image paths and linked heading anchors are checked separately.
 This review does not run or promote any live ChatGPT, sharing, messaging, calendar
 or responder acceptance gate. M2’s retry remains unchanged.
+
+
+Passing REVIEW `360e194f-4da7-5298-b3e0-27669adbcebb`, MARK_COMPLETE and RUN_COMPLETE were read
+back. Retry closed at 2026-10-05T20:30:21.242106+00:00; terminal
+`30754e2f-60a8-52b5-8af4-b5e4eba2a147`. Full receipts are in the adjacent events JSON.
+No run is active. The private branch `kublascratchpad/ux-alice-worked-example` was
+published at candidate `d1a5075a6252a8ac599d6b29c15f5834a7dca124`; GitHub content
+API byte-matched spec and README, and Git ls-remote matched the commit. Main,
+repository access, prototype source and Site deployment were unchanged.
+Canonical spec and linked screenshots were also byte-verified. Final tracking
+records are delivered separately after the terminal event.

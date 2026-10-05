@@ -349,3 +349,10 @@ identity, isolation, autonomy, invitation, durability, artifacts, portability an
 activation contracts; verify diagrams, image/link paths, readability and accurate
 status. Save review evidence and byte-verify canonical writes. M2 remains incomplete
 with one retry; M3–M6 remain pending. The previous spec stays in linked history.
+
+
+DOC-P01 completed after one documentation-only legibility retry. Requirement
+coverage, three images, two rendered diagrams, 34 relative links/anchors and
+whitespace checks passed. Canonical content was byte-verified; private GitHub
+spec/README and branch head matched candidate `d1a5075`. See
+history/20261005_spec-readability.md. No product milestone or M2 retry changed.

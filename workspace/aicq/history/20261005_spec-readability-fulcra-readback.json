@@ -1,0 +1,77 @@
+[
+  {
+    "path": "workspace/aicq/spec.md",
+    "sha256": "ae34dc43850b23499a62b91108a2e0899dbadace88b5475c661a77db5808f1ee",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/decisions.md",
+    "sha256": "3774eb349083de9ef31c6ad4f30dd84f3d89b01fb0debd4c15665a03e16748d0",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/fulcra-mcp-events.md",
+    "sha256": "391a13c33dc16b96be462623901a3dc1460878e9a5bd780673c8cfa40ea7c805",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/history/20261005_spec-before-readability.md",
+    "sha256": "24d14665d377201911c3e390335d4901622ac2d9b490cc5db32ab1c7fee03623",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/history/20261005_spec-readability-checks.json",
+    "sha256": "45160a5a867f4b46a97c1313132a2e1a922846bbd4cbd958d5f449003bad23c9",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/agent-boundary-completed.png",
+    "sha256": "8dc6c5b2d6bcf96602c2776df8a55d13fadc7db1d18dffab0ca2b2bd7e9153f2",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/agent-boundary-settings.png",
+    "sha256": "2f9e5a94c6ba5d1af786dd682aedb5d2abe3d3a92cf8a4e83d72662f3b271201",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/prototypes/agent-boundary-invite.png",
+    "sha256": "4bb70096033cca94e1cdefcfdf98f372d1bf92fa4f40e19fafeb6fc47c774c41",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/plan.md",
+    "sha256": "4234a7e37d7cfa29aee9074c1355553aa2038fbf0394cf3b46a84b010bc72892",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/progress.md",
+    "sha256": "339cf224bc77579ba6e5fadde599f92c6881bf285148026f4386c5467077d013",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/workboard.md",
+    "sha256": "f21a7c85f9164e24a24cac3fe29f44c1e4d446aa868e6c5f43d2dd6c2e0a5339",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/overview.md",
+    "sha256": "8a521e0610a4091282dadc2f96f9e3bed02d88ca904adc0eaf05a1c9ce1d03c8",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/outstanding-issues.md",
+    "sha256": "f03bcb494391b18adcabea0780b6b10b45c043f9b3b1107e56533535bca12871",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/history/20261005_spec-readability.md",
+    "sha256": "1a608f177bef38b60e34ac4e5405bba1a1e2f0d980b47095f9f22f462c8e7b5c",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/history/20261005_spec-readability-events.json",
+    "sha256": "496ef3ad24dab137734117ec6a6a2c7b02d1cd98b3f0e9326e91fb0f2428727b",
+    "matched": true
+  }
+]

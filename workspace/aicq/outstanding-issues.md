@@ -77,8 +77,11 @@ keep all required host/account checks incomplete and M3–M6 pending.
 
 ## Source publication and later gates
 
-Application commits remain local in the private repository. Earlier cloud Git push
-failed with HTTP 401; current local push capability has not been retested.
+Local Git publication now works: branch `kublascratchpad/ux-alice-worked-example`
+was pushed to private `kubla/aicq` on 2026-10-05. GitHub spec/README bytes and remote
+head matched candidate `d1a5075`; main and repository access were unchanged.
+The earlier HTTP 401 was a historical cloud transport failure. See
+history/20261005_spec-readability.md.
 Two-owner exchanges, third-owner isolation, revocation, useful artifacts, client
 switching, and actual ChatGPT Events remain unverified. Separate prerequisite
 `429da58` is protocol readiness, not Events implementation.

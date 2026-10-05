@@ -18,10 +18,13 @@ remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 ## Harness state
 
 Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
-The current run is DOC-P01 retry 1 `doc-p01-90502b16-82af-4065-a66d-997d5ad62a39`. Documentation REVIEW passed;
-canonical delivery and repository publication are in progress. No product milestone
-is promoted. One documentation retry repaired diagram legibility. Latest prototype
-remains UX-P09 public Site version 6. M2 has one retry unchanged. See
+Latest run: DOC-P01 retry 1 `doc-p01-90502b16-82af-4065-a66d-997d5ad62a39`, closed at
+2026-10-05T20:30:21.242106+00:00. Passing REVIEW `360e194f-4da7-5298-b3e0-27669adbcebb`, MARK_COMPLETE and
+RUN_COMPLETE were read back; terminal `30754e2f-60a8-52b5-8af4-b5e4eba2a147`. No run is active.
+Spec is 46% shorter, illustrated, reviewed and published on the private repository
+branch `kublascratchpad/ux-alice-worked-example`, candidate `d1a5075`.
+One documentation-only retry repaired diagram legibility. Latest prototype remains
+UX-P09 public Site version 6. M2 has one retry unchanged. See
 history/20261005_spec-readability.md and history/20261005_agent-boundary.md.
 
 - UX-P03 retry `ux-p03-f8c30fc1-0cbf-4de2-bc18-c876c3165901`: passing

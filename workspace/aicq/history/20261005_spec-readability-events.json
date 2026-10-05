@@ -1,0 +1,167 @@
+[
+  {
+    "record_id": "fe768daa-1d00-5668-b4a2-f2af3142f309",
+    "recorded_at": "2026-10-05T20:16:18.657557+00:00",
+    "event_id": "b1623bc7-0a36-49bf-98ab-a4fbc320ceaf",
+    "run_id": "doc-p01-f593d538-25dc-41e8-893c-9b4b2abcbcf4",
+    "milestone": "DOC-P01",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "Rewrite the spec for Fulcra engineers; preserve current decisions and implementation status.",
+    "evidence": "Canonical plan/spec/decisions/progress/workboard/history matched repository; DOC-P01 timeout override uploaded and read back before run."
+  },
+  {
+    "record_id": "c3034ed6-09bd-5b3d-ac0e-1f5b9e06930d",
+    "recorded_at": "2026-10-05T20:16:48.144208+00:00",
+    "event_id": "aee96057-41b6-4db4-9440-2abcb88c8128",
+    "run_id": "doc-p01-f593d538-25dc-41e8-893c-9b4b2abcbcf4",
+    "milestone": "DOC-P01",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "DOC-P01 is the authorized documentation task; product milestones and retry counts stay unchanged.",
+    "evidence": "Full prior spec (6028 words) read; current polling, embedded UI, autonomy, agent-tool boundary and invitation decisions reconciled."
+  },
+  {
+    "record_id": "a7711266-30ae-51ae-8d2c-9bb0e104c9d6",
+    "recorded_at": "2026-10-05T20:16:50.978884+00:00",
+    "event_id": "7b990a56-b6ca-4fe9-8f9e-b9959ef1f9b9",
+    "run_id": "doc-p01-f593d538-25dc-41e8-893c-9b4b2abcbcf4",
+    "milestone": "DOC-P01",
+    "step": "GENERATE",
+    "status": "started",
+    "detail": "Rewrite the spec around Alice and consolidate engineering contracts; archive prior wording.",
+    "evidence": "Use current UX-P09 screenshots, pinned Extensions mapping, existing source and recorded decisions; no new architecture selection."
+  },
+  {
+    "record_id": "1a7ee738-1359-5c2a-8a44-ff38ee8d55a0",
+    "recorded_at": "2026-10-05T20:23:11.649875+00:00",
+    "event_id": "26f4daab-43d8-4248-8d55-4695db7f7d84",
+    "run_id": "doc-p01-f593d538-25dc-41e8-893c-9b4b2abcbcf4",
+    "milestone": "DOC-P01",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Draft rewritten from 6028 words to about 3240, with three prototype screenshots, two diagrams and consolidated contracts; README now leads to the current spec.",
+    "evidence": "Prior spec archived with original wording and adjusted relative links; no source, prototype or product milestone changes."
+  },
+  {
+    "record_id": "f359078c-380f-5a24-9652-112c2a458955",
+    "recorded_at": "2026-10-05T20:23:14.017823+00:00",
+    "event_id": "cce674a4-fe44-4d6f-b3ab-2ff9a8cf7aac",
+    "run_id": "doc-p01-f593d538-25dc-41e8-893c-9b4b2abcbcf4",
+    "milestone": "DOC-P01",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Separate Evaluator pass: compare requirement coverage, render diagrams/images, validate navigation and status.",
+    "evidence": "Read prior spec and current decisions independently of the draft; document-only acceptance, not live product verification."
+  },
+  {
+    "record_id": "9568f6d3-c9bb-5506-a654-fa4dd2efde6d",
+    "recorded_at": "2026-10-05T20:24:48.190808+00:00",
+    "event_id": "3cf5888d-9f3f-46b7-b281-cc0306e4470f",
+    "run_id": "doc-p01-f593d538-25dc-41e8-893c-9b4b2abcbcf4",
+    "milestone": "DOC-P01",
+    "step": "REVIEW",
+    "status": "failed",
+    "detail": "Rendered diagrams parse, but horizontal layouts shrink labels below a comfortable reading size.",
+    "evidence": "Browser at 1280px: boundary graph labels visibly tiny; invitation graph scales to only 47px high. Three screenshot assets load. Readability criterion requires repair."
+  },
+  {
+    "record_id": "f18d04dc-19f1-5ce4-98ed-58623cb431a5",
+    "recorded_at": "2026-10-05T20:24:50.380236+00:00",
+    "event_id": "6a1b2aca-10fc-4139-b05a-3cdab5b9f976",
+    "run_id": "doc-p01-f593d538-25dc-41e8-893c-9b4b2abcbcf4",
+    "milestone": "DOC-P01",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "Close first documentation attempt after legibility review; revise diagrams in DOC-P01 retry 1.",
+    "evidence": "Independent documentation retry only; M2 unchanged; no product or website publication."
+  },
+  {
+    "record_id": "e64e53e3-2ee0-5b2d-86c8-ab2f0d2bc912",
+    "recorded_at": "2026-10-05T20:24:52.63738+00:00",
+    "event_id": "a587af68-3435-4bb8-a2b7-74cf54ad7b32",
+    "run_id": "doc-p01-90502b16-82af-4065-a66d-997d5ad62a39",
+    "milestone": "DOC-P01",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "DOC-P01 retry 1: repair diagram layouts and complete contract/link review.",
+    "evidence": "Existing 45-minute documentation override and two-retry limit remain; first attempt failed diagram legibility."
+  },
+  {
+    "record_id": "bf7a42f0-25e1-5563-a12a-50a3463804ae",
+    "recorded_at": "2026-10-05T20:24:55.102226+00:00",
+    "event_id": "f452702d-4208-4510-97eb-fa1cf0a7c879",
+    "run_id": "doc-p01-90502b16-82af-4065-a66d-997d5ad62a39",
+    "milestone": "DOC-P01",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "Continue the same authorized spec rewrite, preserving requirements and statuses.",
+    "evidence": "M1 complete; M2 incomplete with one retry; M3\u2013M6 pending."
+  },
+  {
+    "record_id": "a0ec1948-59eb-56cb-9d9e-e5fb5142eedd",
+    "recorded_at": "2026-10-05T20:24:57.398757+00:00",
+    "event_id": "143c8f33-9b51-4ae8-aabe-0efa763dc595",
+    "run_id": "doc-p01-90502b16-82af-4065-a66d-997d5ad62a39",
+    "milestone": "DOC-P01",
+    "step": "GENERATE",
+    "status": "started",
+    "detail": "Use a vertical boundary layout and a compact invitation sequence diagram.",
+    "evidence": "Repair the readability defect observed in rendered Markdown; retain existing prose and screenshots."
+  },
+  {
+    "record_id": "7ec06280-e93b-58d5-81af-915f1c738b52",
+    "recorded_at": "2026-10-05T20:25:30.410602+00:00",
+    "event_id": "b2af2bb1-2965-4b08-86ee-0e5f1dbcd065",
+    "run_id": "doc-p01-90502b16-82af-4065-a66d-997d5ad62a39",
+    "milestone": "DOC-P01",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Repaired diagrams render at native reading size: boundary 586 by 454, invitation 792 by 507.",
+    "evidence": "Mermaid 11.12.0 renders both; three current prototype screenshot assets load. Spec is 3255 words, about 46 percent shorter."
+  },
+  {
+    "record_id": "75134b0a-52e5-52c0-aac4-4ad228357fb4",
+    "recorded_at": "2026-10-05T20:25:32.828146+00:00",
+    "event_id": "7d5c77e1-5c31-42fa-9d0a-e4a77f02f32f",
+    "run_id": "doc-p01-90502b16-82af-4065-a66d-997d5ad62a39",
+    "milestone": "DOC-P01",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Re-evaluate requirement coverage, readable illustrations, relative links and exact build status.",
+    "evidence": "Documentation-only review; prior source and current decisions remain the comparison baseline."
+  },
+  {
+    "record_id": "360e194f-4da7-5298-b3e0-27669adbcebb",
+    "recorded_at": "2026-10-05T20:28:39.176681+00:00",
+    "event_id": "606458f3-563c-416e-87bb-3f1c28e4c3ae",
+    "run_id": "doc-p01-90502b16-82af-4065-a66d-997d5ad62a39",
+    "milestone": "DOC-P01",
+    "step": "REVIEW",
+    "status": "completed",
+    "detail": "Documentation review passed: current contract preserved, diagrams legible, screenshots loaded, 34 local links/anchors valid and no whitespace errors.",
+    "evidence": "Coverage table and checks JSON in history/20261005_spec-readability*; 3255 versus 6028 words; missing Events reference restored and stale status corrected; no live acceptance claims."
+  },
+  {
+    "record_id": "24fb4c38-2c80-5f40-b09d-86329b8e9dbc",
+    "recorded_at": "2026-10-05T20:30:18.643111+00:00",
+    "event_id": "c1767977-a031-4b9a-99fd-259a57af47ab",
+    "run_id": "doc-p01-90502b16-82af-4065-a66d-997d5ad62a39",
+    "milestone": "DOC-P01",
+    "step": "MARK_COMPLETE",
+    "status": "completed",
+    "detail": "DOC-P01 spec rewrite is reviewed, canonical-synced and published on the existing private branch.",
+    "evidence": "34 valid local links/anchors; readable Mermaid diagrams and screenshots; canonical spec/assets byte-verified; GitHub spec/README bytes and branch head verified at d1a5075."
+  },
+  {
+    "record_id": "30754e2f-60a8-52b5-8af4-b5e4eba2a147",
+    "recorded_at": "2026-10-05T20:30:21.242106+00:00",
+    "event_id": "be2f3a2f-649b-4952-9135-2542f9e2487b",
+    "run_id": "doc-p01-90502b16-82af-4065-a66d-997d5ad62a39",
+    "milestone": "DOC-P01",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "Documentation task complete after one diagram-legibility retry; no product milestone advanced.",
+    "evidence": "M1 complete; M2 incomplete with one retry; M3\u2013M6 pending. Private repo access and public prototype unchanged; final resume records follow."
+  }
+]
