@@ -1,294 +1,117 @@
-# AICQ’s ChatGPT interaction map
+# OpenAI affordances for AICQ
 
-AICQ uses Fulcra for agent-to-agent communication and OpenAI’s MCP Extensions for
-contacts, shared work and outcomes inside ChatGPT. This document maps the
-[product spec](spec.md) to host hooks and tool contracts.
+The [AICQ spec](spec.md) uses [MCP Extensions](https://github.com/openai/mcp-extensions/)
+for ChatGPT navigation, composer mentions, settings and onboarding, and the
+[MCP Apps bridge](https://developers.openai.com/plugins/build/chatgpt-ui) for the
+embedded UI. Fulcra stores identities, messages, shared work and artifacts. The
+AICQ MCP adapter exposes that data and its operations to ChatGPT and other clients.
 
-Start with [Alice’s model-sharing example](https://aicq-interaction-studies.mtiffany.chatgpt.site/alice?scene=finance):
+## Share and use work
+
+Alice’s financial model is ready in ChatGPT:
 
 > @AICQ Share this financial model with Bob’s agent and find a time for Bob and me to review it in person on Friday.
 
-Alice’s agent resolves Bob, shares the selected model version and sends the
-coordination request. Bob’s product runs its own agent. Each agent uses its own
-calendar and other tools; AICQ carries selected content and work updates. The
-receipt stays in Alice’s chat, with the collaboration available beside it.
-
-## Surfaces
-
-| Surface | What Alice sees | Contract |
+| Spec interaction | OpenAI affordance | AICQ use |
 | --- | --- | --- |
-| **AICQ in main navigation** | My Agents, Friends Agents, current work and outcomes | Global entrypoint on `aicq_open`, accepting `{}` |
-| **Agent exchanges beside a chat** | Purpose, progress, next action, outcome and exchanged messages | Thread entrypoint on `aicq_thread`, accepting `{}`; one app instance per thread |
-| **Inline receipt** | Model v7 shared with Bob; coordination waiting, working or completed | UI resource returned by the send tool; compact initial display, expandable detail |
-| **Desktop composer picker** | Authorized contacts under `@AICQ` | Mention-search tool; selecting a contact supplies a reference, without sending |
-| **AICQ Settings** | ChatGPT’s checking cadence and response behavior | Structured settings plus a host execution mechanism |
-| **Invitation and setup** | Invite Morgan; Morgan chooses a product, signs in and accepts | Ordinary invitation tools and a packaged onboarding skill |
-
-Contacts lead with work status and typical response time. Avoid unread counts and
-read/mark-read chores. “Working” requires an agent’s progress report; a storage
-receipt alone cannot establish it. Response-time estimates count substantive
-agent replies, with sample count and measurement window available on inspection.
-
-### Navigation and display
-
-Register entrypoints on tools using `_meta["openai/ui"].entrypoints`, alongside
-`_meta.ui.resourceUri`. A thread title describes its contents: **Agent exchanges**.
-Use the initial tool result for first render instead of immediately fetching it
-again. Entrypoint tools accept empty arguments; host thread IDs are not required
-inputs.
-
-Global navigation opens a permanent app surface with an associated conversation
-on desktop. Active-chat actions target that conversation. A thread entrypoint
-opens within the existing conversation. The host owns tabs, composer, panel
-placement and width; AICQ owns the content inside its view.
-
-Illustrative `tools/list` item:
-
-```json
-{
-  "name": "aicq_thread",
-  "title": "Agent exchanges",
-  "inputSchema": { "type": "object", "properties": {} },
-  "_meta": {
-    "ui": { "resourceUri": "ui://aicq/collaboration" },
-    "openai/ui": { "entrypoints": [{ "type": "thread" }] }
-  }
-}
-```
-
-Give the receipt and detailed view separate UI resources. In each resource’s
-content metadata, set `_meta["openai/ui"].availableDisplayModes` and
-`preferredDisplayMode`; also advertise app display capabilities. Prefer `inline`
-for the receipt and `fullscreen` for detailed work. Request expansion through
-`ui/request-display-mode` and honor the returned mode.
-
-“Sidebar” names a navigation location, not a display mode. The
-[Extensions display contract](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#display-modes)
-describes `inline` and `fullscreen`; the broader
-[UI guide](https://developers.openai.com/plugins/build/chatgpt-ui) also illustrates
-picture-in-picture. AICQ requires neither a particular panel arrangement nor
-picture-in-picture. Use the negotiated host capabilities and display response.
-
-## From selection to action
-
-| Action | Hook | AICQ behavior |
-| --- | --- | --- |
-| Browse Bob’s collaboration | App-local navigation | Read the exchange without attaching it to the chat or starting a turn |
-| **Add context** | `ui/update-model-context` | Attach selected, titled material with its version, provenance and unresolved questions |
-| Attach another selection | Same method | Replace context from this app instance rather than accumulating it |
-| Remove an attachment in ChatGPT | `ui/notifications/host-context-changed` and `openai/modelContext` | Reconcile the attached state; browsing selection may remain |
-| **Use Alice’s changes** or **Pick this back up** | `ui/message` targeting the active chat | Send an explicit instruction; the agent retrieves the shared proposal and reconciles current work |
-| Continue in a new chat | `ui/message` targeting `new`, where supported | Retrieve the shared exchange without inheriting the old private transcript |
-| Open a particular collaboration | Global-app deep link and `hostContext["openai/deepLink"].url` | Resolve the exchange under the authenticated owner’s access |
-| Share selected work | Ordinary AICQ send tool | Persist the selected artifact/request, verify recipient access and return a receipt |
-
-### Attach without sending
-
-```json
-{
-  "method": "ui/update-model-context",
-  "params": {
-    "content": [{
-      "type": "text",
-      "text": "Bob’s model review: financial model v7, shared by Alice. Friday requested; time and place pending.",
-      "_meta": { "openai/title": "Bob’s model review · v7" }
-    }]
-  }
-}
-```
-
-Each call replaces context from the same app instance. On initialization, remount
-and host-context changes, reconcile `hostContext["openai/modelContext"]`, including
-its `updateId` and a cleared `null` state. Other app instances retain their own
-selection and attachments.
-
-Content metadata is excluded from model input. Put version and provenance in the
-visible text itself. Browsing a contact or receiving peer content never attaches
-private material automatically.
-
-### Start a host turn
-
-```json
-{
-  "method": "ui/message",
-  "params": {
-    "role": "user",
-    "content": [{
-      "type": "text",
-      "text": "Retrieve AICQ exchange ex-24 and continue arranging Friday’s model review with Bob’s agent."
-    }],
-    "_meta": { "openai/message": { "target": "active", "send": true } }
-  }
-}
-```
-
-These examples show method parameters; JSON-RPC envelopes are omitted.
-`ex-24` is an illustrative exchange ID, resolved under the owner’s authorization.
-`ui/message` starts a host conversation turn; the agent then uses AICQ tools to
-send to Bob. It does not directly deliver a peer message or overwrite a document.
-The Extensions message options support `send: true`, not a draft-only
-`send: false`. Use model context for removable material that should wait in the
-composer. Titled text sent through `ui/message` has no attachment-removal
-notifications to the app; do not treat it as maintained selection state.
-
-Deep links use the installed plugin’s identity and percent-encoded app-relative
-path. Handle both initial and subsequent deep-link context. An exchange reference
-is a locator, not an access grant. If deep links are unavailable, open AICQ and
-select the collaboration.
-
-## Mentions and artifact selection
-
-Mark the contact-search tool with
-`_meta["openai/extensions"]["mentions/search"]: {}` and include `"app"` in
-`_meta.ui.visibility`. It accepts `{ "query": "Bob" }` and returns resource links
-in `structuredContent.items`.
-
-Search the owner’s authorized contacts. Use stable contact IDs in resource URIs;
-names and platform labels are display text. The host owns picker rows and blue
-inline mention styling. Selecting Bob neither sends a message nor grants access.
-Resolve ambiguous names before sending. Without composer search, an ordinary
-instruction such as “Share this with Bob’s agent” uses the same contact tools.
-
-If “this model” identifies one authorized artifact, send that version under the
-user’s instruction. If ambiguous, ask which artifact/version. Use a resource
-picker only when the host supports the required elicitation fields and previews;
-otherwise ask in conversation. Previewing a resource does not share it.
-
-The [elicitation contract](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#openai-form-elicitation)
-distinguishes legacy direct connections from registered-server flows. Registered
-servers require MCP `2026-07-28` or later and multi-round-trip requests. Implement
-the appropriate flow; do not copy the old prototype’s legacy envelope into a
-registered server. An unsupported input makes the whole form unsupported.
-
-## ChatGPT checking and response settings
-
-AICQ Settings aims to control **ChatGPT’s** participation. Other products govern
-their own agents. Keep desired checking cadence separate from effective cadence,
-last completed check and whether the host can run while Alice is away. Checks
-cover all connected AICQ inboxes, regardless of the open contact or chat.
-
-| Response behavior | ChatGPT’s instruction |
-| --- | --- |
-| **Notify me** | Notify on arrival; wait for direction before preparing or sending a reply |
-| **Notify me with a draft** | Prepare and notify; wait for approval to send |
-| **Respond; check with me on Consequential decisions** | Handle routine exchanges; ask on a choice needing Alice’s judgment |
-| **Respond; notify me about results** | Handle authorized exchanges; notify about outcomes rather than every arrival or reply |
-
-Expose native controls through the `openai/settings` capability’s `readTool` and
-`updateTool`. For MCP `2026-07-28` and newer, advertise it under
-`server/discover` → `capabilities.extensions`; earlier connections advertise it
-in `initialize` as specified by the
-[settings contract](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#structured-settings).
-
-The read tool accepts `{}`, performs no writes and declares an `outputSchema`
-for `{ schema, values, layout }`. Every schema property needs a current/default
-value. The update tool receives only changed properties in `{ "set": { ... } }`;
-persist them in owner-scoped Fulcra storage and return effective values. Primitive
-controls support booleans, strings/enums and numbers/integers. A `kind: "tool"`
-layout action can open a same-server MCP App modal for execution details.
-
-A settings write records the requested policy. Starting or updating a scheduler
-requires a supported host workflow and verification. Check the effective policy
-before each outward action. Pause/block, explicit constraints, permissions and
-required host confirmations apply in every mode. Friday becoming Monday is a
-Consequential decision; an ordinary permitted Friday slot is routine coordination.
-AICQ has no calendar controls.
-
-### Retrieval and execution are separate
+| Select Bob through desktop `@AICQ` | [Composer mentions](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#composer-at-mentions) | Contact search accepts `{query}` and returns resource links in `structuredContent.items`. Search metadata is `openai/extensions` → `mentions/search`; tool visibility includes `app`. |
+| Send the model and request in one instruction | Model-invoked MCP tools | The send tool receives the resolved contact, selected artifact version and coordination request. |
+| Choose among possible artifacts | [Resource-selection elicitation](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#resource-selection) | A native picker identifies the model/version, with previews through `openai/preview`. Conversational clarification serves hosts without the picker. |
+| Open a shared artifact | MCP resource links and artifact-retrieval tools | The selected version is available for display in the host or collaboration view. |
+| See the sharing receipt in the chat | Tool UI resource, `_meta.ui.resourceUri` | The send result renders a compact receipt with the shared version and collaboration state. |
+| Expand the receipt | [Display modes](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#display-modes) and `ui/request-display-mode` | Separate receipt and collaboration resources prefer `inline` and `fullscreen`. The host’s returned mode determines presentation. |
+| Add shared work to the chat | [`ui/update-model-context`](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#uiupdate-model-context-extensions) | Visible, titled context contains the selected version, provenance and unresolved questions. Each app instance’s attachment replaces its previous selection. |
+| Use returned changes or resume work | [`ui/message`](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#uimessage-extensions) | An explicit user action sends an instruction to the active chat. The agent retrieves the shared proposal and reconciles it with current work. |
+| Continue in a fresh chat | `ui/message` with `openai/message.target: "new"` | The new chat retrieves the exchange and artifacts by stable reference. Mobile uses the active-chat target. |
 
 ```mermaid
-flowchart LR
-  S["Desired cadence + response policy"] --> H["Supported host schedule / activation"]
-  H --> T["ChatGPT agent turn"]
-  T --> R["Retrieve pending AICQ messages"]
-  R --> A["Notify / draft / respond / report result"]
-  F["Foreground app refresh"] --> V["Read messages + update view"]
+sequenceDiagram
+  participant A as Alice in ChatGPT
+  participant Q as AICQ
+  participant B as Bob’s agent
+  A->>Q: Selected model + Friday review request
+  Q-->>A: Inline receipt + collaboration link
+  B->>Q: Retrieve shared work
+  B->>Q: Reply with progress or outcome
+  A->>Q: Retrieve outcome during a host turn
+  Q-->>A: Bob has v7; Friday review arranged
 ```
 
-An app refresh can display a message without executing the response path.
-Ordinary retrieval tools also serve Codex and other harnesses.
-[Scheduled tasks](https://learn.chatgpt.com/docs/automations) can use plugins and
-skills in supported Work contexts; chat follow-ups support minute-based schedules.
-This is a candidate polling mechanism to evaluate. Native settings do not, by
-themselves, establish a schedule or promise background execution. No default
-interval or response mode is chosen here.
+The agents’ products supply calendar and document tools. AICQ’s tool results carry
+their progress reports, returned artifacts and completion evidence.
 
-Verify the executor, schedule, permissions, last completed check, response and
-notification behavior together. If execution is unavailable, preserve work and
-show the specific waiting reason. Persist consumption/deduplication state across
-runs; avoid duplicate replies and automatic reply loops.
+## Contacts and the collaboration view
 
-[MCP Events](https://developers.openai.com/plugins/build/mcp-events) offers optional
-webhook activation in supported Work contexts. Its current ChatGPT integration
-does not provide polling or streaming delivery. Polling remains acceptable for
-AICQ; a Fulcra MCP Events change is not an initial messaging prerequisite.
+| Spec interaction | OpenAI affordance | AICQ use |
+| --- | --- | --- |
+| Open AICQ from main navigation | [Global entrypoint](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#global-entrypoint) | `aicq_open({})` opens My Agents, Friends Agents, current work and outcomes. Registration uses `_meta["openai/ui"].entrypoints: [{type:"global"}]`. |
+| Inspect a collaboration beside the current chat | [Thread entrypoint](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#thread-entrypoint) | `aicq_thread({})` opens **Agent exchanges** as a content tab, with an app instance for each thread. |
+| See current work and typical response time | Embedded app rendering and `tools/call` | Contact rows show the current collaboration or quiet state, response estimates and waiting time. Inspection exposes the estimate’s sample count and measurement window. |
+| Inspect purpose, progress, decisions and outcome | Embedded app rendering, tool results and history retrieval | A summary leads the view; exchanged messages and evidence sit beneath it. Agent-reported states populate the summary. |
+| Open a particular collaboration | [Deep links](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#deep-links) | `hostContext["openai/deepLink"].url` routes to the authorized exchange. Navigation and selection provide the fallback. |
+| Remove selected context from the composer | `ui/notifications/host-context-changed` and `openai/modelContext` | Attached-context state follows host removal, replacement and remount. Browsing state remains local to each app instance. |
+| Give direction or approve a decision | `ui/message`, `role: "user"`, active target | The decision view contributes the owner’s answer and the shared exchange reference to the chat. |
+| Pause, block or revoke | UI-initiated `tools/call` | Owner controls update the corresponding Fulcra-backed policy or share and render the resulting state. |
 
-## Invite Morgan and connect their product
+The MCP Apps bridge supplies initialization, tool-input/result notifications,
+tool calls, context and messages. The global desktop surface has an associated
+conversation; active-chat actions use that conversation. Tool-linked UI resources
+provide the same collaboration view from navigation and receipts.
 
-**Invite** asks Alice for Morgan’s name and an introduction. An ordinary tool
-creates a revocable link containing no platform hint, artifact, private transcript
-or credentials. Alice copies and shares it. Morgan chooses their product after
-opening the link, authenticates and accepts.
+## Invite Morgan and connect an account
 
-Set `extensions["com.openai"].onboardingSkill` in the plugin manifest to the
-packaged setup skill. It verifies the executing owner, discovers/reuses AICQ
-resources and resumes missing steps. Other harnesses use the same authenticated
-CLI/MCP workflow. Verify reciprocal share scopes before reporting **Ready**.
-Installation, contact acceptance and unattended-response authority are separate.
-Each client authenticates independently; a link or handoff transfers neither
-credentials nor private chat history.
+| Spec interaction | OpenAI affordance | AICQ use |
+| --- | --- | --- |
+| Generate and copy an invitation | Embedded invitation form and MCP tools | Alice enters Morgan’s name and an introduction. The app displays the revocable link for sharing. Morgan chooses their product when accepting. |
+| Connect the executing client to Fulcra | [MCP OAuth account linking](https://developers.openai.com/plugins/build/auth) | The host’s linking flow establishes authenticated access to the AICQ adapter, backed by the Fulcra owner. |
+| Prepare or resume the workspace | [Plugin onboarding](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#plugin-onboarding) | Manifest `extensions["com.openai"].onboardingSkill` points to the packaged setup skill. Setup tools discover existing resources, create missing ones and verify reciprocal access. |
+| See setup progress and accept the contact | Tool results and embedded app rendering | Signed in → Preparing your workspace → Connecting with Alice → Ready. Contact acceptance is a separate operation. |
 
-## Capability fallbacks and optional hooks
+Other clients use the authenticated CLI/MCP setup tools and reuse the same owner’s
+resources. Each client maintains its own credentials and private conversation.
 
-Check negotiated capabilities, content types and the host response. The
-[Extensions platform table](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#platform-support)
-is launch guidance, not a runtime capability test. The
-[official guide](https://developers.openai.com/plugins/build/extensions) also
-notes web rollout limits; do not infer availability from “ChatGPT” alone.
+## ChatGPT’s checking and response behavior
 
-| Unavailable hook | Fallback |
+[Structured settings](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#structured-settings)
+provide native controls for the desired checking cadence and response policy.
+The `openai/settings` capability names a read tool returning
+`{schema, values, layout}` and an update tool receiving `{set: {changedProperty: value}}`.
+A tool action in the settings layout can open an MCP App modal for execution
+status: effective cadence, last completed check and availability while away.
+
+| Setting | ChatGPT behavior |
 | --- | --- |
-| Embedded app / entrypoint | Core tools return contacts, work summaries, artifacts and receipts as text |
-| Desktop mention search | Resolve the named contact through ordinary tools |
-| New-chat target | Continue explicitly in the active chat or retrieve the exchange in a user-opened chat |
-| Fullscreen expansion | Keep the receipt usable in the host’s returned display mode |
-| Deep link | Open AICQ and select the authorized collaboration |
-| Resource-picker form | Ask the specific question in conversation |
-| Resource-link message content | Send supported text with a stable reference; retrieve the artifact through tools |
-| Background execution | Preserve pending work and show why it is waiting |
+| **Notify me** | Arrival notification; response waits for direction |
+| **Notify me with a draft** | Prepared response and notification; sending waits for approval |
+| **Respond; check with me on Consequential decisions** | Routine replies proceed; choices needing the owner’s judgment produce a focused question |
+| **Respond; notify me about results** | Authorized exchanges proceed; notifications report outcomes |
 
-The Extensions mobile contract limits messages to `target: "active", send: true`;
-iOS messages exclude resource links and iOS context excludes thumbnails. Check
-content support rather than sending unsupported blocks. Audio blocks are outside
-the Extensions context/message contract.
+| Execution requirement | OpenAI affordance / AICQ mechanism |
+| --- | --- |
+| Check all connected AICQ inboxes at a chosen cadence | [Scheduled tasks](https://learn.chatgpt.com/docs/automations) using AICQ tools and a skill are the candidate polling route. Supported chat tasks offer minute-based schedules. |
+| Act on retrieved messages | A host agent turn applies the response policy and uses the agent’s tools. Task instructions carry the policy; Fulcra-backed state supplies pause/block and permissions. |
+| Report arrivals, drafts, decisions or results | Host conversation output and task notifications are the delivery surfaces. |
+| Activate from a new message instead of polling | [MCP Events](https://developers.openai.com/plugins/build/mcp-events) is an optional webhook route for supported Work contexts. |
+| Resume after a host or peer was unavailable | Pending work remains in Fulcra; the collaboration view shows the waiting reason. A later agent turn retrieves it. |
 
-An optional `.aicq` file viewer could use a file entrypoint, host-intercepted
-`resources/read` and `openai/resources/write`. Writes require the opened writable
-URI and `ifMatch` ETag; preserve a draft on conflict. This is deferred: exchanging
-an artifact does not require registering a file handler. Host resource access
-never implies arbitrary filesystem access.
+The engineering question is how AICQ Settings can create, maintain and verify the
+host schedule and response instructions. A stored setting and a foreground app
+refresh are available independently of that execution mechanism. Other products
+run their own agents and govern their response policies.
 
-## Engineering checks
+## Fulcra-backed contracts across clients
 
-Exercise Alice’s one-instruction handoff, Morgan’s invitation and the four
-response policies against the [spec’s behavioral checks](spec.md#behavioral-checks).
-For the host adapter, also verify:
+These spec requirements use ordinary MCP tools and Fulcra data operations.
+ChatGPT’s embedded views present their results; Codex and other clients use the
+same contacts, exchanges and artifact references through tools.
 
-- Empty-argument entrypoints and first render from the initial result.
-- Per-instance context replacement, removal and remount, with no implicit sharing.
-- Explicit active/new-chat actions and retrieval without private transcript transfer.
-- Authorized mention search, artifact-version selection and third-owner denial.
-- Receipt expansion/refusal, deep-link authorization and supported-content fallbacks.
-- Settings persistence separately from schedule creation and agent execution.
-- All-inbox checking, unavailable agents, interruption/restart and deduplicated replies.
-
-Payloads above illustrate the intended adapter. Proposed search, send and settings
-tools are not an implementation inventory; see the [development guide](../../docs/mcp-development.md)
-and [progress](progress.md) for implementation evidence. The older
-[hook lab](../../mcp/ui/prototypes/extensions-v2.html) is historical and does not model the
-current four-policy settings or Alice’s full journey.
-
-Sources: [MCP Extensions](https://github.com/openai/mcp-extensions/),
-[Plugin Extensions guide](https://developers.openai.com/plugins/build/extensions),
-[MCP App UI guide](https://developers.openai.com/plugins/build/chatgpt-ui).
-Use current documentation and negotiated capabilities when implementing the adapter.
+| Spec requirement | AICQ mechanism |
+| --- | --- |
+| Stable owners, agents and authorized contacts | Authenticated account bindings, registered agent addresses and accepted contact records |
+| Selected sharing and third-owner isolation | Owner-scoped operations and narrow Fulcra shares |
+| Versioned artifacts and returned revisions | Recipient-accessible artifact references, versions, provenance and request/reply correlation |
+| Persisted → recipient-accessible → consumed → replied | Distinct delivery and agent-consumption records rendered in receipts and work summaries |
+| Restart and later-session continuation | Durable exchanges, cursors, pending work and retrieval tools |
+| Uncertain writes and duplicate delivery | Stable IDs, owner-scoped idempotency, reconciliation and deduplication |
+| Pause, block, revocation and bounded exchanges | Persisted owner controls, share revocation and turn budgets checked by participating agents |
+| Calendar or document actions | Participating agents’ own tools; their verified results become AICQ work updates |

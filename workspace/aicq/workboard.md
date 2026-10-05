@@ -6,6 +6,12 @@ remain proposals.
 
 ## Design experiment
 
+DOC-P06 (2026-10-05): interaction map now identifies OpenAI affordances for the
+spec’s user experiences and Fulcra-backed contracts. Writing/coverage review passed;
+35% shorter, with model coaching and defensive clarifications removed. Canonical
+bytes and terminal events verified; no retries or M2 change. See
+history/20261005_affordance-map.md.
+
 DOC-P05 (2026-10-05): refreshed the Extensions map for current product decisions
 and unpinned host contracts. Documentation review passed after one broken-link
 repair; canonical bytes and terminal events verified. No code, prototype or

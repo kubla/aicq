@@ -1,0 +1,30 @@
+{
+  "markdown": {
+    "words": 1427,
+    "previousWords": 2196,
+    "tables": 6,
+    "rows": 38,
+    "localLinks": [
+      "spec.md"
+    ],
+    "specUnchanged": true,
+    "markdownParsed": true
+  },
+  "coverage": {
+    "Share the model and arrange the review": "Share and use work",
+    "Agents own their tools": "Agent-owned calendar/document tools and result reports",
+    "A window on the work": "Contacts and the collaboration view",
+    "How far can our plugin push ChatGPT to act agentically?": "Checking settings, four response policies and host-execution question",
+    "Invite Morgan": "Invite Morgan and connect an account",
+    "ChatGPT interactions": "Entrypoints, mentions, display, context, messages, deep links, settings, onboarding",
+    "Shared work across clients": "Fulcra-backed contracts across clients",
+    "Fulcra storage and delivery": "Identity, scoped sharing, artifacts, delivery stages, cursors, idempotency, controls",
+    "Behavioral checks": "Mapped handoff, judgment/approval, waiting/restart, version reconciliation, setup, isolation/controls and client continuation"
+  },
+  "sourceAnchorsVerified": true,
+  "writingReview": "Direct requirements and mechanisms; no hypothetical model instructions, false-misunderstanding corrections, payload walkthroughs, summary restatement or development status. Host execution uncertainty retained.",
+  "sourcesReused": "Current official Extensions, MCP Apps, scheduled-task and Events sources fetched in DOC-P05; authentication guide additionally fetched in DOC-P06.",
+  "authSourceSha256": "30906090c8e55b0e2f6dc88ef16552054a8dc297ea547e4eb963fba848368042",
+  "documentSha256": "0812fbf09d0827f8105242242ecb8cb583b681d39fa442052cfe5d25deba2382",
+  "runtimeChecks": "Not run: documentation only; no M2 retry or capability verification"
+}

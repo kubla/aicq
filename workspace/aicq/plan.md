@@ -418,3 +418,20 @@ DOC-P05 completed after one documentation-only retry for a broken historical-lab
 link. Markdown/JSON/link checks and separate contract/requirements review passed;
 canonical document bytes and terminal events verified. No code/prototype change;
 M2's remaining retry is unchanged. See history/20261005_extensions-map.md.
+
+## DOC-P06 — Spec-to-affordance map and writing pass (2026-10-05)
+
+Michael wants the interaction map to identify the OpenAI affordances that deliver
+the spec, with his writing rules applied throughout. Replace hypothetical model
+instructions and defensive corrections with direct requirement-to-mechanism
+mapping. Cover product surfaces, shared artifacts, continuation, settings and
+host execution, invitations/setup, owner controls and portable Fulcra contracts.
+Keep the spec unchanged and source links current/unpinned. Evaluate coverage,
+framework accuracy, prose and links; keep technical examples only when useful.
+Sequential roles, existing owner annotation, independent DOC-P06 state, default
+15-minute timeout and two retries. Sync/read back canonical files, then commit
+directly to main. No code/prototype change or M2 retry.
+
+DOC-P06 completed with no retries. Full spec coverage, source hooks and writing
+review passed. The map is 35% shorter; canonical bytes and terminal events were
+verified. Spec/code/prototype unchanged. See history/20261005_affordance-map.md.

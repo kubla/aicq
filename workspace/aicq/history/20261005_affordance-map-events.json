@@ -1,0 +1,90 @@
+[
+  {
+    "record_id": "2257b1c9-2dae-520e-a6af-c8fdf7bb4ba2",
+    "recorded_at": "2026-10-05T22:37:26.937645+00:00",
+    "event_id": "d5007392-a401-48c1-ab9a-31612b211d6e",
+    "run_id": "doc-p06-4145dedc-8354-4e29-8185-ef89cd78c625",
+    "milestone": "DOC-P06",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "DOC-P06: spec-to-affordance map and writing pass",
+    "evidence": "Nurse verified normal Fulcra CLI credentials match the project owner and seven canonical documents match the repository. Prior DOC-P05 is closed. DOC-P06 scope/default timeout and retries uploaded/read back before this independent documentation run."
+  },
+  {
+    "record_id": "4ea26d1f-4e2a-592d-91a1-6bb87bcdaaa7",
+    "recorded_at": "2026-10-05T22:37:29.068702+00:00",
+    "event_id": "00ba168e-4f9b-43e7-9289-a58e637f799b",
+    "run_id": "doc-p06-4145dedc-8354-4e29-8185-ef89cd78c625",
+    "milestone": "DOC-P06",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "User-requested document reframing selected",
+    "evidence": "Coordinator selected the affordance mapping and writing pass. Current spec is unchanged. No code/prototype/M2 work authorized in this run."
+  },
+  {
+    "record_id": "509a8f82-1b84-5801-805b-75253762e30b",
+    "recorded_at": "2026-10-05T22:37:31.126721+00:00",
+    "event_id": "48eec04f-3915-4585-a0e4-50bcfbedb435",
+    "run_id": "doc-p06-4145dedc-8354-4e29-8185-ef89cd78c625",
+    "milestone": "DOC-P06",
+    "step": "GENERATE",
+    "status": "started",
+    "detail": "Replace coaching and defensive prose with product affordances",
+    "evidence": "Generator read Michael\u2019s complete writing rules and latest correction. Existing map includes model instructions, false-misunderstanding corrections, payload boilerplate and repeated cautions. Rewrite around spec requirements, OpenAI hook and AICQ use; retain precise host-execution uncertainty."
+  },
+  {
+    "record_id": "5906a2f1-442c-5d11-8b94-741f284354f6",
+    "recorded_at": "2026-10-05T22:40:22.23644+00:00",
+    "event_id": "1f850b69-f35f-43ca-b412-8964a99bb8e8",
+    "run_id": "doc-p06-4145dedc-8354-4e29-8185-ef89cd78c625",
+    "milestone": "DOC-P06",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Spec-to-affordance map drafted",
+    "evidence": "Generator replaced the 2188-word coaching/implementation guide with direct spec interaction / OpenAI affordance / AICQ use tables, one journey diagram and a precise settings-to-scheduler question. Removed hypothetical agent instructions, defensive corrections, JSON walkthroughs, repeated cautions and historical/development commentary. SHA256 0812fbf09d0827f8105242242ecb8cb583b681d39fa442052cfe5d25deba2382."
+  },
+  {
+    "record_id": "4fef5587-a0d9-59b2-a5ab-4b56e65e0500",
+    "recorded_at": "2026-10-05T22:40:29.644029+00:00",
+    "event_id": "12a21bd5-032f-4a32-8384-3d5776411909",
+    "run_id": "doc-p06-4145dedc-8354-4e29-8185-ef89cd78c625",
+    "milestone": "DOC-P06",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Separate coverage and writing review",
+    "evidence": "Evaluator begins full current-spec coverage comparison, exact affordance/source checks and writing-rule review. Markdown parsing found six tables, one Mermaid diagram, zero JSON walkthroughs; local links exist and spec bytes are unchanged. No runtime testing applicable."
+  },
+  {
+    "record_id": "c9bf6c41-3164-51fa-9875-f6970f99bb69",
+    "recorded_at": "2026-10-05T22:42:39.791641+00:00",
+    "event_id": "c7f0ac63-7b69-4bbe-92ce-bce410cf0866",
+    "run_id": "doc-p06-4145dedc-8354-4e29-8185-ef89cd78c625",
+    "milestone": "DOC-P06",
+    "step": "REVIEW",
+    "status": "completed",
+    "detail": "Spec coverage and writing review passed",
+    "evidence": "Separate Evaluator compared all nine current spec sections to the affordance map. Current source hooks/anchors and ownership/host-execution semantics reviewed. marked parsed six tables/38 rows and one diagram; local links resolve, spec is unchanged, git diff --check passes. Prose is 1427 words versus 2196, 35% shorter. Hypothetical model instructions, defensive corrections, JSON walkthroughs and repeated caveats removed; settings-to-host execution question retained. Four canonical documents byte-match. No runtime/M2 checks run."
+  },
+  {
+    "record_id": "74cda50c-e31c-56ee-bdee-103f16b62c00",
+    "recorded_at": "2026-10-05T22:42:42.054999+00:00",
+    "event_id": "b1a8fa19-e722-4aae-8c7e-a9139fd2fae2",
+    "run_id": "doc-p06-4145dedc-8354-4e29-8185-ef89cd78c625",
+    "milestone": "DOC-P06",
+    "step": "MARK_COMPLETE",
+    "status": "completed",
+    "detail": "DOC-P06 documentation complete",
+    "evidence": "Coordinator inspected the passing coverage/writing review and canonical byte comparisons. Only the requested documentation pass is complete. No retries used; M2 remains incomplete with one retry."
+  },
+  {
+    "record_id": "44485e4f-546c-5969-a21a-1176ca4587f8",
+    "recorded_at": "2026-10-05T22:42:44.396993+00:00",
+    "event_id": "84938b80-d2c9-4679-ba15-898f36ab1b48",
+    "run_id": "doc-p06-4145dedc-8354-4e29-8185-ef89cd78c625",
+    "milestone": "DOC-P06",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "DOC-P06 closed",
+    "evidence": "Reviewed map and evidence saved/read back in canonical Fulcra. Terminal event read-back and final state sync precede GitHub main publication. No software or prototype changes."
+  }
+]

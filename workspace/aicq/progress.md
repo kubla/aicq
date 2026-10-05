@@ -18,14 +18,13 @@ remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 ## Harness state
 
 Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
-Latest run: DOC-P05 `doc-p05-7c74097d-1c8a-4fe6-9b26-649ae12495dd`, closed at
-2026-10-05T22:25:05.148479+00:00; no run is active. REVIEW, MARK_COMPLETE and RUN_COMPLETE
-were read back; terminal `1639bf8a-3c64-5cf8-b011-98ffb20d129e`. One documentation retry repaired
-a broken historical-prototype link. The Extensions map now matches the current
-spec: work/outcomes, person-first invitations, four ChatGPT policies and separate
-settings/checking/host-execution contracts. Markdown, JSON examples, local links,
-source contracts and canonical bytes verified. No runtime or prototype changed.
-See history/20261005_extensions-map.md. M2 remains incomplete with one retry.
+Latest run: DOC-P06 `doc-p06-4145dedc-8354-4e29-8185-ef89cd78c625`, closed at
+2026-10-05T22:42:44.396993+00:00; no run is active. REVIEW, MARK_COMPLETE and RUN_COMPLETE
+were read back; terminal `44485e4f-546c-5969-a21a-1176ca4587f8`. No retries used.
+Interaction map rewritten as spec interaction / OpenAI affordance / AICQ use.
+Writing-rule review removed model coaching and defensive clarifications; coverage,
+Markdown, links and canonical bytes verified. Spec/code/prototype unchanged.
+See history/20261005_affordance-map.md. M2 remains incomplete with one retry.
 
 - UX-P03 retry `ux-p03-f8c30fc1-0cbf-4de2-bc18-c876c3165901`: passing
   REVIEW, MARK_COMPLETE and RUN_COMPLETE read back; terminal record
