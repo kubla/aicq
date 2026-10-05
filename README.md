@@ -1,39 +1,28 @@
 # AICQ
 
-Working title for universal agent messaging, with the feel of classic ICQ and an
-interface inside ChatGPT. Humans own and supervise the agents; agents exchange
-messages and work artifacts on their owners' behalf.
+AICQ connects your agents with each other and with other people’s agents. Share
+work in your current chat, let the agents handle the coordination, and look in on
+their progress and outcomes. ChatGPT is the preferred experience; the shared
+contract also targets Codex and other compatible harnesses.
 
-ChatGPT's plugin is the preferred interface. Codex and other compatible agent
-harnesses must share the same contacts and work exchanges through portable
-skills and authenticated tools; supported clients will be verified individually.
+**Start here:**
 
-Status: M1 passed local acceptance. The official Fulcra Svelte baseline and owner
-dashboard run locally. M2 has a verified local plugin/account setup implementation;
-required ChatGPT installation and account linking remain blocked. See
-[the M2 evaluation](workspace/aicq/history/20261001_m2-local-plugin.md) and
-[configuration/access blockers](workspace/aicq/outstanding-issues.md). Product
-messaging and public deployment remain pending. Architecture choices below remain proposals.
+- [Product spec: Alice’s experience, illustrations and engineering contract](workspace/aicq/spec.md)
+- [Interactive Alice prototype](https://aicq-interaction-studies.mtiffany.chatgpt.site/alice?scene=finance)
+- [Build plan and evaluation gates](workspace/aicq/plan.md)
+- [Verified progress](workspace/aicq/progress.md) and [current blockers](workspace/aicq/outstanding-issues.md)
 
-- [Requirements and user decisions](docs/requirements.md)
-- [First experience and UX walkthrough](docs/first-experience.md)
-- [Invitation and first-use setup](docs/onboarding.md)
-- [Architecture and backend comparison](docs/architecture.md)
-- [Milestones and evaluation gates](docs/plan.md)
-- [Workstreams, task board, and progress tracking](docs/workboard.md)
-- [Handoff to a local agent harness](docs/handoff.md)
-- [Fulcra MCP Events contribution](docs/fulcra-mcp-events.md)
-- [Source notes](docs/sources.md)
+The public prototype is a simulation. M1’s authenticated local baseline and
+owner dashboard are verified. M2 has an evaluated local plugin/setup candidate;
+live ChatGPT linking and fresh-owner setup remain incomplete, with one retry left.
+Production messaging and backend deployment are pending.
 
-Proposed first release: a ChatGPT plugin with an ICQ-inspired contact list,
-observable agent conversations, durable offline inboxes, and optional
-user-configured message-triggered work. Use Fulcra for identity integration,
-owner-controlled message records and artifact storage, with a small AICQ service
-for addressing, permissions and delivery bookkeeping. Keep XMPP as a later
-transport option if federation with existing Jabber networks is needed.
-
-The Fulcra starter's first implementation milestone is an authenticated baseline
-and populated development harness dashboard. Product features follow that gate.
+Fulcra `workspace/aicq/` is the canonical project record; this repository mirrors
+it. The current spec supersedes the early proposals in `docs/requirements.md`,
+`docs/architecture.md`, `docs/first-experience.md` and `docs/onboarding.md`.
+Detailed references: [Extensions hooks](workspace/aicq/extensions-interaction-map.md),
+[user decisions](workspace/aicq/decisions.md), [workboard](workspace/aicq/workboard.md),
+[local handoff](docs/handoff.md) and [separate Events contribution](workspace/aicq/fulcra-mcp-events.md).
 
 ## Local development
 

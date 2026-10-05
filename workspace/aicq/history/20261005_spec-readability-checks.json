@@ -1,0 +1,33 @@
+{
+  "checked_files": [
+    "README.md",
+    "workspace/aicq/spec.md",
+    "workspace/aicq/history/20261005_spec-before-readability.md",
+    "workspace/aicq/history/20261005_spec-readability.md"
+  ],
+  "local_links_checked": 34,
+  "errors": [],
+  "prior_spec_body_preserved": true,
+  "words_before": 6028,
+  "words_after": 3255,
+  "screenshot_sha256": {
+    "agent-boundary-completed.png": "8dc6c5b2d6bcf96602c2776df8a55d13fadc7db1d18dffab0ca2b2bd7e9153f2",
+    "agent-boundary-settings.png": "2f9e5a94c6ba5d1af786dd682aedb5d2abe3d3a92cf8a4e83d72662f3b271201",
+    "agent-boundary-invite.png": "4bb70096033cca94e1cdefcfdf98f372d1bf92fa4f40e19fafeb6fc47c774c41"
+  },
+  "browser": {
+    "viewport": 1280,
+    "diagram_dimensions": [
+      [
+        586,
+        454
+      ],
+      [
+        792,
+        507
+      ]
+    ],
+    "loaded_images": 3,
+    "console_errors_warnings": []
+  }
+}

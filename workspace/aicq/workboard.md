@@ -6,6 +6,12 @@ remain proposals.
 
 ## Design experiment
 
+DOC-P01 (2026-10-05): engineer-readable spec is 46% shorter, with current prototype
+screenshots, boundary/invitation diagrams, consolidated contracts and acceptance
+journeys. README leads to the current spec. Documentation review passed after one
+legibility repair; canonical/repository delivery in progress. No M2 retry used.
+See history/20261005_spec-readability.md.
+
 UX-P09 (2026-10-05): removed AICQ calendar/meeting preferences and the inert away
 badge. The three autonomy modes remain; scheduling is an agent-reported outcome.
 Person-only sender invitations contain no platform hint; recipient chooses own app.

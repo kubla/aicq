@@ -330,3 +330,22 @@ invitation URL; recipient chooses its own app; scheduling is an agent-reported
 outcome with no AICQ calendar API/state; retained approval/judgment, pause/block,
 invitation acceptance/revocation and desktop/narrow browser journeys work. Publish
 the reviewed HTML to the existing public Site. M2 remains incomplete with one retry.
+
+
+## DOC-P01 — Engineer-readable product specification (2026-10-05)
+
+Michael requested a concise, illustrated spec suitable for fellow Fulcra software
+engineers after the successful demo. Rewrite the existing spec around the current
+Alice experience, preserving approved decisions and separating proposed mechanics
+from verified implementation. Link historical requirements and architecture rather
+than repeating them in the main reading path. Make the root README point to the
+current spec and prototype. No prototype code, hosting, or product milestone work.
+
+Nurse/Coordinator/Generator/separate Evaluator roles run sequentially with the
+existing owner annotation and independent DOC-P01 state. Record/read back this
+**45-minute timeout override** before RUN_START; retain two retries. Acceptance:
+compare the rewrite against the complete prior spec and current decisions; preserve
+identity, isolation, autonomy, invitation, durability, artifacts, portability and
+activation contracts; verify diagrams, image/link paths, readability and accurate
+status. Save review evidence and byte-verify canonical writes. M2 remains incomplete
+with one retry; M3–M6 remain pending. The previous spec stays in linked history.

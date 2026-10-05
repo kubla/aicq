@@ -350,3 +350,14 @@ User: “When inviting a friend, it’s too much to ask a user to know what kind
 agent they’re using. They shouldn’t need to know that.” Sender name/introduction
 only; recipient chooses their product independently. Strip product hints from
 new invitation payloads and ignore them in old demo links.
+
+
+## 2026-10-05 — Spec readability for Fulcra engineers
+
+User: “update the spec with the highest priority being human readability” and
+“remove verbosity anywhere that you can, use illustrations, use examples from
+our prototype”. Audience: fellow Fulcra software engineers following the demo.
+Rewrite the existing spec as the primary reading path; preserve requirements and
+label proposed mechanics and verified status. This is a documentation request,
+not a new backend choice, product milestone authorization, or permission to send
+messages/invite repository collaborators. See history/20261005_spec-readability.md.

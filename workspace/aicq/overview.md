@@ -1,10 +1,9 @@
 # AICQ development
 
-**Status:** Interaction design first. UX-P09 separates agent tool access from AICQ
-communication, removes the inert away badge and makes invitations platform-neutral.
-The first review caught a stale calendar reference; repaired browser journeys passed.
-Public Site version 6 is published. The run is closed after one UX-only retry.
-All activity is simulated.
+**Status:** Engineer-readable product spec reviewed: Alice’s journey, three current
+prototype screenshots, two diagrams, portable exchange contracts and acceptance
+journeys. Canonical/repository delivery in progress. Public Alice prototype remains
+UX-P09 Site version 6; its interactions are simulated. No product milestone changed.
 
 - M1 — authenticated local baseline: complete
 - M2 — plugin shell/linking: incomplete; one retry remains

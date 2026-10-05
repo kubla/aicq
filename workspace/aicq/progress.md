@@ -18,11 +18,11 @@ remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 ## Harness state
 
 Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
-The latest run is UX-P09 retry 1, closed at 2026-10-05T16:04:25.502473+00:00; no run is active.
-Passing REVIEW f9f6d90f-1871-5ef2-a1f5-bac399383a44, MARK_COMPLETE and RUN_COMPLETE
-were read back; terminal 8a3c4c09-2ff4-5616-afd7-961a6bcf7b4b. One UX-only retry used. Public
-Site version 6 is published; canonical/repository evidence accompanies the run.
-M2 retry count unchanged. See history/20261005_agent-boundary.md.
+The current run is DOC-P01 retry 1 `doc-p01-90502b16-82af-4065-a66d-997d5ad62a39`. Documentation REVIEW passed;
+canonical delivery and repository publication are in progress. No product milestone
+is promoted. One documentation retry repaired diagram legibility. Latest prototype
+remains UX-P09 public Site version 6. M2 has one retry unchanged. See
+history/20261005_spec-readability.md and history/20261005_agent-boundary.md.
 
 - UX-P03 retry `ux-p03-f8c30fc1-0cbf-4de2-bc18-c876c3165901`: passing
   REVIEW, MARK_COMPLETE and RUN_COMPLETE read back; terminal record
