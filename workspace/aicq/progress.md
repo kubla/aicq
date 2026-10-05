@@ -18,15 +18,14 @@ remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 ## Harness state
 
 Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
-Latest run: DOC-P04 `doc-p04-02a7480c-0c2c-42fa-8cb4-f98df5ebbe4e`, closed at
-2026-10-05T21:54:46.693909+00:00; no run is active. REVIEW, MARK_COMPLETE and RUN_COMPLETE
-were read back; terminal `f50e6122-118c-5bf6-9341-6b4be759445d`. No retries used.
-Spec now treats AICQ Settings as ChatGPT-specific checking cadence and four
-response/notification behaviors. Host control is an engineering question, not
-verified background execution. Other products govern their own agents. Obsolete
-settings screenshot removed from spec; prototype/source/Site unchanged.
-Official scheduled-task documentation suggests a polling route to test. See
-history/20261005_chatgpt-agency.md. Fulcra remains fixed; M2 has one retry unchanged.
+Latest run: DOC-P05 `doc-p05-7c74097d-1c8a-4fe6-9b26-649ae12495dd`, closed at
+2026-10-05T22:25:05.148479+00:00; no run is active. REVIEW, MARK_COMPLETE and RUN_COMPLETE
+were read back; terminal `1639bf8a-3c64-5cf8-b011-98ffb20d129e`. One documentation retry repaired
+a broken historical-prototype link. The Extensions map now matches the current
+spec: work/outcomes, person-first invitations, four ChatGPT policies and separate
+settings/checking/host-execution contracts. Markdown, JSON examples, local links,
+source contracts and canonical bytes verified. No runtime or prototype changed.
+See history/20261005_extensions-map.md. M2 remains incomplete with one retry.
 
 - UX-P03 retry `ux-p03-f8c30fc1-0cbf-4de2-bc18-c876c3165901`: passing
   REVIEW, MARK_COMPLETE and RUN_COMPLETE read back; terminal record

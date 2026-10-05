@@ -1,0 +1,167 @@
+[
+  {
+    "record_id": "80a5964f-d8c9-5e01-974c-ff7e33f18282",
+    "recorded_at": "2026-10-05T22:17:07.299742+00:00",
+    "event_id": "2c53b3bb-afaa-4877-8f42-54111a755463",
+    "run_id": "doc-p05-ce26fa21-a223-42a9-a025-e5c6b65c1b86",
+    "milestone": "DOC-P05",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "DOC-P05: refresh the Extensions interaction map",
+    "evidence": "Nurse authenticated with normal Fulcra CLI storage as the recorded project owner. Nine canonical documents match repository mirrors; DOC-P04 is closed. Current official Extensions spec and guides retrieved. DOC-P05 scope, 15-minute timeout and two retries uploaded and byte-verified before this run. No M2 retry started."
+  },
+  {
+    "record_id": "d8efb311-c490-5baf-a178-e3f92960b1b0",
+    "recorded_at": "2026-10-05T22:17:09.747506+00:00",
+    "event_id": "b5439e8b-64da-48ba-a561-48759e02c4c5",
+    "run_id": "doc-p05-ce26fa21-a223-42a9-a025-e5c6b65c1b86",
+    "milestone": "DOC-P05",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "Independent documentation scope selected",
+    "evidence": "Coordinator selected the user-requested interaction-map refresh; spec is unchanged, M2 remains incomplete with one retry. Existing owner annotation reused."
+  },
+  {
+    "record_id": "185740e2-85f2-563a-a58d-d3c1b21ba5d6",
+    "recorded_at": "2026-10-05T22:17:12.021902+00:00",
+    "event_id": "9043d98d-c95d-4634-87fd-a775a776033d",
+    "run_id": "doc-p05-ce26fa21-a223-42a9-a025-e5c6b65c1b86",
+    "milestone": "DOC-P05",
+    "step": "GENERATE",
+    "status": "started",
+    "detail": "Rewrite the hook mapping for current AICQ design",
+    "evidence": "Existing map inspected: proposal/sidebar language, inbox framing, historical pinned reference and old platform table need revision. Current spec requires work/outcomes, person-only invites, agent-owned tools, four ChatGPT policies and separate checking/activation."
+  },
+  {
+    "record_id": "7af76041-3228-5741-9ae0-1d14c4e1826c",
+    "recorded_at": "2026-10-05T22:20:13.964757+00:00",
+    "event_id": "0a265fc3-6534-4d65-a95f-fc6b4af54bf8",
+    "run_id": "doc-p05-ce26fa21-a223-42a9-a025-e5c6b65c1b86",
+    "milestone": "DOC-P05",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Current interaction map drafted",
+    "evidence": "Generator rewrote the map around Alice/Bob model handoff, work/outcomes, person-first invitation, native entrypoints, selected context and explicit host turns. Four ChatGPT policies and desired/effective cadence are separated from execution; polling needs no Events change. Current unpinned sources cited; illustrative payloads and historical lab distinguished. Candidate SHA256 c70afc3017678dce53130fbc2318831b07b35526277aa85173536e3db3a032c0, 2181 words."
+  },
+  {
+    "record_id": "d3bfe153-507b-5a7d-b414-6a80ce1d7975",
+    "recorded_at": "2026-10-05T22:20:16.181985+00:00",
+    "event_id": "87bc6786-e8c2-4444-ab92-6ae4dc3aecdb",
+    "run_id": "doc-p05-ce26fa21-a223-42a9-a025-e5c6b65c1b86",
+    "milestone": "DOC-P05",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Separate Evaluator pass on the documentation candidate",
+    "evidence": "Generation complete. Evaluator begins comparison against current spec, current fetched Extensions contracts and official UI/scheduling/Events guides; check JSON examples, local links, source scope and unsupported-host fallbacks. No live host behavior is being evaluated."
+  },
+  {
+    "record_id": "478155c5-7bee-58d3-b125-bed7c3aaab60",
+    "recorded_at": "2026-10-05T22:21:48.771456+00:00",
+    "event_id": "fa5f742f-36b9-4e93-a7a6-56794f83578d",
+    "run_id": "doc-p05-ce26fa21-a223-42a9-a025-e5c6b65c1b86",
+    "milestone": "DOC-P05",
+    "step": "REVIEW",
+    "status": "failed",
+    "detail": "Documentation link validation found an absent repository mirror",
+    "evidence": "Separate Evaluator ran marked.lexer and parsed all three JSON examples successfully, then local-link validation failed for prototypes/extensions-v2.html: the canonical HTML is not mirrored at that path. The existing hook lab is in mcp/ui/prototypes/extensions-v2.html. Generation also clarified the diagram so foreground refresh has no path into an agent turn. Final review is incomplete; repair the link and rerun the documentation checks."
+  },
+  {
+    "record_id": "f4accdf5-bcad-51e4-a527-a38234b8c3f7",
+    "recorded_at": "2026-10-05T22:21:51.018936+00:00",
+    "event_id": "e6aff89a-82ce-4001-a7a8-f3c1ba466017",
+    "run_id": "doc-p05-ce26fa21-a223-42a9-a025-e5c6b65c1b86",
+    "milestone": "DOC-P05",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "DOC-P05 attempt 1 closed incomplete",
+    "evidence": "Coordinator did not MARK_COMPLETE. Failed documentation REVIEW is recorded and will be read back. One documentation retry is required; M2 remains incomplete with one retry unchanged."
+  },
+  {
+    "record_id": "001c40b9-8143-524d-b9e8-e7d2dcd61667",
+    "recorded_at": "2026-10-05T22:21:56.714889+00:00",
+    "event_id": "8a699eb6-afba-4a94-94ec-002c89652523",
+    "run_id": "doc-p05-7c74097d-1c8a-4fe6-9b26-649ae12495dd",
+    "milestone": "DOC-P05",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "DOC-P05 retry 1: repair historical hook-lab link",
+    "evidence": "Nurse confirms attempt 1 closed after local-link validation failure; existing event read-back succeeded. Default two retries and 15-minute timeout remain recorded. Independent DOC-P05 retry 1; no product milestone retry consumed."
+  },
+  {
+    "record_id": "0da4c379-715d-56a7-ac8f-78d05fd882d8",
+    "recorded_at": "2026-10-05T22:21:59.106178+00:00",
+    "event_id": "0cedfb73-5691-41ec-8211-44f75c83f910",
+    "run_id": "doc-p05-7c74097d-1c8a-4fe6-9b26-649ae12495dd",
+    "milestone": "DOC-P05",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "Repair and evaluate the same documentation scope",
+    "evidence": "Coordinator selected DOC-P05 retry 1. Current spec unchanged; repair only the absent mirror link before repeating parsing, source/schema and behavioral review."
+  },
+  {
+    "record_id": "3884cbba-9e8f-5429-8ca3-219567c9bcbc",
+    "recorded_at": "2026-10-05T22:22:01.257614+00:00",
+    "event_id": "544e9269-1084-4f28-bbba-03bab20b20d7",
+    "run_id": "doc-p05-7c74097d-1c8a-4fe6-9b26-649ae12495dd",
+    "milestone": "DOC-P05",
+    "step": "GENERATE",
+    "status": "started",
+    "detail": "Correct link to the repository hook lab",
+    "evidence": "Evaluator identified an absent workspace/aicq/prototypes/extensions-v2.html mirror. The existing historical file is mcp/ui/prototypes/extensions-v2.html; use a repository-relative link to that file."
+  },
+  {
+    "record_id": "d05f5fc5-8168-5494-951f-71744a4d9461",
+    "recorded_at": "2026-10-05T22:22:46.892388+00:00",
+    "event_id": "93fa1e29-cf56-4e26-aaa2-6632c43034db",
+    "run_id": "doc-p05-7c74097d-1c8a-4fe6-9b26-649ae12495dd",
+    "milestone": "DOC-P05",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Historical link repaired",
+    "evidence": "Generator corrected hook-lab path to ../../mcp/ui/prototypes/extensions-v2.html. Candidate SHA256 5be191dda4255ccf6cce39a23648899f7b4a6efdfbd411b135232175ac4a5591. No product source or spec edited."
+  },
+  {
+    "record_id": "d2d3aee0-8379-5a62-9bae-113c4b0da709",
+    "recorded_at": "2026-10-05T22:22:49.315026+00:00",
+    "event_id": "3714bd5f-8e3a-40b5-9c9a-b4fbd74b9273",
+    "run_id": "doc-p05-7c74097d-1c8a-4fe6-9b26-649ae12495dd",
+    "milestone": "DOC-P05",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Separate Evaluator pass on the repaired document",
+    "evidence": "Evaluator ran marked parser, JSON parsing and link checks on repaired candidate; now reviewing requirements and source contract boundaries against the current spec and fetched official sources."
+  },
+  {
+    "record_id": "3f8365c0-32dc-53fb-a0ff-f5ad53544cee",
+    "recorded_at": "2026-10-05T22:25:00.642831+00:00",
+    "event_id": "564323b3-4fd6-4527-b894-ed82af003c98",
+    "run_id": "doc-p05-7c74097d-1c8a-4fe6-9b26-649ae12495dd",
+    "milestone": "DOC-P05",
+    "step": "REVIEW",
+    "status": "completed",
+    "detail": "Current interaction-map documentation passes review",
+    "evidence": "Separate Evaluator parsed the repaired document with marked: four tables, three valid JSON examples, five existing local links. Reviewed 17 contract fields against current OpenAI Extensions source and ten requirement/boundary checks against the unchanged spec. Diagram has no foreground-refresh path into an agent turn. Four ChatGPT policies and all-inbox cadence, person-only invitations, agent-owned calendars, polling/no-required-Events, source/capability/display distinctions pass. git diff --check passed. Five canonical documents byte-match. No live M2 checks run."
+  },
+  {
+    "record_id": "441ada4d-fda6-5db1-abf0-de65ac3ff978",
+    "recorded_at": "2026-10-05T22:25:02.859749+00:00",
+    "event_id": "90718548-73d9-4ae8-a44d-11f220cf3bf1",
+    "run_id": "doc-p05-7c74097d-1c8a-4fe6-9b26-649ae12495dd",
+    "milestone": "DOC-P05",
+    "step": "MARK_COMPLETE",
+    "status": "completed",
+    "detail": "DOC-P05 documentation complete",
+    "evidence": "Coordinator inspected the passing documentation review and actual canonical byte comparisons. Only DOC-P05 is complete after one documentation retry; M2 remains incomplete with one retry. No runtime behavior or host capability is marked verified."
+  },
+  {
+    "record_id": "1639bf8a-3c64-5cf8-b011-98ffb20d129e",
+    "recorded_at": "2026-10-05T22:25:05.148479+00:00",
+    "event_id": "d80a091d-6347-41f1-b640-3fa09fa9a523",
+    "run_id": "doc-p05-7c74097d-1c8a-4fe6-9b26-649ae12495dd",
+    "milestone": "DOC-P05",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "DOC-P05 retry 1 closed",
+    "evidence": "Documentation scope complete: current interaction map and review/history artifacts saved and byte-verified in Fulcra. No application/prototype/deployment changes. Terminal event read-back is required before closing repository mirrors and publication."
+  }
+]

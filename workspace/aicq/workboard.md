@@ -6,6 +6,11 @@ remain proposals.
 
 ## Design experiment
 
+DOC-P05 (2026-10-05): refreshed the Extensions map for current product decisions
+and unpinned host contracts. Documentation review passed after one broken-link
+repair; canonical bytes and terminal events verified. No code, prototype or
+hosting change; M2 unchanged. See history/20261005_extensions-map.md.
+
 DOC-P04 (2026-10-05): ChatGPT-specific agency spec replaces generic three-mode
 controls. Four arrival/draft/judgment/results policies, desired/effective all-inbox
 cadence and host execution boundaries reviewed. Canonical bytes and terminal events

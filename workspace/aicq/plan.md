@@ -399,3 +399,22 @@ spec and checks; keep ledger outside spec and do not edit/publish the prototype.
 Sequential roles, existing annotation, separate DOC-P04 state, 15-minute default
 timeout and two retries. Read current official host docs, review policy/activation
 boundaries, byte-verify canonical writes and commit directly to main. M2 unchanged.
+
+## DOC-P05 — Current Extensions interaction map (2026-10-05)
+
+Update `extensions-interaction-map.md` as an engineer-readable companion to the
+current spec. Map Alice's handoff, contacts/work/outcomes, person-first invitations
+and four ChatGPT response policies to current Extensions contracts. Use unpinned
+official sources; distinguish host capabilities, AICQ choices and scheduler
+feasibility. Keep Fulcra as the backend and polling acceptable without a server
+Events change. Review exact payloads, instance/context isolation, capability
+fallbacks and the host's display response. No code, prototype or deployment change.
+Sequential Nurse, Coordinator, Generator and separate Evaluator roles; existing
+owner annotation, independent DOC-P05 state, default 15-minute timeout and two
+retries. Verify canonical bytes and actual event read-back; commit directly to
+main. M2 remains incomplete with one retry.
+
+DOC-P05 completed after one documentation-only retry for a broken historical-lab
+link. Markdown/JSON/link checks and separate contract/requirements review passed;
+canonical document bytes and terminal events verified. No code/prototype change;
+M2's remaining retry is unchanged. See history/20261005_extensions-map.md.

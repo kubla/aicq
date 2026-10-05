@@ -1,0 +1,78 @@
+{
+  "source_contract_fields": [
+    "openai/ui",
+    "entrypoints",
+    "resourceUri",
+    "preferredDisplayMode",
+    "availableDisplayModes",
+    "ui/update-model-context",
+    "openai/modelContext",
+    "ui/notifications/host-context-changed",
+    "ui/message",
+    "openai/message",
+    "mentions/search",
+    "openai/settings",
+    "readTool",
+    "updateTool",
+    "onboardingSkill",
+    "openai/resources/write",
+    "ifMatch"
+  ],
+  "manual_review": [
+    "Alice instruction resolves authorized Bob/model version; calendars stay with agents",
+    "Contacts lead with work/outcomes and substantive responsiveness",
+    "Person-only invite; recipient chooses product; reciprocal read-back before Ready",
+    "Four ChatGPT policies, all-inbox desired/effective cadence, permissions and Consequential decisions",
+    "Context replacement/removal/remount per instance; no automatic attachment",
+    "Message is host turn, not peer delivery; stable ID example authorization; no send:false",
+    "Receipt and detailed resources separate; display hint and refusal honored",
+    "Capabilities/content/elicitation protocol fallback; generic UI pip scope not universal assertion",
+    "Settings persistence distinct from host schedule; polling route is candidate, Events optional",
+    "Historical hook lab separated; no source/prototype/deployment/M2 claim"
+  ],
+  "sha256": "5be191dda4255ccf6cce39a23648899f7b4a6efdfbd411b135232175ac4a5591",
+  "runtime_testing": "Not applicable to documentation-only change; live M2 checks not run",
+  "documentation_retry": 1,
+  "markdown": {
+    "document": "workspace/aicq/extensions-interaction-map.md",
+    "jsonExamples": 3,
+    "localLinks": [
+      "spec.md",
+      "spec.md#behavioral-checks",
+      "../../docs/mcp-development.md",
+      "progress.md",
+      "../../mcp/ui/prototypes/extensions-v2.html"
+    ],
+    "tableCount": 4,
+    "policies": [
+      "Notify me",
+      "Notify me with a draft",
+      "Respond; check with me on Consequential decisions",
+      "Respond; notify me about results"
+    ],
+    "unpinnedSources": true,
+    "renderedMarkdown": true
+  },
+  "sources": [
+    {
+      "url": "https://github.com/openai/mcp-extensions/blob/main/docs/spec.md",
+      "sha256": "a17f3a0ad36fe2175791ff9f5b9572bd368313a4a4651a8eb80dd2ac49a10b10"
+    },
+    {
+      "url": "https://developers.openai.com/plugins/build/extensions",
+      "sha256": "b3eff71db001c528bc4296739e1b7642ab534a3f63787d4149202ec7c9100fea"
+    },
+    {
+      "url": "https://developers.openai.com/plugins/build/chatgpt-ui",
+      "sha256": "9403394ff61d97fd0185a24acdb7602648371c4d58f450d59af762d63bb536ab"
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/automations",
+      "sha256": "40fa5b04180f6c7a7b3fb01e4721d274d1a90e394d5da52bb39be5fd1adb08cd"
+    },
+    {
+      "url": "https://developers.openai.com/plugins/build/mcp-events",
+      "sha256": "68c534c9d1bd3f9322b31b515f10d56d69cbcefb6c6be1e314c116b2a68e0632"
+    }
+  ]
+}
