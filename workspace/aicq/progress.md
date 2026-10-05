@@ -18,14 +18,13 @@ remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 ## Harness state
 
 Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
-Latest run: DOC-P01 retry 1 `doc-p01-90502b16-82af-4065-a66d-997d5ad62a39`, closed at
-2026-10-05T20:30:21.242106+00:00. Passing REVIEW `360e194f-4da7-5298-b3e0-27669adbcebb`, MARK_COMPLETE and
-RUN_COMPLETE were read back; terminal `30754e2f-60a8-52b5-8af4-b5e4eba2a147`. No run is active.
-Spec is 46% shorter, illustrated, reviewed and published on the private repository
-branch `kublascratchpad/ux-alice-worked-example`, candidate `d1a5075`.
-One documentation-only retry repaired diagram legibility. Latest prototype remains
-UX-P09 public Site version 6. M2 has one retry unchanged. See
-history/20261005_spec-readability.md and history/20261005_agent-boundary.md.
+Latest run: DOC-P02 `doc-p02-6a10cf36-6bb9-4782-8f1f-cfa53504e14e`, closed at
+2026-10-05T21:15:06.462839+00:00; no run is active. Passing REVIEW, MARK_COMPLETE and
+RUN_COMPLETE were read back; terminal `0c1bf916-813b-5382-8528-bc35dbd46476`. No retries used.
+Fulcra is now the fixed backend; alternate-backend proposals are removed from
+current documents, with historical proposals explicitly superseded. See
+history/20261005_fulcra-only.md. DOC-P01’s illustrated spec and UX-P09’s public
+simulated prototype remain the reading/design baseline. M2 has one retry unchanged.
 
 - UX-P03 retry `ux-p03-f8c30fc1-0cbf-4de2-bc18-c876c3165901`: passing
   REVIEW, MARK_COMPLETE and RUN_COMPLETE read back; terminal record

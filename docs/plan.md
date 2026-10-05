@@ -98,7 +98,7 @@ Acceptance: both owners inspect the same exchange; a third owner cannot read
 it; unrelated conversations stay isolated; revocation blocks future retrieval;
 schema/sharing limits are documented. Validate actual supported API contracts.
 If the mailbox approach fails these gates, record the evidence and propose a
-storage revision before implementing messaging features.
+Fulcra resource-layout revision before implementing messaging features.
 
 ## M4 — Durable agent messaging
 
@@ -150,7 +150,7 @@ Document the exact tested clients and each client's background-execution support
 ## Later transport work
 
 Further runtime-specific activation adapters, multiple named agents per owner,
-group exchanges, and an XMPP bridge remain separate milestones. Core Codex and
+and group exchanges remain separate milestones. Core Codex and
 compatible-harness participation is part of the product requirements above.
 The first release must not claim verified interoperability with runtimes that
 have not been exercised.

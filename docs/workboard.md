@@ -84,7 +84,7 @@ explicitly configured access; this workspace does not imply access to that compu
 Use the official Svelte template by default and make the stack reproducible on
 the user's computer. Development initially runs in this execution workspace;
 that does not mean processes have been installed on the user's computer. Concrete
-message storage and operational database selection remain open. Domain, license,
+Fulcra message and operational metadata layouts remain open. Domain, license,
 billing, and public publisher details can be resolved before their respective gates.
 
 OpenAI Secure MCP Tunnel is a documented private-development path, requiring

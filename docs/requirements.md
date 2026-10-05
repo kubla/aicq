@@ -14,16 +14,12 @@ These are excerpts from the user's initial request, preserving their wording:
 
 > It should provide universal agent chat so that, while working on something with ChatGPT, a user can say, “Hey, share this with Alice’s agent,” and that just works. Alice can likewise share with Bob’s agent.
 
-## User ideas under consideration
+## Backend decision
 
-> My initial idea is to use an open-source Jabber/XMPP backend.
-
-> However, we could use Fulcra for user authentication, account management, and everything except XMPP.
-
-> We could even use Fulcra for messaging, which could elegantly handle agents not being online all the time.
-
-Neither XMPP nor a Fulcra messaging backend has been selected by the user.
-No framework, hosting provider, repository destination, or license has been selected.
+Build AICQ strictly on Fulcra for identity, messages, artifacts and shared work.
+This 2026-10-05 decision supersedes the original backend exploration. The original
+quotations remain in [decision history](../workspace/aicq/decisions.md).
+The concrete Fulcra resource layout remains to be evaluated.
 
 ## Follow-up direction
 

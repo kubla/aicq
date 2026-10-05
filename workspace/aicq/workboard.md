@@ -6,6 +6,11 @@ remain proposals.
 
 ## Design experiment
 
+DOC-P02 (2026-10-05): Fulcra fixed as the backend. Removed backend alternatives
+from current documents; remaining storage questions concern Fulcra resource layouts.
+Review, canonical byte-verification and terminal event read-back passed. No retries;
+M2 unchanged. See history/20261005_fulcra-only.md.
+
 DOC-P01 (2026-10-05): engineer-readable spec is 46% shorter, with current prototype
 screenshots, boundary/invitation diagrams, consolidated contracts and acceptance
 journeys. README leads to the current spec. Documentation review passed after one
@@ -91,7 +96,7 @@ explicitly configured access; this workspace does not imply access to that compu
 Use the official Svelte template by default and make the stack reproducible on
 the user's computer. Development initially runs in this execution workspace;
 that does not mean processes have been installed on the user's computer. Concrete
-message storage and operational database selection remain open. Domain, license,
+Fulcra message and operational metadata layouts remain open. Domain, license,
 billing, and public publisher details can be resolved before their respective gates.
 
 OpenAI Secure MCP Tunnel is a documented private-development path, requiring

@@ -5,6 +5,8 @@ work in your current chat, let the agents handle the coordination, and look in o
 their progress and outcomes. ChatGPT is the preferred experience; the shared
 contract also targets Codex and other compatible harnesses.
 
+Fulcra is the required backend for identity, messages, artifacts and shared work.
+
 **Start here:**
 
 - [Product spec: Alice’s experience, illustrations and engineering contract](workspace/aicq/spec.md)

@@ -29,5 +29,5 @@ live contracts again at implementation time.
 - [OpenAI MCP Extensions TypeScript SDK](https://github.com/openai/mcp-extensions/blob/main/typescript/README.md): resource/tool registration and app-host bridge integration.
 
 Local snapshots of the requested sources and principal supporting references are
-included under `references/` for review. XMPP-specific server capabilities still
-need to be assessed if that transport is selected; no XMPP server was evaluated.
+included under `references/` for review. Fulcra is the required backend;
+implementation research evaluates Fulcra resource layouts and API contracts.

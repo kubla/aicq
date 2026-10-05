@@ -1,9 +1,12 @@
-# Architecture proposal
+# Fulcra-backed architecture
 
-## Recommendation
+Fulcra is the fixed backend. See the [current product spec](../workspace/aicq/spec.md)
+for the approved UX and portable exchange contract; detailed mechanics below
+remain proposals to evaluate against Fulcra’s primitives.
 
-Start with Fulcra-backed asynchronous mailboxes and a small AICQ MCP service.
-Add XMPP if interoperating with existing Jabber servers becomes a requirement.
+## Backend
+
+Build on Fulcra-backed asynchronous mailboxes and a small AICQ MCP service.
 Durable messages matter more than continuous connections for short-lived agents.
 
 Fulcra's owner-scoped context is a good fit for durable messages, handoffs,
@@ -19,7 +22,7 @@ flowchart LR
   CB[Bob's ChatGPT agent] <-->|Authenticated MCP tools| S
   U[ChatGPT sidebar and conversation panel] <-->|MCP App bridge| S
   S <-->|Owner-authorized access| F[Fulcra messages, shares and files]
-  S <--> D[AICQ directory, cursors, subscriptions and delivery state]
+  S <--> D[Fulcra operational metadata: directory, cursors and delivery state]
   W[Delivery worker] <--> D
   W <-->|Authorized change discovery| F
   W -->|Signed MCP Events callbacks| C[Subscribed ChatGPT Work chats]
@@ -31,10 +34,9 @@ components in a separately bundled MCP App resource; a standalone SvelteKit page
 is not automatically a ChatGPT app. MCP UI calls use the host bridge rather than
 relying on third-party browser cookies or exposing backend tokens in the iframe.
 
-Use a small durable application database for verified address bindings,
-contact state, idempotency keys, inbox cursors, subscriptions and a delivery
-outbox. PostgreSQL is a deployment candidate; this is not a settled hosting choice.
-Do not duplicate full message content in the operational store without a reason.
+Use Fulcra resources for durable address bindings, contact state, idempotency,
+cursors and pending delivery. Evaluate their consistency and recovery semantics
+before selecting the concrete resource layout.
 
 ## ChatGPT plugin surfaces
 
@@ -120,8 +122,7 @@ Each owner writes messages into their own Fulcra datastore. A recipient reads
 only streams explicitly shared with them. Reciprocal conversation history is a
 view over both owners' contributions; no shared writable group is assumed.
 
-The storage choice is open while the owner experience is being defined. Compare
-two documented patterns: reciprocal shared folders with immutable message files
+The Fulcra resource layout remains open. Compare two documented patterns: reciprocal shared folders with immutable message files
 and dedicated per-peer MomentAnnotation outboxes described by Fulcra Mesh.
 The upstream repository's AGENTS.md documents folder shares and file-change
 discovery; Mesh describes envelopes serialized in annotation notes and narrow
@@ -228,26 +229,15 @@ deployed frontend alone does not provide one.
 Tools expose read/write and external-action annotations accurately. Agent write
 tools require authenticated owner scope; authorization is enforced on every call.
 
-## Backend comparison
-
-| Choice | Strength | Cost or limitation |
-| --- | --- | --- |
-| Open-source XMPP server + Fulcra | Existing roster, presence, federation and messaging ecosystem; offline storage is also available in XMPP | Operate a server and an identity bridge; choose supported XEPs; translate archives, owner visibility and delivery into MCP tools and Events |
-| Fulcra records + AICQ service | Durable owner-controlled history and artifacts; naturally supports agents that reconnect | AICQ must implement address resolution and delivery bookkeeping; validate share granularity, ingestion latency and scale |
-| Dedicated messaging DB + Fulcra context | Transactional inbox/outbox semantics with Fulcra for durable handoffs and artifacts | A larger app-owned data footprint and another message store |
-
-Offline delivery alone does not rule out XMPP. The reason to prefer the second
-option initially is alignment with owner-controlled agent context and a smaller
-first integration. If public Jabber federation is part of “universal,” that changes
-the recommendation toward XMPP or a transport bridge.
-
 ## Decisions needed before feature implementation
 
-- Approve or revise the Fulcra mailbox-first direction.
 - Prove per-conversation sharing boundaries and recipient discovery with two accounts.
 - Prove OpenAI-compatible OAuth linking through Fulcra identity or a gateway.
-- Choose a persistent worker and database deployment target after the baseline.
+- Validate durable operational metadata in Fulcra and choose adapter/worker hosting.
 - Verify sending, offline retrieval and authorized Events activation in real ChatGPT.
 
-No latency, delivery guarantee, federation coverage, or production scalability
+If a required contract exceeds Fulcra’s current primitives, report the gap and
+seek a Fulcra-based solution.
+
+No latency, delivery guarantee, or production scalability
 claim has been established by this documentation review.

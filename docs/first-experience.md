@@ -102,6 +102,6 @@ agent chat remains part of the required product.
    ordinary replies, a returned revision, and later-session retrieval.
 5. Add and validate optional Events activation for that already durable exchange.
 
-Storage choice, hosting, and the exact structured request/result schema remain
-open. The existing MCP 2 readiness commit is a prerequisite; it does not yet
+Fulcra is the fixed backend. Its resource layout, adapter hosting and exact
+structured request/result schema remain open. The existing MCP 2 readiness commit is a prerequisite; it does not yet
 implement Events or the AICQ app.

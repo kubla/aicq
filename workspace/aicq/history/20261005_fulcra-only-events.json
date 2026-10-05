@@ -1,0 +1,90 @@
+[
+  {
+    "record_id": "327a2f22-0b0e-5ae9-9b76-52335939812a",
+    "recorded_at": "2026-10-05T21:12:18.245568+00:00",
+    "event_id": "b94481da-1908-43f7-8a88-ca8be13dcbe7",
+    "run_id": "doc-p02-6a10cf36-6bb9-4782-8f1f-cfa53504e14e",
+    "milestone": "DOC-P02",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "Apply Michael\u2019s Fulcra-only backend decision to the spec and current design documents.",
+    "evidence": "Canonical records matched; updated plan and exact user decision uploaded/read back; default 15-minute timeout and two retries."
+  },
+  {
+    "record_id": "b7ca649e-e55f-5b37-8f51-19c32e1d71b6",
+    "recorded_at": "2026-10-05T21:12:20.66723+00:00",
+    "event_id": "eec4325d-7098-489c-ad2c-b4835aa2215d",
+    "run_id": "doc-p02-6a10cf36-6bb9-4782-8f1f-cfa53504e14e",
+    "milestone": "DOC-P02",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "DOC-P02 is the authorized documentation correction; M2 remains incomplete with one retry.",
+    "evidence": "Remove alternate backends; preserve Fulcra resource-layout evaluation, MCP/UI adapter, polling and local-first development."
+  },
+  {
+    "record_id": "b5db7497-84e1-5522-87ae-37177b72b605",
+    "recorded_at": "2026-10-05T21:12:22.840068+00:00",
+    "event_id": "bcead762-a16c-4137-bc35-f76b1ba86de1",
+    "run_id": "doc-p02-6a10cf36-6bb9-4782-8f1f-cfa53504e14e",
+    "milestone": "DOC-P02",
+    "step": "GENERATE",
+    "status": "started",
+    "detail": "Remove backend alternatives and reconcile supporting documentation.",
+    "evidence": "Preserve original historical wording with clear supersession; no source or prototype changes."
+  },
+  {
+    "record_id": "8ef5b81e-e82f-51b9-bd5b-4ddd062aaeda",
+    "recorded_at": "2026-10-05T21:13:34.229481+00:00",
+    "event_id": "54a1856f-b023-4e70-8403-bd28101125d4",
+    "run_id": "doc-p02-6a10cf36-6bb9-4782-8f1f-cfa53504e14e",
+    "milestone": "DOC-P02",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Fulcra is now the fixed backend; removed alternate transports, backend comparisons and separate database proposals from active documents.",
+    "evidence": "Spec, README, architecture, requirements, plans, source notes and walkthroughs reconciled; original quotations and archived proposals explicitly superseded."
+  },
+  {
+    "record_id": "873538e3-b074-5220-b345-0135bc60bea0",
+    "recorded_at": "2026-10-05T21:13:36.615107+00:00",
+    "event_id": "c33621bc-6b91-4484-a663-73af8e07733d",
+    "run_id": "doc-p02-6a10cf36-6bb9-4782-8f1f-cfa53504e14e",
+    "milestone": "DOC-P02",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Verify Fulcra-only consistency, links and unchanged product status.",
+    "evidence": "Review current docs independently; historical quotations remain provenance only; no source, prototype or hosting changes."
+  },
+  {
+    "record_id": "fd72aceb-0e76-50de-b68c-51126fd5b01e",
+    "recorded_at": "2026-10-05T21:14:18.681916+00:00",
+    "event_id": "1f140312-8ed0-4117-953d-080c5582b745",
+    "run_id": "doc-p02-6a10cf36-6bb9-4782-8f1f-cfa53504e14e",
+    "milestone": "DOC-P02",
+    "step": "REVIEW",
+    "status": "completed",
+    "detail": "Fulcra-only review passed; no alternate backend or separate messaging-database proposals remain in active documents.",
+    "evidence": "Current-doc search clean except explicitly superseded decision quotations; relative paths valid; diff check passed; schema choices are within Fulcra and M2 status is unchanged."
+  },
+  {
+    "record_id": "d8f14faa-63ca-541f-bbce-bcc986c4689a",
+    "recorded_at": "2026-10-05T21:15:04.070013+00:00",
+    "event_id": "665c0b2c-7587-4c7c-8c35-544825dc48e7",
+    "run_id": "doc-p02-6a10cf36-6bb9-4782-8f1f-cfa53504e14e",
+    "milestone": "DOC-P02",
+    "step": "MARK_COMPLETE",
+    "status": "completed",
+    "detail": "Fulcra-only documentation correction reviewed and canonical-synced.",
+    "evidence": "Seven canonical writes byte-verified; active-doc search and 41 relative paths passed; exact decision recorded; no M2 retry used."
+  },
+  {
+    "record_id": "0c1bf916-813b-5382-8528-bc35dbd46476",
+    "recorded_at": "2026-10-05T21:15:06.462839+00:00",
+    "event_id": "61c4f6fe-8920-4802-8cf9-54a15603b0c6",
+    "run_id": "doc-p02-6a10cf36-6bb9-4782-8f1f-cfa53504e14e",
+    "milestone": "DOC-P02",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "DOC-P02 complete with no retries; preserve fixed backend and unchanged milestone status.",
+    "evidence": "Events read back; repository publication and final closed-state mirrors follow. M2 remains incomplete with one retry."
+  }
+]

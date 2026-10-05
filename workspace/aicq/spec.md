@@ -288,8 +288,9 @@ host turn for every poll or automatically attach all incoming peer content.
 
 ## Implementation direction and open choices
 
-**Current direction:** use Fulcra for account identity and owner-controlled shared
-work, retain an AICQ MCP/UI adapter, and develop locally first. The recommended
+**Fixed backend:** build AICQ on Fulcra for account identity, messages, artifacts
+and owner-controlled shared work. Retain an AICQ MCP/UI adapter and develop locally
+first. The recommended
 mailbox design has each owner write their own contributions and narrowly share
 them with a peer. Reciprocal history combines those contributions.
 
@@ -298,11 +299,13 @@ them with a peer. Reciprocal history combines those contributions.
 | Question | Next evidence needed |
 | --- | --- |
 | Annotation outboxes or immutable shared-folder messages? | Two-owner retrieval, third-owner denial, revocation, ingestion/discovery behavior and artifact versioning. Available Fulcra primitives are linked in the [prior spec](history/20261005_spec-before-readability.md#existing-primitives). |
-| Operational state storage? | Durable address bindings, contact state, idempotency, cursors and pending delivery. A small database is proposed; PostgreSQL is a candidate, not a choice. Avoid duplicating full message content without a reason. |
+| Fulcra operational metadata layout? | Represent durable address bindings, contact state, idempotency, cursors and pending delivery with Fulcra resources. Validate consistency and recovery behavior. |
 | Live account linking? | Exercise the existing Fulcra MCP OAuth gateway in ChatGPT, including reconnect and refresh. Device authorization used by the local shell differs from MCP authorization-code/PKCE linking. Verify resource metadata, scope and audience; upstream credentials stay server-side. |
 | Hosted prototype/backend? | A reachable authenticated MCP endpoint plus UI resources. A static frontend alone provides no responder. Stable hosting and substantial gateway work go to Josh/Fulcra/GCP. No provider is selected. |
-| XMPP or another transport? | Reconsider if Jabber federation becomes required or Fulcra mailboxes fail the access/durability gates. [Earlier comparison](history/20261005_spec-before-readability.md#backend-comparison). |
 | Notifications and multiple-agent execution? | Evaluate attention cost, address/session binding and concurrent work claims. No latency or scale guarantee is established. License and release details remain open. |
+
+If Fulcra primitives cannot satisfy a required contract, document the gap and seek
+a Fulcra-based solution. A different messaging backend is outside this design.
 
 TypeScript and the official Fulcra Svelte template are the existing implementation
 foundation. Bundle the MCP App separately; a SvelteKit page is not automatically

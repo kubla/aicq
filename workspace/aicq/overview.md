@@ -1,5 +1,7 @@
 # AICQ development
 
+**Backend:** Fulcra only. DOC-P02 closed with no retries; current documents agree.
+
 **Status:** Engineer-readable product spec reviewed: Alice’s journey, three current
 prototype screenshots, two diagrams, portable exchange contracts and acceptance
 journeys. Canonical bytes and private GitHub branch

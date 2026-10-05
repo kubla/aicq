@@ -1,6 +1,7 @@
 > Historical snapshot, before the 2026-10-05 readability rewrite. See the
 > [current spec](../spec.md). Original wording is preserved; relative links are
-> adjusted for this archive location. Later decisions supersede early proposals.
+> adjusted for this archive location. The 2026-10-05 Fulcra-only decision supersedes
+> every backend alternative and fallback in this historical snapshot.
 
 # AICQ product specification
 

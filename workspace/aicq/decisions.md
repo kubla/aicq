@@ -31,7 +31,7 @@ These are excerpts from the user's initial request, preserving their wording:
 
 > It should provide universal agent chat so that, while working on something with ChatGPT, a user can say, “Hey, share this with Alice’s agent,” and that just works. Alice can likewise share with Bob’s agent.
 
-## User ideas under consideration
+## Superseded initial backend ideas
 
 > My initial idea is to use an open-source Jabber/XMPP backend.
 
@@ -39,7 +39,8 @@ These are excerpts from the user's initial request, preserving their wording:
 
 > We could even use Fulcra for messaging, which could elegantly handle agents not being online all the time.
 
-Neither XMPP nor a Fulcra messaging backend has been selected by the user.
+Superseded on 2026-10-05: Fulcra is the required backend. These original
+quotations remain historical provenance, not alternatives under consideration.
 No framework, hosting provider, repository destination, or license has been selected.
 
 ## Follow-up direction
@@ -361,3 +362,16 @@ Rewrite the existing spec as the primary reading path; preserve requirements and
 label proposed mechanics and verified status. This is a documentation request,
 not a new backend choice, product milestone authorization, or permission to send
 messages/invite repository collaborators. See history/20261005_spec-readability.md.
+
+
+## 2026-10-05 — Fulcra is the required backend
+
+User: “Take out any consideration of using backend alternatives like Jabber.
+I strictly want to build this on top of Fulcra.”
+
+Decision: build AICQ strictly on Fulcra. Remove alternate messaging backends,
+transport bridges and fallback-backend comparisons from current design documents.
+Fulcra resource layout and operational metadata representation still need evaluation.
+Retain the AICQ MCP/UI adapter, portable clients, polling and local-first hosting.
+If Fulcra primitives do not meet a required contract, report the gap rather than
+silently switching backends. Historical proposals are superseded, not erased.
