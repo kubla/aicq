@@ -1,0 +1,101 @@
+{
+  "milestone": "UX-P09",
+  "observed_at": "2026-10-05T16:00:22.214Z",
+  "scope": "Fictional local HTML; no live agent or calendar integration",
+  "observations": [
+    {
+      "check": "Repaired agent-reported scheduled outcome",
+      "text": "AICQ\nContacts\nSettings\n+ Invite\nMY AGENTS\nG\nMy Grok bot\nLaunch conversation scan\nTypically replies in about 3 minutes\nH\nMy Hermes agent\nGuest speaker availability\nTypically replies in about 2 minutes\nC\nMy Codex agent\nLaunch site checklist\nTypically replies in about 5 minutes\nFRIENDS AGENTS\nB\nBob\u2019s Hermes\nModel shared. Review scheduled.\nTypically replies within a minute\nP\nPriya\u2019s Claude\nPartner webinar speakers\nTypically replies in about 20 minutes\nD\nDan\u2019s ChatGPT\nNo active collaboration\nTypically replies in about an hour\n+ Invite a friend\nB\nBob\u2019s Hermes\n\nBob Chen \u00b7 Hermes\n\n\u2022\u2022\u2022\nTypically replies within a minute\nCompleted\nModel shared. Review scheduled.\n\nBob has model v7. Your review is scheduled for Friday, October 9, at 2 p.m. at his office.\n\nThe calendar invitation was sent. No action needed.\nSCHEDULED\nFinancial model review\nWhen\nFriday, October 9 \u00b7 2\u20132:30 p.m.\nAmerica/New_York\nWhere\nBob\u2019s office \u00b7 42 Mercer Street\nWith\nAlice Chen and Bob Chen\nShared\nOperating model \u00b7 v7\nInvitation\nSent \u00b7 Reported by your agent\nOpen model\nShared work & direction\nAutonomy \u00b7 Handle it for me\nAdd to this chat\nContinue in chat\nOpen in new chat\nPause\nAgent conversation \u00b7 4 updates\nYour agent carries this direction into the collaboration."
+    },
+    {
+      "check": "Approval-only waits before sharing",
+      "text": "Prepared for approval\nModel review ready for your approval\n\nThe model and your request are prepared. They have not been shared with Bob\u2019s agent.\n\nWaiting for your approval\nShare the model and arrange Friday\u2019s review?\n\nOnly operating model v7 and your review request will be shared. Your private chat stays private.\n\nApprove and proceed\nShared work & direction\nAutonomy \u00b7 Prepare for my approval\nAdd to this chat\nContinue in chat\nOpen in new chat\nPause\nAgent conversation \u00b7 0 updates"
+    },
+    {
+      "check": "Approval-only also waits before meeting commitment",
+      "text": "Prepared for approval\nMeeting ready for your approval\n\nFriday at 2 p.m. at Bob\u2019s office is agreed. The invitation has not been sent.\n\nWaiting for your approval\nSend the meeting invitation?\n\nFriday at 2 p.m. at Bob\u2019s office.\n\nApprove invitation\nShared work & direction\nAutonomy \u00b7 Prepare for my approval\nAdd to this chat\nContinue in chat\nOpen in new chat\nPause\nAgent conversation \u00b7 3 updates"
+    },
+    {
+      "check": "Approval-only completed after both explicit approvals",
+      "text": "Completed\nModel shared. Review scheduled.\n\nBob has model v7. Your review is scheduled for Friday, October 9, at 2 p.m. at his office.\n\nThe calendar invitation was sent. No action needed.\nSCHEDULED\nFinancial model review\nWhen\nFriday, October 9 \u00b7 2\u20132:30 p.m.\nAmerica/New_York\nWhere\nBob\u2019s office \u00b7 42 Mercer Street\nWith\nAlice Chen and Bob Chen\nShared\nOperating model \u00b7 v7\nInvitation\nSent \u00b7 Reported by your agent\nOpen model\nShared work & direction\nAutonomy \u00b7 Prepare for my approval\nAdd to this chat\nContinue in chat\nOpen in new chat\nPause\nAgent conversation \u00b7 4 updates"
+    },
+    {
+      "check": "Judgment mode waits for changing requested day",
+      "text": "Decision needed\nFriday doesn\u2019t work for Bob\n\nYour agents checked Friday. Bob is unavailable, but you\u2019re both free Monday at 10 a.m.\n\nA decision is needed before changing the day\nFriday is unavailable. Move the review to Monday at 10 a.m.?\n\nMonday, October 12, at 10 a.m. at Bob\u2019s office. You\u2019re both free, and it fits your meeting preferences.\n\nBook Monday at 10\nKeep Friday\nShared work & direction\nAutonomy \u00b7 Check with me on judgment calls\nAdd to this chat\nContinue in chat\nOpen in new chat\nPause\nAgent conversation \u00b7 3 updates"
+    },
+    {
+      "check": "Owner Monday decision completes reported result",
+      "text": "Completed\nModel shared. Review scheduled.\n\nBob has model v7. Your review is scheduled for Monday, October 12, at 10 a.m. at his office.\n\nThe calendar invitation was sent. No action needed.\nSCHEDULED\nFinancial model review\nWhen\nMonday, October 12 \u00b7 10\u201310:30 a.m.\nAmerica/New_York\nWhere\nBob\u2019s office \u00b7 42 Mercer Street\nWith\nAlice Chen and Bob Chen\nShared\nOperating model \u00b7 v7\nInvitation\nSent \u00b7 Reported by your agent\nOpen model\nShared work & direction\nAutonomy \u00b7 Check with me on judgment calls\nAdd to this chat\nContinue in chat\nOpen in new chat\nPause\nAgent conversation \u00b7 5 updates"
+    },
+    {
+      "check": "Unavailable agent waits and cannot retrieve",
+      "enabled": false,
+      "text": "Waiting for agent\nFinding a time to review the model\n\nYour model and Friday request are available to Bob\u2019s agent. It will continue when the agent returns.\n\nWaiting for Bob\u2019s agent \u00b7 Just sent\nShared work & direction\nAutonomy \u00b7 Handle it for me\nAdd to this chat\nContinue in chat\nOpen in new chat\nPause\nAgent conversation \u00b7 1 update"
+    },
+    {
+      "check": "Pause prevents retrieval",
+      "enabled": false
+    },
+    {
+      "check": "Block prevents retrieval",
+      "enabled": false
+    },
+    {
+      "check": "Final settings: no calendar or away controls",
+      "text": "AICQ settings\n\u00d7\n\nAccount: Alice Chen\nAgent: Alice\u2019s ChatGPT\n\nHow much should your agents handle?\nHandle it for me\nCheck with me on judgment calls\nPrepare for my approval\n\nYour agents complete work within your permissions and preferences. They ask when something needed is missing or outside those limits.\n\nSharing stays under your control\n\nYour agents share the messages and files you authorize. This setting doesn\u2019t grant access to more tools or expose your private chats.\n\nDone",
+      "modes": [
+        "Handle it for me",
+        "Check with me on judgment calls",
+        "Prepare for my approval"
+      ]
+    },
+    {
+      "check": "Final narrow sender needs no platform",
+      "text": "Invite someone\u2019s agent\n\u00d7\n\nInvite a friend to connect their agent with yours.\n\nWho is this for?\nMessage\n\nYour friend will see this message before accepting. No files or chat history are shared.\n\nGenerate invitation\nClose",
+      "dimensions": {
+        "page": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "check": "Final URL contains name/introduction/id only",
+      "payload": {
+        "name": "Morgan",
+        "intro": "Let\u2019s connect our agents so we can coordinate the autumn launch. We\u2019ll share only the work we choose.",
+        "id": "demo-morgan"
+      }
+    },
+    {
+      "check": "Final recipient does not inherit a sender platform",
+      "installEnabled": false,
+      "selected": null
+    },
+    {
+      "check": "Narrow independent recipient choice and resumed acceptance",
+      "text": "AICQ invitation\nMorgan, Alice would like to connect your agents.\n\nAlice Chen \u00b7 Alice\u2019s ChatGPT\n\nLet\u2019s connect our agents so we can coordinate the autumn launch. We\u2019ll share only the work we choose.\n\nConnecting lets you exchange messages and files you choose to share. Your private chat history stays private.\nConnected with Alice\n\nYour Hermes agent can now exchange messages and files with Alice\u2019s ChatGPT.\n\n\u2713 Alice\u2019s ChatGPT\n\nConnected to your Hermes agent. Your agent will follow your autonomy and sharing preferences.",
+      "dimensions": {
+        "page": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "check": "Narrow collaboration result without page overflow",
+      "text": "Completed\nModel shared. Review scheduled.\n\nBob has model v7. Your review is scheduled for Friday, October 9, at 2 p.m. at his office.\n\nThe calendar invitation was sent. No action needed.\nSCHEDULED\nFinancial model review\nWhen\nFriday, October 9 \u00b7 2\u20132:30 p.m.\nAmerica/New_York\nWhere\nBob\u2019s office \u00b7 42 Mercer Street\nWith\nAlice Chen and Bob Chen\nShared\nOperating model \u00b7 v7\nInvitation\nSent \u00b7 Reported by your agent\nOpen model\nShared work & direction\nAutonomy \u00b7 Handle it for me\nAdd to this chat\nContinue in chat\nOpen in new chat\nPause\nAgent conversation \u00b7 4 updates",
+      "dimensions": {
+        "page": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "check": "Old invitation platform hint ignored on opening",
+      "value": "",
+      "installEnabled": false
+    },
+    {
+      "check": "Final candidate console has no new error after repair",
+      "newErrors": []
+    }
+  ],
+  "source_sha256": "44dd98df1dbd116e397c98f731f8fa4202812c48023996c21ee5806b5830b423",
+  "run_id": "ux-p09-5899317d-ae38-4877-beba-6b18221aa570"
+}

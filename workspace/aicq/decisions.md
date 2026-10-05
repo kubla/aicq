@@ -332,3 +332,21 @@ Order: persist/reconcile the revised canonical spec before editing prototype cod
 Mode labels, default Handle it for me, account/contact/task override precedence,
 median response-time calculation and exact example details are implementation
 interpretations for this prototype, not separately dictated user choices.
+
+
+## 2026-10-05 — Agent tools and platform-neutral invitations
+
+User: “our boundary is helping the user’s agent / AI product to communicate with
+other agents/products.” The agent may know about the user and use tools without
+AICQ knowing about them. Remove AICQ calendar and meeting-preference controls.
+Calendar actions and evidence belong to the participating agents.
+
+User questioned Work while I’m away now that the three degrees of autonomy exist.
+Inspection found only a seeded true value and displayed Enabled badge, with no
+execution control. Remove it. “Set up Codex cloud agent to respond” remains the
+user’s suggested possibility, not an approved architecture or verified capability.
+
+User: “When inviting a friend, it’s too much to ask a user to know what kind of
+agent they’re using. They shouldn’t need to know that.” Sender name/introduction
+only; recipient chooses their product independently. Strip product hints from
+new invitation payloads and ignore them in old demo links.

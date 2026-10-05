@@ -1,6 +1,6 @@
 # AICQ product specification
 
-Updated 2026-10-03. The approved product direction is autonomous collaboration
+Updated 2026-10-05. The approved product direction is autonomous collaboration
 between people’s agents, with inspectable work and outcomes. The interaction
 prototype is simulated; it has not verified live account linking, messaging,
 background execution, or calendar access. M1 is complete; M2 remains incomplete
@@ -31,6 +31,31 @@ Last worked together yesterday.” Opening a contact leads with what the agents
 are doing, the next expected action, and any specific decision for the owner.
 An owner may still give direction or send an ordinary note without a task form.
 
+## AICQ boundary: agents own their tools
+
+**Confirmed direction (2026-10-05):** AICQ helps the user’s agent or AI product
+communicate with other agents/products. Participating agents own their user context,
+tools and permissions. AICQ does not need awareness of their calendars, connected
+tools, meeting preferences, private memory or credentials.
+
+Remove calendar connections, availability permissions and meeting-preference
+controls from AICQ. An agent may send permitted availability or a scheduling result
+as ordinary collaboration content. The originating agent verifies its own tool
+actions; AICQ can display the agent’s reported outcome and shared evidence without
+holding calendar access or representing itself as the calendar verifier. Private
+details stay with the agent unless deliberately included in a shared message.
+
+The former Work while I’m away badge had no execution effect. Remove it. The three
+autonomy modes govern authority; an executor’s availability governs whether it can
+act. A future “Set up Codex cloud agent to respond” flow is a **proposal**. It must
+configure an actual supported responder and truthfully report its lifecycle, scope
+and limitations. It is not an additional autonomy mode and is not implemented here.
+
+Friend invitations are addressed to people. The sender is not asked to identify
+or suggest the friend’s agent/product. The invitation contains no platform hint.
+The recipient chooses where to use AICQ during their own setup; the contact’s
+product/address is resolved from accepted setup, not guessed by the sender.
+
 ## Autonomy and authority
 
 The user requires a scale of autonomy, including fully autonomous work within
@@ -56,7 +81,7 @@ an agent can arrange an ordinary meeting, including sending the calendar invitat
 without asking its owner again. This includes exchanging permitted availability,
 agreeing a time/location consistent with both owners’ constraints, and placing the
 meeting on the calendar through an authorized tool. It does not imply that AICQ
-has a calendar integration today. Explicit task direction can settle a judgment
+needs a calendar integration. Calendar authorization and meeting preferences belong to the participating agent/product. Explicit task direction can settle a judgment
 call; a routine meeting must not gain an extra approval merely because it involves
 another person. A departure from preferences, such as Friday being impossible,
 requires a focused decision under the relevant policy.
@@ -81,8 +106,10 @@ Status comes from actual work updates. A storage receipt means persisted; a
 recipient-accessible artifact means access is established; an agent consumption
 receipt means opened; a response means the agent replied. None alone proves a
 meeting is scheduled. Show a completed scheduling result only after the agreed
-slot/location, authorized calendar write/read-back, and invitation result are
-established. If calendar creation is uncertain, reconcile it before retrying so
+slot/location and invitation result are established by the responsible agent,
+using its own authorized tools and read-back. AICQ records the reported outcome;
+it does not query calendars. If calendar creation is uncertain, the agent reconciles
+it before retrying so
 one instruction cannot create duplicate meetings. Do not expose a failure as success.
 
 A focused owner decision includes the question, reason it remains unresolved,
@@ -630,7 +657,9 @@ AICQ contacts, message channels, artifacts, or subscriptions.
 
 ## Proposed recipient flow
 
-1. The invitation introduces the inviter and a specific collaboration. Before
+1. The sender supplies the friend’s name and an introduction, without choosing
+   the friend’s agent/product. The recipient chooses their own app during setup.
+   The invitation introduces the inviter and a specific collaboration. Before
    recipient verification, show only an introduction approved for that preview.
 2. The invitee installs AICQ and signs up or signs in through browser authorization.
    Preserve the invitation through setup; reopening its link resumes progress.

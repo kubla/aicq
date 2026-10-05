@@ -1,0 +1,36 @@
+{
+  "saved": {
+    "id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896~appgver_e6b6fd7a2dd08191bd7b6dd7e5c74eb4",
+    "project_id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896",
+    "version_number": 6,
+    "source": {
+      "commit_sha": "da3d5eef165f819fc36b38e4d3193012baefb2d6"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000289881f8bc74affe2f9ae5b1",
+      "content_hash": "sha256:3dba2557acb4ddf1fcf4b2718ad2288a89cc0db020e9009e5e3acbec75325b7d",
+      "size_bytes": 512000,
+      "file_count": 6
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ac3ca5e3e3c819183b5239c8559d701",
+    "project_id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896",
+    "title": "AICQ · Interaction studies",
+    "version_id": "appgprj_6ac11b43d7e0819198f3007c5cf6a896~appgver_e6b6fd7a2dd08191bd7b6dd7e5c74eb4",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://aicq-interaction-studies.mtiffany.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ac11b43d7e0819198f3007c5cf6a896",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-05T16:03:50.812496+00:00"
+  },
+  "source_sha256": "44dd98df1dbd116e397c98f731f8fa4202812c48023996c21ee5806b5830b423",
+  "archive_matches_reviewed_html": true
+}

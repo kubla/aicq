@@ -10,6 +10,14 @@ implement Events. Evaluation evidence: history/20261001_m1-local-baseline.md.
 
 ## Current design status
 
+UX-P09 (2026-10-05): removed AICQ calendar/meeting preferences and the inert away
+badge. The three autonomy modes remain; scheduling is an agent-reported outcome.
+Person-only sender invitations contain no platform hint; recipient chooses own app.
+Actual desktop and 390px invitation/result journeys, authority/waiting controls
+passed after one repaired stale-view reference. Public Site version 6 published.
+Cloud responder setup remains a proposal. M2 still incomplete with one retry.
+See history/20261005_agent-boundary.md and prototypes/agent-boundary-notes.md.
+
 UX-P07 completed the spec-first autonomy revision; UX-P08 corrected its native
 mention/host and artifact details and republished the public worked example.
 Evaluate Michael’s feedback on the one-instruction handoff and the level of detail
@@ -297,3 +305,28 @@ publication and evidence delivery. UX-P08 is independent of M1–M6; no M2 retry
 is consumed. Acceptance requires actual desktop/narrow observations of typed
 mentions, selected mentions, editing, sending, context, calendar outcomes and
 representative invitation/artifact continuity; record exact source and publication.
+
+
+## UX-P09 — Agent boundary and friend invitations (2026-10-05)
+
+Apply Michael’s calendar, unattended-work and invitation feedback to the canonical
+spec first, then the Alice worked example. AICQ transports selected messages,
+artifacts and collaboration updates. Tools, calendars and private preferences
+belong to participating agents/products. Remove calendar/meeting-preference settings
+and the inert Work while I’m away badge. Preserve the three autonomy modes.
+Sender invitations collect a person and introduction, never the friend’s platform;
+recipient app selection belongs to the recipient. Preserve resumed/revoked setup.
+
+Cloud responder setup is a proposal, not a confirmed Codex capability or provisioned
+service. Do not pretend to launch a worker. The current pass removes the redundant
+badge; an eventual responder setup must identify the executor, credentials, scope,
+cost and lifecycle separately from permission to act.
+
+Run sequential Nurse, Coordinator, Generator and separate Evaluator roles using
+the existing owner annotation and independent UX-P09 state. Record/read back this
+**45-minute timeout override** before RUN_START; retain two retries. Acceptance:
+settings have autonomy and no calendar/away controls; platform-neutral sender and
+invitation URL; recipient chooses its own app; scheduling is an agent-reported
+outcome with no AICQ calendar API/state; retained approval/judgment, pause/block,
+invitation acceptance/revocation and desktop/narrow browser journeys work. Publish
+the reviewed HTML to the existing public Site. M2 remains incomplete with one retry.

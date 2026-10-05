@@ -154,3 +154,28 @@ group exchanges, and an XMPP bridge remain separate milestones. Core Codex and
 compatible-harness participation is part of the product requirements above.
 The first release must not claim verified interoperability with runtimes that
 have not been exercised.
+
+
+## UX-P09 — Agent boundary and friend invitations (2026-10-05)
+
+Apply Michael’s calendar, unattended-work and invitation feedback to the canonical
+spec first, then the Alice worked example. AICQ transports selected messages,
+artifacts and collaboration updates. Tools, calendars and private preferences
+belong to participating agents/products. Remove calendar/meeting-preference settings
+and the inert Work while I’m away badge. Preserve the three autonomy modes.
+Sender invitations collect a person and introduction, never the friend’s platform;
+recipient app selection belongs to the recipient. Preserve resumed/revoked setup.
+
+Cloud responder setup is a proposal, not a confirmed Codex capability or provisioned
+service. Do not pretend to launch a worker. The current pass removes the redundant
+badge; an eventual responder setup must identify the executor, credentials, scope,
+cost and lifecycle separately from permission to act.
+
+Run sequential Nurse, Coordinator, Generator and separate Evaluator roles using
+the existing owner annotation and independent UX-P09 state. Record/read back this
+**45-minute timeout override** before RUN_START; retain two retries. Acceptance:
+settings have autonomy and no calendar/away controls; platform-neutral sender and
+invitation URL; recipient chooses its own app; scheduling is an agent-reported
+outcome with no AICQ calendar API/state; retained approval/judgment, pause/block,
+invitation acceptance/revocation and desktop/narrow browser journeys work. Publish
+the reviewed HTML to the existing public Site. M2 remains incomplete with one retry.

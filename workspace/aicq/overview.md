@@ -1,9 +1,10 @@
 # AICQ development
 
-**Status:** Interaction design first. UX-P08 corrected the native @AICQ mention,
-composer/history/context controls, spreadsheet viewer and stale review/status copy.
-Desktop and 390px browser journeys passed; public Site version 5 is published.
-The run is closed after two UX-only retries. All agent/calendar work remains simulated.
+**Status:** Interaction design first. UX-P09 separates agent tool access from AICQ
+communication, removes the inert away badge and makes invitations platform-neutral.
+The first review caught a stale calendar reference; repaired browser journeys passed.
+Public Site version 6 is published. The run is closed after one UX-only retry.
+All activity is simulated.
 
 - M1 — authenticated local baseline: complete
 - M2 — plugin shell/linking: incomplete; one retry remains
@@ -12,6 +13,4 @@ The run is closed after two UX-only retries. All agent/calendar work remains sim
 - M5 — subscribed activation: pending; polling acceptable initially
 - M6 — usability/distribution: pending
 
-Current example: https://aicq-interaction-studies.mtiffany.chatgpt.site/alice.html?scene=finance
-Audit/evidence: `history/20261003_host-realism.md` and `prototypes/host-realism-notes.md`.
-Live host/account and infrastructure prerequisites remain separate; no M2 retry used.
+No live agent/calendar or cloud responder integration is claimed.

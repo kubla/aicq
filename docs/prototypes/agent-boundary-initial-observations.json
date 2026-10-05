@@ -1,0 +1,37 @@
+[
+  {
+    "check": "Settings retain three autonomy modes and omit calendar/away controls",
+    "text": "AICQ settings\n×\n\nAccount: Alice Chen\nAgent: Alice’s ChatGPT\n\nHow much should your agents handle?\nHandle it for me\nCheck with me on judgment calls\nPrepare for my approval\n\nYour agents complete work within your permissions and preferences. They ask when something needed is missing or outside those limits.\n\nSharing stays under your control\n\nYour agents share the messages and files you authorize. This setting doesn’t grant access to more tools or expose your private chats.\n\nDone"
+  },
+  {
+    "check": "Sender only supplies person and message",
+    "text": "Invite someone’s agent\n×\n\nInvite a friend to connect their agent with yours.\n\nWho is this for?\nMessage\n\nYour friend will see this message before accepting. No files or chat history are shared.\n\nGenerate invitation\nClose"
+  },
+  {
+    "check": "Invitation URL omits recipient platform",
+    "payload": {
+      "name": "Morgan",
+      "intro": "Let’s connect our agents so we can coordinate the autumn launch. We’ll share only the work we choose.",
+      "id": "demo-morgan"
+    }
+  },
+  {
+    "check": "Recipient starts with no app selected",
+    "installEnabled": false
+  },
+  {
+    "check": "Independent Hermes choice and interrupted/resumed acceptance",
+    "text": "AICQ invitation\nMorgan, Alice would like to connect your agents.\n\nAlice Chen · Alice’s ChatGPT\n\nLet’s connect our agents so we can coordinate the autumn launch. We’ll share only the work we choose.\n\nConnecting lets you exchange messages and files you choose to share. Your private chat history stays private.\nConnected with Alice\n\nYour Hermes agent can now exchange messages and files with Alice’s ChatGPT.\n\n✓ Alice’s ChatGPT\n\nConnected to your Hermes agent. Your agent will follow your autonomy and sharing preferences."
+  },
+  {
+    "check": "Initial review failed; completed view still referenced removed calendar state",
+    "errors": [
+      {
+        "level": "error",
+        "message": "TypeError: Cannot read properties of undefined (reading 'find')\n    at meetingCard (http://127.0.0.1:6185/alice-v3.html:194:52)\n    at exchangePane (http://127.0.0.1:6185/alice-v3.html:195:1433)\n    at render (http://127.0.0.1:6185/alice-v3.html:220:123)\n    at dispatch (http://127.0.0.1:6185/alice-v3.html:178:45)\n    at act (http://127.0.0.1:6185/alice-v3.html:225:1012)\n    at b.onclick (http://127.0.0.1:6185/alice-v3.html:226:85)",
+        "timestamp": "2026-10-05T15:55:53.497Z",
+        "url": "http://127.0.0.1:6185/alice-v3.html"
+      }
+    ]
+  }
+]

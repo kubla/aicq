@@ -6,6 +6,14 @@ remain proposals.
 
 ## Design experiment
 
+UX-P09 (2026-10-05): removed AICQ calendar/meeting preferences and the inert away
+badge. The three autonomy modes remain; scheduling is an agent-reported outcome.
+Person-only sender invitations contain no platform hint; recipient chooses own app.
+Actual desktop and 390px invitation/result journeys, authority/waiting controls
+passed after one repaired stale-view reference. Public Site version 6 published.
+Cloud responder setup remains a proposal. M2 still incomplete with one retry.
+See history/20261005_agent-boundary.md and prototypes/agent-boundary-notes.md.
+
 UX-P08 (2026-10-03): published the host realism pass at the existing public Alice
 route. @AICQ uses native blue inline highlighting in drafts/sent messages; picker,
 keyboard, context/history controls, bubbles, status copy and spreadsheet preview
