@@ -6,6 +6,13 @@ remain proposals.
 
 ## Design experiment
 
+DOC-P04 (2026-10-05): ChatGPT-specific agency spec replaces generic three-mode
+controls. Four arrival/draft/judgment/results policies, desired/effective all-inbox
+cadence and host execution boundaries reviewed. Canonical bytes and terminal events
+verified; no retries. Scheduled tasks with plugins/skills are a candidate to test,
+not a configured worker. Prototype unchanged; M2 unchanged. See
+history/20261005_chatgpt-agency.md.
+
 DOC-P03 (2026-10-05): writing pass makes the spec a product contract. Removed
 build status, simulation/development commentary, history links and pinned source;
 kept product work states, behavioral invariants and unchanged illustrations.

@@ -1,0 +1,19 @@
+{
+  "fourPolicies": true,
+  "allConnectedInboxes": true,
+  "effectiveCadence": true,
+  "lastCheck": true,
+  "hostTurn": true,
+  "otherProductsIndependent": true,
+  "aspirationalControl": true,
+  "obsoleteSettingsImageRemoved": true,
+  "developmentStatusAbsent": true,
+  "images": 2,
+  "diagrams": 2,
+  "missing": [],
+  "diagrams_unchanged": true,
+  "previous_three_modes_removed": true,
+  "host_confirmations_preserved": true,
+  "unselected_defaults_or_intervals": true,
+  "no_prototype_changes": true
+}

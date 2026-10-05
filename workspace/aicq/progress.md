@@ -18,14 +18,15 @@ remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 ## Harness state
 
 Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
-Latest run: DOC-P03 `doc-p03-2f774ab5-043a-4f06-95f1-fe7c9178e50b`, closed at
-2026-10-05T21:37:24.738355+00:00; no run is active. REVIEW, MARK_COMPLETE and RUN_COMPLETE
-were read back; terminal `cb846d36-be7f-59af-a63a-3c38f074cc8c`. No retries used.
-Spec now contains product behavior and interactions only, using Michael’s Fulcra
-accessibility framing and unpinned MCP Extensions link. Development status,
-implementation commentary and historical links are removed from the spec and
-remain in these project records. See history/20261005_spec-contract.md.
-Fulcra remains the fixed backend. M2 has one retry unchanged; M3–M6 pending.
+Latest run: DOC-P04 `doc-p04-02a7480c-0c2c-42fa-8cb4-f98df5ebbe4e`, closed at
+2026-10-05T21:54:46.693909+00:00; no run is active. REVIEW, MARK_COMPLETE and RUN_COMPLETE
+were read back; terminal `f50e6122-118c-5bf6-9341-6b4be759445d`. No retries used.
+Spec now treats AICQ Settings as ChatGPT-specific checking cadence and four
+response/notification behaviors. Host control is an engineering question, not
+verified background execution. Other products govern their own agents. Obsolete
+settings screenshot removed from spec; prototype/source/Site unchanged.
+Official scheduled-task documentation suggests a polling route to test. See
+history/20261005_chatgpt-agency.md. Fulcra remains fixed; M2 has one retry unchanged.
 
 - UX-P03 retry `ux-p03-f8c30fc1-0cbf-4de2-bc18-c876c3165901`: passing
   REVIEW, MARK_COMPLETE and RUN_COMPLETE read back; terminal record

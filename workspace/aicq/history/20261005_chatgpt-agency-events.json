@@ -1,0 +1,90 @@
+[
+  {
+    "record_id": "463b22d5-a99b-5693-b4d5-bca37fcfd241",
+    "recorded_at": "2026-10-05T21:50:23.523971+00:00",
+    "event_id": "9b445c69-ad3d-4292-8140-f42f5cd6300f",
+    "run_id": "doc-p04-02a7480c-0c2c-42fa-8cb4-f98df5ebbe4e",
+    "milestone": "DOC-P04",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "Reframe AICQ Settings as ChatGPT-specific checking and response behavior, with host-control feasibility explicit.",
+    "evidence": "Canonical records match main; exact direction and default documentation plan uploaded/read back; official host references fetched."
+  },
+  {
+    "record_id": "6b3e384e-642c-571a-bc9c-5cb04f3bf5dd",
+    "recorded_at": "2026-10-05T21:50:26.318571+00:00",
+    "event_id": "390f0a69-acf2-4b4a-86ef-81cfc1070778",
+    "run_id": "doc-p04-02a7480c-0c2c-42fa-8cb4-f98df5ebbe4e",
+    "milestone": "DOC-P04",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "DOC-P04 is the authorized spec correction; no product milestone attempt.",
+    "evidence": "Four policies and inbox-checking cadence replace generic three-mode agency framing; other products govern their own agents."
+  },
+  {
+    "record_id": "d3b0bd6d-72d4-54bb-b83b-aef0ee86333d",
+    "recorded_at": "2026-10-05T21:50:28.695178+00:00",
+    "event_id": "82735845-ede5-49dc-b59f-b700149e1da0",
+    "run_id": "doc-p04-02a7480c-0c2c-42fa-8cb4-f98df5ebbe4e",
+    "milestone": "DOC-P04",
+    "step": "GENERATE",
+    "status": "started",
+    "detail": "Update ChatGPT agency section, journey assumptions and behavioral checks.",
+    "evidence": "Keep desired polling separate from available host activation, respect permissions, remove obsolete settings screenshot and retain product-only spec."
+  },
+  {
+    "record_id": "19a2acc2-35b8-57d7-9172-7845295dc07e",
+    "recorded_at": "2026-10-05T21:52:44.708246+00:00",
+    "event_id": "7f765313-ac7d-4567-8291-cb6305e909d0",
+    "run_id": "doc-p04-02a7480c-0c2c-42fa-8cb4-f98df5ebbe4e",
+    "milestone": "DOC-P04",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "ChatGPT-specific agency section, four response behaviors, all-inbox check cadence and execution boundaries replace generic three-mode settings.",
+    "evidence": "Alice example states results-only policy; obsolete settings screenshot removed; remote products retain independent policy. Static Markdown/behavior checks passed."
+  },
+  {
+    "record_id": "d34bc4eb-f387-568e-b04b-0cdc8452ecac",
+    "recorded_at": "2026-10-05T21:52:47.063424+00:00",
+    "event_id": "7f1d3d98-5644-4c19-b079-3a025f1fd450",
+    "run_id": "doc-p04-02a7480c-0c2c-42fa-8cb4-f98df5ebbe4e",
+    "milestone": "DOC-P04",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Review user direction and policy boundaries separately from editing.",
+    "evidence": "Check no default autonomy claim, no claimed polling/worker mechanism, all four behaviors, Consequential judgment and results-only notifications within permissions."
+  },
+  {
+    "record_id": "7898f163-0381-5444-ac0b-d8ce6dcf72cb",
+    "recorded_at": "2026-10-05T21:53:55.570193+00:00",
+    "event_id": "51d1174a-3e90-4c19-bcf0-f3c29bf1f4e3",
+    "run_id": "doc-p04-02a7480c-0c2c-42fa-8cb4-f98df5ebbe4e",
+    "milestone": "DOC-P04",
+    "step": "REVIEW",
+    "status": "completed",
+    "detail": "ChatGPT agency spec review passed: four response policies and all-inbox checking separated from host execution and peer behavior.",
+    "evidence": "Desired/effective cadence and last check; Consequential decisions; authority and required host confirmations; no invented interval/default, no developer status and no stale settings image. Two diagrams unchanged; Markdown checks passed."
+  },
+  {
+    "record_id": "63d17abc-0f8b-54b9-b830-d26b66018ca3",
+    "recorded_at": "2026-10-05T21:54:44.12778+00:00",
+    "event_id": "23a3bd41-7e9c-45f4-ad32-cdceb280e3ed",
+    "run_id": "doc-p04-02a7480c-0c2c-42fa-8cb4-f98df5ebbe4e",
+    "milestone": "DOC-P04",
+    "step": "MARK_COMPLETE",
+    "status": "completed",
+    "detail": "DOC-P04 clarification reviewed and canonical-synced.",
+    "evidence": "Five exact canonical writes verified; four ChatGPT-specific behaviors, desired/effective all-inbox cadence and host-control question; no code or M2 retry."
+  },
+  {
+    "record_id": "f50e6122-118c-5bf6-9341-6b4be759445d",
+    "recorded_at": "2026-10-05T21:54:46.693909+00:00",
+    "event_id": "3c12b39b-744e-4d9e-a432-e2b19de04eb4",
+    "run_id": "doc-p04-02a7480c-0c2c-42fa-8cb4-f98df5ebbe4e",
+    "milestone": "DOC-P04",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "ChatGPT agency specification task complete with no retries.",
+    "evidence": "Review and final events read back; product-only spec and unchanged prototype. Closed-state records and main publication follow."
+  }
+]

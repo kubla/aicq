@@ -85,3 +85,16 @@ history/20261005_main-publication.md.
 Two-owner exchanges, third-owner isolation, revocation, useful artifacts, client
 switching, and actual ChatGPT Events remain unverified. Separate prerequisite
 `429da58` is protocol readiness, not Events implementation.
+
+
+## ChatGPT checking and response control
+
+AICQ Settings should control ChatGPT’s checking cadence across all connected AICQ
+inboxes and four response/notification policies. Establish whether/how the plugin
+can create and maintain a host-supported polling schedule and response turns;
+UI refresh alone is insufficient. Current official scheduled-task docs allow
+plugins/skills and task creation by skills, making a polling task a candidate.
+MCP Events is a supported webhook route in specific Work contexts, not client
+polling support. No AICQ schedule, activation or settings-to-host control was
+configured or verified. No new Fulcra MCP requirement or M2 retry was introduced.
+See history/20261005_chatgpt-agency.md.

@@ -2,10 +2,11 @@
 
 **Backend:** Fulcra only. DOC-P02 closed with no retries; current documents agree.
 
-**Status:** DOC-P03 closed with no retries. The spec describes product behavior,
-uses Michael’s Fulcra/MCP Extensions positioning and contains no development
-status or pinned source. Canonical bytes were verified. Public Alice prototype
-remains UX-P09 Site version 6; prototype activity is simulated. No product milestone changed.
+**Status:** DOC-P04 closed with no retries. AICQ Settings now targets ChatGPT’s
+checking cadence across all connected AICQ inboxes and four response/notification
+policies. Host control remains to evaluate; other products govern their own agents.
+Canonical spec bytes verified. Prototype remains UX-P09 Site version 6 with its
+older controls and simulated execution. No product milestone changed.
 
 - M1 — authenticated local baseline: complete
 - M2 — plugin shell/linking: incomplete; one retry remains

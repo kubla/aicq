@@ -1,0 +1,52 @@
+[
+  {
+    "path": "workspace/aicq/spec.md",
+    "sha256": "5c98398928fcec0316e765a667fe534e9b7a0004d1f108704706b59c36483f2d",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/plan.md",
+    "sha256": "81f59fa043d2d26c8b4c8a4356eefa98a1fcaebfbb4983389a6f456481fbf3c8",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/decisions.md",
+    "sha256": "c70bf1f1bdab360b5d1a50563068e7c22ffc95c1bc07859ad606c31350559349",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/progress.md",
+    "sha256": "fe0dd11f6c847f654a85742bceec01d9e363319b1106658b97bdcb5d14873d98",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/workboard.md",
+    "sha256": "04b0657e2f6f2c1d369784fccf6d1f531700c1504d5608ee4db94c04f31082ec",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/overview.md",
+    "sha256": "875b746b83e162972883c8c0d1b0ec8701b0c56c1fd0a776a40dca327cd331ca",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/outstanding-issues.md",
+    "sha256": "3a3019e048aaeeab2c1b52365d8a3226065884d8e8a3d90f39d5733ab88ac7e1",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/history/20261005_chatgpt-agency.md",
+    "sha256": "8f7b52fd3f4b51950bb654549a046d6456abb1db020b0de56d4ded51b8c4fb35",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/history/20261005_chatgpt-agency-checks.json",
+    "sha256": "e8584fa3d425d7095ebd1a39c28444c429e5bd63c8c32bec27991bd4b2148ffe",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/history/20261005_chatgpt-agency-events.json",
+    "sha256": "b236f4792e3472a37647d8b91a7a00de6c66a41f4d05aabe4e78f86c0c9845d6",
+    "matched": true
+  }
+]

@@ -15,7 +15,8 @@ She selects his agent with the desktop `@AICQ` picker and says:
 
 Her agent sends the model and the request. Alice keeps working in the same chat.
 The agents exchange permitted availability, agree a time and place, and use their
-own tools to arrange the meeting. The result comes back:
+own tools to arrange the meeting. In this example, Alice has asked ChatGPT to
+reply autonomously and notify her about results. The result comes back:
 
 > Bob has model v7. Your review is scheduled for Friday at 2 p.m. at his office.
 
@@ -98,25 +99,44 @@ and human views don’t count. Show the sample count and measurement window on
 inspection, “Not enough history yet” when appropriate, and the current request’s
 waiting time separately.
 
-## How much should your agents handle?
+## How far can our plugin push ChatGPT to act agentically?
 
-| Mode | Behavior |
+Sharing with another agent assumes its product can act on the request and write
+back autonomously. That product governs its own agent. ChatGPT’s ordinary chat
+behavior is driven by user turns; our plugin aims to make it an active participant
+in these exchanges.
+
+**AICQ Settings** should control two things: when ChatGPT checks for messages and
+what it does when it finds one. How far the plugin can control that behavior is
+an engineering question to explore as we build it.
+
+Message checks cover all of the owner’s connected AICQ inboxes, including other
+owned agents and friends’ agents, regardless of which contact or chat is open.
+The checking control sets the desired cadence. The app should show the effective
+cadence, last completed check and whether checking can continue while the user
+is away. A requested interval needs a host mechanism that can run the checks.
+
+| Response behavior | What ChatGPT should do |
 | --- | --- |
-| **Handle it for me** | Complete work within established permissions and preferences. Ask when something needed is missing or outside those limits. |
-| **Check with me on judgment calls** | Handle routine steps. Ask about consequential choices the instruction and preferences don’t settle. |
-| **Prepare for my approval** | Prepare a proposal and wait before outward replies or commitments. |
+| **Notify me** | Tell the user a message arrived. Wait for direction before preparing or sending a response. |
+| **Notify me with a draft** | Prepare a response and notify the user. Wait for approval before sending it. |
+| **Respond; check with me on Consequential decisions** | Respond autonomously to routine requests. Ask when a Consequential decision needs the user. |
+| **Respond; notify me about results** | Handle the exchange autonomously within granted authority. Notify the user about outcomes rather than every arrival or reply. |
 
-![Alice’s settings: autonomy and sharing permissions.](prototypes/agent-boundary-settings.png)
+A Consequential decision is a choice that needs the owner’s judgment rather than
+routine coordination: for example, changing an explicitly requested Friday review
+to Monday. In every mode, permissions, required host confirmations and explicit
+constraints still apply. If missing information or authority prevents completion,
+ask the specific question.
 
-Owners choose an account default and can override it for a contact or task.
-Apply **task override → contact override → account default**. Show the effective
-mode and where it came from. Check it before the next outward
-action. A policy change applies to subsequent work; existing messages and
-commitments remain. Pause and block take precedence. Each owner chooses independently.
+The setting governs ChatGPT’s responses, not the other products’ agents. Check
+the effective policy before each outward action. Policy changes apply to subsequent
+work; existing messages and commitments remain. Pause and block take precedence.
 
-An agent’s authority and its availability are separate. When no executor can act,
-show “Waiting for Bob’s agent to return.” A configured responder continues without
-the human app being open, using its own authorized tools and credentials.
+Separate checking for a message from getting ChatGPT to act on it. Fetching a new
+message or refreshing the app can update the view; an autonomous response also
+needs a host-supported agent turn. When checking or responding cannot run, show
+the specific waiting state and preserve the request for the next session.
 
 ## Invite Morgan
 
@@ -175,7 +195,7 @@ capability more accessible to everyday ChatGPT users.
 | Add shared work to the chat | `ui/update-model-context`: visible, titled selected context |
 | Continue or use returned changes | `ui/message`: an explicit user instruction to the active chat |
 | Open a particular collaboration | Authorized deep link, with navigation/selection as a fallback |
-| Set autonomy or connect the account | Structured settings and onboarding skill |
+| Set ChatGPT’s checking and response behavior, or connect the account | Structured settings and onboarding skill |
 
 These surfaces use the [MCP Apps bridge](https://developers.openai.com/plugins/build/chatgpt-ui)
 and [Extensions hooks](https://developers.openai.com/plugins/build/extensions).
@@ -222,10 +242,11 @@ the shared result and unresolved questions. Each client authenticates separately
 and reuses the owner’s resources; credentials and private conversation history
 stay in that client.
 
-Agents retrieve pending work on demand or through authorized polling. A configured
-runner or subscription can continue the collaboration while the owner is away.
-Polling retrieves messages; starting an agent turn requires an executor.
-Receipt notifications must not create unnecessary turns or reply loops.
+Other products retrieve pending work on demand or through their own polling,
+runners or subscriptions. They own their response policies and tool permissions.
+For ChatGPT, explore how the plugin can arrange checks and start response turns
+under AICQ Settings. Receipt notifications must not create unnecessary turns or
+reply loops.
 
 ## Fulcra storage and delivery
 
@@ -266,7 +287,11 @@ reconciles it before retrying. AICQ displays the reported evidence.
 | --- | --- |
 | Share model v7 and arrange Friday’s review | Correct contact and version; selected content only; one instruction; routine work completes while Alice continues chatting |
 | Friday is impossible | Focused question and recommendation before changing the day |
-| Prepare for my approval | No outward reply or commitment before approval |
+| Notify me / Notify me with a draft | Arrival notification only, or notification with a prepared response; neither sends an outward reply without direction or approval |
+| Respond; check with me on Consequential decisions | Routine replies proceed; a Consequential choice produces a focused question |
+| Respond; notify me about results | Authorized exchanges proceed without an arrival/reply notification for each message; report the outcome |
+| Check for messages while another contact is open | Check all connected AICQ inboxes at the effective cadence; show the last completed check |
+| ChatGPT cannot run checks or start a response turn | Show the actual waiting state, preserve the work and never imply that a settings choice started a worker |
 | Bob’s agent is away; services restart | Durable waiting state, later retrieval and continuation without lost or repeated work |
 | Review a plan that changes during the exchange | Versioned revision, rationale and reconciliation with newer source work |
 | Morgan joins or resumes setup | Verified reciprocal access, resource reuse and no duplicate contacts/channels |
@@ -274,5 +299,5 @@ reconciles it before retrying. AICQ displays the reported evidence.
 | Hand off between ChatGPT and Codex | Usable returned artifact, stable identity and shared continuity after switching clients |
 | A write or tool action has an uncertain outcome | Reconcile and report the unresolved state; no duplicate replies or meetings |
 
-Exercise desktop and narrow layouts, capability fallbacks, effective autonomy,
-agent availability and response-time estimates through these journeys.
+Exercise desktop and narrow layouts, capability fallbacks, checking cadence,
+response/notification policies, agent availability and response-time estimates.

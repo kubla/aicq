@@ -386,3 +386,16 @@ DOC-P03 completed with no retries. Full prior-spec comparison and writing review
 passed. Product invariants and unchanged images/diagrams retained; status/pinned
 references removed from the spec. Current spec is 2,233 words. Canonical bytes and
 terminal events were read back. See history/20261005_spec-contract.md.
+
+
+## DOC-P04 — ChatGPT-specific agency settings (2026-10-05)
+
+Michael reframes autonomy controls as how far AICQ can push ChatGPT to act
+agentically. Other products govern their own agents; AICQ Settings should govern
+ChatGPT’s checking cadence across connected AICQ inboxes and four response/
+notification behaviors. Frame host-control feasibility as a design question, not
+an implemented capability or a policy that remotely controls all agents. Update
+spec and checks; keep ledger outside spec and do not edit/publish the prototype.
+Sequential roles, existing annotation, separate DOC-P04 state, 15-minute default
+timeout and two retries. Read current official host docs, review policy/activation
+boundaries, byte-verify canonical writes and commit directly to main. M2 unchanged.

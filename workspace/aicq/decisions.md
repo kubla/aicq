@@ -398,3 +398,22 @@ Michael asked why the work was on a branch rather than main, then instructed:
 working home for the shared spec and straightforward documentation edits.
 This does not change product milestone status or authorize public repository access.
 See history/20261005_main-publication.md.
+
+
+## 2026-10-05 — AICQ Settings governs ChatGPT’s agency
+
+User: “‘How much should your agents handle?’ should really become ‘How far can
+our plugin push ChatGPT to act agentically?’” Other agent products are assumed
+to act and write back autonomously; ChatGPT does not do this by default.
+
+Aspirationally AICQ Settings changes ChatGPT’s participation: control how often
+it checks new messages across all connected AICQ inboxes, and whether it (1)
+notifies about arrival only, (2) notifies with a prepared draft, (3) replies
+autonomously unless a Consequential decision needs the owner, or (4) answers
+autonomously and notifies only about results. Host-control feasibility must be
+discovered. Other products’ response policies remain their own; this setting
+neither changes them nor grants ChatGPT new tool/data permissions.
+
+This supersedes the earlier three-mode generic-agent framing. The exact cadence,
+default mode and mechanism are not selected. Keep the spec aspirational without
+restoring development status. No prototype update was requested in this turn.
