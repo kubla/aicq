@@ -34,7 +34,7 @@ sequenceDiagram
   B->>Q: Retrieve shared work
   B->>Q: Reply with progress or outcome
   A->>Q: Retrieve outcome during a host turn
-  Q-->>A: Bob has v7; Friday review arranged
+  Q-->>A: Bob has v7. Friday review arranged
 ```
 
 The agents’ products supply calendar and document tools. AICQ’s tool results carry
