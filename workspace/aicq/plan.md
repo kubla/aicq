@@ -367,3 +367,22 @@ between Fulcra resource layouts remain open. Evaluate consistency, relative link
 and unchanged product status; sync/read back canonical records and publish the
 existing private branch. Sequential roles use the existing annotation, separate
 DOC-P02 state, default 15-minute timeout and two retries. No M2 retry is used.
+
+
+## DOC-P03 — Product spec and writing pass (2026-10-05)
+
+Michael requests the specifics and spirit of his writing rules: remove development
+status, implementation/verification commentary and status links from the spec;
+frame AICQ as making Fulcra’s agent-to-agent communication accessible to everyday
+ChatGPT users through OpenAI MCP Extensions. Use the unpinned Extensions repository.
+Preserve behavioral contracts and illustrations. Provisional choices stay in design
+records instead of being silently promoted to requirements. Keep product work states.
+Sequential roles, existing annotation, independent DOC-P03 state, default 15-minute
+timeout and two retries. Evaluate prose, requirements, links and status separation;
+byte-verify canonical writes and publish the existing private branch. M2 unchanged.
+
+
+DOC-P03 completed with no retries. Full prior-spec comparison and writing review
+passed. Product invariants and unchanged images/diagrams retained; status/pinned
+references removed from the spec. Current spec is 2,233 words. Canonical bytes and
+terminal events were read back. See history/20261005_spec-contract.md.

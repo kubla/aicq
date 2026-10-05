@@ -6,6 +6,12 @@ remain proposals.
 
 ## Design experiment
 
+DOC-P03 (2026-10-05): writing pass makes the spec a product contract. Removed
+build status, simulation/development commentary, history links and pinned source;
+kept product work states, behavioral invariants and unchanged illustrations.
+Supplied Fulcra accessibility framing used; canonical bytes verified, run closed
+with no retries. M2 unchanged. See history/20261005_spec-contract.md.
+
 DOC-P02 (2026-10-05): Fulcra fixed as the backend. Removed backend alternatives
 from current documents; remaining storage questions concern Fulcra resource layouts.
 Review, canonical byte-verification and terminal event read-back passed. No retries;

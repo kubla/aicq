@@ -18,13 +18,14 @@ remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 ## Harness state
 
 Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
-Latest run: DOC-P02 `doc-p02-6a10cf36-6bb9-4782-8f1f-cfa53504e14e`, closed at
-2026-10-05T21:15:06.462839+00:00; no run is active. Passing REVIEW, MARK_COMPLETE and
-RUN_COMPLETE were read back; terminal `0c1bf916-813b-5382-8528-bc35dbd46476`. No retries used.
-Fulcra is now the fixed backend; alternate-backend proposals are removed from
-current documents, with historical proposals explicitly superseded. See
-history/20261005_fulcra-only.md. DOC-P01’s illustrated spec and UX-P09’s public
-simulated prototype remain the reading/design baseline. M2 has one retry unchanged.
+Latest run: DOC-P03 `doc-p03-2f774ab5-043a-4f06-95f1-fe7c9178e50b`, closed at
+2026-10-05T21:37:24.738355+00:00; no run is active. REVIEW, MARK_COMPLETE and RUN_COMPLETE
+were read back; terminal `cb846d36-be7f-59af-a63a-3c38f074cc8c`. No retries used.
+Spec now contains product behavior and interactions only, using Michael’s Fulcra
+accessibility framing and unpinned MCP Extensions link. Development status,
+implementation commentary and historical links are removed from the spec and
+remain in these project records. See history/20261005_spec-contract.md.
+Fulcra remains the fixed backend. M2 has one retry unchanged; M3–M6 pending.
 
 - UX-P03 retry `ux-p03-f8c30fc1-0cbf-4de2-bc18-c876c3165901`: passing
   REVIEW, MARK_COMPLETE and RUN_COMPLETE read back; terminal record

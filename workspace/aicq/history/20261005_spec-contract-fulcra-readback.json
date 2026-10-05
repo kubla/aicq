@@ -1,0 +1,47 @@
+[
+  {
+    "path": "workspace/aicq/spec.md",
+    "sha256": "52dd9d27aed99b5d05295d99b18ee2033dec1ffb16c10fc5c7fd7557a07b667f",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/plan.md",
+    "sha256": "a3f414795c3c02039f4dde7364b823b4e1b283f60e084e9b4bb0bbae17442f84",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/decisions.md",
+    "sha256": "fd40367e4afbad6f1f9c7edc4c9924d5391f9b4c1b112ddb04aedc00492f2c1a",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/progress.md",
+    "sha256": "ddeb4dcd8209be106016e849a5bbbde2cf860cb0b0b6bf842898a788f8781418",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/overview.md",
+    "sha256": "c8c254ab17a6392783d6ef33a2d584607333c7be44e93d106a13ce7df828aae9",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/workboard.md",
+    "sha256": "62c75ea54dbaa0fdf80cecd604f99c9b225b6d47f45b98266677adf9f25b0a27",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/history/20261005_spec-contract.md",
+    "sha256": "09848a2b7e103bdaa764b67227f8f9e379f44a819eb95131c7b4489b7ca8b314",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/history/20261005_spec-contract-checks.json",
+    "sha256": "b7c2a71ade5ee7a32579b1a8e92a8047de9c60f3ca64c1fd931fd5ec0d069a98",
+    "matched": true
+  },
+  {
+    "path": "workspace/aicq/history/20261005_spec-contract-events.json",
+    "sha256": "8445127b6baadb80b769b111c08c3ddcaa1fd5164d1855d6d8dc806b8c3bf3f4",
+    "matched": true
+  }
+]

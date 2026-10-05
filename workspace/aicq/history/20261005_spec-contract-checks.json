@@ -1,0 +1,22 @@
+{
+  "words": 2233,
+  "images": 3,
+  "diagrams": 2,
+  "missingPaths": [],
+  "developmentStatusOrPins": false,
+  "requestedExtensionsLink": true,
+  "previous_words": 3251,
+  "diagram_source_unchanged": true,
+  "contract_review": [
+    "selected content and version",
+    "owner isolation and revocation",
+    "three autonomy modes and precedence",
+    "resumable invitations",
+    "portable identity and artifacts",
+    "durable IDs and uncertain-write reconciliation",
+    "receipts versus outcomes",
+    "polling versus execution",
+    "host context versus explicit turn",
+    "Fulcra-only backend"
+  ]
+}

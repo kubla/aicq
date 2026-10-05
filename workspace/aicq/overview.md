@@ -2,11 +2,10 @@
 
 **Backend:** Fulcra only. DOC-P02 closed with no retries; current documents agree.
 
-**Status:** Engineer-readable product spec reviewed: Alice’s journey, three current
-prototype screenshots, two diagrams, portable exchange contracts and acceptance
-journeys. Canonical bytes and private GitHub branch
-verified at `d1a5075`; DOC-P01 closed after one legibility repair. Public Alice prototype remains
-UX-P09 Site version 6; its interactions are simulated. No product milestone changed.
+**Status:** DOC-P03 closed with no retries. The spec describes product behavior,
+uses Michael’s Fulcra/MCP Extensions positioning and contains no development
+status or pinned source. Canonical bytes were verified. Public Alice prototype
+remains UX-P09 Site version 6; prototype activity is simulated. No product milestone changed.
 
 - M1 — authenticated local baseline: complete
 - M2 — plugin shell/linking: incomplete; one retry remains

@@ -375,3 +375,17 @@ Fulcra resource layout and operational metadata representation still need evalua
 Retain the AICQ MCP/UI adapter, portable clients, polling and local-first hosting.
 If Fulcra primitives do not meet a required contract, report the gap rather than
 silently switching backends. Historical proposals are superseded, not erased.
+
+
+## 2026-10-05 — Spec as product contract; Fulcra accessibility
+
+User: “remove from the spec everything that looks like a status, even the link
+to ‘Build status.’ Make this a good spec.” Apply the specifics and spirit of
+Michael’s writing rules, cutting defensive commentary and exposition.
+
+User’s replacement: “Fulcra already provides agent-to-agent communication. Here
+we are focused on using OpenAI’s MCP Extensions to make that capability more
+accessible to everyday ChatGPT users.” Link https://github.com/openai/mcp-extensions/
+without a pinned revision. Product work states remain requirements; development
+status and evidence remain in progress/history rather than the spec. Removing
+prototype-choice annotations does not approve previously provisional mechanics.

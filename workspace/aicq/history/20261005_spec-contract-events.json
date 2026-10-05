@@ -1,0 +1,90 @@
+[
+  {
+    "record_id": "30b43c01-5f2b-5a82-a4de-1015e709c929",
+    "recorded_at": "2026-10-05T21:32:57.511139+00:00",
+    "event_id": "eac2cff1-0f96-4be5-afe8-26d0ead90e40",
+    "run_id": "doc-p03-2f774ab5-043a-4f06-95f1-fe7c9178e50b",
+    "milestone": "DOC-P03",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "Rewrite the spec as a direct product contract in Michael\u2019s voice, with Fulcra accessibility framing.",
+    "evidence": "Canonical documents matched; exact editorial direction and default 15-minute documentation plan uploaded/read back."
+  },
+  {
+    "record_id": "45d19c51-b726-582c-8d49-9d042ef99a2f",
+    "recorded_at": "2026-10-05T21:32:59.919836+00:00",
+    "event_id": "a5de32e1-accf-418a-baf9-ca1bcf513ade",
+    "run_id": "doc-p03-2f774ab5-043a-4f06-95f1-fe7c9178e50b",
+    "milestone": "DOC-P03",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "DOC-P03 is the authorized spec pass, independent of product milestones.",
+    "evidence": "Preserve product behavior and provisional-choice provenance; remove development status and pinned references from the spec."
+  },
+  {
+    "record_id": "6b4b8951-407c-5843-a8d6-20784153eec5",
+    "recorded_at": "2026-10-05T21:33:02.405955+00:00",
+    "event_id": "675462f7-608c-4494-b0c8-671bdcb4a8a0",
+    "run_id": "doc-p03-2f774ab5-043a-4f06-95f1-fe7c9178e50b",
+    "milestone": "DOC-P03",
+    "step": "GENERATE",
+    "status": "started",
+    "detail": "Cut status, defensive commentary and implementation planning; rewrite around behavior and interactions.",
+    "evidence": "Full writing rules read; official Extensions reference fetched; retain three illustrations and two diagrams."
+  },
+  {
+    "record_id": "593c4a58-ef2b-5bc2-846e-f77585d75fcd",
+    "recorded_at": "2026-10-05T21:35:50.482727+00:00",
+    "event_id": "012ce700-a2f3-4d01-b8cf-2f2040d1e69a",
+    "run_id": "doc-p03-2f774ab5-043a-4f06-95f1-fe7c9178e50b",
+    "milestone": "DOC-P03",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "Spec rewritten as behavior and interaction contracts; status/pins/history links removed; supplied Fulcra accessibility framing applied.",
+    "evidence": "Main spec reduced to about 2240 words; three images and two diagrams retained; provisional mechanics and development evidence remain outside the spec."
+  },
+  {
+    "record_id": "93356736-d0fa-5716-aa0e-b59592954e4d",
+    "recorded_at": "2026-10-05T21:35:53.019321+00:00",
+    "event_id": "64bd138d-1565-46c7-b997-9b1955b170dc",
+    "run_id": "doc-p03-2f774ab5-043a-4f06-95f1-fe7c9178e50b",
+    "milestone": "DOC-P03",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Separate review for writing quality, contract coverage and absence of development/status clutter.",
+    "evidence": "Markdown token checks passed: three images, two diagrams, existing relative paths and unpinned Extensions link; full prose and diff review follows."
+  },
+  {
+    "record_id": "0c58d559-58da-5394-8fbd-c85167bfd5a3",
+    "recorded_at": "2026-10-05T21:36:38.46737+00:00",
+    "event_id": "eafe1239-c769-4bf6-8b1f-722e54af5cbe",
+    "run_id": "doc-p03-2f774ab5-043a-4f06-95f1-fe7c9178e50b",
+    "milestone": "DOC-P03",
+    "step": "REVIEW",
+    "status": "completed",
+    "detail": "Product-spec and writing review passed: behavioral contracts retained, development/status material removed, supplied framing and unpinned source used.",
+    "evidence": "Full prior-spec comparison; 2240-word contract, three existing images, two unchanged diagrams, valid Markdown/relative assets, no development ledger links or pinned sources; no app changes."
+  },
+  {
+    "record_id": "5973bc37-d05d-5cfd-88a2-2bbd17790a6e",
+    "recorded_at": "2026-10-05T21:37:22.425222+00:00",
+    "event_id": "a958aae0-86d1-4a92-9613-2c70cda9515d",
+    "run_id": "doc-p03-2f774ab5-043a-4f06-95f1-fe7c9178e50b",
+    "milestone": "DOC-P03",
+    "step": "MARK_COMPLETE",
+    "status": "completed",
+    "detail": "DOC-P03 editorial correction passed review and canonical read-back.",
+    "evidence": "2233-word spec; behavior and illustrations retained; development status and pinned references absent; requested Fulcra accessibility framing present."
+  },
+  {
+    "record_id": "cb846d36-be7f-59af-a63a-3c38f074cc8c",
+    "recorded_at": "2026-10-05T21:37:24.738355+00:00",
+    "event_id": "0e18477f-7031-4f2b-9823-e23fc8f9dbaf",
+    "run_id": "doc-p03-2f774ab5-043a-4f06-95f1-fe7c9178e50b",
+    "milestone": "DOC-P03",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "Product-spec pass complete with no retries; development evidence retained outside the spec.",
+    "evidence": "Exact canonical bytes verified; no source/prototype changes or M2 retry consumed. Final project mirrors and private branch publication follow."
+  }
+]
