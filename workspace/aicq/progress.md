@@ -240,3 +240,11 @@ recipient card; browser review and native deployment passed. Passing REVIEW,
 MARK_COMPLETE and RUN_COMPLETE read back; terminal 60b192ca-2455-5702-97d0-0f80d96886db.
 No active run; M2 remains incomplete with one retry. See
 `history/20261003_alice-realism.md` and `prototypes/alice-realism-notes.md`.
+
+
+## Mainline publication (2026-10-05)
+
+Main fast-forwarded from `36870e4` to reviewed work `9d57071` on Michael’s
+instruction. GitHub main and spec bytes matched the local reviewed copy; the
+checkout is now main. See history/20261005_main-publication.md. No product
+implementation or milestone status changed.

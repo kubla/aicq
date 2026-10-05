@@ -389,3 +389,12 @@ accessible to everyday ChatGPT users.” Link https://github.com/openai/mcp-exte
 without a pinned revision. Product work states remain requirements; development
 status and evidence remain in progress/history rather than the spec. Removing
 prototype-choice annotations does not approve previously provisional mechanics.
+
+
+## 2026-10-05 — Shared spec on main
+
+Michael asked why the work was on a branch rather than main, then instructed:
+“Make it happen.” Publish the reviewed AICQ work to main and use main as the
+working home for the shared spec and straightforward documentation edits.
+This does not change product milestone status or authorize public repository access.
+See history/20261005_main-publication.md.

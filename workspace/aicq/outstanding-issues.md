@@ -77,11 +77,11 @@ keep all required host/account checks incomplete and M3–M6 pending.
 
 ## Source publication and later gates
 
-Local Git publication now works: branch `kublascratchpad/ux-alice-worked-example`
-was pushed to private `kubla/aicq` on 2026-10-05. GitHub spec/README bytes and remote
-head matched candidate `d1a5075`; main and repository access were unchanged.
-The earlier HTTP 401 was a historical cloud transport failure. See
-history/20261005_spec-readability.md.
+Git publication works. On Michael’s instruction, GitHub main was fast-forwarded
+to reviewed work `9d57071` on 2026-10-05. Main’s spec byte-matched the reviewed
+local copy; the working checkout is main. Earlier private branch publication and
+the cloud HTTP 401 are historical. Repository access remains unchanged. See
+history/20261005_main-publication.md.
 Two-owner exchanges, third-owner isolation, revocation, useful artifacts, client
 switching, and actual ChatGPT Events remain unverified. Separate prerequisite
 `429da58` is protocol readiness, not Events implementation.
