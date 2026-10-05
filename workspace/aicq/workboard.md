@@ -6,6 +6,10 @@ remain proposals.
 
 ## Design experiment
 
+DOC-P07 (2026-10-05): repaired the interaction map’s Mermaid message delimiter.
+Actual GitHub preview and expanded diagram render; canonical bytes and terminal
+events verified. No retries or M2 changes. See history/20261005_mermaid-fix.md.
+
 DOC-P06 (2026-10-05): interaction map now identifies OpenAI affordances for the
 spec’s user experiences and Fulcra-backed contracts. Writing/coverage review passed;
 35% shorter, with model coaching and defensive clarifications removed. Canonical

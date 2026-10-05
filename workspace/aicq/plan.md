@@ -435,3 +435,19 @@ directly to main. No code/prototype change or M2 retry.
 DOC-P06 completed with no retries. Full spec coverage, source hooks and writing
 review passed. The map is 35% shorter; canonical bytes and terminal events were
 verified. Spec/code/prototype unchanged. See history/20261005_affordance-map.md.
+
+## DOC-P07 — GitHub Mermaid render repair (2026-10-05)
+
+Michael reports a Mermaid rendering error and requests browser inspection.
+GitHub reproduces a parse error in the final sequence message. Repair the message
+punctuation and evaluate the actual GitHub-rendered diagram. Documentation scope
+only; spec/code/prototype and M2 retries remain unchanged. Sequential roles,
+existing owner annotation, independent DOC-P07 state, default 15-minute timeout
+and two retries. The candidate diagram fix may be published on main to exercise
+GitHub's renderer; completion requires its successful browser render and final
+canonical byte/event read-back. No broader bug instrumentation is needed for this
+isolated source delimiter; the browser render is the regression check.
+
+DOC-P07 completed with no retries. Semicolon-to-period fix `dd42278` renders in
+the actual GitHub preview and expanded diagram; canonical bytes and terminal
+events verified. M2 unchanged. See history/20261005_mermaid-fix.md.

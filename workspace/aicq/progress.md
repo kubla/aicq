@@ -18,13 +18,12 @@ remain blocked. No M2 MARK_COMPLETE was recorded; M3–M6 remain pending.
 ## Harness state
 
 Reuse owner annotation `MomentAnnotation/51f5fa9c-a6c7-4ee5-a0e3-f602496e3bed`.
-Latest run: DOC-P06 `doc-p06-4145dedc-8354-4e29-8185-ef89cd78c625`, closed at
-2026-10-05T22:42:44.396993+00:00; no run is active. REVIEW, MARK_COMPLETE and RUN_COMPLETE
-were read back; terminal `44485e4f-546c-5969-a21a-1176ca4587f8`. No retries used.
-Interaction map rewritten as spec interaction / OpenAI affordance / AICQ use.
-Writing-rule review removed model coaching and defensive clarifications; coverage,
-Markdown, links and canonical bytes verified. Spec/code/prototype unchanged.
-See history/20261005_affordance-map.md. M2 remains incomplete with one retry.
+Latest run: DOC-P07 `doc-p07-3351ae3c-170d-4848-8590-469651ed32cf`, closed at
+2026-10-05T23:34:48.249486+00:00; no run is active. REVIEW, MARK_COMPLETE and RUN_COMPLETE
+were read back; terminal `9f381f36-a1cf-5956-9204-60a3f9432125`. No retries used.
+Fixed the sequence-message semicolon at `dd42278`; actual GitHub browser preview
+and expanded diagram render successfully. Canonical bytes verified.
+See history/20261005_mermaid-fix.md. Spec/code/prototype and M2 retries unchanged.
 
 - UX-P03 retry `ux-p03-f8c30fc1-0cbf-4de2-bc18-c876c3165901`: passing
   REVIEW, MARK_COMPLETE and RUN_COMPLETE read back; terminal record

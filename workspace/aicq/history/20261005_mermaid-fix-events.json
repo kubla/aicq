@@ -1,0 +1,90 @@
+[
+  {
+    "record_id": "ba0219a4-fd1e-5938-8d29-c264a475366c",
+    "recorded_at": "2026-10-05T23:31:05.214855+00:00",
+    "event_id": "a0bde549-3798-440f-9e8e-07f8b20ffe1e",
+    "run_id": "doc-p07-3351ae3c-170d-4848-8590-469651ed32cf",
+    "milestone": "DOC-P07",
+    "step": "RUN_START",
+    "status": "started",
+    "detail": "DOC-P07: repair actual GitHub Mermaid rendering",
+    "evidence": "Nurse verified project-owner credentials and canonical mirrors; previous documentation run closed. DOC-P07 default timeout/retries and browser evaluation scope uploaded/read back. Browser reproduced GitHub rich-display parse error at the final message containing a semicolon."
+  },
+  {
+    "record_id": "50ac999b-c5c1-5763-a476-11224612543f",
+    "recorded_at": "2026-10-05T23:31:07.637436+00:00",
+    "event_id": "09eccd5c-d18f-4b87-9bbd-fd741056eda0",
+    "run_id": "doc-p07-3351ae3c-170d-4848-8590-469651ed32cf",
+    "milestone": "DOC-P07",
+    "step": "FIND_MILESTONE",
+    "status": "completed",
+    "detail": "Documentation-render repair selected",
+    "evidence": "Coordinator selected only the user-reported diagram repair. GitHub browser preview at a233bb5 is the red-capable regression loop; no M2 retry or product change."
+  },
+  {
+    "record_id": "b694f05c-d291-5406-a0ce-8319790b395a",
+    "recorded_at": "2026-10-05T23:31:10.153063+00:00",
+    "event_id": "67e0ce8f-bb2f-4fa4-b47e-4cc5c318da94",
+    "run_id": "doc-p07-3351ae3c-170d-4848-8590-469651ed32cf",
+    "milestone": "DOC-P07",
+    "step": "GENERATE",
+    "status": "started",
+    "detail": "Replace message delimiter punctuation",
+    "evidence": "The displayed source ends Q-->>A: Bob has v7; Friday review arranged. GitHub reports an expected arrow token at the following newline. Replace the semicolon with a period; actual browser render will test the delimiter diagnosis."
+  },
+  {
+    "record_id": "e5080974-c41d-516b-88dc-e0238138677a",
+    "recorded_at": "2026-10-05T23:31:37.327413+00:00",
+    "event_id": "f1a7ac0b-6756-4395-aa90-888003ce012c",
+    "run_id": "doc-p07-3351ae3c-170d-4848-8590-469651ed32cf",
+    "milestone": "DOC-P07",
+    "step": "GENERATE",
+    "status": "completed",
+    "detail": "One-character message punctuation fix prepared",
+    "evidence": "Generator replaced the semicolon with a period in the final Mermaid message. git diff --check passed; map diff contains one changed line. Candidate will be published solely for GitHub renderer evaluation."
+  },
+  {
+    "record_id": "4030f238-4ec5-5471-a274-c05cd8444d69",
+    "recorded_at": "2026-10-05T23:31:39.912664+00:00",
+    "event_id": "fe8fee1d-316f-4a38-b4e3-ca7dc5dbb249",
+    "run_id": "doc-p07-3351ae3c-170d-4848-8590-469651ed32cf",
+    "milestone": "DOC-P07",
+    "step": "REVIEW",
+    "status": "started",
+    "detail": "Verify the repaired diagram in GitHub\u2019s browser renderer",
+    "evidence": "Evaluator uses the same actual browser preview that reproduced Unable to render rich display at a233bb5. Publication precedes the renderer check; no passing review or completion recorded yet."
+  },
+  {
+    "record_id": "7e1010bb-1ac4-556e-ad54-7be7e451b3ef",
+    "recorded_at": "2026-10-05T23:33:49.514653+00:00",
+    "event_id": "6c5e8676-b5a9-4d53-b50b-60f1930095c3",
+    "run_id": "doc-p07-3351ae3c-170d-4848-8590-469651ed32cf",
+    "milestone": "DOC-P07",
+    "step": "REVIEW",
+    "status": "completed",
+    "detail": "Actual GitHub Mermaid browser render passes",
+    "evidence": "Separate Evaluator reloaded the GitHub main interaction map after commit dd42278. GitHub Mermaid iframe rendered Alice in ChatGPT, AICQ and Bob\u2019s agent, with all six messages and corrected final label. Expanded diagram also rendered; screenshot saved to .local/mermaid-render-fixed.jpg. Prior parse error reproduced at a233bb5, absent after one-character semicolon-to-period change. git diff --check passes. No application/M2 tests run."
+  },
+  {
+    "record_id": "e437a587-c45c-5029-90e1-cef15a905749",
+    "recorded_at": "2026-10-05T23:34:46.001126+00:00",
+    "event_id": "84cc8350-c3a5-4e12-a8a7-05b48bce4359",
+    "run_id": "doc-p07-3351ae3c-170d-4848-8590-469651ed32cf",
+    "milestone": "DOC-P07",
+    "step": "MARK_COMPLETE",
+    "status": "completed",
+    "detail": "DOC-P07 Mermaid repair complete",
+    "evidence": "Coordinator inspected the passing actual GitHub browser review and three canonical byte comparisons. Only the documentation-render repair is complete; M2 retry and runtime gates unchanged."
+  },
+  {
+    "record_id": "9f381f36-a1cf-5956-9204-60a3f9432125",
+    "recorded_at": "2026-10-05T23:34:48.249486+00:00",
+    "event_id": "e6a77c5e-7941-48cb-912f-560205e0fbc9",
+    "run_id": "doc-p07-3351ae3c-170d-4848-8590-469651ed32cf",
+    "milestone": "DOC-P07",
+    "step": "RUN_COMPLETE",
+    "status": "completed",
+    "detail": "DOC-P07 closed",
+    "evidence": "GitHub diagram renders at dd42278 and canonical map/history bytes match. No retries used. Terminal read-back and final state mirrors follow; screenshot retained locally."
+  }
+]
